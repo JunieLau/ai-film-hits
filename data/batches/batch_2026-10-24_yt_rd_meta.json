@@ -1,0 +1,138 @@
+{
+  "batch": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "writtenAt": "2026-10-24T10:10:00+08:00",
+  "youtube_new_count": 20,
+  "reddit_new_count": 20,
+  "youtube_restore_count": 22,
+  "youtube_restore_path": "/workspace/moodboard_history/batch_2026-10-24_youtube_restore.json",
+  "youtube_new_path": "/workspace/moodboard_history/batch_2026-10-24_youtube_new.json",
+  "reddit_new_path": "/workspace/moodboard_history/batch_2026-10-24_reddit_new.json",
+  "blocks": [
+    "Reddit www/old.reddit.com JSON and HTML: connection timeout / unreachable from box",
+    "Reddit WebFetch hot.json/top.json: timeout",
+    "Pullpush API: HTTP 429 rate limit on fresh fetches this run",
+    "redlib.vanillax.me: 403 Forbidden",
+    "DuckDuckGo HTML search: captcha/challenge page"
+  ],
+  "reddit_note": "NEW Reddit items sourced from local verified as23.json cache (posts Oct 17–21 2026). After excluding live-board IDs, r/aivideo NEW tops ~316 — below ideal ≥500/≥1000 bar; kept strongest verified AI-video posts anyway. Live board already holds the ≥1000 aivideo hits.",
+  "youtube_note": "NEW YouTube items verified via yt-dlp metadata; upload window Sep 15–Oct 24 2026; max 2 per channel; views formatted from raw counts; no fabricated metrics.",
+  "youtube_top_hits": [
+    {
+      "id": "gVi5kDQjaso",
+      "views": "636.3K",
+      "channel": "Bryzib Studios",
+      "title": "He Doesn’t Belong Here | Amy & Wisp — ELDERHAVEN"
+    },
+    {
+      "id": "yayCXPPgXFk",
+      "views": "436.7K",
+      "channel": "Gossip Goblin",
+      "title": "The Toaster Rebellion"
+    },
+    {
+      "id": "i4VzmQI0Qlk",
+      "views": "447.9K",
+      "channel": "Valune Motion Pictures",
+      "title": "Sea of Ash | Cinematic AI Short Film | Higgsfield Film Festival"
+    },
+    {
+      "id": "fnyrvFMxCHg",
+      "views": "480.7K",
+      "channel": "Fabian Mosele",
+      "title": "Triple T sacrifice to kill Sora 2 - Triple T Movie (2027)"
+    },
+    {
+      "id": "0bhjhGxksXU",
+      "views": "302.1K",
+      "channel": "FABLEWAKE",
+      "title": "DEMON OF THE FINAL ACT | EP. 02: Beneath the Mountain | AI Dark Fantasy Short Film"
+    }
+  ],
+  "reddit_top_hits": [
+    {
+      "id": "1xbl5fo",
+      "score": "224",
+      "sub": "aivideo",
+      "title": "LANTERN - Trailer for my upcoming 90min movie"
+    },
+    {
+      "id": "1xa2e5h",
+      "score": "124",
+      "sub": "aivideo",
+      "title": "The Alien Invasion Begins Here - A Sci-Fi Prologue"
+    },
+    {
+      "id": "1x8z6wf",
+      "score": "316",
+      "sub": "aivideo",
+      "title": "Poor Malfoid"
+    },
+    {
+      "id": "1x8cppb",
+      "score": "306",
+      "sub": "aivideo",
+      "title": "Chrono Trigger - Reimagined With Realistic Graphics"
+    },
+    {
+      "id": "1xamxxc",
+      "score": "248",
+      "sub": "aivideo",
+      "title": "Make them Yearn - A Malfoid MV"
+    }
+  ],
+  "restore_top": [
+    {
+      "id": "NLAZubEa6X4",
+      "views": "9.41M",
+      "channel": "Gossip Goblin",
+      "title": "WOODNUTS | Sci-Fi Short Film (Cosmic Horror)"
+    },
+    {
+      "id": "mEVl0NS0vu8",
+      "views": "5.86M",
+      "channel": "maximise",
+      "title": "That's AI (2026) - Short Film"
+    },
+    {
+      "id": "v6AByaZr2WA",
+      "views": "1.78M",
+      "channel": "Causality",
+      "title": "The Last Person on Earth | Sci-Fi Short Film"
+    },
+    {
+      "id": "ToEfIA2ffco",
+      "views": "1.31M",
+      "channel": "Queen One Studios",
+      "title": "LEGEND (2026) | Official Short Film"
+    },
+    {
+      "id": "UH-xxHm-I9o",
+      "views": "1.15M",
+      "channel": "Epic AI Films",
+      "title": "Nobody Was Alive When We Landed | Full Sci-Fi Alien Movie 4K"
+    },
+    {
+      "id": "JQUEbv4f8f4",
+      "views": "834.4K",
+      "channel": "RKA Scope",
+      "title": "Inside A Recovered UFO | Sci-Fi Short Film"
+    },
+    {
+      "id": "Tbz-7am6FfE",
+      "views": "494.2K",
+      "channel": "Fantasy Allure AI",
+      "title": "Night At the Halloween Ball: Glamour for Ghouls | AI Short Film"
+    },
+    {
+      "id": "PxhV-C1C3AI",
+      "views": "383.9K",
+      "channel": "Last Sumerian",
+      "title": "PLANET 9 | Chapter 2 — AI Sci-Fi Short Film"
+    }
+  ],
+  "thumbs": {
+    "youtube": 20,
+    "reddit": 19
+  }
+}

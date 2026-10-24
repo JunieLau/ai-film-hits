@@ -1,0 +1,49 @@
+{
+  "batch": "2026-10-24",
+  "platform": "x",
+  "addedAt": "2026-10-24T10:00:00+08:00",
+  "searchedHandlesCount": 67,
+  "handlesSweptNotes": "Full watchlist resolved (67). Prioritized top filmmakers + JeffSynthesized, Gossip_Goblin, PsyopAnime, HatimsShorts, EHuanglu, jboogx, dreamfallart, Extraltodeus, CharaspowerAI, ammaar, Salmaaboukarr, venturetwins, swaymolina, 0xInk_, emmanuel_2m, Uncanny_Harry, NeuralViz, PJaccetturo, maxescu, blizaine, ProperPrompter, techhalla, iamneubert, CuriousRefuge, PurzBeats, StevieMac03.",
+  "queriesUsed": [
+    "(AI OR \"AI film\" OR \"AI short\" OR Sora OR Runway OR Kling OR Higgsfield OR Veo) has:videos -is:reply (client filter ≥100 reposts)",
+    "Seedance has:videos -is:reply since:2026-10-17",
+    "(Kling OR \"AI short\" OR \"AI film\" OR Sora) has:videos -is:reply -is:retweet start_time:2026-10-17",
+    "Mandatory watchlist get_users_posts sweeps (exclude replies/retweets)"
+  ],
+  "candidatesSeen": "~80+ video posts with ≥100 reposts across sweeps; many excluded as already-on-board, political non-AI, real-robot news, or paid Dreamina/Pippit spam",
+  "kept": 20,
+  "rateLimitNotes": "X API ~30/min and ~1000/day; ended with ~934/1000 daily reads left. Keyword search returns heavy promo spam; watchlist sweep was primary signal. min_retweets operator not honored by search API—filtered client-side using repost_count+quote_count.",
+  "skippedAlreadyOnBoard": [
+    "2112919117556531696 SarcasticAnnabe (on archive but missing from provided exclude list)"
+  ],
+  "skippedOther": [
+    "LinusEkenstam Tesla reveal (likely real footage)",
+    "Unitree robot demos",
+    "larry_mcwethy political clips",
+    "Dreamina/Pippit $1.50 ad cluster"
+  ],
+  "top3ByViews": [
+    {
+      "id": "2110758072083751046",
+      "handle": "Gossip_Goblin",
+      "views": "702.3K",
+      "reposts": "1.1K"
+    },
+    {
+      "id": "2111200113095803282",
+      "handle": "ammaar",
+      "views": "376.6K",
+      "reposts": "496"
+    },
+    {
+      "id": "2110694417984348172",
+      "handle": "jboogx_creative",
+      "views": "353.2K",
+      "reposts": "356"
+    }
+  ],
+  "output": "/workspace/moodboard_history/batch_2026-10-24_x_new.json",
+  "coversDir": "/workspace/moodboard/img/",
+  "coversDownloaded": 20,
+  "coversFailed": []
+}

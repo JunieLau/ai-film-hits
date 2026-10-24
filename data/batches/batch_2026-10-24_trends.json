@@ -1,0 +1,14 @@
+{
+  "IG_TREND_DATE": "2026-10-17 → 10-24",
+  "IG_TREND_ZH": "本批 IG 新增 17 条（赞多为数千～数十万；登出页无播放数标 N/A）。头部仍是萌宠健身、情景喜剧反转与电影感迷你片；aidsgns / cat_vlog365 / gloomstomper 领跑点赞。课程 CTA 与 Higgsfield 署名常见，但不影响完播钩子。",
+  "IG_TREND": "17 new IG hits this batch (likes from thousands to 100K+; views N/A on logged-out pages). Leaders stay pet/gym gags, sitcom reverses, and cinematic mini-movies; aidsgns / cat_vlog365 / gloomstomper lead likes. Course CTAs + Higgsfield credits are common but hooks still land.",
+  "X_TREND_DATE": "2026-10-17 → 10-24",
+  "X_TREND_ZH": "本批 X 经 watchlist 全量扫号 + 关键词补漏，新增 20 条（转发≥100）。头部：Gossip Goblin 热情短片破 70 万播、dreamfallart 微剧、jboogx 打斗练习；赛璐璐二创与系列短剧仍是主力。",
+  "X_TREND": "X: full watchlist sweep + keyword fill → 20 new (≥100 reposts). Leaders: Gossip Goblin passion short (~702K views), dreamfallart micro-drama, jboogx fight study; cel-secondaries and episodic shorts still dominate.",
+  "REDDIT_TREND_DATE": "2026-10-17 → 10-24",
+  "REDDIT_TREND_ZH": "Reddit 本轮 www/old JSON 超时不可达，新帖来自已核实本地缓存；多数 r/aivideo 新帖分 <500（已标偏软），另有 r/singularity 机器人格斗帖 2.5K 分压过创意区。长片预告与 Malfoid 系列仍是社区话题。",
+  "REDDIT_TREND": "Reddit live JSON timed out this run; new rows come from verified local cache. Most new r/aivideo scores are <500 (flagged soft); a r/singularity robot-kung-fu post at 2.5K outranks skits. Feature trailers and Malfoid series still drive talk.",
+  "YT_TREND_DATE": "2026-09-15 → 10-24",
+  "YT_TREND_ZH": "YouTube 本批新增 20 条（晚九月至 10/24，yt-dlp 核实），并回补历史误删 22 条（含 WOODNUTS / That's AI 等）。新头部：Bryzib《ELDERHAVEN》、Gossip Goblin《烤面包机叛乱》、Higgsfield 节展片与系列科幻连载。",
+  "YT_TREND": "YouTube: 20 new (late Sep–Oct 24, yt-dlp verified) + 22 wrongly-dropped history rows restored (WOODNUTS, That's AI, etc.). New leaders: Bryzib ELDERHAVEN, Gossip Goblin Toaster Rebellion, Higgsfield festival cuts and episodic sci-fi."
+}

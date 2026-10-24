@@ -1,0 +1,207 @@
+{
+  "answer": "NOT yet absolute top across every row — IG is top-tier; X mostly; YT tightened to ≥500K (13 live after dropping 10 fillers) + Gossip Goblin trailer; Reddit still has several 500–999 scores flagged below ideal 1K because live Reddit API was 403 and no honest replacements were available.",
+  "counts": {
+    "ig": 20,
+    "x": 19,
+    "reddit": 15,
+    "youtube": 13
+  },
+  "ig_top": {
+    "handle": "aliaboutine",
+    "views": "37.5M",
+    "likes": "795K"
+  },
+  "x_top": {
+    "handle": "elonmusk",
+    "views": "4.41M",
+    "likes": "25.2K",
+    "reposts": "2,925"
+  },
+  "rd_top": {
+    "sub": "singularity",
+    "score": "2,979",
+    "title": "Researchers connected a simulated fruit fly brain to Odyssey-3, an AI that gener"
+  },
+  "yt_top": {
+    "channel": "PolyFilms",
+    "views": "3.47M",
+    "title": "One Brave Trunk"
+  },
+  "gossip": {
+    "id": "1G5LArU7tmE",
+    "channel": "Gossip Goblin",
+    "views": "2.2M",
+    "likes": "13.4K",
+    "comments": "2,000",
+    "date": "Oct 6, 2026",
+    "url": "https://www.youtube.com/watch?v=1G5LArU7tmE",
+    "titleZh": "《Gods Don't Give Gifts》官方预告：Gossip Goblin 全 AI 长片预告（10/6，本窗须收录）",
+    "title": "Gods Don't Give Gifts - Official Trailer (2026)",
+    "addedAt": "2026-10-24T01:15:00+08:00",
+    "batch": "2026-10-24",
+    "flag": "New this update · must-include",
+    "flagZh": "本批新增 · 应要求收录",
+    "tags": [
+      "Trailer",
+      "AI feature",
+      "Sci-fi"
+    ],
+    "cover": "img/yt_1G5LArU7tmE.jpg",
+    "whyZh": "全 AI 院线向预告，世界观钩子强、播放破两百万",
+    "whyEn": "Theatrical-scale AI trailer; worldbuilding hook past 2M views."
+  },
+  "images": {
+    "ig_covers_refreshed": 20,
+    "ig_covers_missing_after": 0,
+    "filmmaker_avatars_were_blank": 15,
+    "filmmaker_avatars_blank_after": 0,
+    "filmmaker_avatars_tiny_but_present": [
+      "rioaigc",
+      "voidstomper",
+      "infiniteunreality"
+    ]
+  },
+  "report": {
+    "ig_covers_refreshed": 20,
+    "avatars_fixed": 15,
+    "yt_dropped": [
+      {
+        "id": "bEN8ZggUvAA",
+        "views": "492.9K",
+        "likes": "2.5K",
+        "title": "The Serpent's Final Gift | Episode 02",
+        "channel": "Teer"
+      },
+      {
+        "id": "rz_sShKmcyw",
+        "views": "442.8K",
+        "likes": "8.5K",
+        "title": "TARU | Sci-Fi Fantasy Short Film",
+        "channel": "Crazy Taco Man"
+      },
+      {
+        "id": "FaV90HyywFo",
+        "views": "320.6K",
+        "likes": "641",
+        "title": "Monkey Business | Animated Short Film",
+        "channel": "marcello__ai"
+      },
+      {
+        "id": "KlZWNjrGwpE",
+        "views": "304.4K",
+        "likes": "4.7K",
+        "title": "HYDROCIDE | AI Sci-Fi Short Film 2026 | Episode 1 — Giant Titans and the War for Water",
+        "channel": "TUTO PREMIERE"
+      },
+      {
+        "id": "tHYP1OeBYwY",
+        "views": "284.5K",
+        "likes": "3.9K",
+        "title": "It Looked Directly at Him | Dystopian Sci-Fi AI Short Film",
+        "channel": "ByMosX"
+      },
+      {
+        "id": "nehAv2_j74E",
+        "views": "263.9K",
+        "likes": "2.9K",
+        "title": "Kiro & Zakar: The Call of Vaeloria II | Battle Against Malgrath | AI Short Film",
+        "channel": "Pure AI Films"
+      },
+      {
+        "id": "-1iJob_X-Rk",
+        "views": "257.6K",
+        "likes": "2.4K",
+        "title": "Zombie Robots | Sands of Steel (2026) | AI Short Film by Unbox14 Group",
+        "channel": "Unbox14 | Creative AI FilmMaking Studio"
+      },
+      {
+        "id": "S4kpsnFi904",
+        "views": "177.1K",
+        "likes": "2.6K",
+        "title": "Malfoid AI Short Film - Malfoy Manor",
+        "channel": "Mastodon Studios"
+      },
+      {
+        "id": "5VSjuLoTH-0",
+        "views": "174.3K",
+        "likes": "2.1K",
+        "title": "AI Short Film 2026 – \"THE LAST SEED\" | Cinematic Music & AI Movie in 4K | Made with Freebeat AI",
+        "channel": "OA beats"
+      },
+      {
+        "id": "ZncA70OAgPw",
+        "views": "172.2K",
+        "likes": "5.4K",
+        "title": "Passport Rush | AI Animated Short Film | Higgsfield Originals(2026)",
+        "channel": "Higgsfield Animation"
+      }
+    ],
+    "yt_added": [
+      {
+        "id": "1G5LArU7tmE",
+        "views": "2.2M",
+        "likes": "13.4K",
+        "title": "Gods Don't Give Gifts - Official Trailer (2026)",
+        "channel": "Gossip Goblin"
+      },
+      {
+        "id": "7pPUE6cGFwI",
+        "views": "810K",
+        "likes": "3.4K",
+        "title": "A Little Pony’s Big Heart",
+        "channel": "PolyFilms"
+      }
+    ],
+    "rd_dropped": [
+      {
+        "id": "1x97ikb",
+        "score": "474",
+        "title": "Eiffel Tower Ride"
+      },
+      {
+        "id": "1x94nlh",
+        "score": "402",
+        "title": "Female Malfoy Girl Anime OP | 秘密の Love Potion"
+      },
+      {
+        "id": "1x8enyc",
+        "score": "367",
+        "title": "Might be the best cast"
+      },
+      {
+        "id": "1xa1o6y",
+        "score": "358",
+        "title": "And they say AI doesn’t care about us"
+      },
+      {
+        "id": "1xanevd",
+        "score": "319",
+        "title": "miracle cream"
+      }
+    ],
+    "x_dropped": [
+      {
+        "id": "2112919117556531696",
+        "handle": "SarcasticAnnabe",
+        "views": "90K",
+        "likes": "1.7K",
+        "reposts": "206"
+      }
+    ],
+    "failed_bar": {
+      "youtube_below_500k": 10,
+      "reddit_below_500": 5,
+      "x_soft": 1
+    },
+    "yt_live_count": 13,
+    "rd_live_count": 15,
+    "x_live_count": 19
+  },
+  "files": {
+    "html": "/workspace/moodboard/index.html",
+    "deliverable": "/workspace/moodboard/AI_Film_Hits_Moodboard.html",
+    "archive": "/workspace/moodboard_history/posts_archive.json",
+    "backup": "/workspace/moodboard_history/2026-10-24-v20/",
+    "preview": "/workspace/moodboard/preview_youtube.png"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "ig": {
+    "new": 17,
+    "total": 37
+  },
+  "x": {
+    "new": 20,
+    "total": 39
+  },
+  "reddit": {
+    "new": 20,
+    "total": 35
+  },
+  "youtube": {
+    "new": 20,
+    "restored": 22,
+    "total": 55
+  },
+  "filmmakers": {
+    "new": 8,
+    "total": 78
+  },
+  "top": {
+    "ig": {
+      "id": "Dehcem_o0ep",
+      "handle": "aidsgns",
+      "views": "N/A",
+      "likes": "575K",
+      "comments": "6,018",
+      "date": "Oct 15, 2026",
+      "noteZh": "aidsgns 的 AI 短片：Comedy AI mini-movie: she gets her turn to shine after the guy’s bit. Caption al",
+      "note": "Comedy AI mini-movie: she gets her turn to shine after the guy’s bit. Caption also plugs a Prompt-to-Screen course.",
+      "tags": [
+        "AI film"
+      ],
+      "cover": "img/Dehcem_o0ep.jpg",
+      "addedAt": "2026-10-24T10:00:00+08:00",
+      "batch": "2026-10-24",
+      "whyZh": "情景喜剧反转，完播欲强",
+      "whyEn": "Sitcom reverse keeps completion high."
+    },
+    "x": {
+      "id": "2110758072083751046",
+      "handle": "Gossip_Goblin",
+      "followers": "121.1K",
+      "views": "702.3K",
+      "likes": "8.6K",
+      "reposts": "1.1K",
+      "replies": "308",
+      "date": "Oct 15, 2026",
+      "url": "https://x.com/Gossip_Goblin/status/2110758072083751046",
+      "noteZh": "追求热情的AI短片",
+      "note": "Pursue Your Passions AI short",
+      "flag": "New this update",
+      "flagZh": "本批新增",
+      "tags": [
+        "Short Film"
+      ],
+      "cover": "img/x_2110758072083751046.jpg",
+      "addedAt": "2026-10-24T10:00:00+08:00",
+      "batch": "2026-10-24",
+      "whyZh": "情绪弧线完整、镜头语言电影感",
+      "whyEn": "Full emotional arc with cinematic camera language",
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110757875744112640/img/Bz-aUnbwGcQeO4XS.jpg"
+    },
+    "reddit": {
+      "id": "1xbl5fo",
+      "sub": "aivideo",
+      "author": "matsam999",
+      "score": "224",
+      "comments": "69",
+      "date": "Oct 21, 2026",
+      "titleZh": "《LANTERN》预告：作者即将完成的 90 分钟 AI 长片",
+      "title": "LANTERN - Trailer for my upcoming 90min movie",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xbl5fo/lantern_trailer_for_my_upcoming_90min_movie/",
+      "flag": "New · soft (<500)",
+      "flagZh": "本批新增 · 偏软（<500；Reddit 源站本轮不可达）",
+      "tags": [
+        "Trailer",
+        "Film"
+      ],
+      "cover": "img/rd_1xbl5fo.jpg",
+      "addedAt": "2026-10-24T10:00:00+08:00",
+      "batch": "2026-10-24",
+      "whyZh": "独立作者用 AI 预告 90 分钟长片，连载野心清晰。",
+      "whyEn": "Indie AI trailer for a planned 90-min feature; serial ambition shows."
+    },
+    "youtube": {
+      "id": "gVi5kDQjaso",
+      "channel": "Bryzib Studios",
+      "views": "636.3K",
+      "likes": "158",
+      "comments": "6",
+      "date": "Oct 3, 2026",
+      "url": "https://www.youtube.com/watch?v=gVi5kDQjaso",
+      "titleZh": "《他不属于这里》Amy & Wisp — ELDERHAVEN：Bryzib 奇幻短片",
+      "title": "He Doesn’t Belong Here | Amy & Wisp — ELDERHAVEN",
+      "addedAt": "2026-10-24T10:00:00+08:00",
+      "batch": "2026-10-24",
+      "flag": "New this update",
+      "flagZh": "本批新增",
+      "tags": [
+        "Fantasy",
+        "Heartwarming"
+      ],
+      "cover": "img/yt_gVi5kDQjaso.jpg",
+      "whyZh": "奇幻角色稳定、情感节拍清晰，Elderhaven 系列辨识度强。",
+      "whyEn": "Stable fantasy characters and clear emotional beats; strong Elderhaven series ID."
+    }
+  }
+}

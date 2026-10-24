@@ -1,0 +1,65 @@
+{
+  "batch": "2026-10-24",
+  "writtenAt": "2026-10-24T10:15:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "filmmakers": {
+    "currentInIndex": 70,
+    "priorityPresent": {
+      "niceaunties": true,
+      "ai.jeni": true,
+      "niceaunties_followers": "297K",
+      "ai.jeni_followers": "100K"
+    },
+    "newCandidatesPath": "/workspace/moodboard_history/batch_2026-10-24_filmmakers_new.json",
+    "newCandidatesCount": 8,
+    "newHandles": [
+      "kaye.creatives",
+      "ai.art.my",
+      "heyselcuk",
+      "hidreley",
+      "filmcrux",
+      "macbaconai",
+      "emperorai.official",
+      "lucaslevitan"
+    ],
+    "newFollowersSorted": [
+      "kaye.creatives 1M",
+      "ai.art.my 936K",
+      "heyselcuk 811K",
+      "hidreley 543K",
+      "filmcrux 340K",
+      "macbaconai 287K",
+      "emperorai.official 190K",
+      "lucaslevitan 174K"
+    ],
+    "targetToward": 80,
+    "gapAfterMerge": 2,
+    "skippedAlreadyPresent": [],
+    "skippedUnverifiableOrBelow100K": [
+      "eliastopcinema (78K OG)",
+      "julian_ai_art (58K OG)",
+      "bilawalsidhu (82 OG — wrong/low account)",
+      "ashkoosha (12K)",
+      "billy.boman (12K)",
+      "jeff_synthesized (21K)",
+      "theapesquad_ (4.5K)",
+      "guzineers.ai / yuuuki_creative_studio / charming_computer / aifilms.ai / wonderful_midjourney — login-walled, no verifiable ≥100K this run"
+    ],
+    "note": "Follower counts are from Instagram og:description or cited third-party only when noted. topReelViews left N/A when unverified. Avatar empty."
+  },
+  "instagram": {
+    "rawPath": "/workspace/moodboard_history/batch_2026-10-24_ig_raw.json",
+    "rawCount": 17,
+    "rawCoversPresent": 17,
+    "enrichedPath": "/workspace/moodboard_history/batch_2026-10-24_ig_enriched.json",
+    "enrichedCount": 25,
+    "enrichedFetchOk": 25,
+    "enrichedLocalImages": 25,
+    "note": "All 17 ig_raw shortcodes already had local covers; enrichment also wrote 25 OG rows (fresh shortcodes outside exclude list)."
+  },
+  "youtube": {
+    "restorePath": "/workspace/moodboard_history/batch_2026-10-24_youtube_restore.json",
+    "restoreCount": 22,
+    "note": "Existing restore file was complete (22 history ids not in live YT_POSTS); not overwritten."
+  }
+}
