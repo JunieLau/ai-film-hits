@@ -27,5 +27,6 @@ if __name__ == '__main__':
     print('Archive:', ARCHIVE, 'exists=', ARCHIVE.exists())
     if ARCHIVE.exists():
         a=json.loads(ARCHIVE.read_text())
-        for k in ['instagram','x','reddit','youtube','filmmakers']:
+        for k in ['instagram','x','reddit','youtube','filmmakers','tutorials','removed_tutorials']:
             print(k, len(a.get(k,[])))
+        print('blocklist.tutorials', a.get('blocklist',{}).get('tutorials',[]))
