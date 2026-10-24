@@ -1,5 +1,7 @@
 # AI Film Hits Moodboard · 全球 AI 爆款视频雷达
 
+在线站点：<https://junielau.github.io/ai-film-hits/>
+
 ![preview](preview.png)
 
 ## 这是什么
@@ -40,6 +42,8 @@ python3 src/build.py
 ```
 
 ---
+
+Live site: <https://junielau.github.io/ai-film-hits/>
 
 ## What it is
 
