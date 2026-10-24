@@ -1,0 +1,28 @@
+{
+  "removedAt": "2026-10-25T04:30:00+08:00",
+  "reason": "hindi language (yt-dlp language=hi)",
+  "ids": [
+    "yt_Ev5_u5LZTW8",
+    "yt_n6my-hQSoTA"
+  ],
+  "items": [
+    {
+      "id": "yt_Ev5_u5LZTW8",
+      "creator": "Learn AI with Ritika",
+      "title": "Unlimted FREE AI Image to Video Generators 🔥 (Top 4 Free AI Video Generator Tools) #ai",
+      "url": "https://www.youtube.com/watch?v=Ev5_u5LZTW8",
+      "views": "1.58M",
+      "date": "Mar 14, 2026",
+      "ytLanguage": "hi"
+    },
+    {
+      "id": "yt_n6my-hQSoTA",
+      "creator": "Learn By KK Create",
+      "title": "AI food video tutorial 🔥",
+      "url": "https://www.youtube.com/watch?v=n6my-hQSoTA",
+      "views": "1.38M",
+      "date": "Mar 31, 2026",
+      "ytLanguage": "hi"
+    }
+  ]
+}

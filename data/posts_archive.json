@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T04:25:00+08:00",
+  "updatedAt": "2026-10-25T04:30:00+08:00",
   "latestBatch": "2026-10-24",
   "note": "Append-only merge 2026-10-24 routine; never deleted prior rows.",
   "instagram": [
@@ -6892,62 +6892,6 @@
   },
   "tutorials": [
     {
-      "id": "yt_Ev5_u5LZTW8",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/watch?v=Ev5_u5LZTW8",
-      "creator": "Learn AI with Ritika",
-      "handle": "@LearnAIwithRitika",
-      "title": "Unlimted FREE AI Image to Video Generators 🔥 (Top 4 Free AI Video Generator Tools) #ai",
-      "titleZh": "4 个免费无限量的图生视频工具",
-      "date": "Mar 14, 2026",
-      "duration": 49,
-      "views": "1.58M",
-      "likes": "34.4K",
-      "comments": "485",
-      "viewsRaw": 1579577,
-      "likesRaw": 34391,
-      "commentsRaw": 485,
-      "cover": "img/tut_Ev5_u5LZTW8.jpg",
-      "tags": [
-        "Image-to-video",
-        "Free tools",
-        "Shorts"
-      ],
-      "learnZh": "40 秒速览四款免费图生视频工具，选工具不踩坑",
-      "learnEn": "40-second roundup of four free image-to-video tools",
-      "addedAt": "2026-10-25",
-      "batch": "2026-10-25",
-      "metricsAt": "2026-10-25T03:45:00+08:00"
-    },
-    {
-      "id": "yt_n6my-hQSoTA",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/watch?v=n6my-hQSoTA",
-      "creator": "Learn By KK Create",
-      "handle": "@learnbykk.create",
-      "title": "AI food video tutorial 🔥",
-      "titleZh": "AI 美食视频教程",
-      "date": "Mar 31, 2026",
-      "duration": 52,
-      "views": "1.38M",
-      "likes": "46.6K",
-      "comments": "215",
-      "viewsRaw": 1381366,
-      "likesRaw": 46614,
-      "commentsRaw": 215,
-      "cover": "img/tut_n6my-hQSoTA.jpg",
-      "tags": [
-        "AI food video",
-        "Prompting",
-        "Shorts"
-      ],
-      "learnZh": "爆款 AI 美食镜头的提示词与运镜套路",
-      "learnEn": "Prompt and camera recipe behind viral AI food clips",
-      "addedAt": "2026-10-25",
-      "batch": "2026-10-25",
-      "metricsAt": "2026-10-25T03:45:00+08:00"
-    },
-    {
       "id": "yt_G2Ec3h5CfA8",
       "platform": "YouTube",
       "url": "https://www.youtube.com/watch?v=G2Ec3h5CfA8",
@@ -7839,6 +7783,68 @@
       "metricsAt": "2026-10-25T03:45:00+08:00",
       "removedAt": "2026-10-25T04:25:00+08:00",
       "removedReason": "Junie: remove Hindi-language tutorials (Kaise Banaye / Hindi titles) from AI Tutorial tab"
+    },
+    {
+      "id": "yt_Ev5_u5LZTW8",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Ev5_u5LZTW8",
+      "creator": "Learn AI with Ritika",
+      "handle": "@LearnAIwithRitika",
+      "title": "Unlimted FREE AI Image to Video Generators 🔥 (Top 4 Free AI Video Generator Tools) #ai",
+      "titleZh": "4 个免费无限量的图生视频工具",
+      "date": "Mar 14, 2026",
+      "duration": 49,
+      "views": "1.58M",
+      "likes": "34.4K",
+      "comments": "485",
+      "viewsRaw": 1579577,
+      "likesRaw": 34391,
+      "commentsRaw": 485,
+      "cover": "img/tut_Ev5_u5LZTW8.jpg",
+      "tags": [
+        "Image-to-video",
+        "Free tools",
+        "Shorts"
+      ],
+      "learnZh": "40 秒速览四款免费图生视频工具，选工具不踩坑",
+      "learnEn": "40-second roundup of four free image-to-video tools",
+      "addedAt": "2026-10-25",
+      "batch": "2026-10-25",
+      "metricsAt": "2026-10-25T03:45:00+08:00",
+      "removedAt": "2026-10-25T04:30:00+08:00",
+      "removedReason": "hindi language (yt-dlp language=hi)",
+      "ytLanguage": "hi"
+    },
+    {
+      "id": "yt_n6my-hQSoTA",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=n6my-hQSoTA",
+      "creator": "Learn By KK Create",
+      "handle": "@learnbykk.create",
+      "title": "AI food video tutorial 🔥",
+      "titleZh": "AI 美食视频教程",
+      "date": "Mar 31, 2026",
+      "duration": 52,
+      "views": "1.38M",
+      "likes": "46.6K",
+      "comments": "215",
+      "viewsRaw": 1381366,
+      "likesRaw": 46614,
+      "commentsRaw": 215,
+      "cover": "img/tut_n6my-hQSoTA.jpg",
+      "tags": [
+        "AI food video",
+        "Prompting",
+        "Shorts"
+      ],
+      "learnZh": "爆款 AI 美食镜头的提示词与运镜套路",
+      "learnEn": "Prompt and camera recipe behind viral AI food clips",
+      "addedAt": "2026-10-25",
+      "batch": "2026-10-25",
+      "metricsAt": "2026-10-25T03:45:00+08:00",
+      "removedAt": "2026-10-25T04:30:00+08:00",
+      "removedReason": "hindi language (yt-dlp language=hi)",
+      "ytLanguage": "hi"
     }
   ],
   "blocklist": {
@@ -7846,6 +7852,8 @@
       "yt_-0GaAugSXrQ",
       "yt_0d5GoN0P5zM",
       "yt_BdBU2RfZMis",
+      "yt_Ev5_u5LZTW8",
+      "yt_n6my-hQSoTA",
       "yt_sWrwsI9vaPs"
     ]
   }
