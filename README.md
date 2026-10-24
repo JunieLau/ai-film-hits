@@ -6,7 +6,7 @@
 
 ## 这是什么
 
-一份精选 moodboard，收录 Instagram、X、Reddit、YouTube 上的病毒式 AI 视频，以及一份 **顶尖 AI 电影人** 名单（最多 80 人，按粉丝数从高到低排序）。另有 **AI 教程** 标签（10 条），列表可按综合最佳 / 最新 / 最多观看排序。
+一份精选 moodboard，收录 Instagram、X、Reddit、YouTube 上的病毒式 AI 视频，以及一份 **顶尖 AI 电影人** 名单（最多 80 人，按粉丝数从高到低排序）。另有 **AI 教程** 标签（目前 30 条）。每次更新追加约 20 条专业 AI 电影制作教程（镜头语言、一致性、完整流程），来源为 YouTube / X / Instagram / Reddit。列表可按综合最佳 / 最新 / 最多观看排序。
 
 ## 如何查看
 
@@ -47,7 +47,7 @@ Live site: <https://junielau.github.io/ai-film-hits/>
 
 ## What it is
 
-A curated moodboard of viral AI videos across Instagram, X, Reddit, and YouTube, plus a **Top AI Filmmakers** list (up to 80, sorted by followers). There is also an **AI Tutorial** tab (10 tutorials); lists can be sorted by Best overall, Newest, or Most viewed.
+A curated moodboard of viral AI videos across Instagram, X, Reddit, and YouTube, plus a **Top AI Filmmakers** list (up to 80, sorted by followers). There is also an **AI Tutorial** tab (30 tutorials). Each update adds about 20 pro AI filmmaking tutorials (shot language, consistency, full pipelines) from YouTube, X, Instagram, and Reddit. Lists can be sorted by Best overall, Newest, or Most viewed.
 
 ## How to view
 

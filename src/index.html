@@ -138,6 +138,10 @@
   .learn{margin-top:8px;padding:8px 10px;border-radius:10px;background:rgba(245,195,107,.08);border:1px solid rgba(245,195,107,.22);font-size:12.5px;line-height:1.45;color:var(--gold)}
   .learn b{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#d9a955;margin-right:6px}
   .learn .en{color:#b8a57a;font-size:11.5px;margin-top:3px}
+  .topic{display:inline-flex;gap:6px;align-items:center;margin:2px 0 6px;font-size:11px;letter-spacing:.06em;color:#fff}
+  .topic .t{background:rgba(255,61,127,.16);border:1px solid rgba(255,61,127,.45);border-radius:999px;padding:2px 9px}
+  .topic .lv{border-radius:999px;padding:2px 8px;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+  .topic .lv.pro{background:var(--gold);color:#1a1206}.topic .lv.beginner{border:1px solid var(--line);color:var(--mute)}
   .plat{position:absolute;bottom:10px;right:12px;z-index:2;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);padding:3px 8px;border-radius:999px}
 </style>
 </head>
@@ -236,8 +240,8 @@
 <header>
   <div class="kicker">AI 教程 · Tutorials · for @junielaux</div>
   <h1>AI 拍片 <em>教程</em><span class="en">AI Filmmaking &amp; Video Tutorials</span></h1>
-  <p class="sub">每次更新收录约 10 条观看量最高的 AI 电影 / AI 视频制作教程（YouTube、Instagram、X、Reddit 均可）· <b>只叠加不删除</b> · <b id="tut-updated"></b><span class="en">Each update adds ~10 of the most-viewed AI filmmaking / AI video-making tutorials from any platform · <b>append-only</b> · <b id="tut-updated-en"></b></span></p>
-  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：2026 年发布 · 按真实播放量排序 · 每位作者最多 2 条 · 明显的品牌付费推广（播放高但点赞极低、或标注 Product/赞助链接）已排除 <span class="en-i">Rule: published in 2026 · ranked by real views · max 2 per creator · obvious paid promos (huge views with near-zero likes, or sponsor/product links) excluded</span></p>
+  <p class="sub">每次更新收录约 20 条<b>偏专业的 AI 电影制作教程</b>（镜头语言、角色/场景一致性、完整短片流程、VFX 与后期），YouTube、X、Reddit、Instagram 均可 · <b>只叠加不删除</b> · <b id="tut-updated"></b><span class="en">Each update adds ~20 <b>pro-leaning AI filmmaking tutorials</b> (shot language, character/location consistency, full short-film pipelines, VFX & finishing) from YouTube, X, Reddit or Instagram · <b>append-only</b> · <b id="tut-updated-en"></b></span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：2026 年发布 · 各平台按真实触达排序（YouTube 播放 / X 曝光 / Reddit 分数）· 每位作者最多 2 条 · 明显付费推广（播放高但点赞极低、整期赞助、品牌合作口吻）已排除 · 卡片标注主题与“专业 / 入门” <span class="en-i">Rule: 2026 · ranked by real reach per platform (YouTube views / X impressions / Reddit score) · max 2 per creator · paid promos excluded · each card tagged with topic and Pro / Beginner</span></p>
   <div class="stats" id="tut-stats"></div>
 </header>
 <div class="trend" id="tut-trend"></div>
@@ -245,7 +249,7 @@
   <div class="sortbar" data-sort="tut"></div>
   <div class="grid" id="tut-grid"></div>
 </main>
-<footer>播放、点赞、评论来自 YouTube 公开数据（yt-dlp，采集于 2026-10-25 约 03:45 北京时间）；YouTube 隐藏点赞或评论时显示 N/A，不编造。本批 X 上的教程帖曝光都在 2.3 万以下、Reddit 不公开播放数、Instagram 登出状态无法核实播放，所以第一批全部来自 YouTube。封面为官方缩略图，版权归频道所有，仅作私人参考。<span class="en">Views, likes and comments are public YouTube data (yt-dlp, ~03:45 Oct 25, 2026 China time); hidden likes/comments show N/A — nothing invented. In this batch, tutorial posts on X were all under ~23K impressions, Reddit hides views and Instagram views couldn't be verified logged-out, so batch 1 is all YouTube. Covers are official thumbnails © their channels, private reference only.</span></footer>
+<footer>YouTube 播放/点赞/评论来自公开数据（yt-dlp）；X 为 API 返回的曝光、点赞、转发（转推+引用）、回复；Reddit 为公开归档 arctic-shift 的分数与评论数（Reddit 不公开播放数，标 N/A）。第一批 10 条采集于 2026-10-25 约 03:45，专业向 20 条采集于约 04:30（北京时间）。Instagram 登出状态无法核实播放与日期，本批未收录。隐藏的数据显示 N/A，不编造。封面版权归原作者，仅作私人参考。<span class="en">YouTube views/likes/comments from public data (yt-dlp); X shows API impressions, likes, reposts (retweets+quotes) and replies; Reddit shows score and comments from the public arctic-shift archive (views are private → N/A). Batch 1 collected ~03:45 and the 20 pro picks ~04:30, Oct 25, 2026 (China time). Instagram views/dates could not be verified logged-out, so none this batch. Hidden values show N/A — nothing invented. Covers © their creators, private reference only.</span></footer>
 </section>
 
 <section class="page" id="page-filmmakers">
@@ -5458,12 +5462,12 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "Oct 25, 2026 03:45 CST";
-const TUT_UPDATED_ZH = "2026-10-25 03:45（北京时间）";
-const TUT_LATEST_BATCH = "2026-10-25";
-const TREND_TUTORIAL_DATE = "2026-01 → 10-25";
-const TREND_TUTORIAL_ZH = "播放最高的教程几乎都是“零基础免费做 AI 视频”：印地语的 AI 卡通 / 萌娃 / 长视频全流程霸榜（Google Flow、Veo 免费额度最常见）；面向电影人的进阶教程播放低一档但更硬核——Kling 3.0 动作控制、Blender 预演 + Seedance 精确运镜、本地开源模型（Wan / LTX-2）和“一步步做 AI 电影”的完整流程。";
-const TREND_TUTORIAL = "The most-viewed tutorials are overwhelmingly “free AI video from zero”: Hindi end-to-end guides for AI cartoons, AI kids and long-form videos dominate (Google Flow / free Veo most common). Filmmaker-grade tutorials draw fewer views but go deeper — Kling 3.0 motion control, Blender previz driving Seedance camera moves, local open-source models (Wan / LTX-2), and full step-by-step AI short-film pipelines.";
+const TUT_UPDATED = "Oct 25, 2026 04:30 CST";
+const TUT_UPDATED_ZH = "2026-10-25 04:30（北京时间）";
+const TUT_LATEST_BATCH = "2026-10-25b";
+const TREND_TUTORIAL_DATE = "2026-01 → 10-25 · 专业向 Pro craft";
+const TREND_TUTORIAL_ZH = "专业向教程的三大热点：① 先预演再生成——PJ Accetturo《Nexus》团队、Higgsfield 都在用 Blender 锁机位和节奏，再让 Seedance 精确执行，直接把生成费砍半；② 一致性从“角色”扩展到“场景”——MiniMax H3 参考图、RefMod 拼图、360° HDRI、角色设定图实测在 Reddit 讨论最热；③ 完整流程 + 后期——本地开源 ComfyUI 做完整短片与 VFX 合成、实拍+AI 混合、AI 配音真人化与老素材修复超分。Seedance 2.x 是本批出现最多的模型。";
+const TREND_TUTORIAL = "Three hot threads in pro tutorials: (1) previz before generation — PJ Accetturo’s Nexus team and Higgsfield block shots in Blender, then let Seedance execute exact camera moves, halving generation spend; (2) consistency now covers locations, not just faces — MiniMax H3 references, RefMod photo grids, 360° HDRIs and character-sheet tests dominate Reddit; (3) full pipelines + finishing — fully local ComfyUI shorts and VFX comps, live-action + AI hybrids, human-sounding AI voice, and restoration/upscaling. Seedance 2.x is the most-used model in this batch.";
 const TUTORIALS = 
 [
   {
@@ -5492,7 +5496,11 @@ const TUTORIALS =
     "learnEn": "Make viral AI kid/baby shorts end-to-end in under a minute",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "入门",
+    "topicEn": "Beginner",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_sWrwsI9vaPs",
@@ -5520,7 +5528,11 @@ const TUTORIALS =
     "learnEn": "Script → voice → images → video for AI cartoons & docs",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "入门",
+    "topicEn": "Beginner",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_BdBU2RfZMis",
@@ -5549,7 +5561,11 @@ const TUTORIALS =
     "learnEn": "Build story, characters and dialogue into a cartoon in Flow",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "入门",
+    "topicEn": "Beginner",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_-0GaAugSXrQ",
@@ -5577,7 +5593,11 @@ const TUTORIALS =
     "learnEn": "Stitch clips into long-form 3D cartoon stories for YouTube",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "入门",
+    "topicEn": "Beginner",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_Ev5_u5LZTW8",
@@ -5605,7 +5625,11 @@ const TUTORIALS =
     "learnEn": "40-second roundup of four free image-to-video tools",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "工具速览",
+    "topicEn": "Tool roundup",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_n6my-hQSoTA",
@@ -5633,7 +5657,11 @@ const TUTORIALS =
     "learnEn": "Prompt and camera recipe behind viral AI food clips",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "入门",
+    "topicEn": "Beginner",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_G2Ec3h5CfA8",
@@ -5662,7 +5690,11 @@ const TUTORIALS =
     "learnEn": "Run open-source video models locally: setup, VRAM, T2V/I2V",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "本地部署",
+    "topicEn": "Local setup",
+    "level": "beginner",
+    "metricLabel": "views"
   },
   {
     "id": "yt_GbA6YDZOj9U",
@@ -5690,7 +5722,11 @@ const TUTORIALS =
     "learnEn": "Use Kling 3.0 motion reference for believable human motion",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "动作与表演",
+    "topicEn": "Motion & performance",
+    "level": "pro",
+    "metricLabel": "views"
   },
   {
     "id": "yt_OiULPvTJ-0E",
@@ -5720,7 +5756,11 @@ const TUTORIALS =
     "learnEn": "Block shots in Blender, then let Seedance hit exact camera moves",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "镜头预演",
+    "topicEn": "Previz & blocking",
+    "level": "pro",
+    "metricLabel": "views"
   },
   {
     "id": "yt_jZQ_clu2DTY",
@@ -5749,7 +5789,665 @@ const TUTORIALS =
     "learnEn": "Idea → dialogue → consistent characters → edit: full AI film flow",
     "addedAt": "2026-10-25",
     "batch": "2026-10-25",
-    "metricsAt": "2026-10-25T03:45:00+08:00"
+    "metricsAt": "2026-10-25T03:45:00+08:00",
+    "topicZh": "完整流程",
+    "topicEn": "Pipeline",
+    "level": "beginner",
+    "metricLabel": "views"
+  },
+  {
+    "id": "yt_KhQTKG3Xtbs",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=KhQTKG3Xtbs",
+    "creator": "Isaac",
+    "handle": "@isaacverse",
+    "title": "How I Actually Make AI Voice Sound Real",
+    "titleZh": "让 AI 配音听起来像真人",
+    "date": "Jan 11, 2026",
+    "duration": 1107,
+    "views": "713.5K",
+    "likes": "31.7K",
+    "comments": "1.9K",
+    "viewsRaw": 713509,
+    "likesRaw": 31728,
+    "commentsRaw": 1900,
+    "cover": "img/tut_KhQTKG3Xtbs.jpg",
+    "tags": [
+      "ElevenLabs",
+      "Voice",
+      "Sound"
+    ],
+    "topicZh": "声音与配音",
+    "topicEn": "Sound & voice",
+    "level": "pro",
+    "learnZh": "语气、停顿、参数与剪辑：把 AI 旁白调成真人质感",
+    "learnEn": "Settings, pacing and edit passes that make AI voice read as human",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_036jyFZWppw",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=036jyFZWppw",
+    "creator": "Higgsfield AI",
+    "handle": "@HiggsfieldAI",
+    "title": "Seedance 2.0: Arena Zero Breakdown",
+    "titleZh": "《Arena Zero》幕后拆解：4 人团队约 5000 次生成做 AI 剧集",
+    "date": "Apr 2, 2026",
+    "duration": 805,
+    "views": "679.4K",
+    "likes": "4.8K",
+    "comments": "418",
+    "viewsRaw": 679381,
+    "likesRaw": 4846,
+    "commentsRaw": 418,
+    "cover": "img/tut_036jyFZWppw.jpg",
+    "tags": [
+      "Seedance",
+      "Series",
+      "Consistency",
+      "Locations"
+    ],
+    "topicZh": "完整流程",
+    "topicEn": "Pipeline",
+    "level": "pro",
+    "learnZh": "角色设计、场景勘景、动画段落：一集 AI 剧的完整制作决策",
+    "learnEn": "Characters, location scouting, set pieces: every call behind an AI episode",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_d6spCMcfkew",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=d6spCMcfkew",
+    "creator": "Sirio",
+    "handle": "@SirioBerati",
+    "title": "Dear Higgsfield, I reverse engineered you in 12 hours",
+    "titleZh": "逆向 Higgsfield Genjutsu：用 Seedance 2.5 + 深度图自建特效流程",
+    "date": "Oct 9, 2026",
+    "duration": 1306,
+    "views": "668.6K",
+    "likes": "16.5K",
+    "comments": "596",
+    "viewsRaw": 668608,
+    "likesRaw": 16473,
+    "commentsRaw": 596,
+    "cover": "img/tut_d6spCMcfkew.jpg",
+    "tags": [
+      "Seedance",
+      "Depth",
+      "Workflow"
+    ],
+    "topicZh": "VFX 与自动化",
+    "topicEn": "VFX & automation",
+    "level": "pro",
+    "learnZh": "深度图 + 人声分离 + 草稿模式，自建 11 步特效自动化流程",
+    "learnEn": "Depth maps, stem isolation and draft mode in an 11-step VFX automation",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_2hJsvDSPWYM",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=2hJsvDSPWYM",
+    "creator": "Dan Kieft",
+    "handle": "@Dankieft",
+    "title": "How I Make Realistic AI Videos with Seedance 2.5 - Full Guide",
+    "titleZh": "用 Seedance 2.5 做超写实 AI 视频完整指南",
+    "date": "Oct 16, 2026",
+    "duration": 1227,
+    "views": "498.9K",
+    "likes": "N/A",
+    "comments": "166",
+    "viewsRaw": 498914,
+    "likesRaw": null,
+    "commentsRaw": 166,
+    "cover": "img/tut_2hJsvDSPWYM.jpg",
+    "tags": [
+      "Seedance",
+      "Realism",
+      "Prompting"
+    ],
+    "topicZh": "写实质感",
+    "topicEn": "Look dev & realism",
+    "level": "pro",
+    "learnZh": "写实感从哪来：镜头、光线与提示词结构的逐项拆解",
+    "learnEn": "Where realism comes from: lens, light and prompt structure, step by step",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_Q6S8tGOVNb4",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=Q6S8tGOVNb4",
+    "creator": "Sightseeing Stan",
+    "handle": "@SightseeingStan",
+    "title": "I mixed AI with Real Footage… and it’s actually scary.",
+    "titleZh": "把 AI 和实拍混在一起的 6 种技巧",
+    "date": "Apr 22, 2026",
+    "duration": 612,
+    "views": "399.1K",
+    "likes": "17.3K",
+    "comments": "1K",
+    "viewsRaw": 399124,
+    "likesRaw": 17263,
+    "commentsRaw": 1000,
+    "cover": "img/tut_Q6S8tGOVNb4.jpg",
+    "tags": [
+      "Live-action + AI",
+      "VFX",
+      "Higgsfield"
+    ],
+    "topicZh": "实拍 + AI 合成",
+    "topicEn": "VFX compositing",
+    "level": "pro",
+    "learnZh": "换背景、AI 场景延展、无缝转场与动作控制的实拍合成",
+    "learnEn": "Background swaps, set extension, impossible transitions on real footage",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_tYJQusOS2jI",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=tYJQusOS2jI",
+    "creator": "Rourke",
+    "handle": "@RourkeHeath",
+    "title": "Seedance 2.0 Officially Public! Full Prompting Tutorial (Claude + Higgsfield)",
+    "titleZh": "Seedance 2.0 完整提示词教程（Claude 辅助写镜头）",
+    "date": "Apr 9, 2026",
+    "duration": 1079,
+    "views": "336.5K",
+    "likes": "12.4K",
+    "comments": "412",
+    "viewsRaw": 336518,
+    "likesRaw": 12384,
+    "commentsRaw": 412,
+    "cover": "img/tut_tYJQusOS2jI.jpg",
+    "tags": [
+      "Seedance",
+      "Prompting",
+      "Camera"
+    ],
+    "topicZh": "镜头语言",
+    "topicEn": "Shot language",
+    "level": "pro",
+    "learnZh": "用 Claude 生成分镜级提示词，精确控制景别与运镜",
+    "learnEn": "Use Claude to write shot-level prompts for framing and camera moves",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_JFTe5fbERGg",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=JFTe5fbERGg",
+    "creator": "Sanji Nai-Chien",
+    "handle": "@Sanji_Chien",
+    "title": "AI Animation Pipeline: How I Make Cartoons 100% With AI",
+    "titleZh": "AI 动画制作流程：100% AI 做一集卡通",
+    "date": "Aug 11, 2026",
+    "duration": 905,
+    "views": "252.8K",
+    "likes": "6.9K",
+    "comments": "40",
+    "viewsRaw": 252821,
+    "likesRaw": 6856,
+    "commentsRaw": 40,
+    "cover": "img/tut_JFTe5fbERGg.jpg",
+    "tags": [
+      "Animation",
+      "Seedance",
+      "Series"
+    ],
+    "topicZh": "完整流程",
+    "topicEn": "Pipeline",
+    "level": "pro",
+    "learnZh": "从空白页到完整一集：剧本、角色、镜头、配音的动画流水线",
+    "learnEn": "Blank page to finished episode: script, characters, shots, voice",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_0CjArtUh_Wg",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=0CjArtUh_Wg",
+    "creator": "Dan Kieft",
+    "handle": "@Dankieft",
+    "title": "How To Create Long AI Animation Videos With Consistent Characters - Kling 3.0",
+    "titleZh": "Kling 3.0 做长篇 AI 动画并保持角色一致",
+    "date": "Mar 31, 2026",
+    "duration": 1180,
+    "views": "220.8K",
+    "likes": "N/A",
+    "comments": "150",
+    "viewsRaw": 220830,
+    "likesRaw": null,
+    "commentsRaw": 150,
+    "cover": "img/tut_0CjArtUh_Wg.jpg",
+    "tags": [
+      "Kling",
+      "Consistency",
+      "Storyboard"
+    ],
+    "topicZh": "角色一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "分镜出图→首尾帧/续写/多镜头→口型→剪辑的长片一致性方法",
+    "learnEn": "Boards → start/end frames, continuation, multishot → sync → edit",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt__n0ir5V5tX4",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=_n0ir5V5tX4",
+    "creator": "Mickmumpitz",
+    "handle": "@mickmumpitz",
+    "title": "I Built a FREE VFX Pipeline with Local AI [2026 Masterclass]",
+    "titleZh": "用本地开源 AI 搭一套免费 VFX 流程（2026 大师课）",
+    "date": "Mar 30, 2026",
+    "duration": 1152,
+    "views": "201K",
+    "likes": "8.8K",
+    "comments": "234",
+    "viewsRaw": 201035,
+    "likesRaw": 8799,
+    "commentsRaw": 234,
+    "cover": "img/tut__n0ir5V5tX4.jpg",
+    "tags": [
+      "ComfyUI",
+      "VFX",
+      "Open source"
+    ],
+    "topicZh": "VFX 合成",
+    "topicEn": "VFX compositing",
+    "level": "pro",
+    "learnZh": "素材准备到最终合成：ComfyUI 可控特效镜头全流程",
+    "learnEn": "Footage prep to final comp: controllable VFX shots in ComfyUI",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_X-rlr3k-2TI",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=X-rlr3k-2TI",
+    "creator": "Theoretically Media",
+    "handle": "@TheoreticallyMedia",
+    "title": "The \"Secret\" to AI Character Sheets",
+    "titleZh": "AI 角色设定图的“秘诀”：各种一致性方法实测",
+    "date": "Jul 31, 2026",
+    "duration": 991,
+    "views": "93.5K",
+    "likes": "2.8K",
+    "comments": "268",
+    "viewsRaw": 93487,
+    "likesRaw": 2782,
+    "commentsRaw": 268,
+    "cover": "img/tut_X-rlr3k-2TI.jpg",
+    "tags": [
+      "Character sheet",
+      "Consistency",
+      "Reference"
+    ],
+    "topicZh": "角色一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "转面图、遮脸技巧、首帧 vs 全参考：哪种一致性方法真有效",
+    "learnEn": "Turnarounds, masked faces, first-frame vs omni: what actually holds a face",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "yt_swx780Vy_OQ",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=swx780Vy_OQ",
+    "creator": "Runway",
+    "handle": "@RunwayML",
+    "title": "Consistent AI Characters, Voices and Scenes (Advanced Workflow) | Runway",
+    "titleZh": "Runway 官方进阶：角色、声音与场景一致（Game of Horse 拆解）",
+    "date": "Sep 14, 2026",
+    "duration": 565,
+    "views": "30.6K",
+    "likes": "618",
+    "comments": "49",
+    "viewsRaw": 30587,
+    "likesRaw": 618,
+    "commentsRaw": 49,
+    "cover": "img/tut_swx780Vy_OQ.jpg",
+    "tags": [
+      "Runway",
+      "Consistency",
+      "Voice",
+      "Official"
+    ],
+    "topicZh": "角色一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "用参考图、声音与场景锁定，让多镜头短片保持统一",
+    "learnEn": "Lock character, voice and set across shots with references",
+    "metricLabel": "views",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "x_2112899203701547153",
+    "platform": "X",
+    "url": "https://x.com/PJaccetturo/status/2112899203701547153",
+    "creator": "PJ Ace",
+    "handle": "@PJaccetturo",
+    "title": "We were spending $2,000 per DAY on generations for WEEKS on this film until we figured out this one trick. ",
+    "titleZh": "Nexus 剧集省钱秘诀：每天 2000 美元生成费如何砍掉（附提示词与流程）",
+    "date": "Oct 21, 2026",
+    "views": "224.2K",
+    "likes": "1.4K",
+    "comments": "172",
+    "reposts": "133",
+    "viewsRaw": 224216,
+    "likesRaw": 1444,
+    "commentsRaw": 172,
+    "sharesRaw": 133,
+    "cover": "img/tut_x_2112899203701547153.jpg",
+    "tags": [
+      "Previz",
+      "Cost control",
+      "Series"
+    ],
+    "topicZh": "镜头预演",
+    "topicEn": "Previz & blocking",
+    "level": "pro",
+    "learnZh": "先预演锁定镜头再生成，长剧集大幅省积分的制作方法",
+    "learnEn": "Lock shots in previz before generating — how a series cut its gen bill",
+    "metricLabel": "impressions",
+    "followers": "99.5K",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "x_2065139280801051021",
+    "platform": "X",
+    "url": "https://x.com/CuriousRefuge/status/2065139280801051021",
+    "creator": "Curious Refuge",
+    "handle": "@CuriousRefuge",
+    "title": "We recently discovered the ultimate workflow to restore old footage to something close to digital high-quality footage. The method works bet",
+    "titleZh": "老素材修复到接近数字高清的完整流程（GPT-Image 2 + Seedance 2.0 + Topaz Astra）",
+    "date": "Jun 12, 2026",
+    "views": "36.2K",
+    "likes": "429",
+    "comments": "11",
+    "reposts": "53",
+    "viewsRaw": 36185,
+    "likesRaw": 429,
+    "commentsRaw": 11,
+    "sharesRaw": 53,
+    "cover": "img/tut_x_2065139280801051021.jpg",
+    "tags": [
+      "Topaz",
+      "Upscale",
+      "Seedance",
+      "Finishing"
+    ],
+    "topicZh": "修复与超分",
+    "topicEn": "Restoration & upscale",
+    "level": "pro",
+    "learnZh": "用图像修复 + 视频重生成 + Topaz 超分，把旧画面做成高清成片",
+    "learnEn": "Restore old footage: image repair + regen + Topaz upscale",
+    "metricLabel": "impressions",
+    "followers": "23K",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1xclika",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xclika/we_spent_26500_on_this_film_to_figure_out_a/",
+    "creator": "u/NightsRadiant",
+    "handle": "r/aivideo",
+    "title": "We spent $26,500 on this film to figure out a Blender workflow that cut our costs in half -- Nexus 6",
+    "titleZh": "我们花 2.65 万美元摸索出的 Blender 流程，把成本砍半（Nexus 6）",
+    "date": "Oct 22, 2026",
+    "views": "N/A",
+    "score": "973",
+    "likes": "N/A",
+    "comments": "165",
+    "viewsRaw": null,
+    "scoreRaw": 973,
+    "likesRaw": null,
+    "commentsRaw": 165,
+    "cover": "img/tut_rd_1xclika.jpg",
+    "tags": [
+      "Blender",
+      "Previz",
+      "Cost control"
+    ],
+    "topicZh": "镜头预演",
+    "topicEn": "Previz & blocking",
+    "level": "pro",
+    "learnZh": "用 Blender 做布局预演再交给 AI 生成，团队实战成本对比",
+    "learnEn": "Blender layout before AI generation — a team’s real cost comparison",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1wwyva2",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1wwyva2/minimax_h3_refmod_consistent_location_trick/",
+    "creator": "u/PATATAJEC",
+    "handle": "r/StableDiffusion",
+    "title": "Minimax H3 + RefMod = consistent location trick",
+    "titleZh": "MiniMax H3 + RefMod：场景一致性技巧",
+    "date": "Oct 4, 2026",
+    "views": "N/A",
+    "score": "838",
+    "likes": "N/A",
+    "comments": "106",
+    "viewsRaw": null,
+    "scoreRaw": 838,
+    "likesRaw": null,
+    "commentsRaw": 106,
+    "cover": "img/tut_rd_1wwyva2.jpg",
+    "tags": [
+      "MiniMax H3",
+      "Location",
+      "Reference"
+    ],
+    "topicZh": "场景一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "把 20 张相邻照片拼成参考图，让实景场景在多次生成中保持一致",
+    "learnEn": "Stitch 20 overlapping photos into one ref to keep a real location consistent",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1w3dojs",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1w3dojs/minimax_h3_consistent_face_body_cloths_via/",
+    "creator": "u/ashishsanu",
+    "handle": "r/StableDiffusion",
+    "title": "Minimax H3: Consistent face, body & cloths via reference identity",
+    "titleZh": "MiniMax H3：用参考身份锁定脸、身体与服装",
+    "date": "Aug 31, 2026",
+    "views": "N/A",
+    "score": "456",
+    "likes": "N/A",
+    "comments": "73",
+    "viewsRaw": null,
+    "scoreRaw": 456,
+    "likesRaw": null,
+    "commentsRaw": 73,
+    "cover": "img/tut_rd_1w3dojs.jpg",
+    "tags": [
+      "MiniMax H3",
+      "Character",
+      "ComfyUI"
+    ],
+    "topicZh": "角色一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "按脸:服装:身体 2:2:1 配参考，打包成可复用的角色文件",
+    "learnEn": "Pack face/outfit/body refs (2:2:1) into one reusable character file",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1wzxyaa",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1wzxyaa/overcome_degradation_here_are_2_ways_to_use_my/",
+    "creator": "u/obvpm",
+    "handle": "r/StableDiffusion",
+    "title": "Overcome Degradation! - Here are 2 ways to use my timeline workflow to create long continuous single shot videos with no degradation.",
+    "titleZh": "克服画质衰减：两种方法做长时间连续一镜到底",
+    "date": "Oct 7, 2026",
+    "views": "N/A",
+    "score": "424",
+    "likes": "N/A",
+    "comments": "110",
+    "viewsRaw": null,
+    "scoreRaw": 424,
+    "likesRaw": null,
+    "commentsRaw": 110,
+    "cover": "img/tut_rd_1wzxyaa.jpg",
+    "tags": [
+      "ComfyUI",
+      "Long take",
+      "Open source"
+    ],
+    "topicZh": "镜头语言",
+    "topicEn": "Shot language",
+    "level": "pro",
+    "learnZh": "用时间线工作流拼接长镜头而不掉画质的两种方法",
+    "learnEn": "Two timeline methods for long continuous single shots without decay",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1sc352d",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1sc352d/entangled_a_3minute_scifi_short_using_100_local/",
+    "creator": "u/Psi-Clone",
+    "handle": "r/StableDiffusion",
+    "title": "ENTANGLED - A 3-minute sci-fi short using 100% local open-source models. Complete Technical Breakdown [ Character Consistency | Voiceover | Music | No Lora Style Consistency | & Much More! ]",
+    "titleZh": "《ENTANGLED》3 分钟科幻短片：100% 本地开源模型完整技术拆解",
+    "date": "Apr 4, 2026",
+    "views": "N/A",
+    "score": "363",
+    "likes": "N/A",
+    "comments": "139",
+    "viewsRaw": null,
+    "scoreRaw": 363,
+    "likesRaw": null,
+    "commentsRaw": 139,
+    "cover": "img/tut_rd_1sc352d.jpg",
+    "tags": [
+      "ComfyUI",
+      "Open source",
+      "Short film"
+    ],
+    "topicZh": "完整流程",
+    "topicEn": "Pipeline",
+    "level": "pro",
+    "learnZh": "纯本地 ComfyUI 做完一部短片：角色、镜头、后期的完整技术路线",
+    "learnEn": "A full short made 100% locally in ComfyUI: characters, shots, post",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1vvpowd",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1vvpowd/psa_minimax_h3_can_turn_360_panorama_images_into/",
+    "creator": "u/mukyuuuu",
+    "handle": "r/StableDiffusion",
+    "title": "PSA: Minimax H3 can turn 360 panorama images into consistent environments for your videos",
+    "titleZh": "PSA：MiniMax H3 能把 360° 全景图变成一致的视频场景",
+    "date": "Aug 23, 2026",
+    "views": "N/A",
+    "score": "230",
+    "likes": "N/A",
+    "comments": "49",
+    "viewsRaw": null,
+    "scoreRaw": 230,
+    "likesRaw": null,
+    "commentsRaw": 49,
+    "cover": "img/tut_rd_1vvpowd.jpg",
+    "tags": [
+      "MiniMax H3",
+      "HDRI",
+      "Location"
+    ],
+    "topicZh": "场景一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "用免费 HDRI 全景图当唯一参考，稳定生成同一空间的多机位",
+    "learnEn": "Use a free 360° HDRI as the only ref for consistent multi-angle sets",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
+  },
+  {
+    "id": "rd_1ujpxvm",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1ujpxvm/i_failed_my_story_but_found_out_how_to_get/",
+    "creator": "u/The_HeroOfRecovery",
+    "handle": "r/StableDiffusion",
+    "title": "I failed my story but found out how to get characters consistent near perfectly so I wish to pass the torch to future/better story tellers and creators. I have receipts.",
+    "titleZh": "故事没做成，却摸透了角色一致性：经验分享",
+    "date": "Jun 30, 2026",
+    "views": "N/A",
+    "score": "203",
+    "likes": "N/A",
+    "comments": "59",
+    "viewsRaw": null,
+    "scoreRaw": 203,
+    "likesRaw": null,
+    "commentsRaw": 59,
+    "cover": "img/tut_rd_1ujpxvm.jpg",
+    "tags": [
+      "Character",
+      "Reference",
+      "Guide"
+    ],
+    "topicZh": "角色一致性",
+    "topicEn": "Consistency",
+    "level": "pro",
+    "learnZh": "多年追角色一致性的实用技巧：同一角色换场景换服装",
+    "learnEn": "Hard-won tricks for the same character across scenes and outfits",
+    "metricLabel": "score",
+    "addedAt": "2026-10-25",
+    "batch": "2026-10-25b",
+    "metricsAt": "2026-10-25T04:30:00+08:00"
   }
 ];
 /* TAG_ZH: Chinese label for each tag (tool names like Higgsfield/Dreamina/Seedance/Kling stay as-is, so leave them out).
@@ -5769,7 +6467,7 @@ const TAG_ZH = {
   "Sci-fi":"科幻","Trend-setter":"潮流开创者","Eerie":"诡异","Weirdcore":"怪核","Transformation":"变身","Celebrity":"明星","Live-action + AI":"实拍 + AI",
   "Parody":"恶搞","Sports":"体育","Meta":"讨论","News post":"新闻","Surreal":"超现实","Campaigns":"商业广告","Anime":"动漫","Live-action":"真人风格","Satire":"讽刺","Original character":"原创角色","Animals":"动物",
   "AI research":"AI 研究","Behind the scenes":"幕后","Casting meme":"选角梗","Character":"角色","Fan film":"同人片","Fan request":"粉丝点单","Feel-good":"治愈","Gaming":"游戏","Harry Potter":"哈利·波特","Historical figure":"历史人物","Infomercial":"电视购物","Lo-fi":"粗糙风","Micro-drama":"微短剧","Music video":"音乐 MV","POV":"第一视角","Persona":"人设","Political":"政治","Prompt CTA":"提示词引流","Retro ad":"复古广告","Showcase":"效果演示","Sitcom":"情景喜剧","Star Wars":"星球大战","Suspense":"悬疑","Tesla":"特斯拉","Travel":"旅行","World model":"世界模型",
-  "AI kids video":"AI 萌娃视频","Free tools":"免费工具","Full workflow":"全流程","Voiceover":"配音","Long-form":"长视频","3D cartoon":"3D 卡通","Image-to-video":"图生视频","AI food video":"AI 美食视频","Prompting":"提示词","Local":"本地部署","Open source":"开源","Motion control":"动作控制","Realism":"写实","Previz":"预演","Official":"官方频道","AI short film":"AI 短片","Story":"故事","Consistency":"角色一致性","Editing":"剪辑",
+  "AI kids video":"AI 萌娃视频","Free tools":"免费工具","Full workflow":"全流程","Voiceover":"配音","Long-form":"长视频","3D cartoon":"3D 卡通","Image-to-video":"图生视频","AI food video":"AI 美食视频","Prompting":"提示词","Local":"本地部署","Open source":"开源","Motion control":"动作控制","Realism":"写实","Previz":"预演","Official":"官方频道","AI short film":"AI 短片","Story":"故事","Consistency":"角色一致性","Editing":"剪辑","ElevenLabs":"ElevenLabs","Voice":"声音","Sound":"声音设计","Locations":"场景","Depth":"深度图","Workflow":"工作流","Camera":"运镜","Storyboard":"分镜","Character sheet":"角色设定图","Reference":"参考图","Cost control":"控成本","Upscale":"超分","Finishing":"后期成片","Location":"场景","HDRI":"全景 HDRI","Long take":"长镜头","Guide":"指南","Blender":"Blender","Topaz":"Topaz","MiniMax H3":"MiniMax H3",
 };
 /* ===== end of data ===== */
 
@@ -5823,7 +6521,14 @@ const SORT_CFG={
   x:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.replies), shares:r=>num(r.reposts), viewsLabel:["最多观看","Most viewed"]},
   reddit:{views:r=>num(r.score), likes:r=>null, comments:r=>num(r.comments), shares:r=>null, viewsLabel:["最高分","Top score"], hint:"Reddit 不公开播放，按分数 · score (views are private)"},
   yt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>null, viewsLabel:["最多观看","Most viewed"]},
-  tut:{views:r=>num(r.viewsRaw??r.views), likes:r=>num(r.likesRaw??r.likes), comments:r=>num(r.commentsRaw??r.comments), shares:r=>null, viewsLabel:["最多观看","Most viewed"]}
+  /* Tutorials mix platforms: reach = YouTube views / X impressions / Reddit score. Percentiles are computed WITHIN each platform
+     (group), so a 973-score Reddit post is compared with Reddit posts, not with YouTube views. "Most viewed" sorts by real
+     views/impressions; Reddit (no public views) goes after them, ordered by score.
+     CRAFT BOOST: Best overall adds +0.50 for rows tagged level:"pro" (shot language, consistency, pipeline, VFX, finishing),
+     so pro craft surfaces first by default while every beginner row stays visible below. */
+  tut:{views:r=>num(r.viewsRaw??r.views), reach:r=>num(r.viewsRaw??r.views)??num(r.scoreRaw??r.score), fallback:r=>num(r.scoreRaw??r.score),
+       likes:r=>num(r.likesRaw??r.likes), comments:r=>num(r.commentsRaw??r.comments), shares:r=>num(r.sharesRaw), group:r=>r.platform||"",
+       boost:r=>r.level==="pro"?0.50:0, viewsLabel:["最多观看","Most viewed"], hint:"综合最佳偏向专业向 · Best overall favours pro craft · Reddit 无播放数按分数排后"}
 };
 const SORT_W={views:.40,likes:.25,comments:.20,shares:.15};
 const SORT_STATE={};
@@ -5834,10 +6539,16 @@ function pctRanks(rows,get){ const vals=rows.map(get); const have=vals.map((v,i)
   for(let j=0;j<n;){ let k=j; while(k+1<n&&have[k+1][0]===have[j][0]) k++; const p=n>1?((j+k)/2)/(n-1):1; for(let t=j;t<=k;t++) out[have[t][1]]=p; j=k+1; }
   return out; }
 function bestScores(rows,cfg){
-  const P={}; for(const m of Object.keys(SORT_W)) P[m]=pctRanks(rows,cfg[m]);
+  const P={};
+  for(const m of Object.keys(SORT_W)){
+    const get=(m==="views"&&cfg.reach)?cfg.reach:cfg[m];
+    if(cfg.group){ P[m]=new Array(rows.length).fill(null); const gs={}; rows.forEach((r,i)=>(gs[cfg.group(r)]=gs[cfg.group(r)]||[]).push(i));
+      for(const g of Object.values(gs)){ const pr=pctRanks(g.map(i=>rows[i]),get); g.forEach((i,k)=>P[m][i]=pr[k]); } }
+    else P[m]=pctRanks(rows,get);
+  }
   const ds=rows.map(r=>dateNum(r.date)); const newest=Math.max(...ds.filter(d=>d!==null), 0);
   return rows.map((r,i)=>{ let s=0,w=0; for(const m of Object.keys(SORT_W)){ if(P[m][i]!==null){ s+=SORT_W[m]*P[m][i]; w+=SORT_W[m]; } }
-    const base=w?s/w:0; const age=ds[i]===null?365:Math.max(0,(newest-ds[i])/864e5); return base+0.15*Math.exp(-age/21); });
+    const base=w?s/w:0; const age=ds[i]===null?365:Math.max(0,(newest-ds[i])/864e5); return base+0.15*Math.exp(-age/21)+(cfg.boost?cfg.boost(r):0); });
 }
 function sortRows(key,rows){
   const cfg=SORT_CFG[key], mode=getSort(key), idx=rows.map((r,i)=>i);
@@ -6102,16 +6813,17 @@ const tutTileHTML=(r,i)=>`
     <div class="cover">
       ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.title||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">${esc(r.platform||"")}</div>`}
       <div class="rank">${String(i+1).padStart(2,"0")}</div>
-      <div class="views">▶ ${na(r.views)} <small>播放</small></div>
+      <div class="views">${r.platform==="Reddit"?`▲ ${na(r.score)} <small>分</small>`:r.platform==="X"?`▶ ${na(r.views)} <small>曝光</small>`:`▶ ${na(r.views)} <small>播放</small>`}</div>
       ${r.batch===TUT_LATEST_BATCH?`<div class="flag">本批新增 · New</div>`:""}
       <div class="play">打开教程 · Open ↗</div>
       <div class="plat">${esc(r.platform||"")}</div>
     </div>
     <div class="meta">
       <div class="handle">${esc(r.creator||r.handle||"?")} ${r.handle?`<span>· ${esc(r.handle)}</span>`:""}</div>
+      ${r.topicZh||r.level?`<div class="topic">${r.topicZh?`<span class="t">${esc(r.topicZh)} · ${esc(r.topicEn||"")}</span>`:""}${r.level?`<span class="lv ${esc(r.level)}">${r.level==="pro"?"专业 Pro":"入门 Beginner"}</span>`:""}</div>`:""}
       <div class="note">${r.titleZh?`${esc(r.titleZh)}<span class="en">${na(r.title)}</span>`:na(r.title)}</div>
       ${(r.learnZh||r.learnEn)?`<div class="learn"><b>学到 · Learn</b>${esc(r.learnZh||r.learnEn)}${r.learnZh&&r.learnEn?`<span class="en">${esc(r.learnEn)}</span>`:""}</div>`:""}
-      <div class="row"><span>♥ <b>${na(r.likes)}</b></span><span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
+      <div class="row">${r.platform==="Reddit"?`<span>▲ <b>${na(r.score)}</b></span>`:`<span>♥ <b>${na(r.likes)}</b></span>`}${r.platform==="X"?`<span title="转推+引用 Retweets+quotes">🔁 <b>${na(r.reposts)}</b></span>`:""}<span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
       ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
     </div>
   </a>`;
@@ -6123,7 +6835,9 @@ function layoutTutorials(){
   const tot=rows.reduce((a,r)=>a+(num(r.viewsRaw??r.views)||0),0);
   document.getElementById("tut-stats").innerHTML=`<div class="stat"><div class="n">${rows.length}</div><div class="l">条教程<span class="en">Tutorials</span></div></div>
     <div class="stat"><div class="n">${rows.filter(r=>r.batch===TUT_LATEST_BATCH).length}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
-    <div class="stat"><div class="n">${fmt(tot)}</div><div class="l">总播放量<span class="en">Combined views</span></div></div>`;
+    <div class="stat"><div class="n">${rows.filter(r=>r.level==="pro").length}</div><div class="l">专业向<span class="en">Pro craft</span></div></div>
+    <div class="stat"><div class="n">${new Set(rows.map(r=>r.platform)).size}</div><div class="l">个平台<span class="en">Platforms</span></div></div>
+    <div class="stat"><div class="n">${fmt(tot)}</div><div class="l">YouTube+X 总触达<span class="en">YT views + X impressions</span></div></div>`;
   const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
   const cols=Array.from({length:n},()=>[]);
   sortRows("tut",rows).forEach((r,i)=>cols[i%n].push(tutTileHTML(r,i)));
