@@ -1,0 +1,93 @@
+{
+  "batch": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "writtenAt": "2026-10-25T10:05:00+08:00",
+  "youtube_new_count": 20,
+  "tutorials_count": 20,
+  "tutorials_platform_mix": {
+    "YouTube": 9,
+    "X": 5,
+    "Reddit": 6
+  },
+  "rejected_hindi": [
+    "wuKY1P2NgLo",
+    "FjpnOstqBvs",
+    "P3zPyzirA-E",
+    "oOo8NMoyZw4",
+    "wuKY1P2NgLo",
+    "P3zPyzirA-E",
+    "oOo8NMoyZw4"
+  ],
+  "blocklist_honored": [
+    "yt_-0GaAugSXrQ",
+    "yt_0d5GoN0P5zM",
+    "yt_BdBU2RfZMis",
+    "yt_Ev5_u5LZTW8",
+    "yt_n6my-hQSoTA",
+    "yt_sWrwsI9vaPs"
+  ],
+  "search_queries_youtube_viral": [
+    "AI short film 2026",
+    "AI cinematic short film 2026",
+    "Sora 2 short film 2026",
+    "Kling AI short film 2026",
+    "Seedance short film 2026",
+    "Higgsfield short film 2026",
+    "Veo AI short film 2026",
+    "AI horror short film 2026",
+    "AI comedy short film 2026",
+    "AI sci-fi short film 2026",
+    "AI short film October 2026",
+    "Higgsfield Global Film Festival 2026",
+    "Seedance 2.5 short film",
+    "AI short film September 2026",
+    "Veo 3.1 short film 2026",
+    "Kling 3.0 short film",
+    "Sora 2 short film October",
+    "AI short film 2026 festival",
+    "\"AI Short Film\" after:2026-09-20"
+  ],
+  "search_queries_tutorials_youtube": [
+    "AI filmmaking cinematography camera language tutorial",
+    "AI film character consistency workflow tutorial",
+    "AI short film pipeline tutorial storyboard edit",
+    "AI film look development color grade tutorial",
+    "AI VFX finishing compositing film tutorial",
+    "directing AI performance acting tutorial film",
+    "AI previz storyboard cinematic tutorial 2026",
+    "consistent character AI video advanced workflow 2026",
+    "Seedance Kling Higgsfield cinematic camera move tutorial",
+    "AI film sound design music grade tutorial"
+  ],
+  "search_queries_x": [
+    "(AI film OR Seedance OR Kling OR Higgsfield) (tutorial OR workflow OR pipeline OR character consistency OR cinematography OR storyboard) lang:en",
+    "camera move/storyboard/character bible/previz craft queries with has:media"
+  ],
+  "blocks": [
+    "Reddit www/old.reddit.com JSON: connection timeout / unreachable from box",
+    "Pullpush API: HTTP 429 rate limit",
+    "arctic-shift / photon-reddit: unreachable",
+    "ytsearchdate: returned empty (0 results) this run; used ytsearch + dump-json date filter instead",
+    "Instagram: no verified craft-tutorial posts this run (logout/views unverifiable); mix is YouTube+X+Reddit"
+  ],
+  "youtube_new_path": "/workspace/moodboard_history/batch_2026-10-25_youtube_new.json",
+  "tutorials_path": "/workspace/moodboard_history/batch_2026-10-25_tutorials.json",
+  "youtube_window": "upload_date >= 20260920 through 20261025",
+  "youtube_top_titles": [
+    "三重T献祭击杀Sora 2 / Triple T sacrificing himself to kill Sora 2 - Scen",
+    "王子的看护人 / Prince's Caretaker (BL) | Original AI Film",
+    "DADA / DADA | Short Horror Film",
+    "成吉思汗：破金之战 / Genghis Khan | The Battle That Broke the Jin Dynas",
+    "THE CALL / THE CALL | A Dystopian Sci-Fi AI Short Film"
+  ],
+  "tutorial_top_titles": [
+    "AI电影38种镜头运动提示词全集",
+    "AI电影镜头运动提示词全讲解",
+    "一条提示词稳住AI角色一致性",
+    "长片角色一致性：长视频做法",
+    "Google Flow整部电影：角色与声音一致",
+    "Seedance 2.5电影级短片完整流程",
+    "Blender+Higgsfield短片拆解",
+    "像导演一样用Opus提示Seedance"
+  ]
+}

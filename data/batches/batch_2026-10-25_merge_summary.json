@@ -1,0 +1,28 @@
+{
+  "ig": {
+    "new": 20,
+    "total": 57
+  },
+  "x": {
+    "new": 20,
+    "total": 59
+  },
+  "reddit": {
+    "new": 20,
+    "total": 55
+  },
+  "youtube": {
+    "new": 20,
+    "total": 75
+  },
+  "tutorials": {
+    "new": 20,
+    "total": 44
+  },
+  "filmmakers": {
+    "new": 0,
+    "total": 78
+  },
+  "reddit_live_ok": false,
+  "backup": "/workspace/moodboard_history/2026-10-25-v27"
+}

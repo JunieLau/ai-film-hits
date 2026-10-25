@@ -1,0 +1,60 @@
+{
+  "batch": "2026-10-25",
+  "platform": "x",
+  "addedAt": "2026-10-25T10:00:00+08:00",
+  "searched_handles_count": 67,
+  "candidates": 20,
+  "selected": 20,
+  "excluded_existing_ids_count": 39,
+  "covers_downloaded": 20,
+  "covers_failed": 0,
+  "handles_with_video_hits": [
+    "0xInk_",
+    "AIWarper",
+    "Diesol",
+    "EHuanglu",
+    "Extraltodeus",
+    "Gossip_Goblin",
+    "HatimsShorts",
+    "PJaccetturo",
+    "PsyopAnime",
+    "dreamfallart",
+    "emmanuel_2m",
+    "venturetwins",
+    "vrhunskeprice"
+  ],
+  "top5_by_views": [
+    {
+      "id": "2113739942174359693",
+      "handle": "PsyopAnime",
+      "views": "204.5K",
+      "note": "RIP Bioware AI anime short"
+    },
+    {
+      "id": "2111977689599107516",
+      "handle": "EHuanglu",
+      "views": "114K",
+      "note": "Reserved lane for Tesla Roadster"
+    },
+    {
+      "id": "2112923373307105709",
+      "handle": "vrhunskeprice",
+      "views": "104.2K",
+      "note": "Zelensky vs Lada Niva coffee rage"
+    },
+    {
+      "id": "2111858080652685782",
+      "handle": "HatimsShorts",
+      "views": "71.6K",
+      "note": "Zelensky EU dinner comedy short"
+    },
+    {
+      "id": "2113409395988324846",
+      "handle": "Extraltodeus",
+      "views": "43.3K",
+      "note": "Local-gen French slopcore music video"
+    }
+  ],
+  "notes": "Watchlist-primary sweep (no Edenwoodfilm keyword spam). Keyword search abandoned after spam flood. Max 2/creator. Soft hits flagged when views/impressions below ~50K bar. PsyopAnime kept RIP Bioware + GenJam (dropped third Psyop seed). Rate limit hit mid-sweep; continued next minute windows.",
+  "rate_limit_issues": "Hit 30/min ceiling mid-run; waited for window resets. Daily remaining ~940/1000 at finish."
+}

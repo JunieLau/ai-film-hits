@@ -1,0 +1,114 @@
+{
+  "batch": "2026-10-25",
+  "writtenAt": "2026-10-25T10:00:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "reddit_live_ok": false,
+  "reddit_method": "arctic-shift.photon-reddit.com (www.reddit.com + old.reddit + pullpush all timed out / 429); live official JSON blocked",
+  "reddit_count": 20,
+  "reddit_covers": 20,
+  "reddit_subs": [
+    "aivideo",
+    "singularity",
+    "stablediffusion"
+  ],
+  "reddit_score_range": [
+    "300",
+    "2,127"
+  ],
+  "reddit_soft_under_500": 6,
+  "reddit_top": [
+    {
+      "id": "1xbp131",
+      "score": "2,127",
+      "title": "Black Hole Apocalypse",
+      "sub": "aivideo"
+    },
+    {
+      "id": "1xc3lea",
+      "score": "1,337",
+      "title": "The Legend of Mike",
+      "sub": "aivideo"
+    },
+    {
+      "id": "1xana1l",
+      "score": "1,222",
+      "title": "This mod received insane amount of AI hate and got taken dow",
+      "sub": "singularity"
+    },
+    {
+      "id": "1xd2lf8",
+      "score": "1,169",
+      "title": "Are you guys ready?",
+      "sub": "aivideo"
+    },
+    {
+      "id": "1xczh14",
+      "score": "1,127",
+      "title": "Introducing NPCTalk: Make the NPCs of any game talk in realt",
+      "sub": "singularity"
+    }
+  ],
+  "ig_method": "ig_fill_cands.json + glu.tv/shorts shortcodes + Instagram OG via facebookexternalhit UA (likes/comments/date/caption/image)",
+  "ig_count": 20,
+  "ig_covers": 20,
+  "ig_handles": [
+    "aidsgns",
+    "alexvkino",
+    "andresvandal",
+    "bennettwaisbren",
+    "dariaz_aicreator",
+    "dreamcode_films",
+    "dreamfall.art",
+    "dreamina_cole",
+    "dreamina_kai",
+    "dreamina_leo",
+    "gloomstomper",
+    "gromtvshow",
+    "jboogxcreative",
+    "mosxstudio",
+    "sofia.digital.art",
+    "wizzitoon"
+  ],
+  "ig_top": [
+    {
+      "id": "DepDMxUAQPe",
+      "handle": "dreamcode_films",
+      "likes": "160K",
+      "date": "Oct 18, 2026"
+    },
+    {
+      "id": "DewiYpnt9IW",
+      "handle": "dreamina_leo",
+      "likes": "151K",
+      "date": "Oct 21, 2026"
+    },
+    {
+      "id": "DewV_lggXUB",
+      "handle": "dreamina_kai",
+      "likes": "90K",
+      "date": "Oct 21, 2026"
+    },
+    {
+      "id": "Des0fIQMAJk",
+      "handle": "dreamina_leo",
+      "likes": "76K",
+      "date": "Oct 19, 2026"
+    },
+    {
+      "id": "DeqVUjcSLDX",
+      "handle": "wizzitoon",
+      "likes": "69K",
+      "date": "Oct 18, 2026"
+    }
+  ],
+  "filmmakers_new": 0,
+  "filmmakers_note": "Checked dreamcode_films/alexvkino/dariaz_aicreator/mosxstudio/gromtvshow/promptgenix/coloroutofplace via profile OG; none newly verified ≥100K (alexvkino 35K, gromtvshow 69K; others login-walled/empty). Cap remains 80 after parent merge; niceaunties/ai.jeni already in archive.",
+  "blockers": [
+    "www.reddit.com JSON: connection timeout",
+    "old.reddit.com JSON: connection timeout",
+    "api.pullpush.io: HTTP 429 rate limit (agents blocked)",
+    "ddinstagram / imginn / picuki: fail or 403",
+    "Instagram logged-out HTML: no og tags without facebookexternalhit UA"
+  ],
+  "notes": "Reddit metrics from arctic-shift mirror (not invented). All IG likes/comments/dates from Instagram og:description. Views N/A unless present in prior fill cands. Append-only: excluded 35 existing reddit IDs and 37 existing IG shortcodes."
+}
