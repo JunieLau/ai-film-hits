@@ -1,0 +1,31 @@
+{
+  "batch": "2026-10-27b",
+  "version": "v29",
+  "window": "2026-10-24..2026-10-27",
+  "ig": {
+    "new": 1,
+    "total": 73,
+    "batch_file": 1
+  },
+  "x": {
+    "new": 6,
+    "total": 85,
+    "batch_file": 6
+  },
+  "reddit": {
+    "new": 15,
+    "total": 90,
+    "batch_file": 15
+  },
+  "youtube": {
+    "new": 8,
+    "total": 103,
+    "batch_file": 8
+  },
+  "backup": "/workspace/moodboard_history/2026-10-27-v29",
+  "underfilled": {
+    "ig": "IG anonymous discovery blocked/limited; only Nice Try verified in-window with real metrics",
+    "youtube": "Strict upload-date filter + Hindi/tutorial reject; 8 film shorts found",
+    "x": "Morning v28 already held most watchlist virals; +6 new video posts incl Oct 27"
+  }
+}

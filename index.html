@@ -273,33 +273,52 @@
    Set addedAt (ISO Asia/Shanghai) + batch on every new row; UI badges "本批新增" when post.batch === LATEST_BATCH.
    Also append JSON under /workspace/moodboard_history/posts_archive.json after each refresh.
    EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND blurbs; keep whyZh/whyEn on every video card.
-   Covers: src/img/<id>.jpg · src/img/x_<id>.jpg · src/img/rd_<id>.jpg · src/img/yt_<id>.jpg; cover:null = placeholder. ===== */
+   Covers: img/<id>.jpg · src/img/x_<id>.jpg · src/img/rd_<id>.jpg · src/img/yt_<id>.jpg; cover:null = placeholder. ===== */
 
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
    Show above each platform grid. Keep bilingual, filmmaker-facing, short.
    Also keep whyZh/whyEn on every IG/X/Reddit/YouTube card. ===== */
-const IG_TREND_DATE = "2026-10-20 → 10-27";
-const IG_TREND_ZH = "本批 IG 新增 15 条（赞多为数千～6万+；登出页无播放数标 N/A；短码发现受限，经 OG 核实 leftover 候选）。头部：dreamina_leo 日记连载破 5–6 万赞，gloomstomper 动作冲击与 dreamina_cole/kai 日常情景并行；角色一致性连载仍是完播主力。";
-const IG_TREND = "15 new IG hits (likes from thousands to 60K+; views N/A logged-out; shortcode discovery limited — OG-verified leftover cands). Leaders: dreamina_leo diary serials past 50–60K likes, gloomstomper action, dreamina_cole/kai sitcom beats — character-lock serials still drive completion.";
+const IG_TREND_DATE = "2026-10-24 → 10-27";
+const IG_TREND_ZH = "时效补丁：仅收 10/24–27 发布。本批 IG 新增 1 条 —— @cinemuse_world《Nice Try》AI 短剧（10/24，22.8万赞），把「最新」顶过此前的 10/23。IG 匿名抓取仍受限，未凑满 20，绝不回填更早片子。";
+const IG_TREND = "Freshness hotfix: publish window Oct 24–27 only. IG +1 — @cinemuse_world “Nice Try” AI mini-drama (Oct 24, 228K likes) lifts 「最新」above prior Oct 23 tops. IG anonymous discovery still limited; under-filled on purpose — no pre-window padding.";
 
-const X_TREND_DATE = "2026-10-20 → 10-27";
-const X_TREND_ZH = "本批 X 经 watchlist 扫号+创作者检索新增 20 条。头部：PsyopAnime Nicki 二创约 81 万播、techhalla 中土游轮、venturetwins S-1/工具演示、AIWarper 伪纪实与模型对决；赛璐璐二创、写实短片与工艺对比并行。";
-const X_TREND = "X: watchlist sweep + creator search → 20 new. Leaders: PsyopAnime Nicki remake (~810K views), techhalla Middle-earth cruise, venturetwins S-1/tool demos, AIWarper photoreal + model compare — cel remakes, photoreal shorts and craft comps alongside.";
+const X_TREND_DATE = "2026-10-24 → 10-27";
+const X_TREND_ZH = "时效补丁：watchlist 补收窗内短片，含 10/27 INK Superhero Story 等；「最新」顶在 10/26–27。";
+const X_TREND = "Freshness hotfix: watchlist adds inside Oct 24–27 (incl. Oct 27 INK Superhero Story). 「最新」tops at Oct 26–27.";
 
-const REDDIT_TREND_DATE = "2026-10-20 → 10-27";
-const REDDIT_TREND_ZH = "Reddit 官方 JSON 本轮仍不可达（经 arctic-shift 镜像）。新增 20 条：r/aivideo NPC 互助与 Joan and Betty 连载领先，分数整体偏软（19 条 <500 已标）；长片预告稀缺，社区以短片实验与讨论帖为主。";
-const REDDIT_TREND = "Reddit official JSON still blocked; arctic-shift mirror. 20 new: r/aivideo NPC help gag and Joan & Betty serial lead; scores soft overall (19 <500 flagged). Fewer feature trailers — community leaning short experiments and talk threads.";
+const REDDIT_TREND_DATE = "2026-10-24 → 10-27";
+const REDDIT_TREND_ZH = "时效补丁：arctic-shift 补收 r/aivideo 窗内帖（含 10/27 TIMEFLIGHT / CBD INCIDENT）。分数偏软已标；官方 JSON 仍 403。";
+const REDDIT_TREND = "Freshness hotfix: arctic-shift aivideo in-window adds (incl. Oct 27 TIMEFLIGHT / CBD INCIDENT). Soft scores flagged; live Reddit JSON still 403.";
 
-const YT_TREND_DATE = "2026-09-25 → 10-27";
-const YT_TREND_ZH = "YouTube 本批新增 20 条（晚九月至 10/27，yt-dlp 核实）。新头部：Blue Horizon 金球劫案（约 270 万）、Epic AI Films 王朝连载、Cine Drop 离线机器人；恐怖短片（Cat in the Hat / Clown / Surveyor）与科幻首触并行。历史条目全部保留。";
-const YT_TREND = "YouTube: 20 new (late Sep–Oct 27, yt-dlp verified). New leaders: Blue Horizon Ballon d’Or Heist (~2.7M), Epic AI Films kingdom serial, Cine Drop offline-robot sci-fi — horror shorts (Cat in the Hat / Clown / Surveyor) and first-contact alongside. All prior rows kept.";
+const YT_TREND_DATE = "2026-10-24 → 10-27";
+const YT_TREND_ZH = "时效补丁：只收 10/24–27 上传的 AI 短片（拒 Hindi / 教程灌水）。本批 +8，含 10/27 万圣节恐怖短片；「最新」顶在窗内。";
+const YT_TREND = "Freshness hotfix: AI shorts uploaded Oct 24–27 only (Hindi/tutorial spam rejected). +8 incl. Oct 27 Halloween horror; 「最新」tops inside the window.";
 
-const UPDATED = "Oct 27, 2026 10:12 CST";
-const UPDATED_ZH = "2026-10-27 10:12（北京时间）";
-const LATEST_BATCH = "2026-10-27"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Oct 27, 2026 18:19 CST";
+const UPDATED_ZH = "2026-10-27 18:19（北京时间）";
+const LATEST_BATCH = "2026-10-27b"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
+  {
+    "id": "De5YJ6uK9UG",
+    "handle": "cinemuse_world",
+    "views": "N/A",
+    "likes": "228K",
+    "comments": "3,618",
+    "date": "October 24, 2026",
+    "noteZh": "Cinemuse《Nice Try》AI 短剧：店员撩已婚男，他用购物袋回击",
+    "note": "Not this time. Nice Try — an AI short film.",
+    "tags": [
+      "Drama",
+      "AI film"
+    ],
+    "cover": "src/img/De5YJ6uK9UG.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内爆款 AI 短剧，反转钩子强、点赞破 20 万",
+    "whyEn": "In-window viral AI mini-drama; twist hook, 200K+ likes"
+  },
   {
     "id": "Deq2FTvN__9",
     "handle": "dreamina_leo",
@@ -1663,10 +1682,154 @@ const INSIGHTS = [
 ]
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
    cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
-const X_UPDATED = "Oct 24, 2026 01:15 CST";
-const X_UPDATED_ZH = "2026-10-24 01:15（北京时间）";
+const X_UPDATED = "Oct 27, 2026 18:19 CST";
+const X_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
 const X_POSTS = 
 [
+  {
+    "id": "2114965183919726989",
+    "handle": "0xInk_",
+    "followers": "213.0K",
+    "views": "4.6K",
+    "likes": "179",
+    "reposts": "11",
+    "replies": "17",
+    "date": "Oct 27, 2026",
+    "url": "https://x.com/0xInk_/status/2114965183919726989",
+    "noteZh": "Superhero Story — AI acting directions to characters",
+    "note": "Superhero Story — AI acting directions to characters",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2114965183919726989.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114963832884129792/img/YW8-atHf4Q5ihof9.jpg"
+  },
+  {
+    "id": "2113955213166121107",
+    "handle": "0xInk_",
+    "followers": "213.0K",
+    "views": "18.6K",
+    "likes": "530",
+    "reposts": "47",
+    "replies": "41",
+    "date": "Oct 24, 2026",
+    "url": "https://x.com/0xInk_/status/2113955213166121107",
+    "noteZh": "a Star Wars tale by INK",
+    "note": "a Star Wars tale by INK",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2113955213166121107.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113954921892728832/img/MslMqhe2LP9UX4Is.jpg"
+  },
+  {
+    "id": "2114784244514038224",
+    "handle": "maxescu",
+    "followers": "39.9K",
+    "views": "3K",
+    "likes": "54",
+    "reposts": "5",
+    "replies": "11",
+    "date": "Oct 26, 2026",
+    "url": "https://x.com/maxescu/status/2114784244514038224",
+    "noteZh": "I Was There First — Anthropic IPO film trailer",
+    "note": "I Was There First — Anthropic IPO film trailer",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2114784244514038224.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114783295053438976/img/WPWFsE0-RhTaIll0.jpg"
+  },
+  {
+    "id": "2114794232229609496",
+    "handle": "CharaspowerAI",
+    "followers": "55.5K",
+    "views": "1.5K",
+    "likes": "27",
+    "reposts": "4",
+    "replies": "6",
+    "date": "Oct 26, 2026",
+    "url": "https://x.com/CharaspowerAI/status/2114794232229609496",
+    "noteZh": "30 seconds to run through the entire history of humanity",
+    "note": "30 seconds to run through the entire history of humanity",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2114794232229609496.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114794192413110273/pu/img/Z-UktMX0_63BY2Q8.jpg"
+  },
+  {
+    "id": "2114748969431519662",
+    "handle": "CharaspowerAI",
+    "followers": "55.5K",
+    "views": "1.5K",
+    "likes": "17",
+    "reposts": "3",
+    "replies": "6",
+    "date": "Oct 26, 2026",
+    "url": "https://x.com/CharaspowerAI/status/2114748969431519662",
+    "noteZh": "What if the paintings escaped the museum? Seedance test",
+    "note": "What if the paintings escaped the museum? Seedance test",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2114748969431519662.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114748943422693376/pu/img/8EmixnjBOPSV_1Fd.jpg"
+  },
+  {
+    "id": "2113990981322187088",
+    "handle": "dreamfallart",
+    "followers": "214.4K",
+    "views": "7.9K",
+    "likes": "41",
+    "reposts": "5",
+    "replies": "1",
+    "date": "Oct 24, 2026",
+    "url": "https://x.com/dreamfallart/status/2113990981322187088",
+    "noteZh": "AT YOUR SERVICE",
+    "note": "AT YOUR SERVICE",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/x_2113990981322187088.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内发布的 AI 短片/试验镜头",
+    "whyEn": "In-window AI short / experimental shot",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113990865097986048/img/9imJXgXmbf9YDlIB.jpg"
+  },
   {
     "id": "2114529967937851562",
     "handle": "PsyopAnime",
@@ -3572,12 +3735,357 @@ const X_INSIGHTS = [
   { tZh:"关键词会漏无 AI 文案的帖", t:"Keyword search misses caption-less AI", pZh:"本轮再次证明：不写 AI 的爆款只能靠创作者主页扫到（如概念广告级动作片）。", p:"Again: hits that never say “AI” only show up via creator sweeps (e.g. spec-ad action cuts)." },
   { tZh:"只追加、不覆盖", t:"Append-only — never overwrite", pZh:"Oct 23 批次卡片全部保留；指标可原地刷新，行不删除。", p:"Oct 23 rows all kept; metrics may refresh in place, rows never deleted." }
 ]
-const REDDIT_UPDATED = "Oct 23, 2026 17:40 CST";
-const REDDIT_UPDATED_ZH = "2026-10-23 17:40（北京时间）";
-const REDDIT_NOTE_ZH = "窗口约 10/17–10/23（北京时间），扫描 r/aivideo、r/singularity、r/midjourney、r/grok、r/ArtificialInteligence、r/StableDiffusion、r/SoraAi、r/veo3、r/HiggsfieldAI、r/OpenAI、r/comfyui 等 AI 版块的全部视频帖，按分数排前 20；机器人实拍、新闻和访谈类视频不算 AI 视频，已排除。Reddit 对本机直连返回 403，数据来自公开归档 arctic-shift，分数为归档抓取时的数字，最近 1–2 天的帖子可能偏低。";
-const REDDIT_NOTE = "Window ~Oct 17–23 (China time): every video post in r/aivideo, r/singularity, r/midjourney, r/grok, r/ArtificialInteligence, r/StableDiffusion, r/SoraAi, r/veo3, r/HiggsfieldAI, r/OpenAI, r/comfyui and other AI subs, top 20 by score; real robot footage, news and interview clips are excluded. Reddit returns 403 to direct requests, so data comes from the public arctic-shift archive; scores are as captured by the archive, so posts from the last 1–2 days may be under-counted.";
+const REDDIT_UPDATED = "Oct 27, 2026 18:19 CST";
+const REDDIT_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
+const REDDIT_NOTE_ZH = "窗口 10/24–10/27（北京时间），扫描 r/aivideo 等 AI 版块视频帖；Reddit 直连 403，数据来自 arctic-shift；分数为归档抓取时数字。";
+const REDDIT_NOTE = "Window Oct 24–27 (China time): AI-sub video posts; Reddit returns 403, data from arctic-shift; scores as captured by the archive.";
 const REDDIT_POSTS = 
 [
+  {
+    "id": "1xghut7",
+    "sub": "aivideo",
+    "author": "metr0punk",
+    "score": "43",
+    "comments": "12",
+    "date": "Oct 27, 2026",
+    "titleZh": "CBD INCIDENT",
+    "title": "CBD INCIDENT",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xghut7/cbd_incident/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xghut7.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/MGF1dDI5ZXFoeHhoMcm73ORtxjtk2AM3uT4kjiq5MRIPmSUHpqD1sNrFnLIP.jpeg?format=pjpg&auto=webp&s=5afd7301b0512267793f08c353b3f89eef4b4245",
+    "soft": true
+  },
+  {
+    "id": "1xgjvir",
+    "sub": "aivideo",
+    "author": "ScriptLurker",
+    "score": "36",
+    "comments": "9",
+    "date": "Oct 27, 2026",
+    "titleZh": "TIMEFLIGHT | An aerial tour through worl",
+    "title": "TIMEFLIGHT | An aerial tour through world history",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgjvir/timeflight_an_aerial_tour_through_world_history/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgjvir.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/cHUzZmt1MWQxeXhoMU2NPwJa9tvTt9vdMaoXW9DafrCrXxienYO4bAylVdNu.jpeg?format=pjpg&auto=webp&s=e01c6f6b9b352d57935aeb840cd1ff9115bd8230",
+    "soft": true
+  },
+  {
+    "id": "1xfsg2m",
+    "sub": "aivideo",
+    "author": "OveyStudios",
+    "score": "17",
+    "comments": "3",
+    "date": "Oct 26, 2026",
+    "titleZh": "Halloween Tip Toe Vampire",
+    "title": "Halloween Tip Toe Vampire",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xfsg2m/halloween_tip_toe_vampire/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xfsg2m.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/NHJoOTB3ajJhc3hoMSwSekE7s_-bg0K_ALFj6HEsOIeCjT4f4WwfSbDZVokt.png?auto=webp&s=b5844ae86f8f9a35cb585155306ac9157256daff",
+    "soft": true
+  },
+  {
+    "id": "1xfpnxd",
+    "sub": "aivideo",
+    "author": "Guilty_Ad3000",
+    "score": "12",
+    "comments": "10",
+    "date": "Oct 26, 2026",
+    "titleZh": "She's a professional, Don't try this at ",
+    "title": "She's a professional, Don't try this at home",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xfpnxd/shes_a_professional_dont_try_this_at_home/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xfpnxd.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/cTh4NTJzN3RlcnhoMQdnFNeYtOPShZ6fo-jKakmnapEWjBG6B84Gz-cJ6k4e.png?format=pjpg&auto=webp&s=fa927dd5d8a24d7a220190ef0c5defa5629fecb2",
+    "soft": true
+  },
+  {
+    "id": "1xgbfyh",
+    "sub": "aivideo",
+    "author": "DIONSCARTOONS",
+    "score": "9",
+    "comments": "0",
+    "date": "Oct 26, 2026",
+    "titleZh": "Just another peaceful night at the 1979 ",
+    "title": "Just another peaceful night at the 1979 Oscar Awards",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgbfyh/just_another_peaceful_night_at_the_1979_oscar/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgbfyh.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/aWo4ajRhdzIyd3hoMcC8vTw_qbVLcBYOu5sJR4KkbsaSaO2eeZEUmagZbIAd.png?auto=webp&s=e612d0d674373ba7e722e89e91b9c08ea312ec6d",
+    "soft": true
+  },
+  {
+    "id": "1xg5el4",
+    "sub": "aivideo",
+    "author": "ADHDavid",
+    "score": "9",
+    "comments": "3",
+    "date": "Oct 26, 2026",
+    "titleZh": "\"Grey-Plague\" intro cutscene to my game:",
+    "title": "\"Grey-Plague\" intro cutscene to my game: Drawn in Godot by Claude",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xg5el4/greyplague_intro_cutscene_to_my_game_drawn_in/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xg5el4.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/dm9udnJ2ZDR4dXhoMT10KzOIKSnmeg6ZEttSlb3Tgs3dE9r7FfHg6Vn5fisq.png?auto=webp&s=032ae513ff2138447cb896970c26b7ee25ddae82",
+    "soft": true
+  },
+  {
+    "id": "1xgk5ag",
+    "sub": "aivideo",
+    "author": "Guilty_Ad3000",
+    "score": "8",
+    "comments": "4",
+    "date": "Oct 27, 2026",
+    "titleZh": "Wait, I remember this differently",
+    "title": "Wait, I remember this differently",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgk5ag/wait_i_remember_this_differently/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgk5ag.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/M3RqamI3ZDg0eXhoMbLfo4EEENW6FZM2Ok1p6XiOGC6drxSldk9VzUG3YR67.png?format=pjpg&auto=webp&s=32fb985aa800a0c8deea574862a615827803b06c",
+    "soft": true
+  },
+  {
+    "id": "1xgf579",
+    "sub": "aivideo",
+    "author": "jollypiraterum",
+    "score": "8",
+    "comments": "0",
+    "date": "Oct 27, 2026",
+    "titleZh": "new bug's life sequel is wild",
+    "title": "new bug's life sequel is wild",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgf579/new_bugs_life_sequel_is_wild/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgf579.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/dDEza2Uxenl1d3hoMYvrFcQ1fND-Ljc9Mr0DjALwWZi3fqw59U1Hq-rW-myZ.png?format=pjpg&auto=webp&s=19fc1e7794092b20a67e790b4c8a1d47d9ce6c3d",
+    "soft": true
+  },
+  {
+    "id": "1xfpm9t",
+    "sub": "aivideo",
+    "author": "jijo6686",
+    "score": "8",
+    "comments": "8",
+    "date": "Oct 26, 2026",
+    "titleZh": "An AI 3D CGI Cursor Attacks the City",
+    "title": "An AI 3D CGI Cursor Attacks the City",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xfpm9t/an_ai_3d_cgi_cursor_attacks_the_city/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xfpm9t.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/dTZnd2JpZTVlcnhoMfF74HUwe04fPAM_5LVk7EXDdwRWdV59X6B7F-ETlkrl.png?auto=webp&s=44a7e8c4463201b91b42bc3a761cba43603cad6f",
+    "soft": true
+  },
+  {
+    "id": "1xflc1c",
+    "sub": "aivideo",
+    "author": "Amaan3024",
+    "score": "8",
+    "comments": "5",
+    "date": "Oct 26, 2026",
+    "titleZh": "Zombie Anomaly",
+    "title": "Zombie Anomaly",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xflc1c/zombie_anomaly/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xflc1c.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/b3ZoM2F3MG81cXhoMVMDoqKk8FQbakO3CGYnm5Df34d4zCr-S5UbykFJrkvN.png?format=pjpg&auto=webp&s=633deda61cf19fca5e8fa45638a21f217850d232",
+    "soft": true
+  },
+  {
+    "id": "1xfu44d",
+    "sub": "aivideo",
+    "author": "Superb_Vegetable_684",
+    "score": "6",
+    "comments": "0",
+    "date": "Oct 26, 2026",
+    "titleZh": "TENDER (4K- MV) KLING+DOMOAI+SEEDANCE",
+    "title": "TENDER (4K- MV) KLING+DOMOAI+SEEDANCE",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xfu44d/tender_4k_mv_klingdomoaiseedance/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xfu44d.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/MXo0NnRvOG9xc3hoMbIXrDa5R16aAEwTu-eunD5Q6HVuE988C7Tbop0c3hMK.png?format=pjpg&auto=webp&s=7ef727a77502ed6a53ca0f70675eb56a3a348b72",
+    "soft": true
+  },
+  {
+    "id": "1xflm67",
+    "sub": "aivideo",
+    "author": "And_Matt",
+    "score": "6",
+    "comments": "1",
+    "date": "Oct 26, 2026",
+    "titleZh": "The 23rd Mile",
+    "title": "The 23rd Mile",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xflm67/the_23rd_mile/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xflm67.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/eDFkbG94Nnk2cXhoMYZl4C2rH9CaFQv9FwbzN2-micNKiyg6RFT5cg4GMatw.png?format=pjpg&auto=webp&s=8d20c1ebdefc87d0827f825e5a74e63eb34ad265",
+    "soft": true
+  },
+  {
+    "id": "1xfi6s9",
+    "sub": "aivideo",
+    "author": "pulse_cinematic",
+    "score": "6",
+    "comments": "4",
+    "date": "Oct 26, 2026",
+    "titleZh": "THE LOST CUB Episode 1 – a baby orc alon",
+    "title": "THE LOST CUB Episode 1 – a baby orc alone in the jungle (AI fantasy film, feedback welcome)",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xfi6s9/the_lost_cub_episode_1_a_baby_orc_alone_in_the/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xfi6s9.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/cXExbjd1b29jcHhoMVY7T2SycVE5YSDtNbpfoAAggF3GN3RgChkCz5zJznST.png?auto=webp&s=89403f65cf52fbe2ea3da67ff4b2fa5f1446ad48",
+    "soft": true
+  },
+  {
+    "id": "1xg9x5s",
+    "sub": "aivideo",
+    "author": "qwer4790",
+    "score": "5",
+    "comments": "1",
+    "date": "Oct 26, 2026",
+    "titleZh": "Video: Seedance; Music: Suno; Lyrics: GP",
+    "title": "Video: Seedance; Music: Suno; Lyrics: GPT6 Astra",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xg9x5s/video_seedance_music_suno_lyrics_gpt6_astra/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xg9x5s.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/ZTRpNG5jZDFydnhoMd58ss4pnFIiR_4oIi_w9MhEX5nq47eShgx4pNU-ppdH.png?auto=webp&s=53cb9a4e71b3b2454846cde07120a38c3ee3d65b",
+    "soft": true
+  },
+  {
+    "id": "1xg44xy",
+    "sub": "aivideo",
+    "author": "DystopioFilms",
+    "score": "5",
+    "comments": "0",
+    "date": "Oct 26, 2026",
+    "titleZh": "How much would you pay for ad free sleep",
+    "title": "How much would you pay for ad free sleep?",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xg44xy/how_much_would_you_pay_for_ad_free_sleep/",
+    "flag": "New this update · soft · arctic-shift",
+    "flagZh": "本批新增 · 偏软 · arctic-shift",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xg44xy.jpg",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "whyZh": "窗内社区短片，发布日对齐时效",
+    "whyEn": "In-window community short — publish date on freshness window",
+    "thumb": "https://external-preview.redd.it/N2FycDkxaXFvdXhoMWjIEgxrLl5C1LWN7HcXvJh-gC4I0_ihZQyVf5UYv6fM.png?auto=webp&s=ad3bd008430dc148ab0682dc67dda365b3311ac1",
+    "soft": true
+  },
   {
     "id": "1xg349k",
     "sub": "aivideo",
@@ -5194,12 +5702,188 @@ const REDDIT_POSTS =
    Future batches: merge new hits; NEVER wipe YT_POSTS.
    Also refresh YT_TREND_ZH / YT_TREND each update, and keep whyZh/whyEn on every card.
    CANE MAN (20GbzQQyvsU, Sep 15) restored by request after the 09-20 date filter removed it. ===== */
-const YT_UPDATED = "Oct 24, 2026 01:15 CST";
-const YT_UPDATED_ZH = "2026-10-24 01:15（北京时间）";
+const YT_UPDATED = "Oct 27, 2026 18:19 CST";
+const YT_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
 const YT_NOTE_ZH = "硬门槛：窗口内优先 ≥50 万播放；本批加入 Gossip Goblin 预告 + PolyFilms 新温情片，并移出未达标条目到归档（只叠加历史、直播榜变干净）。播放/点赞来自 YouTube 公开数据，无编造。";
 const YT_NOTE = "Hard floor: prefer ≥500K views in-window; this batch adds Gossip Goblin trailer + PolyFilms warm short, and moves below-bar rows to archive (append-only history, cleaner live board). Views/likes from public YouTube data — nothing invented.";
 const YT_POSTS = 
 [
+  {
+    "id": "NkJHeWh4z_M",
+    "channel": "Rax Films ",
+    "views": "26.7K",
+    "likes": "0",
+    "comments": "14",
+    "date": "Oct 26, 2026",
+    "url": "https://www.youtube.com/watch?v=NkJHeWh4z_M",
+    "titleZh": "A WRONG TURN INTO THE FOG | Survival Horror Short Film",
+    "title": "A WRONG TURN INTO THE FOG | Survival Horror Short Film",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_NkJHeWh4z_M.jpg",
+    "whyZh": "万圣节恐怖短片节奏紧、钩子强",
+    "whyEn": "Halloween horror short with tight hooks",
+    "thumb": "https://i.ytimg.com/vi_webp/NkJHeWh4z_M/maxresdefault.webp"
+  },
+  {
+    "id": "AtdMyYJV40A",
+    "channel": "𝘼𝙎𝙏𝙍𝙊𝘿𝙐𝙎𝙏",
+    "views": "22.7K",
+    "likes": "418",
+    "comments": "11",
+    "date": "Oct 26, 2026",
+    "url": "https://www.youtube.com/watch?v=AtdMyYJV40A",
+    "titleZh": "THE TERRAFORMER — EPISODE 1 | SCI-FI SHORT FILM",
+    "title": "THE TERRAFORMER — EPISODE 1 | SCI-FI SHORT FILM",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_AtdMyYJV40A.jpg",
+    "whyZh": "科幻设定清晰、镜头语言完整",
+    "whyEn": "Clear sci-fi premise with full shot language",
+    "thumb": "https://i.ytimg.com/vi/AtdMyYJV40A/maxresdefault.jpg"
+  },
+  {
+    "id": "Duk73INIFNI",
+    "channel": "Smart Poly",
+    "views": "10.2K",
+    "likes": "115",
+    "comments": "23",
+    "date": "Oct 25, 2026",
+    "url": "https://www.youtube.com/watch?v=Duk73INIFNI",
+    "titleZh": "I Made a Horror Short Film Using Unreal Engine 5 & Kling 4.0",
+    "title": "I Made a Horror Short Film Using Unreal Engine 5 & Kling 4.0",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_Duk73INIFNI.jpg",
+    "whyZh": "万圣节恐怖短片节奏紧、钩子强",
+    "whyEn": "Halloween horror short with tight hooks",
+    "thumb": "https://i.ytimg.com/vi_webp/Duk73INIFNI/maxresdefault.webp"
+  },
+  {
+    "id": "wREKllnoPHg",
+    "channel": "Silver Colored Lens",
+    "views": "4.9K",
+    "likes": "121",
+    "comments": "6",
+    "date": "Oct 26, 2026",
+    "url": "https://www.youtube.com/watch?v=wREKllnoPHg",
+    "titleZh": "How I Turned 4 Architectural Renders Into a Short Film with ",
+    "title": "How I Turned 4 Architectural Renders Into a Short Film with Higgsfield",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_wREKllnoPHg.jpg",
+    "whyZh": "工具成片完成度高、可复用",
+    "whyEn": "High-finish tool-made short, reusable craft",
+    "thumb": "https://i.ytimg.com/vi_webp/wREKllnoPHg/maxresdefault.webp"
+  },
+  {
+    "id": "xETrXdWRk6s",
+    "channel": "Osaid Films | Animation ",
+    "views": "3.5K",
+    "likes": "2.5K",
+    "comments": "24",
+    "date": "Oct 25, 2026",
+    "url": "https://www.youtube.com/watch?v=xETrXdWRk6s",
+    "titleZh": "PAIN | AI Animated Short Film",
+    "title": "PAIN | AI Animated Short Film",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_xETrXdWRk6s.jpg",
+    "whyZh": "动画叙事完整、角色稳定",
+    "whyEn": "Complete animated narrative with locked characters",
+    "thumb": "https://i.ytimg.com/vi/xETrXdWRk6s/maxresdefault.jpg"
+  },
+  {
+    "id": "1bCTkgu-uWM",
+    "channel": "Magnific",
+    "views": "2.4K",
+    "likes": "45",
+    "comments": "11",
+    "date": "Oct 25, 2026",
+    "url": "https://www.youtube.com/watch?v=1bCTkgu-uWM",
+    "titleZh": "THE POWER OF NOW — AI short film made with Seedance 2.5",
+    "title": "THE POWER OF NOW — AI short film made with Seedance 2.5",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_1bCTkgu-uWM.jpg",
+    "whyZh": "工具成片完成度高、可复用",
+    "whyEn": "High-finish tool-made short, reusable craft",
+    "thumb": "https://i.ytimg.com/vi/1bCTkgu-uWM/maxresdefault.jpg"
+  },
+  {
+    "id": "XpecYg-gXvw",
+    "channel": "Lowend Studios",
+    "views": "2.2K",
+    "likes": "66",
+    "comments": "5",
+    "date": "Oct 27, 2026",
+    "url": "https://www.youtube.com/watch?v=XpecYg-gXvw",
+    "titleZh": "She's Already Home Part 3: Let Me In | AI Horror Short Film",
+    "title": "She's Already Home Part 3: Let Me In | AI Horror Short Film",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_XpecYg-gXvw.jpg",
+    "whyZh": "万圣节恐怖短片节奏紧、钩子强",
+    "whyEn": "Halloween horror short with tight hooks",
+    "thumb": "https://i.ytimg.com/vi/XpecYg-gXvw/maxresdefault.jpg"
+  },
+  {
+    "id": "iwuKQpLiE6c",
+    "channel": "JOEY",
+    "views": "2K",
+    "likes": "86",
+    "comments": "23",
+    "date": "Oct 27, 2026",
+    "url": "https://www.youtube.com/watch?v=iwuKQpLiE6c",
+    "titleZh": "A Halloween \"Slasher\" AI Short Film Comedy",
+    "title": "A Halloween \"Slasher\" AI Short Film Comedy",
+    "addedAt": "2026-10-27T18:30:00+08:00",
+    "batch": "2026-10-27b",
+    "flag": "New this update · freshness hotfix",
+    "flagZh": "本批新增 · 时效补丁",
+    "tags": [
+      "AI film"
+    ],
+    "cover": "src/img/yt_iwuKQpLiE6c.jpg",
+    "whyZh": "万圣节恐怖短片节奏紧、钩子强",
+    "whyEn": "Halloween horror short with tight hooks",
+    "thumb": "https://i.ytimg.com/vi_webp/iwuKQpLiE6c/maxresdefault.webp"
+  },
   {
     "id": "7bXypdyb_uw",
     "channel": "The Blue Horizon AI",
