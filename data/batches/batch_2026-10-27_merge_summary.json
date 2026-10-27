@@ -1,0 +1,50 @@
+{
+  "batch": "2026-10-27",
+  "version": "v28",
+  "ig": {
+    "new": 15,
+    "total": 72,
+    "batch_file": 15
+  },
+  "x": {
+    "new": 20,
+    "total": 79,
+    "batch_file": 20
+  },
+  "reddit": {
+    "new": 20,
+    "total": 75,
+    "batch_file": 20
+  },
+  "youtube": {
+    "new": 20,
+    "total": 95,
+    "batch_file": 20
+  },
+  "tutorials": {
+    "new": 20,
+    "total": 64,
+    "batch_file": 20
+  },
+  "filmmakers": {
+    "new": 0,
+    "total": 78
+  },
+  "reddit_live_ok": false,
+  "ig_discovery_limited": true,
+  "backup": "/workspace/moodboard_history/2026-10-27-v28",
+  "hindi_blocked": [
+    "yt_-0GaAugSXrQ",
+    "yt_0d5GoN0P5zM",
+    "yt_BdBU2RfZMis",
+    "yt_Ev5_u5LZTW8",
+    "yt_n6my-hQSoTA",
+    "yt_sWrwsI9vaPs"
+  ],
+  "tutorial_mix": {
+    "YouTube": 11,
+    "X": 5,
+    "Instagram": 0,
+    "Reddit": 4
+  }
+}
