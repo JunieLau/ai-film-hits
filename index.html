@@ -278,9 +278,9 @@
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
    Show above each platform grid. Keep bilingual, filmmaker-facing, short.
    Also keep whyZh/whyEn on every IG/X/Reddit/YouTube card. ===== */
-const IG_TREND_DATE = "2026-10-24 → 10-27";
-const IG_TREND_ZH = "时效补丁：仅收 10/24–27 发布。本批 IG 新增 1 条 —— @cinemuse_world《Nice Try》AI 短剧（10/24，22.8万赞），把「最新」顶过此前的 10/23。IG 匿名抓取仍受限，未凑满 20，绝不回填更早片子。";
-const IG_TREND = "Freshness hotfix: publish window Oct 24–27 only. IG +1 — @cinemuse_world “Nice Try” AI mini-drama (Oct 24, 228K likes) lifts 「最新」above prior Oct 23 tops. IG anonymous discovery still limited; under-filled on purpose — no pre-window padding.";
+const IG_TREND_DATE = "2026-10-24 → 10-28";
+const IG_TREND_ZH = "补漏：Junie 点名 @thuggpapi Reel De5N_7sAFBK（10/25，4.69万赞 / 884评，播放登出不可见标 N/A）——此前未进候选池，非门槛刷掉；现已单条追加。高互动门槛不变。";
+const IG_TREND = "Miss fill: Junie pointed @thuggpapi Reel De5N_7sAFBK (Oct 25, 46.9K likes / 884 comments; views N/A logged-out) — never scraped, not culled; one-off append. High-engagement floors unchanged.";
 
 const X_TREND_DATE = "2026-10-24 → 10-27";
 const X_TREND_ZH = "互动门槛：直播板仅保留转发≥100（本批藏 36 条低于门槛）。历史真爆款保留；四档排序不变。";
@@ -294,12 +294,34 @@ const YT_TREND_DATE = "2026-10-24 → 10-27";
 const YT_TREND_ZH = "互动门槛：病毒页隐藏 views<10k（本批藏 8 条）。教程页不动。";
 const YT_TREND = "Engagement floor: viral tab hides views<10k (8 culled). Tutorials unchanged.";
 
-const UPDATED = "Oct 27, 2026 18:40 CST";
-const UPDATED_ZH = "2026-10-27 18:40（北京时间）";
-const LATEST_BATCH = "2026-10-27c"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Oct 28, 2026 03:47 CST";
+const UPDATED_ZH = "2026-10-28 03:47（北京时间）";
+const LATEST_BATCH = "2026-10-28a"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
+  {
+    "id": "De5N_7sAFBK",
+    "handle": "thuggpapi",
+    "views": "N/A",
+    "likes": "46.9K",
+    "comments": "884",
+    "date": "October 25, 2026",
+    "noteZh": "bigger than the block · Higgsfield 街头街区感",
+    "note": "bigger than the block — made in @higgsfield.ai",
+    "tags": [
+      "Higgsfield",
+      "Street",
+      "AI film"
+    ],
+    "cover": "src/img/De5N_7sAFBK.jpg",
+    "addedAt": "2026-10-28T03:47:37+08:00",
+    "batch": "2026-10-28-miss",
+    "flag": "miss · Junie pointed",
+    "flagZh": "补漏 · Junie pointed miss",
+    "whyZh": "Higgsfield 街区能量，prompt 驱动街头 AI Reel",
+    "whyEn": "Higgsfield street/block energy — prompt-driven AI reel"
+  },
   {
     "id": "De5YJ6uK9UG",
     "handle": "cinemuse_world",

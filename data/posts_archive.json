@@ -1,8 +1,30 @@
 {
-  "updatedAt": "2026-10-27T18:40:29+08:00",
-  "latestBatch": "2026-10-27c",
-  "note": "Engagement cull 2026-10-27c (v30): hide soft/low-engagement from live (RD soft+score<100=28, X reposts<100=36, YT views<10k=8, IG fails=0). Archive keeps rows with hidden:true; removed_engagement audit list appended. Append-only for true hits.",
+  "updatedAt": "2026-10-28T03:47:37+08:00",
+  "latestBatch": "2026-10-28a",
+  "note": "2026-10-28 miss fill v31: add IG @thuggpapi De5N_7sAFBK (Junie pointed; never scraped). Engagement floors unchanged; do not unhide culled rows. Prior: Engagement cull 2026-10-27c (v30): hide soft/low-engagement from live (RD soft+score<100=28, X reposts<100=36, YT views<10k=8, IG fails=0). Archive keeps rows with hidden:true; rem",
   "instagram": [
+    {
+      "id": "De5N_7sAFBK",
+      "handle": "thuggpapi",
+      "views": "N/A",
+      "likes": "46.9K",
+      "comments": "884",
+      "date": "October 25, 2026",
+      "noteZh": "bigger than the block · Higgsfield 街头街区感",
+      "note": "bigger than the block — made in @higgsfield.ai",
+      "tags": [
+        "Higgsfield",
+        "Street",
+        "AI film"
+      ],
+      "cover": "img/De5N_7sAFBK.jpg",
+      "addedAt": "2026-10-28T03:47:37+08:00",
+      "batch": "2026-10-28-miss",
+      "flag": "miss · Junie pointed",
+      "flagZh": "补漏 · Junie pointed miss",
+      "whyZh": "Higgsfield 街区能量，prompt 驱动街头 AI Reel",
+      "whyEn": "Higgsfield street/block energy — prompt-driven AI reel"
+    },
     {
       "id": "De5YJ6uK9UG",
       "handle": "cinemuse_world",
@@ -11993,8 +12015,8 @@
   },
   "trends": {
     "ig": {
-      "zh": "本批 IG 新增 15 条（赞多为数千～6万+；登出页无播放数标 N/A；短码发现受限，经 OG 核实 leftover 候选）。头部：dreamina_leo 日记连载破 5–6 万赞，gloomstomper 动作冲击与 dreamina_cole/kai 日常情景并行；角色一致性连载仍是完播主力。",
-      "en": "15 new IG hits (likes from thousands to 60K+; views N/A logged-out; shortcode discovery limited — OG-verified leftover cands). Leaders: dreamina_leo diary serials past 50–60K likes, gloomstomper action, dreamina_cole/kai sitcom beats — character-lock serials still drive completion."
+      "zh": "补漏：Junie 点名 @thuggpapi Reel De5N_7sAFBK（10/25，4.69万赞 / 884评，播放登出不可见标 N/A）——此前未进候选池，非门槛刷掉；现已单条追加。高互动门槛不变。",
+      "en": "Miss fill: Junie pointed @thuggpapi Reel De5N_7sAFBK (Oct 25, 46.9K likes / 884 comments; views N/A logged-out) — never scraped, not culled; one-off append. High-engagement floors unchanged."
     },
     "x": {
       "zh": "本批 X 经 watchlist 扫号+创作者检索新增 20 条。头部：PsyopAnime Nicki 二创约 81 万播、techhalla 中土游轮、venturetwins S-1/工具演示、AIWarper 伪纪实与模型对决；赛璐璐二创、写实短片与工艺对比并行。",
@@ -15216,5 +15238,19 @@
     "x": "reposts≥100 (hard)",
     "instagram": "views≥100k OR likes≥5k",
     "youtube_viral": "views≥10k (tutorials exempt)"
-  }
+  },
+  "miss_fills": [
+    {
+      "id": "De5N_7sAFBK",
+      "platform": "instagram",
+      "handle": "thuggpapi",
+      "reason": "Junie pointed miss — never scraped",
+      "addedAt": "2026-10-28T03:47:37+08:00",
+      "batch": "2026-10-28-miss",
+      "likes": "46.9K",
+      "comments": "884",
+      "views": "N/A",
+      "date": "October 25, 2026"
+    }
+  ]
 }
