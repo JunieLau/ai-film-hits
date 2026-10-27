@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-28T03:47:37+08:00",
-  "latestBatch": "2026-10-28a",
-  "note": "2026-10-28 miss fill v31: add IG @thuggpapi De5N_7sAFBK (Junie pointed; never scraped). Engagement floors unchanged; do not unhide culled rows. Prior: Engagement cull 2026-10-27c (v30): hide soft/low-engagement from live (RD soft+score<100=28, X reposts<100=36, YT views<10k=8, IG fails=0). Archive keeps rows with hidden:true; rem",
+  "updatedAt": "2026-10-28T04:03:07+08:00",
+  "latestBatch": "2026-10-28b",
+  "note": "2026-10-28 miss fill v32: add X @jboogx_creative Type Shhh Mice Tale (2114660446062199037) + Top AI Filmmaker @thuggpapi (DAVIDCHI SINATRA, 134K). Engagement floors unchanged; do not unhide culled rows. 2026-10-28 miss fill v31: add IG @thuggpapi De5N_7sAFBK (Junie pointed; never scraped). Engagement floors unchanged; do not unhide culled rows. Prior: Engagement cull 2026-10-27c (v30): hide soft/low-engagement from live (RD soft+score<100=28, X reposts<100=36, YT views<10k=8, IG",
   "instagram": [
     {
       "id": "De5N_7sAFBK",
@@ -1399,6 +1399,32 @@
     }
   ],
   "x": [
+    {
+      "id": "2114660446062199037",
+      "handle": "jboogx_creative",
+      "followers": "31.7K",
+      "views": "169.6K",
+      "likes": "2.7K",
+      "reposts": "140",
+      "replies": "25",
+      "date": "Oct 26, 2026",
+      "url": "https://x.com/jboogx_creative/status/2114660446062199037",
+      "noteZh": "Type Shhh: A Mice Tale — Midjourney + Seedance 老鼠短片",
+      "note": "Type Shhh: A Mice Tale — Midjourney 8.2 + Seedance 2.0",
+      "flag": "Miss fill · miss sweep",
+      "flagZh": "补漏 · miss sweep",
+      "tags": [
+        "Animation",
+        "Short film",
+        "Seedance"
+      ],
+      "cover": "img/x_2114660446062199037.jpg",
+      "addedAt": "2026-10-28T04:03:07+08:00",
+      "batch": "2026-10-28b",
+      "whyZh": "MJ+Seedance 老鼠短片：角色表演连贯、镜头调度有电影感",
+      "whyEn": "MJ+Seedance Mice Tale — coherent creature performance and cinematic framing",
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114660232068800513/img/38qkVrncxZpWrRqC.jpg"
+    },
     {
       "id": "2114965183919726989",
       "handle": "0xInk_",
@@ -9199,6 +9225,24 @@
       ]
     },
     {
+      "handle": "thuggpapi",
+      "name": "DAVIDCHI SINATRA",
+      "followers": "134K",
+      "bio": "Surreal urban / hip-hop-inspired AI video montages; Higgsfield street energy.",
+      "knownForZh": "Higgsfield 街头街区感 AI Reel；超现实城市蒙太奇（代表作约 4.69 万赞）",
+      "knownFor": "Higgsfield street/block AI reels; surreal urban montages (top reel ~46.9K likes)",
+      "topReelUrl": "https://www.instagram.com/reel/De5N_7sAFBK/",
+      "topReelViews": "N/A",
+      "viewsSrc": "likes 46.9K / comments 884 verified; views N/A (logged-out). Followers 134,078 via profile embed.",
+      "profileUrl": "https://www.instagram.com/thuggpapi/",
+      "avatar": "img/av_thuggpapi.jpg",
+      "tags": [
+        "Higgsfield",
+        "Street",
+        "Urban"
+      ]
+    },
+    {
       "handle": "aidsgns",
       "name": "Naida",
       "followers": "133K",
@@ -15251,6 +15295,29 @@
       "comments": "884",
       "views": "N/A",
       "date": "October 25, 2026"
+    },
+    {
+      "id": "2114660446062199037",
+      "platform": "x",
+      "handle": "jboogx_creative",
+      "reason": "miss sweep — watchlist cinematic AI short never scraped; RT+Q 140 / 169.6K views",
+      "addedAt": "2026-10-28T04:03:07+08:00",
+      "batch": "2026-10-28b",
+      "likes": "2.7K",
+      "reposts": "140",
+      "views": "169.6K",
+      "date": "Oct 26, 2026"
+    },
+    {
+      "id": "thuggpapi",
+      "platform": "filmmaker",
+      "handle": "thuggpapi",
+      "name": "DAVIDCHI SINATRA",
+      "reason": "Junie t65u — add to Top AI Filmmakers; followers 134078 verified via profile embed",
+      "addedAt": "2026-10-28T04:03:07+08:00",
+      "batch": "2026-10-28b",
+      "followers": "134K",
+      "topReel": "De5N_7sAFBK"
     }
   ]
 }
