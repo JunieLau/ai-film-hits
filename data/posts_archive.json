@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-27T18:19:34+08:00",
-  "latestBatch": "2026-10-27b",
-  "note": "Append-only freshness hotfix 2026-10-27b (v29): strict publish window Oct 24–27; history preserved.",
+  "updatedAt": "2026-10-27T18:40:29+08:00",
+  "latestBatch": "2026-10-27c",
+  "note": "Engagement cull 2026-10-27c (v30): hide soft/low-engagement from live (RD soft+score<100=28, X reposts<100=36, YT views<10k=8, IG fails=0). Archive keeps rows with hidden:true; removed_engagement audit list appended. Append-only for true hits.",
   "instagram": [
     {
       "id": "De5YJ6uK9UG",
@@ -1399,7 +1399,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114963832884129792/img/YW8-atHf4Q5ihof9.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114963832884129792/img/YW8-atHf4Q5ihof9.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=11)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113955213166121107",
@@ -1423,7 +1426,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113954921892728832/img/MslMqhe2LP9UX4Is.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113954921892728832/img/MslMqhe2LP9UX4Is.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=47)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114784244514038224",
@@ -1447,7 +1453,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114783295053438976/img/WPWFsE0-RhTaIll0.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114783295053438976/img/WPWFsE0-RhTaIll0.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=5)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114794232229609496",
@@ -1471,7 +1480,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114794192413110273/pu/img/Z-UktMX0_63BY2Q8.jpg"
+      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114794192413110273/pu/img/Z-UktMX0_63BY2Q8.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=4)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114748969431519662",
@@ -1495,7 +1507,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114748943422693376/pu/img/8EmixnjBOPSV_1Fd.jpg"
+      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114748943422693376/pu/img/8EmixnjBOPSV_1Fd.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=3)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113990981322187088",
@@ -1519,7 +1534,10 @@
       "batch": "2026-10-27b",
       "whyZh": "窗内发布的 AI 短片/试验镜头",
       "whyEn": "In-window AI short / experimental shot",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113990865097986048/img/9imJXgXmbf9YDlIB.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113990865097986048/img/9imJXgXmbf9YDlIB.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=5)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114529967937851562",
@@ -1593,7 +1611,10 @@
       "batch": "2026-10-27",
       "whyZh": "信息密度高、剪辑利落",
       "whyEn": "High info density with crisp edit pacing",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114745511987343361/img/g4R6Ixc4LFvKmsUE.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114745511987343361/img/g4R6Ixc4LFvKmsUE.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=76)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2111979046221586724",
@@ -1641,7 +1662,10 @@
       "batch": "2026-10-27",
       "whyZh": "伪纪录片质感骗过刷流直觉",
       "whyEn": "Docu-real texture fools casual scroll judgment",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114436875306049536/img/y9LNnG-VhAgNCzWw.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114436875306049536/img/y9LNnG-VhAgNCzWw.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=36)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114679577738162359",
@@ -1666,7 +1690,10 @@
       "batch": "2026-10-27",
       "whyZh": "写实光影撑起情绪戏",
       "whyEn": "Photoreal light carries the emotional beat",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114679528719319040/img/nf51Ri3HpJs-S2JG.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114679528719319040/img/nf51Ri3HpJs-S2JG.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=27)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114390625202344157",
@@ -1691,7 +1718,10 @@
       "batch": "2026-10-27",
       "whyZh": "题材锋利、角色表演夸张可读",
       "whyEn": "Sharp premise; exaggerated readable performances",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114390399196221440/img/_mZPkAA1qJ9RRvaK.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114390399196221440/img/_mZPkAA1qJ9RRvaK.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=97)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114603308589752823",
@@ -1716,7 +1746,10 @@
       "batch": "2026-10-27",
       "whyZh": "街头氛围光影与角色压迫感",
       "whyEn": "Street atmosphere; lighting and character pressure",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114603122677198848/img/wsTXeBTuU7cMP1xp.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114603122677198848/img/wsTXeBTuU7cMP1xp.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=57)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114436065885077561",
@@ -1741,7 +1774,10 @@
       "batch": "2026-10-27",
       "whyZh": "前后对比一眼看懂工具力",
       "whyEn": "Before/after sells the tool capability instantly",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114435248058728448/img/fy0TBFeEcyMcF5Ek.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114435248058728448/img/fy0TBFeEcyMcF5Ek.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=17)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114350675001856259",
@@ -1765,7 +1801,10 @@
       "batch": "2026-10-27",
       "whyZh": "门铃惊吓反转节奏干净",
       "whyEn": "Doorbell scare-to-punchline timing is clean",
-      "preview_image_url": "https://pbs.twimg.com/media/HVeuut4WAAAs9Jd.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVeuut4WAAAs9Jd.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=57)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2111582933891059733",
@@ -1789,7 +1828,10 @@
       "batch": "2026-10-27",
       "whyZh": "车戏运镜电影感强",
       "whyEn": "Car set-piece with cinematic camera language",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111582893252468736/img/9OA1f4nTysDbivzm.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111582893252468736/img/9OA1f4nTysDbivzm.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=22)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114774086685429819",
@@ -1814,7 +1856,10 @@
       "batch": "2026-10-27",
       "whyZh": "说唱卡点与群像调度",
       "whyEn": "Rap sync plus ensemble staging",
-      "preview_image_url": "https://pbs.twimg.com/media/HVkv0SeXwAAZqLT.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVkv0SeXwAAZqLT.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=33)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114736275794366467",
@@ -1839,7 +1884,10 @@
       "batch": "2026-10-27",
       "whyZh": "并排对比服务创作者决策",
       "whyEn": "Side-by-side comparison that aids craft decisions",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114732829204742145/img/Ur5v0IrpDioVaUD0.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114732829204742145/img/Ur5v0IrpDioVaUD0.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=18)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113067754433794134",
@@ -1864,7 +1912,10 @@
       "batch": "2026-10-27",
       "whyZh": "主题曲串起跨集角色弧",
       "whyEn": "Theme song threads a multi-ep character arc",
-      "preview_image_url": "https://pbs.twimg.com/media/HVMf_O4bcAAKF2w.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVMf_O4bcAAKF2w.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=17)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114431897023471934",
@@ -1889,7 +1940,10 @@
       "batch": "2026-10-27",
       "whyZh": "一镜边界控制逆向视效",
       "whyEn": "One-take reverse VFX controlled by a moving boundary",
-      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114431860088430592/pu/img/vxV8fpQhbthoxXEr.jpg"
+      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/2114431860088430592/pu/img/vxV8fpQhbthoxXEr.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=11)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113562320102187501",
@@ -1914,7 +1968,10 @@
       "batch": "2026-10-27",
       "whyZh": "经典剪辑语法的AI转译",
       "whyEn": "Classic editing grammar translated into AI cinema",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113561953494863872/img/DM1sX6SCpUSveHKA.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113561953494863872/img/DM1sX6SCpUSveHKA.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=16)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114015793977708572",
@@ -1939,7 +1996,10 @@
       "batch": "2026-10-27",
       "whyZh": "生活情景喜剧节奏紧",
       "whyEn": "Tight domestic sitcom pacing",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114015503123378176/img/hJZtWzDVrSM2HBuY.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114015503123378176/img/hJZtWzDVrSM2HBuY.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=9)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114046630425190585",
@@ -1964,7 +2024,10 @@
       "batch": "2026-10-27",
       "whyZh": "功夫对位与风格化动作设计",
       "whyEn": "Kung-fu matchup with stylized fight design",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114046465106710528/img/vneJpKHDSBZ_A_he.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114046465106710528/img/vneJpKHDSBZ_A_he.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=11)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113643214410228030",
@@ -1988,7 +2051,10 @@
       "batch": "2026-10-27",
       "whyZh": "交易梗开场干净、动作连贯",
       "whyEn": "Clean deal-gag open with continuous action",
-      "preview_image_url": "https://pbs.twimg.com/media/HVUrTE0XEAAXArb.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVUrTE0XEAAXArb.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=34)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114353843974602873",
@@ -2012,7 +2078,10 @@
       "batch": "2026-10-27",
       "whyZh": "时政小品节奏短平快",
       "whyEn": "Political skit with short punchy pacing",
-      "preview_image_url": "https://pbs.twimg.com/media/HVexnGQXgAAfoEc.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVexnGQXgAAfoEc.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=31)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113739942174359693",
@@ -2061,7 +2130,10 @@
       "batch": "2026-10-25",
       "whyZh": "荒诞概念+写实渲染反差",
       "whyEn": "Absurd premise sold with photoreal finish",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111977507645956096/img/t2s8sSR1gd7lOE2b.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111977507645956096/img/t2s8sSR1gd7lOE2b.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=49)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2112923373307105709",
@@ -2085,7 +2157,10 @@
       "batch": "2026-10-25",
       "whyZh": "动作连贯、表情夸张到位",
       "whyEn": "Continuous action with exaggerated readable faces",
-      "preview_image_url": "https://pbs.twimg.com/media/HVKcmukWgAAG7Cg.jpg"
+      "preview_image_url": "https://pbs.twimg.com/media/HVKcmukWgAAG7Cg.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=73)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2111858080652685782",
@@ -2133,7 +2208,10 @@
       "batch": "2026-10-25",
       "whyZh": "风格统一的本地管线美学",
       "whyEn": "Cohesive local-pipeline aesthetic throughout",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113409276081266688/img/OVa3ylfAsbv_D5cy.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113409276081266688/img/OVa3ylfAsbv_D5cy.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=76)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113579263656071218",
@@ -2278,7 +2356,10 @@
       "batch": "2026-10-25",
       "whyZh": "同镜多变体对比冲击力强",
       "whyEn": "Same-take multi-variant swaps hit hard",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113636835146493952/img/QMGwv-_Jngdoymhf.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113636835146493952/img/QMGwv-_Jngdoymhf.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=80)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113285806810890723",
@@ -2302,7 +2383,10 @@
       "batch": "2026-10-25",
       "whyZh": "场景切换清晰、人设一致",
       "whyEn": "Clear scene switches with consistent character",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113285773726257153/img/PinGFbZ5jDCE2qnd.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113285773726257153/img/PinGFbZ5jDCE2qnd.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=43)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2112269552453112122",
@@ -2327,7 +2411,10 @@
       "batch": "2026-10-25",
       "whyZh": "节日主题包装利落、镜头干净",
       "whyEn": "Tight holiday packaging with clean cuts",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112269031935770625/img/7n3ca8AXxdkblt0Q.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112269031935770625/img/7n3ca8AXxdkblt0Q.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=41)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2112586303912960340",
@@ -2351,7 +2438,10 @@
       "batch": "2026-10-25",
       "whyZh": "悬念开场、角色微表情到位",
       "whyEn": "Suspense open with readable micro-expressions",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112586175756050432/img/lqEn_P5GuyrEE7MG.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112586175756050432/img/lqEn_P5GuyrEE7MG.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=27)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2114027903872897485",
@@ -2375,7 +2465,10 @@
       "batch": "2026-10-25",
       "whyZh": "Goblin人设连贯、情绪钩子明确",
       "whyEn": "Consistent Goblin voice with clear emotional hook",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114027782527401984/img/McwGrW7NZG8SRBmY.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114027782527401984/img/McwGrW7NZG8SRBmY.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=73)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113616438954996141",
@@ -2400,7 +2493,10 @@
       "batch": "2026-10-25",
       "whyZh": "流程透明、可复用镜头控制法",
       "whyEn": "Transparent pipeline for reusable camera control",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113510482606960640/img/_LQvlwF1nWigPLXX.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113510482606960640/img/_LQvlwF1nWigPLXX.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=54)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113819181879808390",
@@ -2424,7 +2520,10 @@
       "batch": "2026-10-25",
       "whyZh": "多角色一致性一次出片",
       "whyEn": "Multi-character consistency in one pass",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113819157745770496/img/02jkPBu-aQU0GEjy.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113819157745770496/img/02jkPBu-aQU0GEjy.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=16)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2112574910182949227",
@@ -2448,7 +2547,10 @@
       "batch": "2026-10-25",
       "whyZh": "场景密度高、镜头推进自然",
       "whyEn": "Dense scene blocking with natural camera push",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112574846165188608/img/xeyWdXW-_dsKz1ef.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112574846165188608/img/xeyWdXW-_dsKz1ef.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=12)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2113107375272161405",
@@ -2472,7 +2574,10 @@
       "batch": "2026-10-25",
       "whyZh": "关键帧驱动动作连贯成本低",
       "whyEn": "Keyframe-driven motion that stays cheap and coherent",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113107219386638336/img/iA-CXf93mIpYY-W6.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113107219386638336/img/iA-CXf93mIpYY-W6.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=15)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2112007267503726791",
@@ -2497,7 +2602,10 @@
       "batch": "2026-10-25",
       "whyZh": "童趣叙事完整、家庭共创真实感",
       "whyEn": "Complete kid-led story with authentic family craft",
-      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112006977954123776/img/qJLAdrYYnJXRCxY5.jpg"
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112006977954123776/img/qJLAdrYYnJXRCxY5.jpg",
+      "hidden": true,
+      "hiddenReason": "reposts<100 (reposts=11)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "2110758072083751046",
@@ -3442,7 +3550,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/MGF1dDI5ZXFoeHhoMcm73ORtxjtk2AM3uT4kjiq5MRIPmSUHpqD1sNrFnLIP.jpeg?format=pjpg&auto=webp&s=5afd7301b0512267793f08c353b3f89eef4b4245",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=43)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xgjvir",
@@ -3465,7 +3576,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/cHUzZmt1MWQxeXhoMU2NPwJa9tvTt9vdMaoXW9DafrCrXxienYO4bAylVdNu.jpeg?format=pjpg&auto=webp&s=e01c6f6b9b352d57935aeb840cd1ff9115bd8230",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=36)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfsg2m",
@@ -3488,7 +3602,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/NHJoOTB3ajJhc3hoMSwSekE7s_-bg0K_ALFj6HEsOIeCjT4f4WwfSbDZVokt.png?auto=webp&s=b5844ae86f8f9a35cb585155306ac9157256daff",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=17)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfpnxd",
@@ -3511,7 +3628,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/cTh4NTJzN3RlcnhoMQdnFNeYtOPShZ6fo-jKakmnapEWjBG6B84Gz-cJ6k4e.png?format=pjpg&auto=webp&s=fa927dd5d8a24d7a220190ef0c5defa5629fecb2",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=12)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xgbfyh",
@@ -3534,7 +3654,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/aWo4ajRhdzIyd3hoMcC8vTw_qbVLcBYOu5sJR4KkbsaSaO2eeZEUmagZbIAd.png?auto=webp&s=e612d0d674373ba7e722e89e91b9c08ea312ec6d",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=9)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg5el4",
@@ -3557,7 +3680,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/dm9udnJ2ZDR4dXhoMT10KzOIKSnmeg6ZEttSlb3Tgs3dE9r7FfHg6Vn5fisq.png?auto=webp&s=032ae513ff2138447cb896970c26b7ee25ddae82",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=9)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xgk5ag",
@@ -3580,7 +3706,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/M3RqamI3ZDg0eXhoMbLfo4EEENW6FZM2Ok1p6XiOGC6drxSldk9VzUG3YR67.png?format=pjpg&auto=webp&s=32fb985aa800a0c8deea574862a615827803b06c",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=8)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xgf579",
@@ -3603,7 +3732,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/dDEza2Uxenl1d3hoMYvrFcQ1fND-Ljc9Mr0DjALwWZi3fqw59U1Hq-rW-myZ.png?format=pjpg&auto=webp&s=19fc1e7794092b20a67e790b4c8a1d47d9ce6c3d",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=8)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfpm9t",
@@ -3626,7 +3758,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/dTZnd2JpZTVlcnhoMfF74HUwe04fPAM_5LVk7EXDdwRWdV59X6B7F-ETlkrl.png?auto=webp&s=44a7e8c4463201b91b42bc3a761cba43603cad6f",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=8)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xflc1c",
@@ -3649,7 +3784,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/b3ZoM2F3MG81cXhoMVMDoqKk8FQbakO3CGYnm5Df34d4zCr-S5UbykFJrkvN.png?format=pjpg&auto=webp&s=633deda61cf19fca5e8fa45638a21f217850d232",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=8)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfu44d",
@@ -3672,7 +3810,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/MXo0NnRvOG9xc3hoMbIXrDa5R16aAEwTu-eunD5Q6HVuE988C7Tbop0c3hMK.png?format=pjpg&auto=webp&s=7ef727a77502ed6a53ca0f70675eb56a3a348b72",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=6)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xflm67",
@@ -3695,7 +3836,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/eDFkbG94Nnk2cXhoMYZl4C2rH9CaFQv9FwbzN2-micNKiyg6RFT5cg4GMatw.png?format=pjpg&auto=webp&s=8d20c1ebdefc87d0827f825e5a74e63eb34ad265",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=6)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfi6s9",
@@ -3718,7 +3862,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/cXExbjd1b29jcHhoMVY7T2SycVE5YSDtNbpfoAAggF3GN3RgChkCz5zJznST.png?auto=webp&s=89403f65cf52fbe2ea3da67ff4b2fa5f1446ad48",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=6)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg9x5s",
@@ -3741,7 +3888,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/ZTRpNG5jZDFydnhoMd58ss4pnFIiR_4oIi_w9MhEX5nq47eShgx4pNU-ppdH.png?auto=webp&s=53cb9a4e71b3b2454846cde07120a38c3ee3d65b",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=5)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg44xy",
@@ -3764,7 +3914,10 @@
       "whyZh": "窗内社区短片，发布日对齐时效",
       "whyEn": "In-window community short — publish date on freshness window",
       "thumb": "https://external-preview.redd.it/N2FycDkxaXFvdXhoMWjIEgxrLl5C1LWN7HcXvJh-gC4I0_ihZQyVf5UYv6fM.png?auto=webp&s=ad3bd008430dc148ab0682dc67dda365b3311ac1",
-      "soft": true
+      "soft": true,
+      "hidden": true,
+      "hiddenReason": "soft:true and score<100 (score=5)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg349k",
@@ -3932,7 +4085,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "角色关系戏驱动完播",
-      "whyEn": "Relationship drama drives rewatch."
+      "whyEn": "Relationship drama drives rewatch.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=72)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg4bh1",
@@ -3953,7 +4109,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "社区热议AI短片，钩子清晰",
-      "whyEn": "Community hit AI short with a clear hook."
+      "whyEn": "Community hit AI short with a clear hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=55)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfgc73",
@@ -3974,7 +4133,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "世界观设定清晰，视效冲击",
-      "whyEn": "Clear worldbuild with VFX punch."
+      "whyEn": "Clear worldbuild with VFX punch.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=41)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xf9eno",
@@ -3995,7 +4157,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "社区热议AI短片，钩子清晰",
-      "whyEn": "Community hit AI short with a clear hook."
+      "whyEn": "Community hit AI short with a clear hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=38)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg8hji",
@@ -4016,7 +4181,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "社区热议AI短片，钩子清晰",
-      "whyEn": "Community hit AI short with a clear hook."
+      "whyEn": "Community hit AI short with a clear hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=31)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg03zm",
@@ -4037,7 +4205,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "末日浪漫氛围镜头压得住",
-      "whyEn": "Apocalyptic romance mood holds the frame."
+      "whyEn": "Apocalyptic romance mood holds the frame.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=24)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg9tis",
@@ -4058,7 +4229,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "社区热议AI短片，钩子清晰",
-      "whyEn": "Community hit AI short with a clear hook."
+      "whyEn": "Community hit AI short with a clear hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=24)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg835f",
@@ -4079,7 +4253,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "粉丝向动作戏镜头语言稳",
-      "whyEn": "Fan-action shot language stays solid."
+      "whyEn": "Fan-action shot language stays solid.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=22)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg532j",
@@ -4100,7 +4277,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "复古广告仿作完成度高",
-      "whyEn": "Retro commercial pastiche fully sold."
+      "whyEn": "Retro commercial pastiche fully sold.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=22)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfwjvd",
@@ -4121,7 +4301,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "动作卡点与音乐同步",
-      "whyEn": "Action hits locked to music."
+      "whyEn": "Action hits locked to music.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=20)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfsz8i",
@@ -4142,7 +4325,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "节日短片氛围到位",
-      "whyEn": "Holiday short mood fully committed."
+      "whyEn": "Holiday short mood fully committed.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=17)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xg4feo",
@@ -4163,7 +4349,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "社区热议AI短片，钩子清晰",
-      "whyEn": "Community hit AI short with a clear hook."
+      "whyEn": "Community hit AI short with a clear hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=13)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xfoose",
@@ -4184,7 +4373,10 @@
       "addedAt": "2026-10-27T10:00:00+08:00",
       "batch": "2026-10-27",
       "whyZh": "手工感反差萌点强",
-      "whyEn": "Handmade charm as contrast hook."
+      "whyEn": "Handmade charm as contrast hook.",
+      "hidden": true,
+      "hiddenReason": "score<100 (score=11)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1xbp131",
@@ -5464,7 +5656,10 @@
       "cover": "img/yt_wREKllnoPHg.jpg",
       "whyZh": "工具成片完成度高、可复用",
       "whyEn": "High-finish tool-made short, reusable craft",
-      "thumb": "https://i.ytimg.com/vi_webp/wREKllnoPHg/maxresdefault.webp"
+      "thumb": "https://i.ytimg.com/vi_webp/wREKllnoPHg/maxresdefault.webp",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=4.9K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "xETrXdWRk6s",
@@ -5486,7 +5681,10 @@
       "cover": "img/yt_xETrXdWRk6s.jpg",
       "whyZh": "动画叙事完整、角色稳定",
       "whyEn": "Complete animated narrative with locked characters",
-      "thumb": "https://i.ytimg.com/vi/xETrXdWRk6s/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/xETrXdWRk6s/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=3.5K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1bCTkgu-uWM",
@@ -5508,7 +5706,10 @@
       "cover": "img/yt_1bCTkgu-uWM.jpg",
       "whyZh": "工具成片完成度高、可复用",
       "whyEn": "High-finish tool-made short, reusable craft",
-      "thumb": "https://i.ytimg.com/vi/1bCTkgu-uWM/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/1bCTkgu-uWM/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2.4K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "XpecYg-gXvw",
@@ -5530,7 +5731,10 @@
       "cover": "img/yt_XpecYg-gXvw.jpg",
       "whyZh": "万圣节恐怖短片节奏紧、钩子强",
       "whyEn": "Halloween horror short with tight hooks",
-      "thumb": "https://i.ytimg.com/vi/XpecYg-gXvw/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/XpecYg-gXvw/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2.2K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "iwuKQpLiE6c",
@@ -5552,7 +5756,10 @@
       "cover": "img/yt_iwuKQpLiE6c.jpg",
       "whyZh": "万圣节恐怖短片节奏紧、钩子强",
       "whyEn": "Halloween horror short with tight hooks",
-      "thumb": "https://i.ytimg.com/vi_webp/iwuKQpLiE6c/maxresdefault.webp"
+      "thumb": "https://i.ytimg.com/vi_webp/iwuKQpLiE6c/maxresdefault.webp",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "7bXypdyb_uw",
@@ -6363,7 +6570,10 @@
       ],
       "cover": "img/yt_Pgx8pVN_hMQ.jpg",
       "whyZh": "粉丝对决场面调度热闹，机甲质感统一。",
-      "whyEn": "Fan-film showdown staging is lively; mech look stays consistent."
+      "whyEn": "Fan-film showdown staging is lively; mech look stays consistent.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=9.3K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "79BZrgmKUJE",
@@ -6385,7 +6595,10 @@
       ],
       "cover": "img/yt_79BZrgmKUJE.jpg",
       "whyZh": "心理恐怖下行结构清楚，声音比画面更先发力。",
-      "whyEn": "Psychological descent structure is clear; sound leads picture."
+      "whyEn": "Psychological descent structure is clear; sound leads picture.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=7.6K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "RQCEJpmD-nw",
@@ -6407,7 +6620,10 @@
       ],
       "cover": "img/yt_RQCEJpmD-nw.jpg",
       "whyZh": "概念广告式短片，产品动作喜剧节奏轻快。",
-      "whyEn": "Spec-ad energy; product-action comedy keeps a light clip."
+      "whyEn": "Spec-ad energy; product-action comedy keeps a light clip.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=5.9K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1G5LArU7tmE",
@@ -10782,7 +10998,10 @@
       ],
       "cover": "img/yt_Pgx8pVN_hMQ.jpg",
       "whyZh": "粉丝对决场面调度热闹，机甲质感统一。",
-      "whyEn": "Fan-film showdown staging is lively; mech look stays consistent."
+      "whyEn": "Fan-film showdown staging is lively; mech look stays consistent.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=9.3K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "79BZrgmKUJE",
@@ -10804,7 +11023,10 @@
       ],
       "cover": "img/yt_79BZrgmKUJE.jpg",
       "whyZh": "心理恐怖下行结构清楚，声音比画面更先发力。",
-      "whyEn": "Psychological descent structure is clear; sound leads picture."
+      "whyEn": "Psychological descent structure is clear; sound leads picture.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=7.6K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "RQCEJpmD-nw",
@@ -10826,7 +11048,10 @@
       ],
       "cover": "img/yt_RQCEJpmD-nw.jpg",
       "whyZh": "概念广告式短片，产品动作喜剧节奏轻快。",
-      "whyEn": "Spec-ad energy; product-action comedy keeps a light clip."
+      "whyEn": "Spec-ad energy; product-action comedy keeps a light clip.",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=5.9K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "7bXypdyb_uw",
@@ -11334,7 +11559,10 @@
       "cover": "img/yt_wREKllnoPHg.jpg",
       "whyZh": "工具成片完成度高、可复用",
       "whyEn": "High-finish tool-made short, reusable craft",
-      "thumb": "https://i.ytimg.com/vi_webp/wREKllnoPHg/maxresdefault.webp"
+      "thumb": "https://i.ytimg.com/vi_webp/wREKllnoPHg/maxresdefault.webp",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=4.9K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "xETrXdWRk6s",
@@ -11356,7 +11584,10 @@
       "cover": "img/yt_xETrXdWRk6s.jpg",
       "whyZh": "动画叙事完整、角色稳定",
       "whyEn": "Complete animated narrative with locked characters",
-      "thumb": "https://i.ytimg.com/vi/xETrXdWRk6s/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/xETrXdWRk6s/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=3.5K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "1bCTkgu-uWM",
@@ -11378,7 +11609,10 @@
       "cover": "img/yt_1bCTkgu-uWM.jpg",
       "whyZh": "工具成片完成度高、可复用",
       "whyEn": "High-finish tool-made short, reusable craft",
-      "thumb": "https://i.ytimg.com/vi/1bCTkgu-uWM/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/1bCTkgu-uWM/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2.4K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "XpecYg-gXvw",
@@ -11400,7 +11634,10 @@
       "cover": "img/yt_XpecYg-gXvw.jpg",
       "whyZh": "万圣节恐怖短片节奏紧、钩子强",
       "whyEn": "Halloween horror short with tight hooks",
-      "thumb": "https://i.ytimg.com/vi/XpecYg-gXvw/maxresdefault.jpg"
+      "thumb": "https://i.ytimg.com/vi/XpecYg-gXvw/maxresdefault.jpg",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2.2K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     },
     {
       "id": "iwuKQpLiE6c",
@@ -11422,7 +11659,10 @@
       "cover": "img/yt_iwuKQpLiE6c.jpg",
       "whyZh": "万圣节恐怖短片节奏紧、钩子强",
       "whyEn": "Halloween horror short with tight hooks",
-      "thumb": "https://i.ytimg.com/vi_webp/iwuKQpLiE6c/maxresdefault.webp"
+      "thumb": "https://i.ytimg.com/vi_webp/iwuKQpLiE6c/maxresdefault.webp",
+      "hidden": true,
+      "hiddenReason": "views<10k (views=2K)",
+      "hiddenAt": "2026-10-27T18:40:29+08:00"
     }
   ],
   "whyLines": {
@@ -13951,6 +14191,1030 @@
       "yt_Ev5_u5LZTW8",
       "yt_n6my-hQSoTA",
       "yt_sWrwsI9vaPs"
-    ]
+    ],
+    "reddit_soft_or_score_lt_100": [
+      "1xghut7",
+      "1xgjvir",
+      "1xfsg2m",
+      "1xfpnxd",
+      "1xgbfyh",
+      "1xg5el4",
+      "1xgk5ag",
+      "1xgf579",
+      "1xfpm9t",
+      "1xflc1c",
+      "1xfu44d",
+      "1xflm67",
+      "1xfi6s9",
+      "1xg9x5s",
+      "1xg44xy",
+      "1xfxh8s",
+      "1xg4bh1",
+      "1xfgc73",
+      "1xf9eno",
+      "1xg8hji",
+      "1xg03zm",
+      "1xg9tis",
+      "1xg835f",
+      "1xg532j",
+      "1xfwjvd",
+      "1xfsz8i",
+      "1xg4feo",
+      "1xfoose"
+    ],
+    "x_reposts_lt_100": [
+      "2114965183919726989",
+      "2113955213166121107",
+      "2114784244514038224",
+      "2114794232229609496",
+      "2114748969431519662",
+      "2113990981322187088",
+      "2114746634534109613",
+      "2114437262062829746",
+      "2114679577738162359",
+      "2114390625202344157",
+      "2114603308589752823",
+      "2114436065885077561",
+      "2114350675001856259",
+      "2111582933891059733",
+      "2114774086685429819",
+      "2114736275794366467",
+      "2113067754433794134",
+      "2114431897023471934",
+      "2113562320102187501",
+      "2114015793977708572",
+      "2114046630425190585",
+      "2113643214410228030",
+      "2114353843974602873",
+      "2111977689599107516",
+      "2112923373307105709",
+      "2113409395988324846",
+      "2113637102722179568",
+      "2113285806810890723",
+      "2112269552453112122",
+      "2112586303912960340",
+      "2114027903872897485",
+      "2113616438954996141",
+      "2113819181879808390",
+      "2112574910182949227",
+      "2113107375272161405",
+      "2112007267503726791"
+    ],
+    "youtube_views_lt_10k": [
+      "wREKllnoPHg",
+      "xETrXdWRk6s",
+      "1bCTkgu-uWM",
+      "XpecYg-gXvw",
+      "iwuKQpLiE6c",
+      "Pgx8pVN_hMQ",
+      "79BZrgmKUJE",
+      "RQCEJpmD-nw"
+    ],
+    "instagram_below_floor": []
+  },
+  "removed_engagement": [
+    {
+      "id": "1xghut7",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=43)",
+      "score": "43",
+      "comments": "12",
+      "soft": true,
+      "title": "CBD INCIDENT",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xghut7/cbd_incident/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=43)"
+    },
+    {
+      "id": "1xgjvir",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=36)",
+      "score": "36",
+      "comments": "9",
+      "soft": true,
+      "title": "TIMEFLIGHT | An aerial tour through world history",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xgjvir/timeflight_an_aerial_tour_through_world_history/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=36)"
+    },
+    {
+      "id": "1xfsg2m",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=17)",
+      "score": "17",
+      "comments": "3",
+      "soft": true,
+      "title": "Halloween Tip Toe Vampire",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfsg2m/halloween_tip_toe_vampire/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=17)"
+    },
+    {
+      "id": "1xfpnxd",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=12)",
+      "score": "12",
+      "comments": "10",
+      "soft": true,
+      "title": "She's a professional, Don't try this at home",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfpnxd/shes_a_professional_dont_try_this_at_home/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=12)"
+    },
+    {
+      "id": "1xgbfyh",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=9)",
+      "score": "9",
+      "comments": "0",
+      "soft": true,
+      "title": "Just another peaceful night at the 1979 Oscar Awards",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xgbfyh/just_another_peaceful_night_at_the_1979_oscar/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=9)"
+    },
+    {
+      "id": "1xg5el4",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=9)",
+      "score": "9",
+      "comments": "3",
+      "soft": true,
+      "title": "\"Grey-Plague\" intro cutscene to my game: Drawn in Godot by Claude",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg5el4/greyplague_intro_cutscene_to_my_game_drawn_in/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=9)"
+    },
+    {
+      "id": "1xgk5ag",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=8)",
+      "score": "8",
+      "comments": "4",
+      "soft": true,
+      "title": "Wait, I remember this differently",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xgk5ag/wait_i_remember_this_differently/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=8)"
+    },
+    {
+      "id": "1xgf579",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=8)",
+      "score": "8",
+      "comments": "0",
+      "soft": true,
+      "title": "new bug's life sequel is wild",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xgf579/new_bugs_life_sequel_is_wild/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=8)"
+    },
+    {
+      "id": "1xfpm9t",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=8)",
+      "score": "8",
+      "comments": "8",
+      "soft": true,
+      "title": "An AI 3D CGI Cursor Attacks the City",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfpm9t/an_ai_3d_cgi_cursor_attacks_the_city/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=8)"
+    },
+    {
+      "id": "1xflc1c",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=8)",
+      "score": "8",
+      "comments": "5",
+      "soft": true,
+      "title": "Zombie Anomaly",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xflc1c/zombie_anomaly/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=8)"
+    },
+    {
+      "id": "1xfu44d",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=6)",
+      "score": "6",
+      "comments": "0",
+      "soft": true,
+      "title": "TENDER (4K- MV) KLING+DOMOAI+SEEDANCE",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfu44d/tender_4k_mv_klingdomoaiseedance/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=6)"
+    },
+    {
+      "id": "1xflm67",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=6)",
+      "score": "6",
+      "comments": "1",
+      "soft": true,
+      "title": "The 23rd Mile",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xflm67/the_23rd_mile/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=6)"
+    },
+    {
+      "id": "1xfi6s9",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=6)",
+      "score": "6",
+      "comments": "4",
+      "soft": true,
+      "title": "THE LOST CUB Episode 1 – a baby orc alone in the jungle (AI fantasy film, feedback welcome)",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfi6s9/the_lost_cub_episode_1_a_baby_orc_alone_in_the/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=6)"
+    },
+    {
+      "id": "1xg9x5s",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=5)",
+      "score": "5",
+      "comments": "1",
+      "soft": true,
+      "title": "Video: Seedance; Music: Suno; Lyrics: GPT6 Astra",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg9x5s/video_seedance_music_suno_lyrics_gpt6_astra/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=5)"
+    },
+    {
+      "id": "1xg44xy",
+      "platform": "reddit",
+      "reason": "soft:true and score<100 (score=5)",
+      "score": "5",
+      "comments": "0",
+      "soft": true,
+      "title": "How much would you pay for ad free sleep?",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg44xy/how_much_would_you_pay_for_ad_free_sleep/",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "soft:true and score<100 (score=5)"
+    },
+    {
+      "id": "1xfxh8s",
+      "platform": "reddit",
+      "reason": "score<100 (score=72)",
+      "score": "72",
+      "comments": "5",
+      "soft": null,
+      "title": "Draconia Malfoy ep 2",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfxh8s/draconia_malfoy_ep_2/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=72)"
+    },
+    {
+      "id": "1xg4bh1",
+      "platform": "reddit",
+      "reason": "score<100 (score=55)",
+      "score": "55",
+      "comments": "2",
+      "soft": null,
+      "title": "Just a noob playing with AI",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg4bh1/just_a_noob_playing_with_ai/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=55)"
+    },
+    {
+      "id": "1xfgc73",
+      "platform": "reddit",
+      "reason": "score<100 (score=41)",
+      "score": "41",
+      "comments": "1",
+      "soft": null,
+      "title": "Cosmic Love",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfgc73/cosmic_love/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=41)"
+    },
+    {
+      "id": "1xf9eno",
+      "platform": "reddit",
+      "reason": "score<100 (score=38)",
+      "score": "38",
+      "comments": "6",
+      "soft": null,
+      "title": "LOS ILUMINADOS 🔴 A RE4 Film by The Blue Horizon",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xf9eno/los_iluminados_a_re4_film_by_the_blue_horizon/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=38)"
+    },
+    {
+      "id": "1xg8hji",
+      "platform": "reddit",
+      "reason": "score<100 (score=31)",
+      "score": "31",
+      "comments": "110",
+      "soft": null,
+      "title": "Anthropic and OpenAI are holding back their best models",
+      "url": "https://www.reddit.com/r/singularity/comments/1xg8hji/anthropic_and_openai_are_holding_back_their_best/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=31)"
+    },
+    {
+      "id": "1xg03zm",
+      "platform": "reddit",
+      "reason": "score<100 (score=24)",
+      "score": "24",
+      "comments": "2",
+      "soft": null,
+      "title": "There’s something romantic about cataclysms",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg03zm/theres_something_romantic_about_cataclysms/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=24)"
+    },
+    {
+      "id": "1xg9tis",
+      "platform": "reddit",
+      "reason": "score<100 (score=24)",
+      "score": "24",
+      "comments": "2",
+      "soft": null,
+      "title": "Nowhere is safe in the backrooms-H3 minimax",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xg9tis/nowhere_is_safe_in_the_backroomsh3_minimax/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=24)"
+    },
+    {
+      "id": "1xg835f",
+      "platform": "reddit",
+      "reason": "score<100 (score=22)",
+      "score": "22",
+      "comments": "7",
+      "soft": null,
+      "title": "Wolverine: Trail of Tears - Episode One - Fan Series",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg835f/wolverine_trail_of_tears_episode_one_fan_series/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=22)"
+    },
+    {
+      "id": "1xg532j",
+      "platform": "reddit",
+      "reason": "score<100 (score=22)",
+      "score": "22",
+      "comments": "0",
+      "soft": null,
+      "title": "I made a fake 1985 commercial for a machine that gets you out of any party without being rude",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg532j/i_made_a_fake_1985_commercial_for_a_machine_that/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=22)"
+    },
+    {
+      "id": "1xfwjvd",
+      "platform": "reddit",
+      "reason": "score<100 (score=20)",
+      "score": "20",
+      "comments": "4",
+      "soft": null,
+      "title": "The Last Fight (Anime music video)",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfwjvd/the_last_fight_anime_music_video/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=20)"
+    },
+    {
+      "id": "1xfsz8i",
+      "platform": "reddit",
+      "reason": "score<100 (score=17)",
+      "score": "17",
+      "comments": "6",
+      "soft": null,
+      "title": "Alfredo's Halloween Night — Felt Hamster Carves a Pumpkin & Makes Risotto",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfsz8i/alfredos_halloween_night_felt_hamster_carves_a/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=17)"
+    },
+    {
+      "id": "1xg4feo",
+      "platform": "reddit",
+      "reason": "score<100 (score=13)",
+      "score": "13",
+      "comments": "8",
+      "soft": null,
+      "title": "how to recreate this video with my dog? Ive tried recreating it but it doesn’t came out well",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xg4feo/how_to_recreate_this_video_with_my_dog_ive_tried/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=13)"
+    },
+    {
+      "id": "1xfoose",
+      "platform": "reddit",
+      "reason": "score<100 (score=11)",
+      "score": "11",
+      "comments": "1",
+      "soft": null,
+      "title": "Pumpkin harvest",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xfoose/pumpkin_harvest/",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "score<100 (score=11)"
+    },
+    {
+      "id": "2114965183919726989",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=11)",
+      "reposts": "11",
+      "likes": "179",
+      "views": "4.6K",
+      "handle": "0xInk_",
+      "url": "https://x.com/0xInk_/status/2114965183919726989",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=11)"
+    },
+    {
+      "id": "2113955213166121107",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=47)",
+      "reposts": "47",
+      "likes": "530",
+      "views": "18.6K",
+      "handle": "0xInk_",
+      "url": "https://x.com/0xInk_/status/2113955213166121107",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=47)"
+    },
+    {
+      "id": "2114784244514038224",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=5)",
+      "reposts": "5",
+      "likes": "54",
+      "views": "3K",
+      "handle": "maxescu",
+      "url": "https://x.com/maxescu/status/2114784244514038224",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=5)"
+    },
+    {
+      "id": "2114794232229609496",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=4)",
+      "reposts": "4",
+      "likes": "27",
+      "views": "1.5K",
+      "handle": "CharaspowerAI",
+      "url": "https://x.com/CharaspowerAI/status/2114794232229609496",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=4)"
+    },
+    {
+      "id": "2114748969431519662",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=3)",
+      "reposts": "3",
+      "likes": "17",
+      "views": "1.5K",
+      "handle": "CharaspowerAI",
+      "url": "https://x.com/CharaspowerAI/status/2114748969431519662",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=3)"
+    },
+    {
+      "id": "2113990981322187088",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=5)",
+      "reposts": "5",
+      "likes": "41",
+      "views": "7.9K",
+      "handle": "dreamfallart",
+      "url": "https://x.com/dreamfallart/status/2113990981322187088",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=5)"
+    },
+    {
+      "id": "2114746634534109613",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=76)",
+      "reposts": "76",
+      "likes": "1.6K",
+      "views": "49.6K",
+      "handle": "venturetwins",
+      "url": "https://x.com/venturetwins/status/2114746634534109613",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=76)"
+    },
+    {
+      "id": "2114437262062829746",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=36)",
+      "reposts": "36",
+      "likes": "581",
+      "views": "36.8K",
+      "handle": "AIWarper",
+      "url": "https://x.com/AIWarper/status/2114437262062829746",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=36)"
+    },
+    {
+      "id": "2114679577738162359",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=27)",
+      "reposts": "27",
+      "likes": "379",
+      "views": "23.7K",
+      "handle": "EHuanglu",
+      "url": "https://x.com/EHuanglu/status/2114679577738162359",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=27)"
+    },
+    {
+      "id": "2114390625202344157",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=97)",
+      "reposts": "97",
+      "likes": "1.2K",
+      "views": "21.5K",
+      "handle": "Gossip_Goblin",
+      "url": "https://x.com/Gossip_Goblin/status/2114390625202344157",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=97)"
+    },
+    {
+      "id": "2114603308589752823",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=57)",
+      "reposts": "57",
+      "likes": "924",
+      "views": "15.2K",
+      "handle": "0xInk_",
+      "url": "https://x.com/0xInk_/status/2114603308589752823",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=57)"
+    },
+    {
+      "id": "2114436065885077561",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=17)",
+      "reposts": "17",
+      "likes": "464",
+      "views": "13.4K",
+      "handle": "venturetwins",
+      "url": "https://x.com/venturetwins/status/2114436065885077561",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=17)"
+    },
+    {
+      "id": "2114350675001856259",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=57)",
+      "reposts": "57",
+      "likes": "223",
+      "views": "11.4K",
+      "handle": "vrhunskeprice",
+      "url": "https://x.com/vrhunskeprice/status/2114350675001856259",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=57)"
+    },
+    {
+      "id": "2111582933891059733",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=22)",
+      "reposts": "22",
+      "likes": "208",
+      "views": "10.3K",
+      "handle": "EHuanglu",
+      "url": "https://x.com/EHuanglu/status/2111582933891059733",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=22)"
+    },
+    {
+      "id": "2114774086685429819",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=33)",
+      "reposts": "33",
+      "likes": "231",
+      "views": "9.2K",
+      "handle": "HatimsShorts",
+      "url": "https://x.com/HatimsShorts/status/2114774086685429819",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=33)"
+    },
+    {
+      "id": "2114736275794366467",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=18)",
+      "reposts": "18",
+      "likes": "235",
+      "views": "7.5K",
+      "handle": "AIWarper",
+      "url": "https://x.com/AIWarper/status/2114736275794366467",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=18)"
+    },
+    {
+      "id": "2113067754433794134",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=17)",
+      "reposts": "17",
+      "likes": "106",
+      "views": "4.1K",
+      "handle": "BLVCKLIGHTai",
+      "url": "https://x.com/BLVCKLIGHTai/status/2113067754433794134",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=17)"
+    },
+    {
+      "id": "2114431897023471934",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=11)",
+      "reposts": "11",
+      "likes": "183",
+      "views": "3.4K",
+      "handle": "CharaspowerAI",
+      "url": "https://x.com/CharaspowerAI/status/2114431897023471934",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=11)"
+    },
+    {
+      "id": "2113562320102187501",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=16)",
+      "reposts": "16",
+      "likes": "159",
+      "views": "3K",
+      "handle": "Uncanny_Harry",
+      "url": "https://x.com/Uncanny_Harry/status/2113562320102187501",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=16)"
+    },
+    {
+      "id": "2114015793977708572",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=9)",
+      "reposts": "9",
+      "likes": "75",
+      "views": "2.7K",
+      "handle": "dreamfallart",
+      "url": "https://x.com/dreamfallart/status/2114015793977708572",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=9)"
+    },
+    {
+      "id": "2114046630425190585",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=11)",
+      "reposts": "11",
+      "likes": "86",
+      "views": "1.6K",
+      "handle": "jboogx_creative",
+      "url": "https://x.com/jboogx_creative/status/2114046630425190585",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=11)"
+    },
+    {
+      "id": "2113643214410228030",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=34)",
+      "reposts": "34",
+      "likes": "227",
+      "views": "15.4K",
+      "handle": "vrhunskeprice",
+      "url": "https://x.com/vrhunskeprice/status/2113643214410228030",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=34)"
+    },
+    {
+      "id": "2114353843974602873",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=31)",
+      "reposts": "31",
+      "likes": "175",
+      "views": "11.8K",
+      "handle": "HatimsShorts",
+      "url": "https://x.com/HatimsShorts/status/2114353843974602873",
+      "batch": "2026-10-27",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=31)"
+    },
+    {
+      "id": "2111977689599107516",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=49)",
+      "reposts": "49",
+      "likes": "696",
+      "views": "114K",
+      "handle": "EHuanglu",
+      "url": "https://x.com/EHuanglu/status/2111977689599107516",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=49)"
+    },
+    {
+      "id": "2112923373307105709",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=73)",
+      "reposts": "73",
+      "likes": "546",
+      "views": "104.2K",
+      "handle": "vrhunskeprice",
+      "url": "https://x.com/vrhunskeprice/status/2112923373307105709",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=73)"
+    },
+    {
+      "id": "2113409395988324846",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=76)",
+      "reposts": "76",
+      "likes": "949",
+      "views": "43.3K",
+      "handle": "Extraltodeus",
+      "url": "https://x.com/Extraltodeus/status/2113409395988324846",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=76)"
+    },
+    {
+      "id": "2113637102722179568",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=80)",
+      "reposts": "80",
+      "likes": "928",
+      "views": "22.6K",
+      "handle": "emmanuel_2m",
+      "url": "https://x.com/emmanuel_2m/status/2113637102722179568",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=80)"
+    },
+    {
+      "id": "2113285806810890723",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=43)",
+      "reposts": "43",
+      "likes": "229",
+      "views": "20.6K",
+      "handle": "vrhunskeprice",
+      "url": "https://x.com/vrhunskeprice/status/2113285806810890723",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=43)"
+    },
+    {
+      "id": "2112269552453112122",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=41)",
+      "reposts": "41",
+      "likes": "440",
+      "views": "18K",
+      "handle": "dreamfallart",
+      "url": "https://x.com/dreamfallart/status/2112269552453112122",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=41)"
+    },
+    {
+      "id": "2112586303912960340",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=27)",
+      "reposts": "27",
+      "likes": "380",
+      "views": "15.8K",
+      "handle": "dreamfallart",
+      "url": "https://x.com/dreamfallart/status/2112586303912960340",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=27)"
+    },
+    {
+      "id": "2114027903872897485",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=73)",
+      "reposts": "73",
+      "likes": "1K",
+      "views": "15.4K",
+      "handle": "Gossip_Goblin",
+      "url": "https://x.com/Gossip_Goblin/status/2114027903872897485",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=73)"
+    },
+    {
+      "id": "2113616438954996141",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=54)",
+      "reposts": "54",
+      "likes": "604",
+      "views": "12K",
+      "handle": "PJaccetturo",
+      "url": "https://x.com/PJaccetturo/status/2113616438954996141",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=54)"
+    },
+    {
+      "id": "2113819181879808390",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=16)",
+      "reposts": "16",
+      "likes": "288",
+      "views": "11.5K",
+      "handle": "venturetwins",
+      "url": "https://x.com/venturetwins/status/2113819181879808390",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=16)"
+    },
+    {
+      "id": "2112574910182949227",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=12)",
+      "reposts": "12",
+      "likes": "130",
+      "views": "9.4K",
+      "handle": "EHuanglu",
+      "url": "https://x.com/EHuanglu/status/2112574910182949227",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=12)"
+    },
+    {
+      "id": "2113107375272161405",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=15)",
+      "reposts": "15",
+      "likes": "326",
+      "views": "8.4K",
+      "handle": "AIWarper",
+      "url": "https://x.com/AIWarper/status/2113107375272161405",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=15)"
+    },
+    {
+      "id": "2112007267503726791",
+      "platform": "x",
+      "reason": "reposts<100 (reposts=11)",
+      "reposts": "11",
+      "likes": "144",
+      "views": "3.2K",
+      "handle": "Diesol",
+      "url": "https://x.com/Diesol/status/2112007267503726791",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "reposts<100 (reposts=11)"
+    },
+    {
+      "id": "wREKllnoPHg",
+      "platform": "youtube",
+      "reason": "views<10k (views=4.9K)",
+      "views": "4.9K",
+      "likes": "121",
+      "channel": "Silver Colored Lens",
+      "title": "How I Turned 4 Architectural Renders Into a Short Film with Higgsfield",
+      "url": "https://www.youtube.com/watch?v=wREKllnoPHg",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=4.9K)"
+    },
+    {
+      "id": "xETrXdWRk6s",
+      "platform": "youtube",
+      "reason": "views<10k (views=3.5K)",
+      "views": "3.5K",
+      "likes": "2.5K",
+      "channel": "Osaid Films | Animation ",
+      "title": "PAIN | AI Animated Short Film",
+      "url": "https://www.youtube.com/watch?v=xETrXdWRk6s",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=3.5K)"
+    },
+    {
+      "id": "1bCTkgu-uWM",
+      "platform": "youtube",
+      "reason": "views<10k (views=2.4K)",
+      "views": "2.4K",
+      "likes": "45",
+      "channel": "Magnific",
+      "title": "THE POWER OF NOW — AI short film made with Seedance 2.5",
+      "url": "https://www.youtube.com/watch?v=1bCTkgu-uWM",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=2.4K)"
+    },
+    {
+      "id": "XpecYg-gXvw",
+      "platform": "youtube",
+      "reason": "views<10k (views=2.2K)",
+      "views": "2.2K",
+      "likes": "66",
+      "channel": "Lowend Studios",
+      "title": "She's Already Home Part 3: Let Me In | AI Horror Short Film",
+      "url": "https://www.youtube.com/watch?v=XpecYg-gXvw",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=2.2K)"
+    },
+    {
+      "id": "iwuKQpLiE6c",
+      "platform": "youtube",
+      "reason": "views<10k (views=2K)",
+      "views": "2K",
+      "likes": "86",
+      "channel": "JOEY",
+      "title": "A Halloween \"Slasher\" AI Short Film Comedy",
+      "url": "https://www.youtube.com/watch?v=iwuKQpLiE6c",
+      "batch": "2026-10-27b",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=2K)"
+    },
+    {
+      "id": "Pgx8pVN_hMQ",
+      "platform": "youtube",
+      "reason": "views<10k (views=9.3K)",
+      "views": "9.3K",
+      "likes": "100",
+      "channel": "CONCEPT ZERO",
+      "title": "TERMINATOR vs ROBOCOP: DEADLOCK | Cinematic AI Short Film",
+      "url": "https://www.youtube.com/watch?v=Pgx8pVN_hMQ",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=9.3K)"
+    },
+    {
+      "id": "79BZrgmKUJE",
+      "platform": "youtube",
+      "reason": "views<10k (views=7.6K)",
+      "views": "7.6K",
+      "likes": "175",
+      "channel": "D4 - Studios",
+      "title": "DESCENT | Sci-Fi Psychological Horror | AI Short Film",
+      "url": "https://www.youtube.com/watch?v=79BZrgmKUJE",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=7.6K)"
+    },
+    {
+      "id": "RQCEJpmD-nw",
+      "platform": "youtube",
+      "reason": "views<10k (views=5.9K)",
+      "views": "5.9K",
+      "likes": "18",
+      "channel": "Random Lore",
+      "title": "Stolen Flying Tesla Roadster Prototype | AI Short Film",
+      "url": "https://www.youtube.com/watch?v=RQCEJpmD-nw",
+      "batch": "2026-10-25",
+      "removedAt": "2026-10-27T18:40:29+08:00",
+      "removedReason": "views<10k (views=5.9K)"
+    }
+  ],
+  "engagement_floors": {
+    "updatedAt": "2026-10-27T18:40:29+08:00",
+    "reddit": "reject soft:true OR score<100; prefer score≥500 for new adds",
+    "x": "reposts≥100 (hard)",
+    "instagram": "views≥100k OR likes≥5k",
+    "youtube_viral": "views≥10k (tutorials exempt)"
   }
 }
