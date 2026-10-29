@@ -1,0 +1,77 @@
+{
+  "batch": "2026-10-29",
+  "version": "v33",
+  "window": "2026-10-26..2026-10-29",
+  "updated": "Oct 29, 2026 10:19 CST",
+  "updated_zh": "2026-10-29 10:19（北京时间）",
+  "ig": {
+    "new": 0,
+    "total": 74,
+    "batch_file": 0
+  },
+  "x": {
+    "new": 3,
+    "total": 53,
+    "batch_file": 3,
+    "ids": [
+      "2115402956317323575",
+      "2115101721793794224",
+      "2115200858287931508"
+    ]
+  },
+  "reddit": {
+    "new": 6,
+    "total": 68,
+    "batch_file": 6,
+    "ids": [
+      "1xf6ccf",
+      "1xh1mj4",
+      "1xh9a9f",
+      "1xgvzzu",
+      "1xgx2h4",
+      "1xf8bqi"
+    ]
+  },
+  "youtube": {
+    "new": 2,
+    "total": 97,
+    "batch_file": 2,
+    "ids": [
+      "xXUQ2SJ254c",
+      "nU09hxlkzwc"
+    ]
+  },
+  "tutorials": {
+    "new": 9,
+    "total": 73,
+    "batch_file": 9,
+    "ids": [
+      "yt_G5Zxg1yzsRI",
+      "x_2114507450728792180",
+      "x_2115498383771140295",
+      "x_2115554689232384045",
+      "yt_TdUb7IwdnHE",
+      "yt_hNlMQc55CtM",
+      "yt_UCG-l7XbAvA",
+      "yt_CWZMKvbYfDw",
+      "yt_ZcrIUE-RurU"
+    ]
+  },
+  "filmmakers": {
+    "new": 0,
+    "total": 79
+  },
+  "backup": "/workspace/moodboard_history/2026-10-29-v33",
+  "underfilled": {
+    "ig": "IG anonymous discovery login-walled; OG/meta returned no metrics; +0",
+    "x": "Hard floor reposts≥100; only 3 watchlist/keyword hits cleared; no padding",
+    "reddit": "score≥500 verified via arctic-shift; 6 cleared (aim 20 but floors+window)",
+    "youtube": "Upload in window + views≥50k; only 2 AI films cleared",
+    "tutorials": "Same publish window; craft-only no Hindi; 9 found (YT+X mix)"
+  },
+  "blocked_sources": [
+    "IG anon/OG login wall",
+    "Reddit live JSON",
+    "pullpush 429"
+  ]
+}

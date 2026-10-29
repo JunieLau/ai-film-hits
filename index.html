@@ -278,25 +278,25 @@
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
    Show above each platform grid. Keep bilingual, filmmaker-facing, short.
    Also keep whyZh/whyEn on every IG/X/Reddit/YouTube card. ===== */
-const IG_TREND_DATE = "2026-10-24 → 10-28";
-const IG_TREND_ZH = "补漏：Junie 点名 @thuggpapi Reel De5N_7sAFBK（10/25，4.69万赞 / 884评，播放登出不可见标 N/A）——此前未进候选池，非门槛刷掉；现已单条追加。高互动门槛不变。";
-const IG_TREND = "Miss fill: Junie pointed @thuggpapi Reel De5N_7sAFBK (Oct 25, 46.9K likes / 884 comments; views N/A logged-out) — never scraped, not culled; one-off append. High-engagement floors unchanged.";
+const IG_TREND_DATE = "2026-10-26 → 10-29";
+const IG_TREND_ZH = "窗口 10/26–29：IG 匿名抓取仍被登录墙挡住（OG/meta 无指标），本批 IG +0。绝不回填更早片子。X/Reddit/YT 窗内高互动已补。";
+const IG_TREND = "Window Oct 26–29: IG anonymous scrape still login-walled (no OG metrics); IG +0 this run. No pre-window padding. X/Reddit/YT in-window highs added.";
 
-const X_TREND_DATE = "2026-10-24 → 10-27";
-const X_TREND_ZH = "互动门槛：直播板仅保留转发≥100（本批藏 36 条低于门槛）。历史真爆款保留；四档排序不变。";
-const X_TREND = "Engagement floor: live board keeps reposts≥100 only (36 below-floor hidden). True historical hits stay; four sorts unchanged.";
+const X_TREND_DATE = "2026-10-26 → 10-29";
+const X_TREND_ZH = "窗口 10/26–29：watchlist+关键词扫到 @0xInk_ Scooby 致敬（138 转发）与 @HatimsShorts 两则高传播 AI 喜剧（1342/124 转发）。硬门槛转发≥100；未凑满 20 不降门槛。";
+const X_TREND = "Window Oct 26–29: watchlist+keyword hits — @0xInk_ Scooby tribute (138 RTs) and @HatimsShorts AI comedy pair (1342/124 RTs). Floor reposts≥100; under-filled on purpose.";
 
-const REDDIT_TREND_DATE = "2026-10-24 → 10-27";
-const REDDIT_TREND_ZH = "互动门槛抬高：直播板隐藏 soft / score<100（本批藏 28 条）。板上仅保留 score≥100 的真爆款；以后新加优先 score≥500。官方 JSON 仍 403。";
-const REDDIT_TREND = "Engagement floor raised: soft / score<100 hidden from live (28 culled this pass). Board keeps score≥100 hits only; future adds prefer ≥500. Official JSON still 403.";
+const REDDIT_TREND_DATE = "2026-10-26 → 10-29";
+const REDDIT_TREND_ZH = "窗口 10/26–29：arctic-shift 收 r/aivideo 真分数≥500 六条（King of Kings / Draconia / Wait and bleed 等）。无 soft/占位；官方 JSON 仍不可达。";
+const REDDIT_TREND = "Window Oct 26–29: arctic-shift r/aivideo verified score≥500 (+6: King of Kings, Draconia, Wait and bleed…). No soft/placeholder; live Reddit JSON still blocked.";
 
-const YT_TREND_DATE = "2026-10-24 → 10-27";
-const YT_TREND_ZH = "互动门槛：病毒页隐藏 views<10k（本批藏 8 条）。教程页不动。";
-const YT_TREND = "Engagement floor: viral tab hides views<10k (8 culled). Tutorials unchanged.";
+const YT_TREND_DATE = "2026-10-26 → 10-29";
+const YT_TREND_ZH = "窗口 10/26–29：只收上传日在窗内且播放≥5万的 AI 片。本批 +2（BOUNTY HUNTERS 16.5万 / Golden Swan 13.5万）。直播/综艺/近零播放已拒。";
+const YT_TREND = "Window Oct 26–29: AI films uploaded in-window with ≥50k views only. +2 (BOUNTY HUNTERS 165k / Golden Swan 135k). Livestreams/talk-shows/near-zero rejected.";
 
-const UPDATED = "Oct 28, 2026 04:03 CST";
-const UPDATED_ZH = "2026-10-28 04:03（北京时间）";
-const LATEST_BATCH = "2026-10-28b"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Oct 29, 2026 10:19 CST";
+const UPDATED_ZH = "2026-10-29 10:19（北京时间）";
+const LATEST_BATCH = "2026-10-29"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -1704,10 +1704,87 @@ const INSIGHTS = [
 ]
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
    cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
-const X_UPDATED = "Oct 27, 2026 18:19 CST";
-const X_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
+const X_UPDATED = "Oct 29, 2026 10:19 CST";
+const X_UPDATED_ZH = "2026-10-29 10:19（北京时间）";
 const X_POSTS = 
 [
+  {
+    "id": "2115402956317323575",
+    "handle": "0xInk_",
+    "followers": "213.0K",
+    "views": "36.7K",
+    "likes": "1.3K",
+    "reposts": "138",
+    "replies": "45",
+    "date": "Oct 28, 2026",
+    "url": "https://x.com/0xInk_/status/2115402956317323575",
+    "noteZh": "Tribute to Scooby Doo — Krea AI 致敬短片",
+    "note": "Tribute to Scooby Doo — made with @krea_ai",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Animation",
+      "Krea",
+      "Comedy"
+    ],
+    "whyZh": "Krea 角色表演连贯，Scooby 致敬节奏有剪辑感",
+    "whyEn": "Krea Scooby tribute — coherent character acting and edit rhythm",
+    "addedAt": "2026-10-29T10:13:40+08:00",
+    "batch": "2026-10-29",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115402493228462080/img/m6zhP9iNoAsCZD19.jpg",
+    "cover": "src/img/x_2115402956317323575.jpg"
+  },
+  {
+    "id": "2115101721793794224",
+    "handle": "HatimsShorts",
+    "followers": "5.1K",
+    "views": "889.4K",
+    "likes": "6.0K",
+    "reposts": "1342",
+    "replies": "506",
+    "date": "Oct 27, 2026",
+    "url": "https://x.com/HatimsShorts/status/2115101721793794224",
+    "noteZh": "Trump × Nicki Minaj 意外时刻 — AI 喜剧短片",
+    "note": "Donald Trump and Nicki Minaj share an unexpected moment (AI comedy)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Comedy",
+      "AI film",
+      "Viral"
+    ],
+    "whyZh": "高传播喜剧短片：角色互动与对白节奏抓人",
+    "whyEn": "Viral AI comedy — punchy character beats and dialogue timing",
+    "addedAt": "2026-10-29T10:13:40+08:00",
+    "batch": "2026-10-29",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115101470433374209/img/O_g_SB9rNTMK6fZ3.jpg",
+    "cover": "src/img/x_2115101721793794224.jpg"
+  },
+  {
+    "id": "2115200858287931508",
+    "handle": "HatimsShorts",
+    "followers": "5.1K",
+    "views": "57.1K",
+    "likes": "529",
+    "reposts": "124",
+    "replies": "43",
+    "date": "Oct 27, 2026",
+    "url": "https://x.com/HatimsShorts/status/2115200858287931508",
+    "noteZh": "Nicki 为 Trump 表演 — AI 搞笑续作",
+    "note": "Nicki Minaj special performance for Trump (AI, for fun)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Comedy",
+      "AI film"
+    ],
+    "whyZh": "同系列喜剧续作，表演夸张但镜头清楚",
+    "whyEn": "Follow-up AI comedy bit — broad performance, clear framing",
+    "addedAt": "2026-10-29T10:13:40+08:00",
+    "batch": "2026-10-29",
+    "preview_image_url": "https://pbs.twimg.com/media/HVqz92WXcAADE_N.jpg",
+    "cover": "src/img/x_2115200858287931508.jpg"
+  },
   {
     "id": "2114660446062199037",
     "handle": "jboogx_creative",
@@ -2904,12 +2981,138 @@ const X_INSIGHTS = [
   { tZh:"关键词会漏无 AI 文案的帖", t:"Keyword search misses caption-less AI", pZh:"本轮再次证明：不写 AI 的爆款只能靠创作者主页扫到（如概念广告级动作片）。", p:"Again: hits that never say “AI” only show up via creator sweeps (e.g. spec-ad action cuts)." },
   { tZh:"只追加、不覆盖", t:"Append-only — never overwrite", pZh:"Oct 23 批次卡片全部保留；指标可原地刷新，行不删除。", p:"Oct 23 rows all kept; metrics may refresh in place, rows never deleted." }
 ]
-const REDDIT_UPDATED = "Oct 27, 2026 18:19 CST";
-const REDDIT_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
-const REDDIT_NOTE_ZH = "窗口 10/24–10/27（北京时间），扫描 r/aivideo 等 AI 版块视频帖；Reddit 直连 403，数据来自 arctic-shift；分数为归档抓取时数字。";
-const REDDIT_NOTE = "Window Oct 24–27 (China time): AI-sub video posts; Reddit returns 403, data from arctic-shift; scores as captured by the archive.";
+const REDDIT_UPDATED = "Oct 29, 2026 10:19 CST";
+const REDDIT_UPDATED_ZH = "2026-10-29 10:19（北京时间）";
+const REDDIT_NOTE_ZH = "窗口 10/26–10/29（北京时间），扫描 r/aivideo 视频帖；Reddit 直连不可达，数据来自 arctic-shift；分数为归档抓取时数字。";
+const REDDIT_NOTE = "Window Oct 26–29 (China time): aivideo video posts; Reddit blocked, data from arctic-shift; scores as captured.";
 const REDDIT_POSTS = 
 [
+  {
+    "id": "1xf6ccf",
+    "sub": "aivideo",
+    "author": "Sourcecode12",
+    "score": "2453",
+    "comments": "160",
+    "date": "Oct 26, 2026",
+    "titleZh": "King of Kings",
+    "title": "King of Kings",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xf6ccf/king_of_kings/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xf6ccf.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "王者气质场面大、角色压迫感强",
+    "whyEn": "King-of-kings scale with strong presence and oppressive framing"
+  },
+  {
+    "id": "1xh1mj4",
+    "sub": "aivideo",
+    "author": "Orichalchem",
+    "score": "1638",
+    "comments": "166",
+    "date": "Oct 28, 2026",
+    "titleZh": "Draconia Malfoid Supremacy",
+    "title": "Draconia Malfoid Supremacy",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xh1mj4/draconia_malfoid_supremacy/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xh1mj4.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "龙裔角色设计夸张，表演与节奏有梗",
+    "whyEn": "Draconia character design pops; gag timing lands"
+  },
+  {
+    "id": "1xh9a9f",
+    "sub": "aivideo",
+    "author": "Mother-Pear-2392",
+    "score": "1406",
+    "comments": "304",
+    "date": "Oct 28, 2026",
+    "titleZh": "Wait and bleed (1971)",
+    "title": "Wait and bleed (1971)",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xh9a9f/wait_and_bleed_1971/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xh9a9f.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "复古摇滚造型统一，剪辑卡点狠",
+    "whyEn": "Period rock pastiche with tight edit hits"
+  },
+  {
+    "id": "1xgvzzu",
+    "sub": "aivideo",
+    "author": "LightningAce5467",
+    "score": "1356",
+    "comments": "56",
+    "date": "Oct 27, 2026",
+    "titleZh": "Was the $5 entry fee worth it??",
+    "title": "Was the $5 entry fee worth it??",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgvzzu/was_the_5_entry_fee_worth_it/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgvzzu.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "比赛切片节奏快，观众代入强",
+    "whyEn": "Contest cut with fast pacing and crowd energy"
+  },
+  {
+    "id": "1xgx2h4",
+    "sub": "aivideo",
+    "author": "pocketscientistron",
+    "score": "790",
+    "comments": "59",
+    "date": "Oct 28, 2026",
+    "titleZh": "How I think Tesla's flying car will be a",
+    "title": "How I think Tesla's flying car will be at launch (created with Seedance 2,0 through DavinciAI)",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xgx2h4/how_i_think_teslas_flying_car_will_be_at_launch/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xgx2h4.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "飞行汽车脑洞可视化清楚",
+    "whyEn": "Flying-car gag visualized with clear staging"
+  },
+  {
+    "id": "1xf8bqi",
+    "sub": "aivideo",
+    "author": "Fun_Dragonfly6967",
+    "score": "522",
+    "comments": "62",
+    "date": "Oct 26, 2026",
+    "titleZh": "The Daughter of the Sea | Buzubuzu 5, A ",
+    "title": "The Daughter of the Sea | Buzubuzu 5, A Dark Fantasy Series",
+    "url": "https://www.reddit.com/r/aivideo/comments/1xf8bqi/the_daughter_of_the_sea_buzubuzu_5_a_dark_fantasy/",
+    "flag": "New this update · Reddit official JSON blocked; arctic-shift mirror",
+    "flagZh": "本批新增 · Reddit 官方 JSON 不可达，经 arctic-shift 镜像",
+    "tags": [
+      "AI video"
+    ],
+    "cover": "src/img/rd_1xf8bqi.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "whyZh": "暗黑奇幻系列化，海之子氛围完整",
+    "whyEn": "Dark-fantasy series tone; Daughter of the Sea mood holds"
+  },
   {
     "id": "1xg349k",
     "sub": "aivideo",
@@ -4253,12 +4456,60 @@ const REDDIT_POSTS =
    Future batches: merge new hits; NEVER wipe YT_POSTS.
    Also refresh YT_TREND_ZH / YT_TREND each update, and keep whyZh/whyEn on every card.
    CANE MAN (20GbzQQyvsU, Sep 15) restored by request after the 09-20 date filter removed it. ===== */
-const YT_UPDATED = "Oct 27, 2026 18:19 CST";
-const YT_UPDATED_ZH = "2026-10-27 18:19（北京时间）";
+const YT_UPDATED = "Oct 29, 2026 10:19 CST";
+const YT_UPDATED_ZH = "2026-10-29 10:19（北京时间）";
 const YT_NOTE_ZH = "硬门槛：窗口内优先 ≥50 万播放；本批加入 Gossip Goblin 预告 + PolyFilms 新温情片，并移出未达标条目到归档（只叠加历史、直播榜变干净）。播放/点赞来自 YouTube 公开数据，无编造。";
 const YT_NOTE = "Hard floor: prefer ≥500K views in-window; this batch adds Gossip Goblin trailer + PolyFilms warm short, and moves below-bar rows to archive (append-only history, cleaner live board). Views/likes from public YouTube data — nothing invented.";
 const YT_POSTS = 
 [
+  {
+    "id": "xXUQ2SJ254c",
+    "channel": "VORON PICTURES",
+    "views": "165.3K",
+    "likes": "3.8K",
+    "comments": "207",
+    "date": "Oct 26, 2026",
+    "url": "https://www.youtube.com/watch?v=xXUQ2SJ254c",
+    "titleZh": "BOUNTY HUNTERS | Sci-Fi Western Short Film",
+    "title": "BOUNTY HUNTERS | Sci-Fi Western Short Film",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI film",
+      "Western",
+      "Sci-Fi"
+    ],
+    "whyZh": "科幻西部片气质完整，镜头语言干净",
+    "whyEn": "Sci-fi western with complete tone and clean camera language",
+    "cover": "src/img/yt_xXUQ2SJ254c.jpg",
+    "addedAt": "2026-10-29T10:13:40+08:00",
+    "batch": "2026-10-29",
+    "thumb": "https://i.ytimg.com/vi/xXUQ2SJ254c/maxresdefault.jpg"
+  },
+  {
+    "id": "nU09hxlkzwc",
+    "channel": "DD FILM AI",
+    "views": "135.2K",
+    "likes": "1.1K",
+    "comments": "68",
+    "date": "Oct 27, 2026",
+    "url": "https://www.youtube.com/watch?v=nU09hxlkzwc",
+    "titleZh": "The Golden Swan — Mocked Outcast Awakens Sacred Beauty",
+    "title": "The Golden Swan - Mocked Outcast Awakens Sacred Beauty - ENG SUB FULL MOVIES",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI film",
+      "Fantasy",
+      "Drama"
+    ],
+    "whyZh": "AI 奇幻长片：逆袭叙事完整、画面统一",
+    "whyEn": "AI fantasy featurette — complete underdog arc with unified look",
+    "cover": "src/img/yt_nU09hxlkzwc.jpg",
+    "addedAt": "2026-10-29T10:14:56+08:00",
+    "batch": "2026-10-29",
+    "thumb": "https://i.ytimg.com/vi/nU09hxlkzwc/maxresdefault.jpg"
+  },
   {
     "id": "NkJHeWh4z_M",
     "channel": "Rax Films ",
@@ -7863,14 +8114,251 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "Oct 25, 2026 04:30 CST";
-const TUT_UPDATED_ZH = "2026-10-25 04:30（北京时间）";
+const TUT_UPDATED = "Oct 29, 2026 10:19 CST";
+const TUT_UPDATED_ZH = "2026-10-29 10:19（北京时间）";
 const TUT_LATEST_BATCH = "2026-10-25b";
 const TREND_TUTORIAL_DATE = "2025-10 → 10-27 · 专业向 Pro craft";
 const TREND_TUTORIAL_ZH = "本批补 20 条专业向教程（YouTube 11 / X 5 / Reddit 4；已拒 Hindi）。热点：① FILM CRUX / Higgsfield / Runway 完整短片工作流；② venturetwins / Charaspower 参考一致性与一镜边界控制；③ Uncanny Harry / techhalla 导演调度与 3D 运动参考。拒绝“免费一键出片”入门软广。";
 const TREND_TUTORIAL = "20 pro craft tutorials (YouTube 11 / X 5 / Reddit 4; Hindi rejected). Hot threads: (1) FILM CRUX / Higgsfield / Runway full short workflows; (2) venturetwins / Charaspower ref consistency + one-take boundary control; (3) Uncanny Harry / techhalla directing + 3D motion refs. No beginner “free one-click” soft promo.";
 const TUTORIALS = 
 [
+  {
+    "id": "yt_G5Zxg1yzsRI",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=G5Zxg1yzsRI",
+    "creator": "Isa does AI",
+    "handle": "@isadoesai",
+    "title": "Stop Wasting Credits on Seedance 2.5, Do This Instead",
+    "titleZh": "Stop Wasting Credits on Seedance 2.5, Do",
+    "date": "Oct 26, 2026",
+    "duration": "8:01",
+    "views": "13.9K",
+    "likes": "0",
+    "comments": "12",
+    "viewsRaw": 13873,
+    "likesRaw": 0,
+    "commentsRaw": 12,
+    "cover": "src/img/tut_G5Zxg1yzsRI.jpg",
+    "tags": [
+      "完整流程",
+      "Seedance"
+    ],
+    "learnZh": "Seedance 2.5 省额度的实战流程",
+    "learnEn": "Seedance 2.5 credit-saving production workflow",
+    "addedAt": "2026-10-29T10:18:37+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:37+08:00"
+  },
+  {
+    "id": "x_2114507450728792180",
+    "platform": "X",
+    "url": "https://x.com/jerrod_lew/status/2114507450728792180",
+    "creator": "Jerrod Lew",
+    "handle": "@jerrod_lew",
+    "title": "Kling 4.0 video editing + Magnific — keep character & camera motion consistent",
+    "titleZh": "Kling 4.0 视频编辑：角色与运镜一致性",
+    "date": "Oct 26, 2026",
+    "duration": "",
+    "views": "3.2K",
+    "likes": "72",
+    "comments": "10",
+    "viewsRaw": 3209,
+    "likesRaw": 72,
+    "commentsRaw": 10,
+    "tags": [
+      "镜头语言",
+      "Kling"
+    ],
+    "learnZh": "Kling 4.0 编辑：加物体时锁定角色与运镜",
+    "learnEn": "Kling 4.0 edit — add objects while locking character and camera motion",
+    "addedAt": "2026-10-29T10:18:37+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:37+08:00",
+    "cover": "src/img/tut_x_2114507450728792180.jpg"
+  },
+  {
+    "id": "x_2115498383771140295",
+    "platform": "X",
+    "url": "https://x.com/rourke_heath/status/2115498383771140295",
+    "creator": "Rourke Heath",
+    "handle": "@rourke_heath",
+    "title": "Higgsfield MCP + Seedance 2.5 — recut one camera into multiple cinematic angles",
+    "titleZh": "Higgsfield MCP + Seedance：单机位拆多机位",
+    "date": "Oct 28, 2026",
+    "duration": "",
+    "views": "968",
+    "likes": "15",
+    "comments": "1",
+    "viewsRaw": 968,
+    "likesRaw": 15,
+    "commentsRaw": 1,
+    "tags": [
+      "镜头语言",
+      "Higgsfield"
+    ],
+    "learnZh": "单机位素材用 MCP+Seedance 重切多角度",
+    "learnEn": "Recut single-camera footage into multi-angle cinematic coverage",
+    "addedAt": "2026-10-29T10:18:37+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:37+08:00",
+    "cover": "src/img/tut_x_2115498383771140295.jpg"
+  },
+  {
+    "id": "x_2115554689232384045",
+    "platform": "X",
+    "url": "https://x.com/jerrod_lew/status/2115554689232384045",
+    "creator": "Jerrod Lew",
+    "handle": "@jerrod_lew",
+    "title": "Magnific Move — add graphics/text/transitions to images and videos",
+    "titleZh": "Magnific Move：图文动效与转场教程",
+    "date": "Oct 28, 2026",
+    "duration": "",
+    "views": "1.4K",
+    "likes": "20",
+    "comments": "3",
+    "viewsRaw": 1362,
+    "likesRaw": 20,
+    "commentsRaw": 3,
+    "tags": [
+      "完整流程"
+    ],
+    "learnZh": "Magnific Move 品牌套件与转场合成",
+    "learnEn": "Magnific Move for branded graphics, text, and transitions",
+    "addedAt": "2026-10-29T10:18:37+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:37+08:00",
+    "cover": "src/img/tut_x_2115554689232384045.jpg"
+  },
+  {
+    "id": "yt_TdUb7IwdnHE",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=TdUb7IwdnHE",
+    "creator": "AI News",
+    "handle": "@AINews",
+    "title": "How to Direct a 30-Second AI Video Scene With Kling 4.0",
+    "titleZh": "How to Direct a 30-Second AI Video Scene",
+    "date": "Oct 27, 2026",
+    "duration": "6:02",
+    "views": "1.2K",
+    "likes": "20",
+    "comments": "2",
+    "viewsRaw": 1168,
+    "likesRaw": 20,
+    "commentsRaw": 2,
+    "cover": "src/img/tut_TdUb7IwdnHE.jpg",
+    "tags": [
+      "镜头语言"
+    ],
+    "learnZh": "Kling 4.0 三十秒场景调度",
+    "learnEn": "Direct a 30s scene with Kling 4.0 camera intent",
+    "addedAt": "2026-10-29T10:18:58+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:58+08:00"
+  },
+  {
+    "id": "yt_hNlMQc55CtM",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=hNlMQc55CtM",
+    "creator": "fal",
+    "handle": "@fal",
+    "title": "GPT-6.1 Terra | Blender 3D to Seedance 2.5 Cinematic Test",
+    "titleZh": "GPT-6.1 Terra | Blender 3D to Seedance 2",
+    "date": "Oct 26, 2026",
+    "duration": "7:52",
+    "views": "15.0K",
+    "likes": "186",
+    "comments": "21",
+    "viewsRaw": 15043,
+    "likesRaw": 186,
+    "commentsRaw": 21,
+    "cover": "src/img/tut_hNlMQc55CtM.jpg",
+    "tags": [
+      "完整流程"
+    ],
+    "learnZh": "Blender→Seedance 电影级测试流程",
+    "learnEn": "Blender 3D to Seedance 2.5 cinematic pipeline test",
+    "addedAt": "2026-10-29T10:18:58+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:58+08:00"
+  },
+  {
+    "id": "yt_UCG-l7XbAvA",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=UCG-l7XbAvA",
+    "creator": "Josh Pocock",
+    "handle": "@JoshPocock",
+    "title": "How I Make Realistic AI Videos with Kling 4.0 (Free Skill)",
+    "titleZh": "How I Make Realistic AI Videos with Klin",
+    "date": "Oct 28, 2026",
+    "duration": "12:46",
+    "views": "385",
+    "likes": "7",
+    "comments": "1",
+    "viewsRaw": 385,
+    "likesRaw": 7,
+    "commentsRaw": 1,
+    "cover": "src/img/tut_UCG-l7XbAvA.jpg",
+    "tags": [
+      "Kling"
+    ],
+    "learnZh": "Kling 4.0 写实短片实操",
+    "learnEn": "Realistic AI videos with Kling 4.0 (free skill)",
+    "addedAt": "2026-10-29T10:18:58+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:58+08:00"
+  },
+  {
+    "id": "yt_CWZMKvbYfDw",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=CWZMKvbYfDw",
+    "creator": "Portal Seven",
+    "handle": "@PortalSeven",
+    "title": "How to Create Cinematic AI Videos with Kling 4.0 on JXP",
+    "titleZh": "How to Create Cinematic AI Videos with K",
+    "date": "Oct 26, 2026",
+    "duration": "7:34",
+    "views": "444",
+    "likes": "33",
+    "comments": "19",
+    "viewsRaw": 444,
+    "likesRaw": 33,
+    "commentsRaw": 19,
+    "cover": "src/img/tut_CWZMKvbYfDw.jpg",
+    "tags": [
+      "镜头语言"
+    ],
+    "learnZh": "JXP 上用 Kling 4.0 做电影感",
+    "learnEn": "Cinematic AI videos with Kling 4.0 on JXP",
+    "addedAt": "2026-10-29T10:18:58+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:58+08:00"
+  },
+  {
+    "id": "yt_ZcrIUE-RurU",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=ZcrIUE-RurU",
+    "creator": "NitMonk",
+    "handle": "@NitMonk",
+    "title": "Higgsfield Got INSANE With Kling 4.0",
+    "titleZh": "Higgsfield Got INSANE With Kling 4.0",
+    "date": "Oct 26, 2026",
+    "duration": "8:12",
+    "views": "494",
+    "likes": "5",
+    "comments": "1",
+    "viewsRaw": 494,
+    "likesRaw": 5,
+    "commentsRaw": 1,
+    "cover": "src/img/tut_ZcrIUE-RurU.jpg",
+    "tags": [
+      "Higgsfield"
+    ],
+    "learnZh": "Higgsfield × Kling 4.0 能力演示",
+    "learnEn": "Higgsfield + Kling 4.0 capability walkthrough",
+    "addedAt": "2026-10-29T10:18:58+08:00",
+    "batch": "2026-10-29",
+    "metricsAt": "2026-10-29T10:18:58+08:00"
+  },
   {
     "id": "yt_c8huoAtXGew",
     "platform": "YouTube",
