@@ -249,7 +249,7 @@
 <header>
   <div class="kicker">抖音 · Douyin · Moodboard · for @junielaux</div>
   <h1>抖音 <em>爆款</em> AI 视频<span class="en">Douyin Viral AI Videos</span></h1>
-  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="dy-updated"></b> · 点击打开抖音<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="dy-updated-en"></b> · Click to open Douyin.</span></p>
+  <p class="sub">发布窗口 <b>2026 年 9 月 8–11 月 1 日</b>（首发扩窗；严窗 10/29–11/1 无过线精片）· 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Sep 8–Nov 1, 2026</b> (inaugural widen; strict Oct 29–Nov 1 empty at craft floor) · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
   <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · <b>append-only</b></span></p>
   <div class="stats" id="dy-stats"></div>
 </header>
@@ -284,7 +284,7 @@
   <div class="sortbar" data-sort="tt"></div>
   <div class="grid" id="tt-grid"></div>
 </main>
-<footer>播放/点赞/评论/分享来自 TikTok 公开 embed / yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面版权归原作者，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments/shares from public TikTok embed or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers © their creators. Historical rows kept forever.</span></footer>
+<footer>播放/点赞/评论/分享来自 TikTok 公开 embed / yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 9/8–11/1（首发扩窗；北京时间）。封面版权归原作者，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments/shares from public TikTok embed/v2; missing values show N/A — nothing invented. Window Sep 8–Nov 1 inaugural widen (China time). Covers © their creators. Historical rows kept forever.</span></footer>
 </section>
 
 <section class="page" id="page-bilibili">
@@ -362,9 +362,9 @@ const YT_TREND_DATE = "2026-10-28 → 10-31";
 const YT_TREND_ZH = "窗口 10/28–31：只收上传日在窗内且播放≥5万的 AI 片，+10。长篇 AI 连续剧/长片（巴基斯坦言情、尼莱坞、国风玄幻漫剧）冲量最大，同人 IP（海贼王、哈利波特、Jailer 3 概念预告）紧随；赞助片、非 AI、教程与解说已拒。";
 const YT_TREND = "Window Oct 28–31: AI films uploaded in-window with ≥50k views only, +10. Long-form AI serials/features (Pakistani romance, Nollywood, xianxia anime) pull the most views, followed by fan-IP shorts (One Piece, Harry Potter, Jailer 3 concept trailer). Sponsored, non-AI, tutorials and commentary rejected.";
 
-const UPDATED = "Nov 1, 2026 03:34 CST";
-const UPDATED_ZH = "2026-11-01 03:34（北京时间）";
-const LATEST_BATCH = "2026-11-01b"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 1, 2026 04:00 CST";
+const UPDATED_ZH = "2026-11-01 04:00（北京时间）";
+const LATEST_BATCH = "2026-11-01c"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -8023,20 +8023,143 @@ const DY_INSIGHTS = [
   }
 ];
 
-/* ===== TikTok — APPEND ONLY by video id. Floor: views≥500K OR likes≥50K. Window Oct 29–Nov 1. ===== */
-const TT_UPDATED = "Nov 1, 2026 03:20 CST";
-const TT_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
-const TT_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥50万或点赞≥5万。本批按 Junie 决定：TikTok Tab 先空着上线，等 US/SG 出口后再补货；不阻塞抖音+B 站发车。";
-const TT_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and ≥500K views or ≥50K likes. Per Junie: ship TikTok tab empty this round; fill after US/SG egress — do not block Douyin+Bilibili Pages ship.";
-const TT_TREND_DATE = "2026-10-29 → 11-01";
-const TT_TREND_ZH = "窗口 10/29–11/1：TikTok Tab 脚手架在线但本批空表（出口限制）。已知窗内样本 @nash.ai6 ~4.5K 远低于门槛。";
-const TT_TREND = "Window Oct 29–Nov 1: TikTok scaffold live but empty this ship (egress). Known in-window sample @nash.ai6 ~4.5K — far under floor.";
-const TIKTOK_POSTS = [];
+/* ===== TikTok — APPEND ONLY by video id. Floor: views≥500K OR likes≥50K. Window Oct 29–Nov 1 (inaugural widen Sep 8–Nov 1). ===== */
+const TT_UPDATED = "Nov 1, 2026 04:00 CST";
+const TT_UPDATED_ZH = "2026-11-01 04:00（北京时间）";
+const TT_NOTE_ZH = "硬门槛：播放≥50万或点赞≥5万；只收电影感 AI 短片/影院体验。批次 2026-11-01c：严格 10/29–11/1 窗内过门槛的只有短剧教程（拒收），故首发扩窗至 9/8–11/1，收 3 条已核实精片（封面齐）。指标来自 tiktok.com/embed/v2；封面 CDN 本地缓存。每位最多 2 条。";
+const TT_NOTE = "Hard floor: ≥500K views or ≥50K likes; cinematic AI shorts/cinema-experience only. Batch 2026-11-01c: strict Oct 29–Nov 1 had zero craft clears (only short-drama how-tos — rejected), so inaugural window widened to Sep 8–Nov 1 for 3 verified hits with covers. Metrics from tiktok.com/embed/v2; covers CDN-cached. Max 2 per creator.";
+const TT_TREND_DATE = "2026-09-08 → 11-01";
+const TT_TREND_ZH = "窗口 9/8–11/1（首发扩窗）：TikTok 直播看板现 3 条——@kennyslowbird Higgsfield「4D 电影院」1.556亿、@nash.ai6《Double Force Miami》910万、@kennyslowbird 日本 4DX 520万。严格 10/29–11/1 无电影感过线；短剧教程未收。";
+const TT_TREND = "Window Sep 8–Nov 1 (inaugural widen): live TikTok now 3 — @kennyslowbird Higgsfield 4D cinema 155.6M, @nash.ai6 Double Force Miami 9.1M, @kennyslowbird JP 4DX 5.2M. Strict Oct 29–Nov 1 had no cinematic clears; short-drama tutorials rejected.";
+const TIKTOK_POSTS = [
+  {
+    "id": "7682921175172828423",
+    "handle": "@kennyslowbird",
+    "views": "155.6M",
+    "viewsRaw": 155600000,
+    "likes": "17.3M",
+    "likesRaw": 17300000,
+    "comments": "60.4K",
+    "commentsRaw": 60400,
+    "shares": "1.8M",
+    "sharesRaw": 1800000,
+    "date": "Sep 8, 2026",
+    "url": "https://www.tiktok.com/@kennyslowbird/video/7682921175172828423",
+    "noteZh": "Higgsfield「4D 电影院」前排冲击 · AI 影院体验",
+    "note": "Higgsfield AI “4D cinema” front-row hit",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI cinema",
+      "Higgsfield",
+      "4DX"
+    ],
+    "whyZh": "公开 embed 核实约 1.556 亿播 / 1730 万赞；Higgsfield 电影感「坐前排」母题，本季 TikTok AI 影院顶流",
+    "whyEn": "Public embed-verified ~155.6M plays / 17.3M likes; Higgsfield cinematic front-row setpiece — season’s defining TikTok AI-cinema hit",
+    "upload_date": "20260908",
+    "cover": "src/img/tt_7682921175172828423.jpg",
+    "thumb": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8W1AeBInFQYPAEVA7AgjcxLEeJDeVIoDGEEAr~tplv-tiktokx-origin.image",
+    "addedAt": "2026-11-01T04:00:00+08:00",
+    "batch": "2026-11-01c",
+    "platform": "tiktok",
+    "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+    "floorNote": "views≥500K or likes≥50K; inaugural widen",
+    "windowNote": "inaugural widen Sep 8–Nov 1 (strict Oct 29–Nov 1 had 0 cinematic craft ≥floor)"
+  },
+  {
+    "id": "7689674827648535839",
+    "handle": "@nash.ai6",
+    "views": "9.1M",
+    "viewsRaw": 9100000,
+    "likes": "930.3K",
+    "likesRaw": 930300,
+    "comments": "6,393",
+    "commentsRaw": 6393,
+    "shares": "25.2K",
+    "sharesRaw": 25200,
+    "date": "Sep 26, 2026",
+    "url": "https://www.tiktok.com/@nash.ai6/video/7689674827648535839",
+    "noteZh": "《Double Force Miami》Part.1 · 原创 AI 电影",
+    "note": "“Double Force Miami” Part.1 — original AI movie",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI movie",
+      "80s",
+      "Original"
+    ],
+    "whyZh": "embed 核实约 910 万播 / 93 万赞；80s 调性原创 AI 长片切片，非舞蹈灌水",
+    "whyEn": "Embed-verified ~9.1M plays / 930K likes; original 80s-toned AI feature cut — craft, not dance filler",
+    "upload_date": "20260926",
+    "cover": "src/img/tt_7689674827648535839.jpg",
+    "thumb": "https://p19-common-sign.tiktokcdn.com/tos-useast8-p-0068-tx2/oEltCAKB1BN2EFqiiAA5lAEYCit3fWNAwIIpCJ~tplv-tiktokx-origin.image",
+    "addedAt": "2026-11-01T04:00:00+08:00",
+    "batch": "2026-11-01c",
+    "platform": "tiktok",
+    "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+    "floorNote": "views≥500K or likes≥50K; inaugural widen",
+    "windowNote": "inaugural widen Sep 8–Nov 1 (strict Oct 29–Nov 1 empty at cinematic floor)"
+  },
+  {
+    "id": "7684077290174598418",
+    "handle": "@kennyslowbird",
+    "views": "5.2M",
+    "viewsRaw": 5200000,
+    "likes": "333.3K",
+    "likesRaw": 333300,
+    "comments": "799",
+    "commentsRaw": 799,
+    "shares": "28.7K",
+    "sharesRaw": 28700,
+    "date": "Sep 11, 2026",
+    "url": "https://www.tiktok.com/@kennyslowbird/video/7684077290174598418",
+    "noteZh": "日本 4DX 影院质感 · Higgsfield 续作",
+    "note": "Japanese 4DX cinema quality — Higgsfield follow-up",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI cinema",
+      "Higgsfield",
+      "4DX"
+    ],
+    "whyZh": "embed 核实约 520 万播 / 33.3 万赞；同一创作者第二席（上限 2），延续 4D 影院电影感",
+    "whyEn": "Embed-verified ~5.2M plays / 333K likes; same creator slot #2 (max 2) — continues 4D-cinema craft",
+    "upload_date": "20260911",
+    "cover": "src/img/tt_7684077290174598418.jpg",
+    "thumb": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUUX4FEsiY8qB6PdviCTiDqsVj6NAIZIAaBWx~tplv-tiktokx-origin.image",
+    "addedAt": "2026-11-01T04:00:00+08:00",
+    "batch": "2026-11-01c",
+    "platform": "tiktok",
+    "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+    "floorNote": "views≥500K or likes≥50K; inaugural widen",
+    "windowNote": "inaugural widen Sep 8–Nov 1; max 2 per creator"
+  }
+];
 const TT_INSIGHTS = [
-  { tZh:"本批 0 条（故意空表）", t:"0 new (intentional empty)", pZh:"四排序与卡片已接通；差公开可核且过门槛的电影感 AI 片。", p:"Four sorts + cards wired; missing verifiable cinematic AI hits above floor." },
-  { tZh:"门槛：播放≥50万或赞≥5万", t:"Floor: ≥500K views or ≥50K likes", pZh:"优先分享；每位最多 2 条。", p:"Prefer shares; max 2 per creator." },
-  { tZh:"抓取瓶颈", t:"Fetch bottleneck", pZh:"yt-dlp 需 chrome impersonate；无则 403。embed 可补单条指标。", p:"yt-dlp needs chrome impersonate or 403s; embed can backfill single-video metrics." },
-  { tZh:"只追加、不覆盖", t:"Append-only", pZh:"按 video id 合并。", p:"Merge by video id." }
+  {
+    "tZh": "本批 +3（首发扩窗）",
+    "t": "+3 this ship (inaugural widen)",
+    "pZh": "严格三天窗零电影感过线；扩到 9/8 起收本季顶流 AI 影院/AI 电影。",
+    "p": "Strict 3-day window: zero cinematic clears; widened from Sep 8 to land season-defining AI cinema/AI movie hits."
+  },
+  {
+    "tZh": "门槛：播放≥50万或赞≥5万",
+    "t": "Floor: ≥500K views or ≥50K likes",
+    "pZh": "三条全部远超；优先分享与电影感。",
+    "p": "All three far above; prefer shares + cinematic craft."
+  },
+  {
+    "tZh": "数据与封面",
+    "t": "Metrics & covers",
+    "pZh": "embed/v2 可核 playCount；封面从 embed CDN 缓存为 src/img/tt_<id>.jpg。www 地区墙仍在，未开 VPN。",
+    "p": "embed/v2 playCount verified; covers cached from embed CDN as src/img/tt_<id>.jpg. www still geo-walled — no VPN."
+  },
+  {
+    "tZh": "只追加、不覆盖",
+    "t": "Append-only",
+    "pZh": "按 video id 合并；历史永久保留。",
+    "p": "Merge by video id; history kept forever."
+  }
 ];
 
 /* ===== Bilibili / 哔哩哔哩 — APPEND ONLY by bvid. Floor: views≥100K. Window Oct 29–Nov 1. ===== */

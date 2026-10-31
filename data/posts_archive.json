@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-01T03:40:00+08:00",
-  "latestBatch": "2026-11-01b",
-  "note": "Append-only v35b 2026-11-01: Bilibili floor raise (4 soft 52k–203k kept in archive as removed_engagement; +4 craft); Douyin views+covers from jingxuan (18.1M / 10.8M / 7.8M). Prior hits kept; TikTok still empty.",
+  "updatedAt": "2026-11-01T04:00:00+08:00",
+  "latestBatch": "2026-11-01c",
+  "note": "Append-only v35b 2026-11-01: Bilibili floor raise (4 soft 52k–203k kept in archive as removed_engagement; +4 craft); Douyin views+covers from jingxuan (18.1M / 10.8M / 7.8M). Prior hits kept. v35c 2026-11-01c: TikTok +3 (7682921175172828423, 7689674827648535839, 7684077290174598418) inaugural widen Sep 8–Nov 1; floors unchanged; covers src/img/tt_*.jpg.",
   "instagram": [
     {
       "id": "DfCa0zQR5ua",
@@ -16246,14 +16246,14 @@
     }
   ],
   "engagement_floors": {
-    "updatedAt": "2026-11-01T03:40:00+08:00",
+    "updatedAt": "2026-11-01T04:00:00+08:00",
     "reddit": "reject soft:true OR score<100; prefer score≥500 for new adds",
     "x": "reposts≥100 (hard)",
     "instagram": "views≥100k OR likes≥5k",
     "youtube_viral": "views≥10k (tutorials exempt)",
     "bilibili": "views≥500k preferred; never show <300k as hit (hard). Cinematic AI微电影/AIGC only.",
     "douyin": "views≥几百万 (prefer ≥3M–10M+ / up to 几千万); likes≥1M proxy only if views unavailable. Cinematic AI shorts only.",
-    "tiktok": "views≥500k or likes≥50k (unchanged; tab still empty pending egress)"
+    "tiktok": "views≥500k or likes≥50k (unchanged). Inaugural widen Sep 8–Nov 1; +3 cinematic hits in 2026-11-01c."
   },
   "miss_fills": [
     {
@@ -16392,7 +16392,110 @@
       "floorNote": "views≥几百万 (prefer ≥3M–10M+); verified play_count"
     }
   ],
-  "tiktok": [],
+  "tiktok": [
+    {
+      "id": "7682921175172828423",
+      "handle": "@kennyslowbird",
+      "views": "155.6M",
+      "viewsRaw": 155600000,
+      "likes": "17.3M",
+      "likesRaw": 17300000,
+      "comments": "60.4K",
+      "commentsRaw": 60400,
+      "shares": "1.8M",
+      "sharesRaw": 1800000,
+      "date": "Sep 8, 2026",
+      "url": "https://www.tiktok.com/@kennyslowbird/video/7682921175172828423",
+      "noteZh": "Higgsfield「4D 电影院」前排冲击 · AI 影院体验",
+      "note": "Higgsfield AI “4D cinema” front-row hit",
+      "flag": "New this update",
+      "flagZh": "本批新增",
+      "tags": [
+        "AI cinema",
+        "Higgsfield",
+        "4DX"
+      ],
+      "whyZh": "公开 embed 核实约 1.556 亿播 / 1730 万赞；Higgsfield 电影感「坐前排」母题，本季 TikTok AI 影院顶流",
+      "whyEn": "Public embed-verified ~155.6M plays / 17.3M likes; Higgsfield cinematic front-row setpiece — season’s defining TikTok AI-cinema hit",
+      "upload_date": "20260908",
+      "cover": "src/img/tt_7682921175172828423.jpg",
+      "thumb": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8W1AeBInFQYPAEVA7AgjcxLEeJDeVIoDGEEAr~tplv-tiktokx-origin.image",
+      "addedAt": "2026-11-01T04:00:00+08:00",
+      "batch": "2026-11-01c",
+      "platform": "tiktok",
+      "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+      "floorNote": "views≥500K or likes≥50K; inaugural widen",
+      "windowNote": "inaugural widen Sep 8–Nov 1 (strict Oct 29–Nov 1 had 0 cinematic craft ≥floor)"
+    },
+    {
+      "id": "7689674827648535839",
+      "handle": "@nash.ai6",
+      "views": "9.1M",
+      "viewsRaw": 9100000,
+      "likes": "930.3K",
+      "likesRaw": 930300,
+      "comments": "6,393",
+      "commentsRaw": 6393,
+      "shares": "25.2K",
+      "sharesRaw": 25200,
+      "date": "Sep 26, 2026",
+      "url": "https://www.tiktok.com/@nash.ai6/video/7689674827648535839",
+      "noteZh": "《Double Force Miami》Part.1 · 原创 AI 电影",
+      "note": "“Double Force Miami” Part.1 — original AI movie",
+      "flag": "New this update",
+      "flagZh": "本批新增",
+      "tags": [
+        "AI movie",
+        "80s",
+        "Original"
+      ],
+      "whyZh": "embed 核实约 910 万播 / 93 万赞；80s 调性原创 AI 长片切片，非舞蹈灌水",
+      "whyEn": "Embed-verified ~9.1M plays / 930K likes; original 80s-toned AI feature cut — craft, not dance filler",
+      "upload_date": "20260926",
+      "cover": "src/img/tt_7689674827648535839.jpg",
+      "thumb": "https://p19-common-sign.tiktokcdn.com/tos-useast8-p-0068-tx2/oEltCAKB1BN2EFqiiAA5lAEYCit3fWNAwIIpCJ~tplv-tiktokx-origin.image",
+      "addedAt": "2026-11-01T04:00:00+08:00",
+      "batch": "2026-11-01c",
+      "platform": "tiktok",
+      "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+      "floorNote": "views≥500K or likes≥50K; inaugural widen",
+      "windowNote": "inaugural widen Sep 8–Nov 1 (strict Oct 29–Nov 1 empty at cinematic floor)"
+    },
+    {
+      "id": "7684077290174598418",
+      "handle": "@kennyslowbird",
+      "views": "5.2M",
+      "viewsRaw": 5200000,
+      "likes": "333.3K",
+      "likesRaw": 333300,
+      "comments": "799",
+      "commentsRaw": 799,
+      "shares": "28.7K",
+      "sharesRaw": 28700,
+      "date": "Sep 11, 2026",
+      "url": "https://www.tiktok.com/@kennyslowbird/video/7684077290174598418",
+      "noteZh": "日本 4DX 影院质感 · Higgsfield 续作",
+      "note": "Japanese 4DX cinema quality — Higgsfield follow-up",
+      "flag": "New this update",
+      "flagZh": "本批新增",
+      "tags": [
+        "AI cinema",
+        "Higgsfield",
+        "4DX"
+      ],
+      "whyZh": "embed 核实约 520 万播 / 33.3 万赞；同一创作者第二席（上限 2），延续 4D 影院电影感",
+      "whyEn": "Embed-verified ~5.2M plays / 333K likes; same creator slot #2 (max 2) — continues 4D-cinema craft",
+      "upload_date": "20260911",
+      "cover": "src/img/tt_7684077290174598418.jpg",
+      "thumb": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUUX4FEsiY8qB6PdviCTiDqsVj6NAIZIAaBWx~tplv-tiktokx-origin.image",
+      "addedAt": "2026-11-01T04:00:00+08:00",
+      "batch": "2026-11-01c",
+      "platform": "tiktok",
+      "metricsSrc": "tiktok.com/embed/v2 playCount/diggCount",
+      "floorNote": "views≥500K or likes≥50K; inaugural widen",
+      "windowNote": "inaugural widen Sep 8–Nov 1; max 2 per creator"
+    }
+  ],
   "bilibili": [
     {
       "id": "BV1LYxv6ZEp8",

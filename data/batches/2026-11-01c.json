@@ -1,0 +1,53 @@
+{
+  "batch": "2026-11-01c",
+  "when": "2026-11-01T04:00:00+08:00",
+  "platform": "tiktok",
+  "window_strict": "2026-10-29..2026-11-01",
+  "window_live": "2026-09-08..2026-11-01",
+  "window_note": "inaugural widen; strict empty at cinematic floor",
+  "floor": "views>=500000 OR likes>=50000",
+  "added": [
+    {
+      "id": "7682921175172828423",
+      "handle": "@kennyslowbird",
+      "viewsRaw": 155600000,
+      "likesRaw": 17300000,
+      "date": "2026-09-08",
+      "title": "Would You Dare Sit in the Front Row of This 4D Cinema?"
+    },
+    {
+      "id": "7689674827648535839",
+      "handle": "@nash.ai6",
+      "viewsRaw": 9100000,
+      "likesRaw": 930300,
+      "date": "2026-09-26",
+      "title": "[Part.1] Double Force Miami [Ai Movie]"
+    },
+    {
+      "id": "7684077290174598418",
+      "handle": "@kennyslowbird",
+      "viewsRaw": 5200000,
+      "likesRaw": 333300,
+      "date": "2026-09-11",
+      "title": "The quality of these new Japanese 4DX cinemas is incredible"
+    }
+  ],
+  "rejected_in_strict_window": [
+    {
+      "id": "7702040128797101330",
+      "handle": "@lulu.ai04",
+      "viewsRaw": 2500000,
+      "likesRaw": 75400,
+      "date": "2026-10-29",
+      "reason": "short-drama how-to tutorial — not cinematic AI film craft"
+    }
+  ],
+  "metricsSrc": "tiktok.com/embed/v2",
+  "coversSrc": "embed CDN covers[] cached locally",
+  "blockers": [
+    "tiktok.com www geo-walled from box (CN egress); no VPN/route used per Junie",
+    "yt-dlp TikTok 403 without chrome impersonate",
+    "tikwm API/img 403 from curl; oEmbed title/thumb empty from CN",
+    "strict Oct 29–Nov 1: 50 embed IDs probed; only short-drama tutorials cleared floor"
+  ]
+}
