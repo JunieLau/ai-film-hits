@@ -341,7 +341,7 @@
    Set addedAt (ISO Asia/Shanghai) + batch on every new row; UI badges "本批新增" when post.batch === LATEST_BATCH.
    Also append JSON under /workspace/moodboard_history/posts_archive.json after each refresh.
    EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND / DY_TREND / TT_TREND / BL_TREND blurbs; keep whyZh/whyEn on every video card.
-   Covers: img/<id>.jpg · img/x_<id>.jpg · img/rd_<id>.jpg · img/yt_<id>.jpg · img/dy_<id>.jpg · img/tt_<id>.jpg · img/bl_<id>.jpg; cover:null = placeholder. ===== */
+   Covers: src/img/<id>.jpg · src/img/x_<id>.jpg · src/img/rd_<id>.jpg · src/img/yt_<id>.jpg · src/img/dy_<id>.jpg · src/img/tt_<id>.jpg · src/img/bl_<id>.jpg; cover:null = placeholder. ===== */
 
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
    Show above each platform grid. Keep bilingual, filmmaker-facing, short.
@@ -362,9 +362,9 @@ const YT_TREND_DATE = "2026-10-28 → 10-31";
 const YT_TREND_ZH = "窗口 10/28–31：只收上传日在窗内且播放≥5万的 AI 片，+10。长篇 AI 连续剧/长片（巴基斯坦言情、尼莱坞、国风玄幻漫剧）冲量最大，同人 IP（海贼王、哈利波特、Jailer 3 概念预告）紧随；赞助片、非 AI、教程与解说已拒。";
 const YT_TREND = "Window Oct 28–31: AI films uploaded in-window with ≥50k views only, +10. Long-form AI serials/features (Pakistani romance, Nollywood, xianxia anime) pull the most views, followed by fan-IP shorts (One Piece, Harry Potter, Jailer 3 concept trailer). Sponsored, non-AI, tutorials and commentary rejected.";
 
-const UPDATED = "Nov 1, 2026 03:20 CST";
-const UPDATED_ZH = "2026-11-01 03:20（北京时间）";
-const LATEST_BATCH = "2026-11-01"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 1, 2026 03:34 CST";
+const UPDATED_ZH = "2026-11-01 03:34（北京时间）";
+const LATEST_BATCH = "2026-11-01b"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -2212,7 +2212,7 @@ const INSIGHTS = [
   { tZh:"多样性约束", t:"Diversity guardrail", pZh:"本批覆盖喜剧、萌宠、科幻/电影感、角色短剧；避免单账号霸榜。", p:"Batch mixes comedy, pets, cinematic/sci-fi, and character skits — no single account dominance." }
 ]
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
-   cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
+   cover = src/img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
 const X_UPDATED = "Oct 31, 2026 10:28 CST";
 const X_UPDATED_ZH = "2026-10-31 10:28（北京时间）";
 const X_POSTS = 
@@ -7889,21 +7889,21 @@ const YT_INSIGHTS = [
 
 
 /* ===== Douyin / 抖音 — APPEND ONLY by video id. Floor: views≥1M OR likes≥100K. Window Oct 29–Nov 1. ===== */
-const DY_UPDATED = "Nov 1, 2026 03:20 CST";
-const DY_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
-const DY_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥100万或点赞≥10万；电影感 AI 短片/微电影。本批收录 3 条过点赞门槛的 AI 影视向作品（网页端无公开播放数，以点赞为主指标）。封面需 cookie/yt-dlp，本批占位。TikTok 仍空表。";
-const DY_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and ≥1M views or ≥100K likes; cinematic AI shorts/microfilms. Seeded 3 AI-film clears on likes (web views not public — likes primary). Covers need cookies/yt-dlp; placeholder this ship. TikTok still empty.";
+const DY_UPDATED = "Nov 1, 2026 03:34 CST";
+const DY_UPDATED_ZH = "2026-11-01 03:34（北京时间）";
+const DY_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥几百万（优先 ≥300万–1000万+；可到几千万）。只收电影感 AI 短片/微电影。播放来自 jingxuan.douyin.com play_count；封面 CDN 本地缓存。本批 3 条已核实（1810万/1080万/783万）并补齐封面。无播放时才用点赞≥100万作代理。";
+const DY_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and views ≥ millions (prefer ≥3M–10M+; tens of millions OK). Cinematic AI shorts/microfilms only. Metrics from jingxuan.douyin.com play_count; covers from CDN. This ship: 3 verified (18.1M / 10.8M / 7.8M) with covers filled. Likes≥1M proxy only if views unavailable.";
 const DY_TREND_DATE = "2026-10-29 → 11-01";
-const DY_TREND_ZH = "窗口 10/29–11/1：抖音 Tab 首批上线 +3。即梦亲情短片《成人礼》点赞 81.5 万领跑；真案改编《硫酸洗头案》与一人长片《听海者》同窗过门槛。网页无播放，排序以点赞/分享为主。";
-const DY_TREND = "Window Oct 29–Nov 1: Douyin tab’s first seed (+3). Jimeng filial short “Coming-of-Age” leads at 815K likes; true-crime ep + solo feature 《听海者》 also clear. No public web views — sort by likes/shares.";
+const DY_TREND_ZH = "窗口 10/29–11/1：抖音门槛上调到「几百万播放」。原 3 条 AI 影视种子经 jingxuan 核实播放——《成人礼》1810万、《硫酸洗头案》1080万、《听海者》783万——全部过线并补封面。特斯拉/奥迪品牌向仍拒收。";
+const DY_TREND = "Window Oct 29–Nov 1: Douyin floor raised to multi-million plays. Same 3 AI-film seeds now show jingxuan play_counts — Coming-of-Age 18.1M, Sulfuric-acid case 10.8M, 听海者 7.8M — all clear; covers filled. Tesla/Audi brand clips still rejected as non-craft.";
 const DOUYIN_POSTS = [
   {
     "id": "7702422092326636834",
     "handle": "人间帧",
-    "views": "n/a",
-    "viewsRaw": null,
-    "likes": "815K",
-    "likesRaw": 815000,
+    "views": "18.1M",
+    "viewsRaw": 18107344,
+    "likes": "815.2K",
+    "likesRaw": 815152,
     "comments": "25K",
     "commentsRaw": 25000,
     "shares": "64K",
@@ -7919,21 +7919,24 @@ const DOUYIN_POSTS = [
       "Jimeng",
       "Drama"
     ],
-    "whyZh": "即梦 AI 短片，亲情成人礼叙事，点赞 81.5 万",
-    "whyEn": "Jimeng AI short — filial coming-of-age story; 815K likes",
+    "whyZh": "即梦 AI 短片《成人礼》——亲情叙事；jingxuan 核实播放约 1810 万、赞 81.5 万",
+    "whyEn": "Jimeng AI short “Coming-of-Age”; jingxuan-verified ~18.1M plays / 815K likes",
     "upload_date": "20261030",
-    "cover": "",
+    "cover": "src/img/dy_7702422092326636834.jpg",
     "addedAt": "2026-11-01T03:20:00+08:00",
     "batch": "2026-11-01",
-    "platform": "douyin"
+    "platform": "douyin",
+    "thumb": "https://p3-sign.douyinpic.com/tos-cn-i-dy/d23ecc46213b44d1bd26a6bb5c276a10~tplv-dy-resize-origshort-autoq-75:0.jpeg?lk3s=138a59ce&x-expires=1794682800&x-signature=jIE%2Br92maYb03gx9vnSupaPC%2BuM%3D&from=327834062_large&s=PackSourceEnum_YUMME_DETAIL&se=false&sc=cover&biz_tag=aweme_video&l=20261101033350440C09A15CC1DB6203DD",
+    "metricsSrc": "jingxuan.douyin.com play_count/digg_count",
+    "floorNote": "views≥几百万 (prefer ≥3M–10M+); verified play_count"
   },
   {
     "id": "7702427003235863834",
     "handle": "Ai卢少骅",
-    "views": "n/a",
-    "viewsRaw": null,
-    "likes": "280K",
-    "likesRaw": 280000,
+    "views": "10.8M",
+    "viewsRaw": 10837154,
+    "likes": "279.7K",
+    "likesRaw": 279745,
     "comments": "3,882",
     "commentsRaw": 3882,
     "shares": "286K",
@@ -7948,21 +7951,24 @@ const DOUYIN_POSTS = [
       "AI film",
       "True crime"
     ],
-    "whyZh": "AI 声明真案改编电影感短片，单集突出非连载农场",
-    "whyEn": "AI-declared true-crime dramatization — standout episode, not a farm",
+    "whyZh": "真案改编 AI 短片《硫酸洗头案》上集；jingxuan 核实播放约 1080 万",
+    "whyEn": "True-crime AI short ep.1; jingxuan-verified ~10.8M plays",
     "upload_date": "20261030",
-    "cover": "",
+    "cover": "src/img/dy_7702427003235863834.jpg",
     "addedAt": "2026-11-01T03:20:00+08:00",
     "batch": "2026-11-01",
-    "platform": "douyin"
+    "platform": "douyin",
+    "thumb": "https://p26-sign.douyinpic.com/tos-cn-i-dy/cef59c5f47bc4ec894518dbc50e1ba16~tplv-dy-resize-origshort-autoq-75:0.jpeg?lk3s=138a59ce&x-expires=1794682800&x-signature=mJrzmwsaAmQhHF7ZZ3%2BzZO8ZKw4%3D&from=327834062_large&s=PackSourceEnum_YUMME_DETAIL&se=false&sc=cover&biz_tag=aweme_video&l=2026110103335237A8E122659DE580A2DB",
+    "metricsSrc": "jingxuan.douyin.com play_count/digg_count",
+    "floorNote": "views≥几百万 (prefer ≥3M–10M+); verified play_count"
   },
   {
     "id": "7701997178981535030",
     "handle": "吉吉AIGC",
-    "views": "n/a",
-    "viewsRaw": null,
-    "likes": "261K",
-    "likesRaw": 261000,
+    "views": "7.8M",
+    "viewsRaw": 7833059,
+    "likes": "261.2K",
+    "likesRaw": 261236,
     "comments": "2,796",
     "commentsRaw": 2796,
     "shares": "131K",
@@ -7978,39 +7984,42 @@ const DOUYIN_POSTS = [
       "Jimeng",
       "Sci-fi"
     ],
-    "whyZh": "一人用即梦做出约 1 小时 35 分 AI 科幻长片合集，窗口内突出作品",
-    "whyEn": "Solo Jimeng AI sci-fi feature (~1h35) — standout in-window craft",
+    "whyZh": "一人成片《听海者》合集；jingxuan 核实播放约 783 万",
+    "whyEn": "Solo-feature 《听海者》 pack; jingxuan-verified ~7.8M plays",
     "upload_date": "20261029",
-    "cover": "",
+    "cover": "src/img/dy_7701997178981535030.jpg",
     "addedAt": "2026-11-01T03:20:00+08:00",
     "batch": "2026-11-01",
-    "platform": "douyin"
+    "platform": "douyin",
+    "thumb": "https://p26-sign.douyinpic.com/tos-cn-i-dy/5f5965f412c445fe81c79dd9c75927dd~tplv-dy-resize-origshort-autoq-75:0.jpeg?lk3s=138a59ce&x-expires=1794682800&x-signature=gMskI44undr5R1HxXYE%2BqVjxHmI%3D&from=327834062_large&s=PackSourceEnum_YUMME_DETAIL&se=false&sc=cover&biz_tag=aweme_video&l=202611010333567E4D4AFE2C12869C88B8",
+    "metricsSrc": "jingxuan.douyin.com play_count/digg_count",
+    "floorNote": "views≥几百万 (prefer ≥3M–10M+); verified play_count"
   }
 ];
 const DY_INSIGHTS = [
   {
-    "tZh": "本批 +3（点赞门槛）",
-    "t": "+3 this update (likes floor)",
-    "pZh": "三条均 ≥26 万赞；最高 81.5 万。播放字段网页不可见，标 n/a。",
-    "p": "All three ≥261K likes; top 815K. Web views unavailable → n/a."
+    "tZh": "本批核验播放 + 补封面",
+    "t": "Views verified + covers filled",
+    "pZh": "jingxuan 拉到三条真实播放：1810万 / 1080万 / 783万；封面已缓存。",
+    "p": "jingxuan verified plays: 18.1M / 10.8M / 7.8M; covers cached locally."
   },
   {
-    "tZh": "门槛：播放≥100万或赞≥10万",
-    "t": "Floor: ≥1M views or ≥100K likes",
-    "pZh": "本批按赞过线；优先分享；每位最多 2 条；拒舞蹈模板与短剧流水线。",
-    "p": "Cleared on likes this batch; prefer shares; max 2/creator; reject dance templates and short-drama farms."
+    "tZh": "门槛上调：播放≥几百万",
+    "t": "Floor raised: views ≥ millions",
+    "pZh": "目标几百万到几千万；本批三条全部过 ≥700 万。点赞仅作无播放时的次要代理（≥100万赞才考虑）。",
+    "p": "Target millions–tens of millions; all three clear ≥7.8M. Likes are a secondary proxy only when views missing (≥1M likes)."
   },
   {
-    "tZh": "即梦叙事 + 真案电影感",
-    "t": "Jimeng narrative + true-crime film",
-    "pZh": "亲情成人礼、真案改编、一人科幻长片合集——窗内三种成片路径。",
-    "p": "Filial coming-of-age, true-crime dramatization, solo sci-fi feature — three craft paths in-window."
+    "tZh": "数据源",
+    "t": "Source",
+    "pZh": "jingxuan.douyin.com 公开 play_count / digg_count + CDN 封面。",
+    "p": "jingxuan.douyin.com public play_count/digg_count + CDN covers."
   },
   {
     "tZh": "只追加、不覆盖",
     "t": "Append-only",
-    "pZh": "按视频 id 合并。",
-    "p": "Merge by video id."
+    "pZh": "按 aweme id 合并；历史永久保留。",
+    "p": "Merge by aweme id; history kept forever."
   }
 ];
 
@@ -8031,181 +8040,185 @@ const TT_INSIGHTS = [
 ];
 
 /* ===== Bilibili / 哔哩哔哩 — APPEND ONLY by bvid. Floor: views≥100K. Window Oct 29–Nov 1. ===== */
-const BL_UPDATED = "Nov 1, 2026 03:20 CST";
-const BL_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
-const BL_NOTE_ZH = "首发门槛（本批）：发布日在 10/29–11/1（北京时间）且播放≥5万；只收电影感 AI 微电影/动画短片，拒教程堆、恶搞段子与短剧流水线。指标来自 B 站 WBI 搜索公开 play，封面本地缓存。本批收录 4 条（窗内过门槛的精作品有限，故意不满灌）。";
-const BL_NOTE = "Inaugural floor (this batch only): published Oct 29–Nov 1 (China time) and ≥50K views; cinematic AI microfilms/animation shorts only — no tutorial dumps, meme sketches, or short-drama farms. Metrics from public Bilibili WBI search play counts; covers cached locally. Seeded 4 (under-fill — few craft clears).";
+const BL_UPDATED = "Nov 1, 2026 03:34 CST";
+const BL_UPDATED_ZH = "2026-11-01 03:34（北京时间）";
+const BL_NOTE_ZH = "硬门槛：播放≥50万优先（直播看板绝不展示低于约30万的「爆款」）。只收电影感 AI 微电影/AIGC 精片——拒佩奇/育儿/段子/短剧农场。批次 2026-11-01b：首批 5.2–20.3 万软数据移入 archive；重收 4 条过门槛精片。仅此首发补仓将发布窗扩至 10/25–11/1（严格 10/29–11/1 在≥50万精片为空）。指标来自 B 站 WBI 搜索 play；封面本地缓存。";
+const BL_NOTE = "Hard floor: views ≥500K preferred (never show below 300K as a hit). Cinematic AI微电影/AIGC craft only — reject Peppa/parenting/meme/short-drama farms. Batch 2026-11-01b: culled inaugural soft 52–203K rows to archive; refilled 4 craft clears. Publish window widened to Oct 25–Nov 1 for this inaugural refill only (strict Oct 29–Nov 1 had zero craft ≥500K). Metrics from Bilibili WBI search play; covers cached.";
 const BL_TREND_DATE = "2026-10-29 → 11-01";
-const BL_TREND_ZH = "窗口 10/29–11/1：B 站 Tab 首批上线。WBI 扫到 1400+ 窗内 AI 相关投稿，精筛后过 5 万播放的电影感条目仅个位数——顶流为蜗牛AI动画《充气城堡海上漂流记》~20.3 万，其次《星河外卖员》PV ~9 万。下轮若恢复 10 万门槛或放宽窗，再补量。";
-const BL_TREND = "Window Oct 29–Nov 1: Bilibili tab’s first seed. WBI found 1400+ in-window AI-related uploads; after craft filter only a handful clear 50K — leader 蜗牛AI动画 Inflatable Castle ~203K, then Star Courier PV ~90K. Next pass may restore 100K floor or widen window for volume.";
+const BL_TREND_ZH = "窗口 10/25–11/1（扩窗补仓）：B 站直播看板现 4 条精片——《星河外卖员：无限未来》209万、《天环城》123万、霍格沃茨2045 第二章 59万、互动《新人类》41.5万。首批 5.2–20.3 万软数据已归档（removed_engagement）。";
+const BL_TREND = "Window Oct 25–Nov 1 (widened refill): live Bilibili now 4 craft hits — Star Courier Infinite Future 2.09M, Sky-Ring City 1.23M, Hogwarts 2045 ch.2 590K, interactive New Humans 415K. Soft 52–203K inaugural rows archived (removed_engagement).";
 const BILIBILI_POSTS = [
   {
-    "id": "BV1LYxv6ZEp8",
-    "channel": "蜗牛AI动画",
-    "handle": "@蜗牛AI动画",
-    "views": "203K",
-    "viewsRaw": 202827,
-    "likes": "88",
-    "likesRaw": 88,
-    "comments": "1",
-    "commentsRaw": 1,
-    "danmaku": 0,
-    "date": "Oct 30, 2026",
-    "url": "https://www.bilibili.com/video/BV1LYxv6ZEp8",
-    "titleZh": "《充气城堡海上漂流记》AI 动画短片",
-    "title": "《充气城堡海上漂流记》【AI全民制作人】",
-    "flag": "New this update",
-    "flagZh": "本批新增",
-    "tags": [
-      "AI animation",
-      "Short film",
-      "Contest"
-    ],
-    "whyZh": "AI全民制作人向动画短片，窗内播放最高的电影感条目之一",
-    "whyEn": "AI-maker contest animation short — among the strongest cinematic plays in-window",
-    "upload_date": "20261030",
-    "duration": "2:09",
-    "cover": "src/img/bl_BV1LYxv6ZEp8.jpg",
-    "thumb": "https://i2.hdslb.com/bfs/archive/aecef16fe113bc4a1c8c811c99f7c5de942123bd.jpg",
-    "addedAt": "2026-11-01T03:13:40+08:00",
-    "batch": "2026-11-01",
-    "platform": "bilibili",
-    "favorites": 350,
-    "favoritesFmt": "350"
-  },
-  {
-    "id": "BV1Eyxe6hEHz",
+    "id": "BV1uBnR6tEVm",
     "channel": "最后讲述者",
     "handle": "@最后讲述者",
-    "views": "89.7K",
-    "viewsRaw": 89741,
-    "likes": "7.8K",
-    "likesRaw": 7805,
-    "comments": "354",
-    "commentsRaw": 354,
-    "danmaku": 464,
-    "date": "Oct 30, 2026",
-    "url": "https://www.bilibili.com/video/BV1Eyxe6hEHz",
-    "titleZh": "微电影《星河外卖员》第二季 PV",
-    "title": "【微电影】星河外卖员: 你说，在宇宙送单是什么感觉？| PV",
+    "views": "2.1M",
+    "viewsRaw": 2088508,
+    "likes": "51.1K",
+    "likesRaw": 51069,
+    "comments": "794",
+    "commentsRaw": 794,
+    "danmaku": 1378,
+    "date": "Oct 27, 2026",
+    "url": "https://www.bilibili.com/video/BV1uBnR6tEVm",
+    "titleZh": "星河外卖员：无限未来",
+    "title": "星河外卖员：无限未来",
     "flag": "New this update",
     "flagZh": "本批新增",
     "tags": [
-      "Microfilm",
       "Sci-fi",
-      "PV"
+      "Microfilm",
+      "Kling"
     ],
-    "whyZh": "科幻微电影连载 PV，叙事与世界观完整，窗内微电影标签顶流",
-    "whyEn": "Sci-fi microfilm season-2 PV — complete story world; top microfilm tag hit in-window",
-    "upload_date": "20261030",
-    "duration": "1:46",
-    "cover": "src/img/bl_BV1Eyxe6hEHz.jpg",
-    "thumb": "https://i1.hdslb.com/bfs/archive/42b1c66872bcaf3c47be4aecd3f649acab4a6526.jpg",
-    "addedAt": "2026-11-01T03:13:40+08:00",
-    "batch": "2026-11-01",
+    "whyZh": "《星河外卖员》番外长片，可灵 AI 科幻微电影，窗扩后顶流 ~209 万播",
+    "whyEn": "Star Courier side-feature — Kling AI sci-fi microfilm; ~2.09M plays after window widen",
+    "upload_date": "20261027",
+    "duration": "8:20",
+    "cover": "src/img/bl_BV1uBnR6tEVm.jpg",
+    "thumb": "https://i0.hdslb.com/bfs/archive/25659b23c2589af421e5104fadd56937472a74d1.jpg",
+    "addedAt": "2026-11-01T03:40:00+08:00",
+    "batch": "2026-11-01b",
     "platform": "bilibili",
-    "favorites": 1213,
-    "favoritesFmt": "1.2K"
+    "favorites": 10192,
+    "favoritesFmt": "10.2K",
+    "windowNote": "wide Oct 25–Nov 1 (inaugural refill; strict Oct 29–Nov 1 empty at ≥50万 craft)"
   },
   {
-    "id": "BV1idxB6zEmC",
-    "channel": "Chuxiaosy",
-    "handle": "@Chuxiaosy",
-    "views": "54.2K",
-    "viewsRaw": 54156,
-    "likes": "855",
-    "likesRaw": 855,
-    "comments": "217",
-    "commentsRaw": 217,
-    "danmaku": 9,
-    "date": "Oct 31, 2026",
-    "url": "https://www.bilibili.com/video/BV1idxB6zEmC",
-    "titleZh": "《没落的贵族奥黛丽》AI 叙事短片",
-    "title": "没落的贵族奥黛丽",
+    "id": "BV1qGH36JEat",
+    "channel": "科学宇宙锋轮",
+    "handle": "@科学宇宙锋轮",
+    "views": "1.2M",
+    "viewsRaw": 1232090,
+    "likes": "628",
+    "likesRaw": 628,
+    "comments": "9",
+    "commentsRaw": 9,
+    "danmaku": 8,
+    "date": "Oct 25, 2026",
+    "url": "https://www.bilibili.com/video/BV1qGH36JEat",
+    "titleZh": "《天环城：一座没有天的城》",
+    "title": "天环城：一座没有天的城【AI全民制作人】",
     "flag": "New this update",
     "flagZh": "本批新增",
     "tags": [
-      "Narrative",
-      "Drama",
-      "AI short"
-    ],
-    "whyZh": "人物向 AI 叙事短片，气质偏电影预告而非段子",
-    "whyEn": "Character-led AI narrative short — trailer energy, not sketch comedy",
-    "upload_date": "20261031",
-    "duration": "1:35",
-    "cover": "src/img/bl_BV1idxB6zEmC.jpg",
-    "thumb": "https://i1.hdslb.com/bfs/archive/6cb687ace4cd725424e9a29bda67bda927ec942a.jpg",
-    "addedAt": "2026-11-01T03:13:40+08:00",
-    "batch": "2026-11-01",
-    "platform": "bilibili",
-    "favorites": 512,
-    "favoritesFmt": "512"
-  },
-  {
-    "id": "BV1RYxv6oEMj",
-    "channel": "蜗牛AI动画",
-    "handle": "@蜗牛AI动画",
-    "views": "52.4K",
-    "viewsRaw": 52421,
-    "likes": "37",
-    "likesRaw": 37,
-    "comments": "0",
-    "commentsRaw": 0,
-    "danmaku": 1,
-    "date": "Oct 30, 2026",
-    "url": "https://www.bilibili.com/video/BV1RYxv6oEMj",
-    "titleZh": "《苹果树上的天空岛》AI 动画短片",
-    "title": "《苹果树上的天空岛》【AI全民制作人】",
-    "flag": "New this update",
-    "flagZh": "本批新增",
-    "tags": [
-      "AI animation",
-      "Fantasy",
+      "Sci-fi",
+      "AI short",
       "Contest"
     ],
-    "whyZh": "同一作者第二条过门槛动画短片，奇幻小品完成度高",
-    "whyEn": "Second clearing short from same UP — polished fantasy vignette",
-    "upload_date": "20261030",
-    "duration": "1:51",
-    "cover": "src/img/bl_BV1RYxv6oEMj.jpg",
-    "thumb": "https://i0.hdslb.com/bfs/archive/69baeed00d0a9652a3ff2066cc1eb19ae51a7f0d.jpg",
-    "addedAt": "2026-11-01T03:13:40+08:00",
-    "batch": "2026-11-01",
+    "whyZh": "《天环城》AI 全民制作人科幻短片，~123 万播，封闭城邦电影感",
+    "whyEn": "Sky-Ring City AI-maker sci-fi short — ~1.23M plays; sealed-city cinematic craft",
+    "upload_date": "20261025",
+    "duration": "3:33",
+    "cover": "src/img/bl_BV1qGH36JEat.jpg",
+    "thumb": "https://i2.hdslb.com/bfs/archive/991fc4e47154b5db657c3225e4035eb3e9a6f38d.jpg",
+    "addedAt": "2026-11-01T03:40:00+08:00",
+    "batch": "2026-11-01b",
     "platform": "bilibili",
-    "favorites": 65,
-    "favoritesFmt": "65"
+    "favorites": 1187,
+    "favoritesFmt": "1.2K",
+    "windowNote": "wide Oct 25–Nov 1 (inaugural refill; strict Oct 29–Nov 1 empty at ≥50万 craft)"
+  },
+  {
+    "id": "BV1JQHV6hESg",
+    "channel": "-AKOWEI-",
+    "handle": "@-AKOWEI-",
+    "views": "589.9K",
+    "viewsRaw": 589888,
+    "likes": "29K",
+    "likesRaw": 28992,
+    "comments": "643",
+    "commentsRaw": 643,
+    "danmaku": 1070,
+    "date": "Oct 27, 2026",
+    "url": "https://www.bilibili.com/video/BV1JQHV6hESg",
+    "titleZh": "霍格沃茨2045｜第二章（广东插班生）",
+    "title": "在霍格莫德被喷白痴的「广东插班生」｜霍格沃茨2045｜第二章",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Fantasy",
+      "Microfilm",
+      "Series"
+    ],
+    "whyZh": "《霍格沃茨2045》第二章粤语同人微电影，~59 万播，连续角色世界观",
+    "whyEn": "Hogwarts 2045 ch.2 Cantonese fan microfilm — ~590K plays; serialized world",
+    "upload_date": "20261027",
+    "duration": "11:16",
+    "cover": "src/img/bl_BV1JQHV6hESg.jpg",
+    "thumb": "https://i1.hdslb.com/bfs/archive/db3aba443916e5f69b2a67352f2245338d3069f0.jpg",
+    "addedAt": "2026-11-01T03:40:00+08:00",
+    "batch": "2026-11-01b",
+    "platform": "bilibili",
+    "favorites": 8033,
+    "favoritesFmt": "8K",
+    "windowNote": "wide Oct 25–Nov 1 (inaugural refill; strict Oct 29–Nov 1 empty at ≥50万 craft)"
+  },
+  {
+    "id": "BV1zhx56BEKZ",
+    "channel": "患病人偶SickDoll",
+    "handle": "@患病人偶SickDoll",
+    "views": "414.7K",
+    "viewsRaw": 414690,
+    "likes": "10.3K",
+    "likesRaw": 10264,
+    "comments": "794",
+    "commentsRaw": 794,
+    "danmaku": 2437,
+    "date": "Oct 28, 2026",
+    "url": "https://www.bilibili.com/video/BV1zhx56BEKZ",
+    "titleZh": "那天，AI 屠杀了全人类…（互动）",
+    "title": "那天，AI屠杀了全人类…【互动创造营】",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Interactive",
+      "Sci-fi",
+      "Animation"
+    ],
+    "whyZh": "互动科幻动画《新人类》——AI 末世选择枝，~41.5 万播（≥30 万硬底）",
+    "whyEn": "Interactive sci-fi anim 《New Humans》 — AI-apocalypse branches; ~415K (≥300K hard floor)",
+    "upload_date": "20261028",
+    "duration": "327:7",
+    "cover": "src/img/bl_BV1zhx56BEKZ.jpg",
+    "thumb": "https://i2.hdslb.com/bfs/archive/1277dbc84b6f5bd10ac59b74100a65fd383c719a.jpg",
+    "addedAt": "2026-11-01T03:40:00+08:00",
+    "batch": "2026-11-01b",
+    "platform": "bilibili",
+    "favorites": 14218,
+    "favoritesFmt": "14.2K",
+    "windowNote": "wide Oct 25–Nov 1 (inaugural refill; strict Oct 29–Nov 1 empty at ≥50万 craft)"
   }
 ];
 const BL_INSIGHTS = [
   {
-    "tZh": "本批 +4（精筛过门槛）",
-    "t": "+4 seeded (craft-cleared)",
-    "pZh": "拒绝百万级育儿/键盘侠段子与佩奇恶搞；只留微电影/动画短片。",
-    "p": "Skipped million-view parenting/keyboard-warrior skits and Peppa parodies; kept microfilms/animation shorts only."
+    "tZh": "本批换血：软数据归档 +4 高播精片",
+    "t": "Cull soft + refill 4 high-play craft",
+    "pZh": "原 5.2–20 万软片移入 removed_engagement；现只留 ≥30 万（目标 ≥50 万）电影感条目。",
+    "p": "Prior 52–203K soft rows archived to removed_engagement; live board only ≥300K (target ≥500K) cinematic craft."
   },
   {
-    "tZh": "门槛：首发≥5万播放",
-    "t": "Floor: inaugural ≥50K views",
-    "pZh": "常规目标仍是 10 万；本窗 10 万几乎空窗故临时下调。每位 UP 最多 2 条。",
-    "p": "Steady-state target remains 100K; lowered only because the 3-day window was nearly empty at 100K. Max 2 per UP."
+    "tZh": "门槛：播放≥50万（硬底≥30万）",
+    "t": "Floor: views ≥500K (hard ≥300K)",
+    "pZh": "拒佩奇/育儿/短剧农场；本窗严格 10/29–11/1 在 ≥50 万精片为空，故扩至 10/25–11/1 补首批。",
+    "p": "Reject Peppa/parenting/short-drama farms; strict Oct 29–Nov 1 empty at ≥500K craft — widened to Oct 25–Nov 1 for inaugural refill."
   },
   {
-    "tZh": "数据源",
-    "t": "Source",
-    "pZh": "api.bilibili.com WBI search（play）；view 详情接口本环境易 412，封面走 CDN。",
-    "p": "Bilibili WBI search play counts; detail view API often 412 here — covers from CDN."
+    "tZh": "顶流",
+    "t": "Leaders",
+    "pZh": "《星河外卖员：无限未来》~209 万；《天环城》~123 万；霍格沃茨2045 第二章 ~59 万。",
+    "p": "Star Courier Infinite Future ~2.09M; Sky-Ring City ~1.23M; Hogwarts 2045 ch.2 ~590K."
   },
   {
-    "tZh": "只追加、不覆盖",
-    "t": "Append-only",
-    "pZh": "按 bvid 合并；历史永久保留。",
-    "p": "Merge by bvid; history kept forever."
+    "tZh": "只追加、弱片可藏",
+    "t": "Append-only; soft may hide",
+    "pZh": "历史永久保留在 archive；直播看板不灌水。",
+    "p": "History kept forever in archive; live board never soft-pads."
   }
 ];
 
 /* FILMMAKERS — APPEND/MERGE by handle: update followers when re-verified; never silently delete creators.
    Only MIN_FOLLOWERS+ are shown (auto-filtered + sorted by followers).
-   TO ADD: paste a line; avatar img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
+   TO ADD: paste a line; avatar src/img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
    topReelUrl, topReelViews, profileUrl, avatar, tags[], optional addedAt/batch. */
 const MIN_FOLLOWERS = 100000;
 const FILMMAKERS = 
@@ -9876,7 +9889,7 @@ const FILMMAKERS =
 ];
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
-   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
+   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: src/img/tut_<videoId>.jpg ===== */
 const TUT_UPDATED = "Oct 31, 2026 10:28 CST";
 const TUT_UPDATED_ZH = "2026-10-31 10:28（北京时间）";
 const TUT_LATEST_BATCH = "2026-10-31";
@@ -12717,7 +12730,7 @@ const SORT_RELAYOUT={};
 function renderSortBars(){
   document.querySelectorAll(".sortbar[data-sort]").forEach(el=>{
     const key=el.dataset.sort, cfg=SORT_CFG[key], mode=getSort(key);
-    const opts=[["best","综合最佳","Best overall"],["new","最新","Newest"],["views",cfg.viewsLabel[0],cfg.viewsLabel[1]],["growth","增长最快","Fastest growth"]];
+    const opts=[["new","最新","Newest"],["best","综合最佳","Best overall"],["views",cfg.viewsLabel[0],cfg.viewsLabel[1]],["growth","增长最快","Fastest growth"]];
     el.innerHTML=`<span class="lab">排序<span class="en">Sort</span></span><div class="seg" role="tablist">${opts.map(o=>`<button type="button" data-mode="${o[0]}" class="${o[0]===mode?"on":""}" aria-pressed="${o[0]===mode}">${o[1]}<span class="en">${o[2]}</span></button>`).join("")}</div>${cfg.hint?`<span class="hint">${cfg.hint}</span>`:""}`;
     el.querySelectorAll("button").forEach(b=>b.onclick=()=>{ setSort(key,b.dataset.mode); renderSortBars(); (SORT_RELAYOUT[key]||(()=>{}))(); });
   });
