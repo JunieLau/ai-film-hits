@@ -123,7 +123,8 @@
 
   .rd-empty{border:1px dashed #3a3442;border-radius:14px;padding:28px 20px;background:var(--panel);color:var(--mute);font-size:14px;line-height:1.6;margin-bottom:18px}
 
-  @media(max-width:820px){nav.top .in{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav.top .in::-webkit-scrollbar{display:none}nav.top a.tab{flex:none;white-space:nowrap}}
+  @media(max-width:1100px){nav.top .in{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:14px}nav.top .in::-webkit-scrollbar{display:none}nav.top a.tab{flex:none;white-space:nowrap}}
+  @media(max-width:820px){nav.top .in{padding:0 18px;gap:12px}nav.top .brand{display:none}nav.top a.tab{font-size:11.5px}}
   /* ---- sort control (v23) ---- */
   .sortbar{max-width:1400px;margin:0 auto 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .sortbar .lab{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-weight:700}
@@ -156,6 +157,9 @@
   <a class="tab" href="#x" data-page="x">X / Twitter<span class="en">X Hits</span></a>
   <a class="tab" href="#reddit" data-page="reddit">Reddit<span class="en">Reddit Hits</span></a>
   <a class="tab" href="#youtube" data-page="youtube">YouTube<span class="en">YT Hits</span></a>
+  <a class="tab" href="#douyin" data-page="douyin">抖音<span class="en">Douyin Hits</span></a>
+  <a class="tab" href="#tiktok" data-page="tiktok">TikTok<span class="en">TikTok Hits</span></a>
+  <a class="tab" href="#bilibili" data-page="bilibili">哔哩哔哩<span class="en">Bilibili Hits</span></a>
   <a class="tab" href="#tutorials" data-page="tutorials">AI 教程<span class="en">AI Tutorial</span></a>
   <a class="tab" href="#filmmakers" data-page="filmmakers">顶尖 AI 电影人<span class="en">Top AI Filmmakers</span></a>
 </div></nav>
@@ -240,6 +244,70 @@
 <footer>播放量与点赞来自 YouTube 公开数据（采集于 2026-10-23 约 17:40 北京时间）。缺省字段显示 N/A，不编造。封面为官方缩略图，版权归频道所有，仅作私人参考。历史条目永久保留。<span class="en">Views and likes from public YouTube data (~17:40 Oct 23, 2026 China time). Missing fields show N/A — nothing invented. Covers are official thumbnails © their channels. Historical rows are kept forever.</span></footer>
 </section>
 
+
+<section class="page" id="page-douyin">
+<header>
+  <div class="kicker">抖音 · Douyin · Moodboard · for @junielaux</div>
+  <h1>抖音 <em>爆款</em> AI 视频<span class="en">Douyin Viral AI Videos</span></h1>
+  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="dy-updated"></b> · 点击打开抖音<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="dy-updated-en"></b> · Click to open Douyin.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · <b>append-only</b></span></p>
+  <div class="stats" id="dy-stats"></div>
+</header>
+<section class="insights">
+  <h2>抖音上的爆款规律 <span class="en-i">What's working on Douyin</span></h2>
+  <div class="cards" id="dy-insights"></div>
+</section>
+<div class="trend" id="dy-trend"></div>
+<main>
+  <div id="dy-note" class="rd-empty" style="max-width:1400px;margin:0 auto 18px"></div>
+  <div class="sortbar" data-sort="dy"></div>
+  <div class="grid" id="dy-grid"></div>
+</main>
+<footer>播放/点赞/评论/分享来自抖音公开分享页或 yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面版权归原作者，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments/shares from public Douyin share pages or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers © their creators. Historical rows kept forever.</span></footer>
+</section>
+
+<section class="page" id="page-tiktok">
+<header>
+  <div class="kicker">TikTok · Moodboard · for @junielaux</div>
+  <h1>TikTok <em>爆款</em> AI 视频<span class="en">TikTok Viral AI Videos</span></h1>
+  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥50 万 <b>或</b> 点赞 ≥5 万 · 优先有分享数 · 每位创作者最多 2 条 · AI film / cinematic shorts（拒纯舞蹈与泛娱乐灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥500K <b>or</b> likes ≥50K · prefer shares · max 2 per creator · AI film/cinematic shorts only · <b>append-only</b></span></p>
+  <div class="stats" id="tt-stats"></div>
+</header>
+<section class="insights">
+  <h2>TikTok 上的爆款规律 <span class="en-i">What's working on TikTok</span></h2>
+  <div class="cards" id="tt-insights"></div>
+</section>
+<div class="trend" id="tt-trend"></div>
+<main>
+  <div id="tt-note" class="rd-empty" style="max-width:1400px;margin:0 auto 18px"></div>
+  <div class="sortbar" data-sort="tt"></div>
+  <div class="grid" id="tt-grid"></div>
+</main>
+<footer>播放/点赞/评论/分享来自 TikTok 公开 embed / yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面版权归原作者，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments/shares from public TikTok embed or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers © their creators. Historical rows kept forever.</span></footer>
+</section>
+
+<section class="page" id="page-bilibili">
+<header>
+  <div class="kicker">哔哩哔哩 · Bilibili · Moodboard · for @junielaux</div>
+  <h1>哔哩哔哩 <em>爆款</em> AI 视频<span class="en">Bilibili Viral AI Videos</span></h1>
+  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="bl-updated"></b> · 点击打开 B 站<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="bl-updated-en"></b> · Click to open Bilibili.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥10 万 · 参考点赞/投币/收藏 · 每位 UP 最多 2 条 · AI 电影/短片/电影感成片（拒纯教程灌水）· <b>只叠加不删除</b>（按 bvid 合并） <span class="en-i">Rule: views ≥100K · consider likes/coins/favorites · max 2 per UP · cinematic AI film/shorts · <b>append-only</b> (merge by bvid)</span></p>
+  <div class="stats" id="bl-stats"></div>
+</header>
+<section class="insights">
+  <h2>B 站上的爆款规律 <span class="en-i">What's working on Bilibili</span></h2>
+  <div class="cards" id="bl-insights"></div>
+</section>
+<div class="trend" id="bl-trend"></div>
+<main>
+  <div id="bl-note" class="rd-empty" style="max-width:1400px;margin:0 auto 18px"></div>
+  <div class="sortbar" data-sort="bl"></div>
+  <div class="grid" id="bl-grid"></div>
+</main>
+<footer>播放/点赞/评论来自 B 站公开接口（web-interface/view）；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面为官方封面图，版权归 UP 所有，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments from public Bilibili view API; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers are official thumbnails © their uploaders. Historical rows kept forever.</span></footer>
+</section>
+
 <section class="page" id="page-tutorials">
 <header>
   <div class="kicker">AI 教程 · Tutorials · for @junielaux</div>
@@ -268,12 +336,12 @@
 </section>
 
 <script>
-/* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS wholesale.
+/* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS wholesale.
    Merge new hits by id (IG shortcode / tweet id / reddit id / youtube video id). Keep older posts.
    Set addedAt (ISO Asia/Shanghai) + batch on every new row; UI badges "本批新增" when post.batch === LATEST_BATCH.
    Also append JSON under /workspace/moodboard_history/posts_archive.json after each refresh.
-   EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND blurbs; keep whyZh/whyEn on every video card.
-   Covers: img/<id>.jpg · img/x_<id>.jpg · img/rd_<id>.jpg · img/yt_<id>.jpg; cover:null = placeholder. ===== */
+   EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND / DY_TREND / TT_TREND / BL_TREND blurbs; keep whyZh/whyEn on every video card.
+   Covers: img/<id>.jpg · img/x_<id>.jpg · img/rd_<id>.jpg · img/yt_<id>.jpg · img/dy_<id>.jpg · img/tt_<id>.jpg · img/bl_<id>.jpg; cover:null = placeholder. ===== */
 
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
    Show above each platform grid. Keep bilingual, filmmaker-facing, short.
@@ -294,9 +362,9 @@ const YT_TREND_DATE = "2026-10-28 → 10-31";
 const YT_TREND_ZH = "窗口 10/28–31：只收上传日在窗内且播放≥5万的 AI 片，+10。长篇 AI 连续剧/长片（巴基斯坦言情、尼莱坞、国风玄幻漫剧）冲量最大，同人 IP（海贼王、哈利波特、Jailer 3 概念预告）紧随；赞助片、非 AI、教程与解说已拒。";
 const YT_TREND = "Window Oct 28–31: AI films uploaded in-window with ≥50k views only, +10. Long-form AI serials/features (Pakistani romance, Nollywood, xianxia anime) pull the most views, followed by fan-IP shorts (One Piece, Harry Potter, Jailer 3 concept trailer). Sponsored, non-AI, tutorials and commentary rejected.";
 
-const UPDATED = "Oct 31, 2026 10:28 CST";
-const UPDATED_ZH = "2026-10-31 10:28（北京时间）";
-const LATEST_BATCH = "2026-10-31"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 1, 2026 03:20 CST";
+const UPDATED_ZH = "2026-11-01 03:20（北京时间）";
+const LATEST_BATCH = "2026-11-01"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -7819,6 +7887,322 @@ const YT_INSIGHTS = [
   { tZh:"只追加、不覆盖", t:"Append-only — never overwrite", pZh:"禁止再按播放门槛整表删行；弱片可标注，不可静默丢弃。", p:"No more wholesale deletes by view floor; soft rows may be flagged, never silently dropped." }
 ]
 
+
+/* ===== Douyin / 抖音 — APPEND ONLY by video id. Floor: views≥1M OR likes≥100K. Window Oct 29–Nov 1. ===== */
+const DY_UPDATED = "Nov 1, 2026 03:20 CST";
+const DY_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
+const DY_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥100万或点赞≥10万；电影感 AI 短片/微电影。本批收录 3 条过点赞门槛的 AI 影视向作品（网页端无公开播放数，以点赞为主指标）。封面需 cookie/yt-dlp，本批占位。TikTok 仍空表。";
+const DY_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and ≥1M views or ≥100K likes; cinematic AI shorts/microfilms. Seeded 3 AI-film clears on likes (web views not public — likes primary). Covers need cookies/yt-dlp; placeholder this ship. TikTok still empty.";
+const DY_TREND_DATE = "2026-10-29 → 11-01";
+const DY_TREND_ZH = "窗口 10/29–11/1：抖音 Tab 首批上线 +3。即梦亲情短片《成人礼》点赞 81.5 万领跑；真案改编《硫酸洗头案》与一人长片《听海者》同窗过门槛。网页无播放，排序以点赞/分享为主。";
+const DY_TREND = "Window Oct 29–Nov 1: Douyin tab’s first seed (+3). Jimeng filial short “Coming-of-Age” leads at 815K likes; true-crime ep + solo feature 《听海者》 also clear. No public web views — sort by likes/shares.";
+const DOUYIN_POSTS = [
+  {
+    "id": "7702422092326636834",
+    "handle": "人间帧",
+    "views": "n/a",
+    "viewsRaw": null,
+    "likes": "815K",
+    "likesRaw": 815000,
+    "comments": "25K",
+    "commentsRaw": 25000,
+    "shares": "64K",
+    "sharesRaw": 64000,
+    "date": "Oct 30, 2026",
+    "url": "https://www.douyin.com/video/7702422092326636834",
+    "noteZh": "AI 短片《成人礼》· 寒门孝子",
+    "note": "AI short “Coming-of-Age Ceremony”",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI short",
+      "Jimeng",
+      "Drama"
+    ],
+    "whyZh": "即梦 AI 短片，亲情成人礼叙事，点赞 81.5 万",
+    "whyEn": "Jimeng AI short — filial coming-of-age story; 815K likes",
+    "upload_date": "20261030",
+    "cover": "",
+    "addedAt": "2026-11-01T03:20:00+08:00",
+    "batch": "2026-11-01",
+    "platform": "douyin"
+  },
+  {
+    "id": "7702427003235863834",
+    "handle": "Ai卢少骅",
+    "views": "n/a",
+    "viewsRaw": null,
+    "likes": "280K",
+    "likesRaw": 280000,
+    "comments": "3,882",
+    "commentsRaw": 3882,
+    "shares": "286K",
+    "sharesRaw": 286000,
+    "date": "Oct 30, 2026",
+    "url": "https://www.douyin.com/video/7702427003235863834",
+    "noteZh": "《硫酸洗头案》上集 · AI 电影改编",
+    "note": "“Sulfuric Acid Case” ep.1 — AI true-crime film",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI film",
+      "True crime"
+    ],
+    "whyZh": "AI 声明真案改编电影感短片，单集突出非连载农场",
+    "whyEn": "AI-declared true-crime dramatization — standout episode, not a farm",
+    "upload_date": "20261030",
+    "cover": "",
+    "addedAt": "2026-11-01T03:20:00+08:00",
+    "batch": "2026-11-01",
+    "platform": "douyin"
+  },
+  {
+    "id": "7701997178981535030",
+    "handle": "吉吉AIGC",
+    "views": "n/a",
+    "viewsRaw": null,
+    "likes": "261K",
+    "likesRaw": 261000,
+    "comments": "2,796",
+    "commentsRaw": 2796,
+    "shares": "131K",
+    "sharesRaw": 131000,
+    "date": "Oct 29, 2026",
+    "url": "https://www.douyin.com/video/7701997178981535030",
+    "noteZh": "《听海者》1人制作 AI 长片合集（致敬灵笼）",
+    "note": "“Listener of the Sea” — solo AI feature homage to Ling Cage",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI feature",
+      "Jimeng",
+      "Sci-fi"
+    ],
+    "whyZh": "一人用即梦做出约 1 小时 35 分 AI 科幻长片合集，窗口内突出作品",
+    "whyEn": "Solo Jimeng AI sci-fi feature (~1h35) — standout in-window craft",
+    "upload_date": "20261029",
+    "cover": "",
+    "addedAt": "2026-11-01T03:20:00+08:00",
+    "batch": "2026-11-01",
+    "platform": "douyin"
+  }
+];
+const DY_INSIGHTS = [
+  {
+    "tZh": "本批 +3（点赞门槛）",
+    "t": "+3 this update (likes floor)",
+    "pZh": "三条均 ≥26 万赞；最高 81.5 万。播放字段网页不可见，标 n/a。",
+    "p": "All three ≥261K likes; top 815K. Web views unavailable → n/a."
+  },
+  {
+    "tZh": "门槛：播放≥100万或赞≥10万",
+    "t": "Floor: ≥1M views or ≥100K likes",
+    "pZh": "本批按赞过线；优先分享；每位最多 2 条；拒舞蹈模板与短剧流水线。",
+    "p": "Cleared on likes this batch; prefer shares; max 2/creator; reject dance templates and short-drama farms."
+  },
+  {
+    "tZh": "即梦叙事 + 真案电影感",
+    "t": "Jimeng narrative + true-crime film",
+    "pZh": "亲情成人礼、真案改编、一人科幻长片合集——窗内三种成片路径。",
+    "p": "Filial coming-of-age, true-crime dramatization, solo sci-fi feature — three craft paths in-window."
+  },
+  {
+    "tZh": "只追加、不覆盖",
+    "t": "Append-only",
+    "pZh": "按视频 id 合并。",
+    "p": "Merge by video id."
+  }
+];
+
+/* ===== TikTok — APPEND ONLY by video id. Floor: views≥500K OR likes≥50K. Window Oct 29–Nov 1. ===== */
+const TT_UPDATED = "Nov 1, 2026 03:20 CST";
+const TT_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
+const TT_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥50万或点赞≥5万。本批按 Junie 决定：TikTok Tab 先空着上线，等 US/SG 出口后再补货；不阻塞抖音+B 站发车。";
+const TT_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and ≥500K views or ≥50K likes. Per Junie: ship TikTok tab empty this round; fill after US/SG egress — do not block Douyin+Bilibili Pages ship.";
+const TT_TREND_DATE = "2026-10-29 → 11-01";
+const TT_TREND_ZH = "窗口 10/29–11/1：TikTok Tab 脚手架在线但本批空表（出口限制）。已知窗内样本 @nash.ai6 ~4.5K 远低于门槛。";
+const TT_TREND = "Window Oct 29–Nov 1: TikTok scaffold live but empty this ship (egress). Known in-window sample @nash.ai6 ~4.5K — far under floor.";
+const TIKTOK_POSTS = [];
+const TT_INSIGHTS = [
+  { tZh:"本批 0 条（故意空表）", t:"0 new (intentional empty)", pZh:"四排序与卡片已接通；差公开可核且过门槛的电影感 AI 片。", p:"Four sorts + cards wired; missing verifiable cinematic AI hits above floor." },
+  { tZh:"门槛：播放≥50万或赞≥5万", t:"Floor: ≥500K views or ≥50K likes", pZh:"优先分享；每位最多 2 条。", p:"Prefer shares; max 2 per creator." },
+  { tZh:"抓取瓶颈", t:"Fetch bottleneck", pZh:"yt-dlp 需 chrome impersonate；无则 403。embed 可补单条指标。", p:"yt-dlp needs chrome impersonate or 403s; embed can backfill single-video metrics." },
+  { tZh:"只追加、不覆盖", t:"Append-only", pZh:"按 video id 合并。", p:"Merge by video id." }
+];
+
+/* ===== Bilibili / 哔哩哔哩 — APPEND ONLY by bvid. Floor: views≥100K. Window Oct 29–Nov 1. ===== */
+const BL_UPDATED = "Nov 1, 2026 03:20 CST";
+const BL_UPDATED_ZH = "2026-11-01 03:20（北京时间）";
+const BL_NOTE_ZH = "首发门槛（本批）：发布日在 10/29–11/1（北京时间）且播放≥5万；只收电影感 AI 微电影/动画短片，拒教程堆、恶搞段子与短剧流水线。指标来自 B 站 WBI 搜索公开 play，封面本地缓存。本批收录 4 条（窗内过门槛的精作品有限，故意不满灌）。";
+const BL_NOTE = "Inaugural floor (this batch only): published Oct 29–Nov 1 (China time) and ≥50K views; cinematic AI microfilms/animation shorts only — no tutorial dumps, meme sketches, or short-drama farms. Metrics from public Bilibili WBI search play counts; covers cached locally. Seeded 4 (under-fill — few craft clears).";
+const BL_TREND_DATE = "2026-10-29 → 11-01";
+const BL_TREND_ZH = "窗口 10/29–11/1：B 站 Tab 首批上线。WBI 扫到 1400+ 窗内 AI 相关投稿，精筛后过 5 万播放的电影感条目仅个位数——顶流为蜗牛AI动画《充气城堡海上漂流记》~20.3 万，其次《星河外卖员》PV ~9 万。下轮若恢复 10 万门槛或放宽窗，再补量。";
+const BL_TREND = "Window Oct 29–Nov 1: Bilibili tab’s first seed. WBI found 1400+ in-window AI-related uploads; after craft filter only a handful clear 50K — leader 蜗牛AI动画 Inflatable Castle ~203K, then Star Courier PV ~90K. Next pass may restore 100K floor or widen window for volume.";
+const BILIBILI_POSTS = [
+  {
+    "id": "BV1LYxv6ZEp8",
+    "channel": "蜗牛AI动画",
+    "handle": "@蜗牛AI动画",
+    "views": "203K",
+    "viewsRaw": 202827,
+    "likes": "88",
+    "likesRaw": 88,
+    "comments": "1",
+    "commentsRaw": 1,
+    "danmaku": 0,
+    "date": "Oct 30, 2026",
+    "url": "https://www.bilibili.com/video/BV1LYxv6ZEp8",
+    "titleZh": "《充气城堡海上漂流记》AI 动画短片",
+    "title": "《充气城堡海上漂流记》【AI全民制作人】",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI animation",
+      "Short film",
+      "Contest"
+    ],
+    "whyZh": "AI全民制作人向动画短片，窗内播放最高的电影感条目之一",
+    "whyEn": "AI-maker contest animation short — among the strongest cinematic plays in-window",
+    "upload_date": "20261030",
+    "duration": "2:09",
+    "cover": "src/img/bl_BV1LYxv6ZEp8.jpg",
+    "thumb": "https://i2.hdslb.com/bfs/archive/aecef16fe113bc4a1c8c811c99f7c5de942123bd.jpg",
+    "addedAt": "2026-11-01T03:13:40+08:00",
+    "batch": "2026-11-01",
+    "platform": "bilibili",
+    "favorites": 350,
+    "favoritesFmt": "350"
+  },
+  {
+    "id": "BV1Eyxe6hEHz",
+    "channel": "最后讲述者",
+    "handle": "@最后讲述者",
+    "views": "89.7K",
+    "viewsRaw": 89741,
+    "likes": "7.8K",
+    "likesRaw": 7805,
+    "comments": "354",
+    "commentsRaw": 354,
+    "danmaku": 464,
+    "date": "Oct 30, 2026",
+    "url": "https://www.bilibili.com/video/BV1Eyxe6hEHz",
+    "titleZh": "微电影《星河外卖员》第二季 PV",
+    "title": "【微电影】星河外卖员: 你说，在宇宙送单是什么感觉？| PV",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Microfilm",
+      "Sci-fi",
+      "PV"
+    ],
+    "whyZh": "科幻微电影连载 PV，叙事与世界观完整，窗内微电影标签顶流",
+    "whyEn": "Sci-fi microfilm season-2 PV — complete story world; top microfilm tag hit in-window",
+    "upload_date": "20261030",
+    "duration": "1:46",
+    "cover": "src/img/bl_BV1Eyxe6hEHz.jpg",
+    "thumb": "https://i1.hdslb.com/bfs/archive/42b1c66872bcaf3c47be4aecd3f649acab4a6526.jpg",
+    "addedAt": "2026-11-01T03:13:40+08:00",
+    "batch": "2026-11-01",
+    "platform": "bilibili",
+    "favorites": 1213,
+    "favoritesFmt": "1.2K"
+  },
+  {
+    "id": "BV1idxB6zEmC",
+    "channel": "Chuxiaosy",
+    "handle": "@Chuxiaosy",
+    "views": "54.2K",
+    "viewsRaw": 54156,
+    "likes": "855",
+    "likesRaw": 855,
+    "comments": "217",
+    "commentsRaw": 217,
+    "danmaku": 9,
+    "date": "Oct 31, 2026",
+    "url": "https://www.bilibili.com/video/BV1idxB6zEmC",
+    "titleZh": "《没落的贵族奥黛丽》AI 叙事短片",
+    "title": "没落的贵族奥黛丽",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Narrative",
+      "Drama",
+      "AI short"
+    ],
+    "whyZh": "人物向 AI 叙事短片，气质偏电影预告而非段子",
+    "whyEn": "Character-led AI narrative short — trailer energy, not sketch comedy",
+    "upload_date": "20261031",
+    "duration": "1:35",
+    "cover": "src/img/bl_BV1idxB6zEmC.jpg",
+    "thumb": "https://i1.hdslb.com/bfs/archive/6cb687ace4cd725424e9a29bda67bda927ec942a.jpg",
+    "addedAt": "2026-11-01T03:13:40+08:00",
+    "batch": "2026-11-01",
+    "platform": "bilibili",
+    "favorites": 512,
+    "favoritesFmt": "512"
+  },
+  {
+    "id": "BV1RYxv6oEMj",
+    "channel": "蜗牛AI动画",
+    "handle": "@蜗牛AI动画",
+    "views": "52.4K",
+    "viewsRaw": 52421,
+    "likes": "37",
+    "likesRaw": 37,
+    "comments": "0",
+    "commentsRaw": 0,
+    "danmaku": 1,
+    "date": "Oct 30, 2026",
+    "url": "https://www.bilibili.com/video/BV1RYxv6oEMj",
+    "titleZh": "《苹果树上的天空岛》AI 动画短片",
+    "title": "《苹果树上的天空岛》【AI全民制作人】",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI animation",
+      "Fantasy",
+      "Contest"
+    ],
+    "whyZh": "同一作者第二条过门槛动画短片，奇幻小品完成度高",
+    "whyEn": "Second clearing short from same UP — polished fantasy vignette",
+    "upload_date": "20261030",
+    "duration": "1:51",
+    "cover": "src/img/bl_BV1RYxv6oEMj.jpg",
+    "thumb": "https://i0.hdslb.com/bfs/archive/69baeed00d0a9652a3ff2066cc1eb19ae51a7f0d.jpg",
+    "addedAt": "2026-11-01T03:13:40+08:00",
+    "batch": "2026-11-01",
+    "platform": "bilibili",
+    "favorites": 65,
+    "favoritesFmt": "65"
+  }
+];
+const BL_INSIGHTS = [
+  {
+    "tZh": "本批 +4（精筛过门槛）",
+    "t": "+4 seeded (craft-cleared)",
+    "pZh": "拒绝百万级育儿/键盘侠段子与佩奇恶搞；只留微电影/动画短片。",
+    "p": "Skipped million-view parenting/keyboard-warrior skits and Peppa parodies; kept microfilms/animation shorts only."
+  },
+  {
+    "tZh": "门槛：首发≥5万播放",
+    "t": "Floor: inaugural ≥50K views",
+    "pZh": "常规目标仍是 10 万；本窗 10 万几乎空窗故临时下调。每位 UP 最多 2 条。",
+    "p": "Steady-state target remains 100K; lowered only because the 3-day window was nearly empty at 100K. Max 2 per UP."
+  },
+  {
+    "tZh": "数据源",
+    "t": "Source",
+    "pZh": "api.bilibili.com WBI search（play）；view 详情接口本环境易 412，封面走 CDN。",
+    "p": "Bilibili WBI search play counts; detail view API often 412 here — covers from CDN."
+  },
+  {
+    "tZh": "只追加、不覆盖",
+    "t": "Append-only",
+    "pZh": "按 bvid 合并；历史永久保留。",
+    "p": "Merge by bvid; history kept forever."
+  }
+];
+
 /* FILMMAKERS — APPEND/MERGE by handle: update followers when re-verified; never silently delete creators.
    Only MIN_FOLLOWERS+ are shown (auto-filtered + sorted by followers).
    TO ADD: paste a line; avatar img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
@@ -12237,6 +12621,12 @@ function renderTrends(){
   if(rd && typeof REDDIT_TREND_ZH!=="undefined") rd.innerHTML=trendHTML(REDDIT_TREND_DATE, REDDIT_TREND_ZH, REDDIT_TREND);
   const yt=document.getElementById("yt-trend");
   if(yt && typeof YT_TREND_ZH!=="undefined") yt.innerHTML=trendHTML(YT_TREND_DATE, YT_TREND_ZH, YT_TREND);
+  const dy=document.getElementById("dy-trend");
+  if(dy && typeof DY_TREND_ZH!=="undefined") dy.innerHTML=trendHTML(DY_TREND_DATE, DY_TREND_ZH, DY_TREND);
+  const tt=document.getElementById("tt-trend");
+  if(tt && typeof TT_TREND_ZH!=="undefined") tt.innerHTML=trendHTML(TT_TREND_DATE, TT_TREND_ZH, TT_TREND);
+  const bl=document.getElementById("bl-trend");
+  if(bl && typeof BL_TREND_ZH!=="undefined") bl.innerHTML=trendHTML(BL_TREND_DATE, BL_TREND_ZH, BL_TREND);
 }
 
 
@@ -12263,6 +12653,9 @@ const SORT_CFG={
   x:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.replies), shares:r=>num(r.reposts), viewsLabel:["最多观看","Most viewed"]},
   reddit:{views:r=>num(r.score), likes:r=>null, comments:r=>num(r.comments), shares:r=>null, viewsLabel:["最高分","Top score"], hint:"Reddit 不公开播放，按分数 · score (views are private)"},
   yt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>null, viewsLabel:["最多观看","Most viewed"]},
+  dy:{views:r=>num(r.views), fallback:r=>num(r.likes), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多点赞","Most liked"], hint:"抖音网页常无播放，按点赞 · likes when views N/A"},
+  tt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
+  bl:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
   /* Tutorials mix platforms: reach = YouTube views / X impressions / Reddit score. Percentiles are computed WITHIN each platform
      (group), so a 973-score Reddit post is compared with Reddit posts, not with YouTube views. "Most viewed" sorts by real
      views/impressions; Reddit (no public views) goes after them, ordered by score.
@@ -12566,6 +12959,133 @@ function layoutYouTube(){
 }
 addEventListener("resize",()=>{ if(document.getElementById("page-youtube")?.classList.contains("active")) layoutYouTube(); });
 
+
+/* ---- Douyin page ---- */
+const dyTileHTML=(r,i)=>`
+  <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="cover">
+      ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.handle||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">抖音 Douyin</div>`}
+      <div class="rank">${String(i+1).padStart(2,"0")}</div>
+      <div class="views">${(r.views && String(r.views).toLowerCase()!=="n/a" && String(r.views).trim()!=="")?`▶ ${na(r.views)} <small>播放</small>`:`♥ ${na(r.likes)} <small>点赞</small>`}</div>
+      ${flagHTML(r)}
+      <div class="play">打开抖音 · Open ↗</div>
+    </div>
+    <div class="meta">
+      <div class="handle">${esc(r.handle||"?")} ${batchBadge(r)}</div>
+      <div class="note">${r.noteZh?`${esc(r.noteZh)}<span class="en">${na(r.note)}</span>`:na(r.note)}</div>
+      ${whyHTML(r)}
+      <div class="row"><span>♥ <b>${na(r.likes)}</b></span>${r.shares?`<span>↗ <b>${na(r.shares)}</b></span>`:""}<span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
+      ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
+    </div>
+  </a>`;
+const dySorted=(typeof DOUYIN_POSTS!=="undefined"?DOUYIN_POSTS:[]).slice().sort((a,b)=>(parseNum(b.likes)||parseNum(b.views)||0)-(parseNum(a.likes)||parseNum(a.views)||0));
+function layoutDouyin(){
+  if(typeof renderTrends==="function") renderTrends();
+  const note=document.getElementById("dy-note");
+  if(note) note.innerHTML=`${esc(typeof DY_NOTE_ZH!=="undefined"?DY_NOTE_ZH:"")}<span class="en">${esc(typeof DY_NOTE!=="undefined"?DY_NOTE:"")}</span>`;
+  const u=document.getElementById("dy-updated"); if(u) u.textContent="更新于 "+(typeof DY_UPDATED_ZH!=="undefined"?DY_UPDATED_ZH:"");
+  const ue=document.getElementById("dy-updated-en"); if(ue) ue.textContent="Updated "+(typeof DY_UPDATED!=="undefined"?DY_UPDATED:"");
+  const newCount=dySorted.filter(isNewBatch).length;
+  document.getElementById("dy-stats").innerHTML=`<div class="stat"><div class="n">${dySorted.length}</div><div class="l">条累计<span class="en">Total (kept)</span></div></div>
+    <div class="stat"><div class="n">${newCount}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
+    <div class="stat"><div class="n">${dySorted.length?(na(dySorted[0].likes)||na(dySorted[0].views)):"—"}</div><div class="l">最高点赞<span class="en">Top likes</span></div></div>`;
+  const ins=document.getElementById("dy-insights");
+  if(ins && typeof DY_INSIGHTS!=="undefined") ins.innerHTML=DY_INSIGHTS.map(i=>`<div class="card"><div class="t">${esc(i.tZh)}<span class="en">${esc(i.t)}</span></div><p>${esc(i.pZh)}</p><p class="en">${esc(i.p)}</p></div>`).join("");
+  const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
+  const cols=Array.from({length:n},()=>[]);
+  if(!dySorted.length){
+    document.getElementById("dy-grid").innerHTML=`<div class="rd-empty">本窗暂无已核实且过门槛的抖音条目（故意空表，不灌水）。<span class="en">No verified Douyin rows above floor this window — left empty on purpose.</span></div>`;
+    return;
+  }
+  sortRows("dy",dySorted).forEach((r,i)=>cols[i%n].push(dyTileHTML(r,i)));
+  document.getElementById("dy-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+}
+addEventListener("resize",()=>{ if(document.getElementById("page-douyin")?.classList.contains("active")) layoutDouyin(); });
+
+/* ---- TikTok page ---- */
+const ttTileHTML=(r,i)=>`
+  <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="cover">
+      ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.handle||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">TikTok</div>`}
+      <div class="rank">${String(i+1).padStart(2,"0")}</div>
+      <div class="views">▶ ${na(r.views)} <small>播放</small></div>
+      ${flagHTML(r)}
+      <div class="play">打开 TikTok · Open ↗</div>
+    </div>
+    <div class="meta">
+      <div class="handle">${esc(r.handle||"?")} ${batchBadge(r)}</div>
+      <div class="note">${r.noteZh?`${esc(r.noteZh)}<span class="en">${na(r.note)}</span>`:na(r.note)}</div>
+      ${whyHTML(r)}
+      <div class="row"><span>♥ <b>${na(r.likes)}</b></span>${r.shares?`<span>↗ <b>${na(r.shares)}</b></span>`:""}<span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
+      ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
+    </div>
+  </a>`;
+const ttSorted=(typeof TIKTOK_POSTS!=="undefined"?TIKTOK_POSTS:[]).slice().sort((a,b)=>parseNum(b.views)-parseNum(a.views));
+function layoutTikTok(){
+  if(typeof renderTrends==="function") renderTrends();
+  const note=document.getElementById("tt-note");
+  if(note) note.innerHTML=`${esc(typeof TT_NOTE_ZH!=="undefined"?TT_NOTE_ZH:"")}<span class="en">${esc(typeof TT_NOTE!=="undefined"?TT_NOTE:"")}</span>`;
+  const u=document.getElementById("tt-updated"); if(u) u.textContent="更新于 "+(typeof TT_UPDATED_ZH!=="undefined"?TT_UPDATED_ZH:"");
+  const ue=document.getElementById("tt-updated-en"); if(ue) ue.textContent="Updated "+(typeof TT_UPDATED!=="undefined"?TT_UPDATED:"");
+  const newCount=ttSorted.filter(isNewBatch).length;
+  document.getElementById("tt-stats").innerHTML=`<div class="stat"><div class="n">${ttSorted.length}</div><div class="l">条累计<span class="en">Total (kept)</span></div></div>
+    <div class="stat"><div class="n">${newCount}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
+    <div class="stat"><div class="n">${ttSorted.length?na(ttSorted[0].views):"—"}</div><div class="l">最高播放<span class="en">Top views</span></div></div>`;
+  const ins=document.getElementById("tt-insights");
+  if(ins && typeof TT_INSIGHTS!=="undefined") ins.innerHTML=TT_INSIGHTS.map(i=>`<div class="card"><div class="t">${esc(i.tZh)}<span class="en">${esc(i.t)}</span></div><p>${esc(i.pZh)}</p><p class="en">${esc(i.p)}</p></div>`).join("");
+  const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
+  const cols=Array.from({length:n},()=>[]);
+  if(!ttSorted.length){
+    document.getElementById("tt-grid").innerHTML=`<div class="rd-empty">本窗暂无已核实且过门槛的 TikTok 条目（故意空表，不灌水）。<span class="en">No verified TikTok rows above floor this window — left empty on purpose.</span></div>`;
+    return;
+  }
+  sortRows("tt",ttSorted).forEach((r,i)=>cols[i%n].push(ttTileHTML(r,i)));
+  document.getElementById("tt-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+}
+addEventListener("resize",()=>{ if(document.getElementById("page-tiktok")?.classList.contains("active")) layoutTikTok(); });
+
+/* ---- Bilibili page ---- */
+const blTileHTML=(r,i)=>`
+  <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="cover">
+      ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.title||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">Bilibili</div>`}
+      <div class="rank">${String(i+1).padStart(2,"0")}</div>
+      <div class="views">▶ ${na(r.views)} <small>播放</small></div>
+      ${flagHTML(r)}
+      <div class="play">打开 B 站 · Open ↗</div>
+    </div>
+    <div class="meta">
+      <div class="handle">${esc(r.handle||r.channel||"?")} ${batchBadge(r)}</div>
+      <div class="note">${r.noteZh||r.titleZh?`${esc(r.noteZh||r.titleZh)}<span class="en">${na(r.note||r.title)}</span>`:na(r.note||r.title)}</div>
+      ${whyHTML(r)}
+      <div class="row"><span>♥ <b>${na(r.likes)}</b></span>${r.coins?`<span>🪙 <b>${na(r.coins)}</b></span>`:""}${r.shares?`<span>↗ <b>${na(r.shares)}</b></span>`:""}<span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
+      ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
+    </div>
+  </a>`;
+const blSorted=(typeof BILIBILI_POSTS!=="undefined"?BILIBILI_POSTS:[]).slice().sort((a,b)=>parseNum(b.views)-parseNum(a.views));
+function layoutBilibili(){
+  if(typeof renderTrends==="function") renderTrends();
+  const note=document.getElementById("bl-note");
+  if(note) note.innerHTML=`${esc(typeof BL_NOTE_ZH!=="undefined"?BL_NOTE_ZH:"")}<span class="en">${esc(typeof BL_NOTE!=="undefined"?BL_NOTE:"")}</span>`;
+  const u=document.getElementById("bl-updated"); if(u) u.textContent="更新于 "+(typeof BL_UPDATED_ZH!=="undefined"?BL_UPDATED_ZH:"");
+  const ue=document.getElementById("bl-updated-en"); if(ue) ue.textContent="Updated "+(typeof BL_UPDATED!=="undefined"?BL_UPDATED:"");
+  const newCount=blSorted.filter(isNewBatch).length;
+  document.getElementById("bl-stats").innerHTML=`<div class="stat"><div class="n">${blSorted.length}</div><div class="l">条累计<span class="en">Total (kept)</span></div></div>
+    <div class="stat"><div class="n">${newCount}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
+    <div class="stat"><div class="n">${blSorted.length?na(blSorted[0].views):"—"}</div><div class="l">最高播放<span class="en">Top views</span></div></div>`;
+  const ins=document.getElementById("bl-insights");
+  if(ins && typeof BL_INSIGHTS!=="undefined") ins.innerHTML=BL_INSIGHTS.map(i=>`<div class="card"><div class="t">${esc(i.tZh)}<span class="en">${esc(i.t)}</span></div><p>${esc(i.pZh)}</p><p class="en">${esc(i.p)}</p></div>`).join("");
+  const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
+  const cols=Array.from({length:n},()=>[]);
+  if(!blSorted.length){
+    document.getElementById("bl-grid").innerHTML=`<div class="rd-empty">本窗暂无已核实且过门槛的 B 站条目（故意空表，不灌水）。<span class="en">No verified Bilibili rows above floor this window — left empty on purpose.</span></div>`;
+    return;
+  }
+  sortRows("bl",blSorted).forEach((r,i)=>cols[i%n].push(blTileHTML(r,i)));
+  document.getElementById("bl-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+}
+addEventListener("resize",()=>{ if(document.getElementById("page-bilibili")?.classList.contains("active")) layoutBilibili(); });
+
 /* ---- AI Tutorials page (v23) ---- */
 const tutTileHTML=(r,i)=>`
   <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
@@ -12603,11 +13123,11 @@ function layoutTutorials(){
   document.getElementById("tut-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
 }
 addEventListener("resize",()=>{ if(document.getElementById("page-tutorials")?.classList.contains("active")) layoutTutorials(); });
-Object.assign(SORT_RELAYOUT,{ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),tut:()=>layoutTutorials()});
+Object.assign(SORT_RELAYOUT,{ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),dy:()=>layoutDouyin(),tt:()=>layoutTikTok(),bl:()=>layoutBilibili(),tut:()=>layoutTutorials()});
 renderSortBars();
 
-/* ---- tab routing (#hits / #x / #reddit / #youtube / #tutorials / #filmmakers) ---- */
-const PAGES={hits:"Instagram 爆款 IG Hits",x:"X 爆款 X Hits",reddit:"Reddit 爆款 Reddit Hits",youtube:"YouTube 爆款 YT Hits",tutorials:"AI 教程 AI Tutorial",filmmakers:"顶尖 AI 电影人 Top AI Filmmakers"};
+/* ---- tab routing (#hits / #x / #reddit / #youtube / #douyin / #tiktok / #bilibili / #tutorials / #filmmakers) ---- */
+const PAGES={hits:"Instagram 爆款 IG Hits",x:"X 爆款 X Hits",reddit:"Reddit 爆款 Reddit Hits",youtube:"YouTube 爆款 YT Hits",douyin:"抖音爆款 Douyin Hits",tiktok:"TikTok 爆款 TikTok Hits",bilibili:"哔哩哔哩爆款 Bilibili Hits",tutorials:"AI 教程 AI Tutorial",filmmakers:"顶尖 AI 电影人 Top AI Filmmakers"};
 function route(){
   const h=(location.hash||"#hits").slice(1); const p=PAGES[h]?h:"hits";
   document.querySelectorAll(".page").forEach(el=>el.classList.toggle("active",el.id==="page-"+p));
@@ -12617,6 +13137,9 @@ function route(){
   if(p==="x") layoutX();
   if(p==="reddit") layoutReddit();
   if(p==="youtube") layoutYouTube();
+  if(p==="douyin") layoutDouyin();
+  if(p==="tiktok") layoutTikTok();
+  if(p==="bilibili") layoutBilibili();
   if(p==="tutorials") layoutTutorials();
   scrollTo(0,0);
 }
