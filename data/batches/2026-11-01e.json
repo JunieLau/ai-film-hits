@@ -1,0 +1,76 @@
+{
+  "batch": "2026-11-01e",
+  "version": "v36b",
+  "theme": "Douyin craft AI short-drama series rebuild",
+  "culled_factory_titles": [
+    "15年青春苦守，未婚夫装穷归来",
+    "听水小锦鲤",
+    "一墙之隔，皆是人心",
+    "绿意萌熹：蛙系萌娃闹翻忧郁老爸",
+    "退婚后我在七零赚钱养家致富",
+    "八岁鉴真心，寻得良母归",
+    "让你代写情书，你落笔惊哭大儒",
+    "糯糯下山，师兄们都慌了",
+    "谁说纨绔不能当状元",
+    "发配边关，罪妻开荒养出战神"
+  ],
+  "new_top10": [
+    {
+      "rank": 1,
+      "title": "The Accident",
+      "heat": "1.51亿合集"
+    },
+    {
+      "rank": 2,
+      "title": "备用联系人",
+      "heat": "红果日榜TOP2"
+    },
+    {
+      "rank": 3,
+      "title": "万物生",
+      "heat": "1亿+系列"
+    },
+    {
+      "rank": 4,
+      "title": "异邪录",
+      "heat": "4015万合集"
+    },
+    {
+      "rank": 5,
+      "title": "漂亮的恶意",
+      "heat": "2.11亿合集"
+    },
+    {
+      "rank": 6,
+      "title": "被裁掉的女孩",
+      "heat": "2亿+"
+    },
+    {
+      "rank": 7,
+      "title": "Shame",
+      "heat": "首集1706万播/250万赞"
+    },
+    {
+      "rank": 8,
+      "title": "血誓",
+      "heat": "首集45.3万赞·30+集"
+    },
+    {
+      "rank": 9,
+      "title": "零号档案",
+      "heat": "亿级超创"
+    },
+    {
+      "rank": 10,
+      "title": "丧尸清道夫",
+      "heat": "7000万+抖音"
+    }
+  ],
+  "cover_root_cause": "v36 used near-black title cards (avgL~30) on #000 .cover — looked like missing covers; paths were fine (src/img 200).",
+  "must_includes": [
+    "The Accident",
+    "备用联系人",
+    "万物生",
+    "异邪录"
+  ]
+}
