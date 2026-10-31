@@ -144,6 +144,21 @@
   .topic .lv{border-radius:999px;padding:2px 8px;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
   .topic .lv.pro{background:var(--gold);color:#1a1206}.topic .lv.beginner{border:1px solid var(--line);color:var(--mute)}
   .plat{position:absolute;bottom:10px;right:12px;z-index:2;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);padding:3px 8px;border-radius:999px}
+
+  /* ---- Douyin AI short-drama series subsection (v36) ---- */
+  .dy-series{margin:36px auto 8px;padding:22px 18px 8px;border:1px solid #3a3040;border-radius:18px;background:linear-gradient(180deg,rgba(245,195,107,.07),rgba(18,18,24,.92))}
+  .dy-series .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+  .dy-series .sec-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .dy-series h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.2vw,34px);line-height:1.15;margin:4px 0 0}
+  .dy-series h2 em{color:var(--gold);font-style:italic}
+  .dy-series .sec-sub{color:var(--mute);font-size:13px;line-height:1.5;max-width:720px;margin-top:8px}
+  .dy-series .sec-badge{flex:none;background:rgba(245,195,107,.12);border:1px solid rgba(245,195,107,.35);color:var(--gold);font-size:12px;font-weight:700;padding:8px 12px;border-radius:999px}
+  .dy-series .grid{margin-top:6px}
+  .dy-series .tile{border-color:#3a3442}
+  .dy-series .tile:hover{border-color:#6a5530;box-shadow:0 18px 40px -18px rgba(245,195,107,.35)}
+  .dy-series .views{background:linear-gradient(135deg,#c9973a,var(--gold));color:#1a1206}
+  .dy-series .flag{background:var(--accent);color:#fff}
+  .dy-series .series-foot{margin-top:14px;padding-top:10px;border-top:1px dashed #3a3442;color:var(--mute);font-size:12px;line-height:1.55}
   /* sortbar-4 */
   .sortbar .seg button{padding:6px 8px;font-size:12px}
   .sortbar .seg button .en{display:none}
@@ -249,8 +264,8 @@
 <header>
   <div class="kicker">抖音 · Douyin · Moodboard · for @junielaux</div>
   <h1>抖音 <em>爆款</em> AI 视频<span class="en">Douyin Viral AI Videos</span></h1>
-  <p class="sub">发布窗口 <b>2026 年 9 月 8–11 月 1 日</b>（首发扩窗；严窗 10/29–11/1 无过线精片）· 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Sep 8–Nov 1, 2026</b> (inaugural widen; strict Oct 29–Nov 1 empty at craft floor) · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
-  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · <b>append-only</b></span></p>
+  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="dy-updated"></b> · 点击打开抖音<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="dy-updated-en"></b> · Click to open Douyin.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水；短剧系列见下方分区）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · short-drama series → subsection below · <b>append-only</b></span></p>
   <div class="stats" id="dy-stats"></div>
 </header>
 <section class="insights">
@@ -262,15 +277,29 @@
   <div id="dy-note" class="rd-empty" style="max-width:1400px;margin:0 auto 18px"></div>
   <div class="sortbar" data-sort="dy"></div>
   <div class="grid" id="dy-grid"></div>
+
+<div class="dy-series" id="dy-series">
+  <div class="sec-head">
+    <div>
+      <div class="sec-kicker">分区 · Subsection · not craft hits</div>
+      <h2>最火 <em>AI 短剧系列</em><span class="en" style="display:inline;margin-left:10px;font-size:.42em;letter-spacing:.04em">Top AI Short-Drama Series</span></h2>
+      <p class="sec-sub">与上方「电影感 AI 短片」分开：这里专门收抖音端原生 <b>AI 短剧 / 漫剧系列</b>（合集级，非单条精片）。口径以 DataEye 等可引用月榜的抖音播放增量为主；封面缺官方源时用标题卡占位并标明。<span class="en">Separate from cinematic craft hits above — series-level AI short dramas only. Douyin monthly play deltas from citeable DataEye reports; title cards when official thumbs unavailable.</span></p>
+    </div>
+    <div class="sec-badge">TOP 10 · 系列</div>
+  </div>
+  <div class="grid" id="dy-series-grid"></div>
+  <p class="series-foot" id="dy-series-foot"></p>
+</div>
+
 </main>
-<footer>播放/点赞/评论/分享来自抖音公开分享页或 yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面版权归原作者，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments/shares from public Douyin share pages or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers © their creators. Historical rows kept forever.</span></footer>
+<footer>播放/点赞/评论/分享来自抖音公开分享页或 yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。上方精片与下方「AI 短剧系列」分区口径不同——短剧系列不混入精片榜。封面版权归原作者；标题卡仅作私人参考。<span class="en">Views/likes/comments/shares from public Douyin share pages or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Craft hits and the AI short-drama series subsection use different floors — series never mix into craft. Covers © creators; title cards private reference only.</span></footer>
 </section>
 
 <section class="page" id="page-tiktok">
 <header>
   <div class="kicker">TikTok · Moodboard · for @junielaux</div>
   <h1>TikTok <em>爆款</em> AI 视频<span class="en">TikTok Viral AI Videos</span></h1>
-  <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
+  <p class="sub">发布窗口 <b>2026 年 9 月 8–11 月 1 日</b>（首发扩窗；严窗 10/29–11/1 无过线精片）· 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Sep 8–Nov 1, 2026</b> (inaugural widen; strict Oct 29–Nov 1 empty at craft floor) · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
   <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥50 万 <b>或</b> 点赞 ≥5 万 · 优先有分享数 · 每位创作者最多 2 条 · AI film / cinematic shorts（拒纯舞蹈与泛娱乐灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥500K <b>or</b> likes ≥50K · prefer shares · max 2 per creator · AI film/cinematic shorts only · <b>append-only</b></span></p>
   <div class="stats" id="tt-stats"></div>
 </header>
@@ -362,9 +391,9 @@ const YT_TREND_DATE = "2026-10-28 → 10-31";
 const YT_TREND_ZH = "窗口 10/28–31：只收上传日在窗内且播放≥5万的 AI 片，+10。长篇 AI 连续剧/长片（巴基斯坦言情、尼莱坞、国风玄幻漫剧）冲量最大，同人 IP（海贼王、哈利波特、Jailer 3 概念预告）紧随；赞助片、非 AI、教程与解说已拒。";
 const YT_TREND = "Window Oct 28–31: AI films uploaded in-window with ≥50k views only, +10. Long-form AI serials/features (Pakistani romance, Nollywood, xianxia anime) pull the most views, followed by fan-IP shorts (One Piece, Harry Potter, Jailer 3 concept trailer). Sponsored, non-AI, tutorials and commentary rejected.";
 
-const UPDATED = "Nov 1, 2026 04:00 CST";
-const UPDATED_ZH = "2026-11-01 04:00（北京时间）";
-const LATEST_BATCH = "2026-11-01c"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 1, 2026 07:30 CST";
+const UPDATED_ZH = "2026-11-01 07:30（北京时间）";
+const LATEST_BATCH = "2026-11-01d"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -8023,6 +8052,325 @@ const DY_INSIGHTS = [
   }
 ];
 
+
+/* ===== Douyin AI short-drama SERIES subsection (v36) — series-level, NOT craft hits. ===== */
+const DY_SERIES_UPDATED = "Nov 1, 2026 07:30 CST";
+const DY_SERIES_UPDATED_ZH = "2026-11-01 07:30（北京时间）";
+const DY_SERIES_NOTE_ZH = "分区口径：抖音端原生 AI 短剧/漫剧「系列」热度榜（合集级）。主排序用 DataEye 可引用的 2026年9月抖音播放增量；补 8月剧王与累计41亿长青IP。不与上方电影感精片混榜。链接为抖音站内搜索；缺官方封面时用标题卡并在 metricsSrc 标明。";
+const DY_SERIES_NOTE = "Subsection: series-level Douyin-native AI short dramas / comic-dramas. Ranked mainly by citeable DataEye Sep 2026 Douyin play deltas; plus Aug chart-topper and a 4.1B+ cumulative evergreen. Never mixed into cinematic craft hits above. Links = Douyin search; title cards when official thumbs missing (flagged in metricsSrc).";
+const DY_SERIES_POSTS = [
+  {
+    "id": "s01_15nian",
+    "handle": "小瓜动漫",
+    "title": "15年青春苦守，未婚夫装穷归来",
+    "views": "23.7亿",
+    "viewsRaw": 2370000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/15%E5%B9%B4%E9%9D%92%E6%98%A5%E8%8B%A6%E5%AE%88%EF%BC%8C%E6%9C%AA%E5%A9%9A%E5%A4%AB%E8%A3%85%E7%A9%B7%E5%BD%92%E6%9D%A5",
+    "noteZh": "《15年青春苦守，未婚夫装穷归来》· 2026年9月抖音 AI 剧漫剧百强榜第1 · 唯一单月增量破20亿",
+    "note": "15年青春苦守，未婚夫装穷归来 — DataEye Sep 2026 Douyin AI drama #1 — only title above 2B monthly delta",
+    "whyZh": "9月抖音播放增量 23.7亿 · AI仿真人剧 · 小瓜动漫",
+    "whyEn": "9月抖音播放增量: 23.7亿 · AI仿真人剧 · 小瓜动漫",
+    "flag": "AI短剧系列",
+    "tags": [
+      "AI仿真人",
+      "逆袭",
+      "装穷",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s01_15nian.jpg",
+    "platform": "douyin-series",
+    "kind": "AI仿真人剧",
+    "studio": "小瓜动漫",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 1
+  },
+  {
+    "id": "s02_tingshui",
+    "handle": "AI仿真人剧",
+    "title": "听水小锦鲤",
+    "views": "17.6亿",
+    "viewsRaw": 1760000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E5%90%AC%E6%B0%B4%E5%B0%8F%E9%94%A6%E9%B2%A4",
+    "noteZh": "《听水小锦鲤》· 9月抖音榜第2 · 听水/读心设定连带爆款",
+    "note": "听水小锦鲤 — DataEye Sep Douyin #2 — “listen-to-water” mind-reading boom",
+    "whyZh": "9月抖音播放增量 17.6亿 · AI仿真人剧 · —",
+    "whyEn": "9月抖音播放增量: 17.6亿 · AI仿真人剧 · —",
+    "flag": "AI短剧系列",
+    "tags": [
+      "AI仿真人",
+      "听水",
+      "逆袭",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s02_tingshui.jpg",
+    "platform": "douyin-series",
+    "kind": "AI仿真人剧",
+    "studio": "—",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 2
+  },
+  {
+    "id": "s03_yiqiang",
+    "handle": "3D漫",
+    "title": "一墙之隔，皆是人心",
+    "views": "17.1亿",
+    "viewsRaw": 1710000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E4%B8%80%E5%A2%99%E4%B9%8B%E9%9A%94%EF%BC%8C%E7%9A%86%E6%98%AF%E4%BA%BA%E5%BF%83",
+    "noteZh": "《一墙之隔，皆是人心》· 9月抖音榜第3 · 3D 漫头部",
+    "note": "一墙之隔，皆是人心 — DataEye Sep Douyin #3 — top 3D comic-drama",
+    "whyZh": "9月抖音播放增量 17.1亿 · 3D漫剧 · —",
+    "whyEn": "9月抖音播放增量: 17.1亿 · 3D漫剧 · —",
+    "flag": "AI短剧系列",
+    "tags": [
+      "3D漫",
+      "人心",
+      "都市",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s03_yiqiang.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧",
+    "studio": "—",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 3
+  },
+  {
+    "id": "s04_lvyi",
+    "handle": "九州文化",
+    "title": "绿意萌熹：蛙系萌娃闹翻忧郁老爸",
+    "views": "16.95亿",
+    "viewsRaw": 1695000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E7%BB%BF%E6%84%8F%E8%90%8C%E7%86%B9%EF%BC%9A%E8%9B%99%E7%B3%BB%E8%90%8C%E5%A8%83%E9%97%B9%E7%BF%BB%E5%BF%A7%E9%83%81%E8%80%81%E7%88%B8",
+    "noteZh": "《绿意萌熹：蛙系萌娃闹翻忧郁老爸》· 九州文化9月代表作 · 萌娃闹腾人设",
+    "note": "绿意萌熹：蛙系萌娃闹翻忧郁老爸 — Jiuzhou Sep standout — frog-baby family comedy",
+    "whyZh": "9月抖音播放增量 16.95亿 · AI仿真人剧 · 九州文化",
+    "whyEn": "9月抖音播放增量: 16.95亿 · AI仿真人剧 · 九州文化",
+    "flag": "AI短剧系列",
+    "tags": [
+      "萌宝",
+      "家庭",
+      "九州",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s04_lvyi.jpg",
+    "platform": "douyin-series",
+    "kind": "AI仿真人剧",
+    "studio": "九州文化",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 4
+  },
+  {
+    "id": "s05_tuihun",
+    "handle": "灵漫AI剧场",
+    "title": "退婚后我在七零赚钱养家致富",
+    "views": "16.59亿",
+    "viewsRaw": 1659000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E9%80%80%E5%A9%9A%E5%90%8E%E6%88%91%E5%9C%A8%E4%B8%83%E9%9B%B6%E8%B5%9A%E9%92%B1%E5%85%BB%E5%AE%B6%E8%87%B4%E5%AF%8C",
+    "noteZh": "《退婚后我在七零赚钱养家致富》· 9月新剧播放增量前列 · 年代致富",
+    "note": "退婚后我在七零赚钱养家致富 — Sep new-drama leaderboard — 1970s wealth-build",
+    "whyZh": "9月抖音播放增量 16.59亿 · 3D漫剧 · 灵漫AI剧场",
+    "whyEn": "9月抖音播放增量: 16.59亿 · 3D漫剧 · 灵漫AI剧场",
+    "flag": "AI短剧系列",
+    "tags": [
+      "年代",
+      "致富",
+      "3D漫",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s05_tuihun.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧",
+    "studio": "灵漫AI剧场",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 5
+  },
+  {
+    "id": "s06_basui",
+    "handle": "快创剧场",
+    "title": "八岁鉴真心，寻得良母归",
+    "views": "16.18亿",
+    "viewsRaw": 1618000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E5%85%AB%E5%B2%81%E9%89%B4%E7%9C%9F%E5%BF%83%EF%BC%8C%E5%AF%BB%E5%BE%97%E8%89%AF%E6%AF%8D%E5%BD%92",
+    "noteZh": "《八岁鉴真心，寻得良母归》· 快创剧场9月榜第6 · 出品方8席领跑之一",
+    "note": "八岁鉴真心，寻得良母归 — Kuaichuang Sep #6 — studio led with 8 chart seats",
+    "whyZh": "9月抖音播放增量 16.18亿 · 3D漫剧 · 快创剧场",
+    "whyEn": "9月抖音播放增量: 16.18亿 · 3D漫剧 · 快创剧场",
+    "flag": "AI短剧系列",
+    "tags": [
+      "萌宝",
+      "鉴真心",
+      "快创",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s06_basui.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧",
+    "studio": "快创剧场",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 6
+  },
+  {
+    "id": "s07_qingshu",
+    "handle": "九州短剧",
+    "title": "让你代写情书，你落笔惊哭大儒",
+    "views": "16.0亿",
+    "viewsRaw": 1600000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E8%AE%A9%E4%BD%A0%E4%BB%A3%E5%86%99%E6%83%85%E4%B9%A6%EF%BC%8C%E4%BD%A0%E8%90%BD%E7%AC%94%E6%83%8A%E5%93%AD%E5%A4%A7%E5%84%92",
+    "noteZh": "《让你代写情书，你落笔惊哭大儒》· 九州短剧9月榜第7 · 古风代笔反转",
+    "note": "让你代写情书，你落笔惊哭大儒 — Jiuzhou Shorts Sep #7 — scholar love-letter twist",
+    "whyZh": "9月抖音播放增量 16.0亿 · 3D漫剧 · 九州短剧",
+    "whyEn": "9月抖音播放增量: 16.0亿 · 3D漫剧 · 九州短剧",
+    "flag": "AI短剧系列",
+    "tags": [
+      "古风",
+      "反转",
+      "九州",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s07_qingshu.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧",
+    "studio": "九州短剧",
+    "heatLabel": "9月抖音播放增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 7
+  },
+  {
+    "id": "s08_nuonuo",
+    "handle": "青椒漫剧",
+    "title": "糯糯下山，师兄们都慌了",
+    "views": "13.4亿",
+    "viewsRaw": 1340000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E7%B3%AF%E7%B3%AF%E4%B8%8B%E5%B1%B1%EF%BC%8C%E5%B8%88%E5%85%84%E4%BB%AC%E9%83%BD%E6%85%8C%E4%BA%86",
+    "noteZh": "《糯糯下山，师兄们都慌了》· 青椒漫剧系列 · 抖音两季合计13.4亿，红果亦双爆",
+    "note": "糯糯下山，师兄们都慌了 — Qingjiao series — 1.34B Douyin across two seasons; Hongguo dual-hit",
+    "whyZh": "9月两季合计抖音增量 13.4亿 · 3D漫剧·系列 · 青椒漫剧",
+    "whyEn": "9月两季合计抖音增量: 13.4亿 · 3D漫剧·系列 · 青椒漫剧",
+    "flag": "AI短剧系列",
+    "tags": [
+      "萌宝",
+      "修仙",
+      "系列",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s08_nuonuo.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧·系列",
+    "studio": "青椒漫剧",
+    "heatLabel": "9月两季合计抖音增量",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 8
+  },
+  {
+    "id": "s09_wanku",
+    "handle": "系列多季",
+    "title": "谁说纨绔不能当状元",
+    "views": "25.79亿",
+    "viewsRaw": 2579000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E8%B0%81%E8%AF%B4%E7%BA%A8%E7%BB%94%E4%B8%8D%E8%83%BD%E5%BD%93%E7%8A%B6%E5%85%83",
+    "noteZh": "《谁说纨绔不能当状元》· 8月抖音剧王25.79亿；9月仍+11.66亿延续 · 封面取红果公开缩略图",
+    "note": "谁说纨绔不能当状元 — Aug Douyin #1 at 2.579B; Sep still +1.166B. Cover from Hongguo public thumb.",
+    "whyZh": "8月抖音播放增量（剧王） 25.79亿 · 3D漫剧·系列 · 系列IP",
+    "whyEn": "8月抖音播放增量（剧王）: 25.79亿 · 3D漫剧·系列 · 系列IP",
+    "flag": "AI短剧系列",
+    "tags": [
+      "穿越",
+      "逆袭",
+      "系列",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s09_wanku.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧·系列",
+    "studio": "系列IP",
+    "heatLabel": "8月抖音播放增量（剧王）",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=hongguo_thumb",
+    "batch": "2026-11-01d",
+    "rank": 9
+  },
+  {
+    "id": "s10_bianguan",
+    "handle": "巴中夫妻团队",
+    "title": "发配边关，罪妻开荒养出战神",
+    "views": "41亿+",
+    "viewsRaw": 4100000000,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-09 榜 / 累计",
+    "url": "https://www.douyin.com/search/%E5%8F%91%E9%85%8D%E8%BE%B9%E5%85%B3%EF%BC%8C%E7%BD%AA%E5%A6%BB%E5%BC%80%E8%8D%92%E5%85%BB%E5%87%BA%E6%88%98%E7%A5%9E",
+    "noteZh": "《发配边关，罪妻开荒养出战神》· 2026年中爆款长青IP · 多季累计抖音播放破41亿",
+    "note": "发配边关，罪妻开荒养出战神 — Mid-2026 evergreen IP — 4.1B+ Douyin cumulative across seasons",
+    "whyZh": "抖音累计播放（多季） 41亿+ · 3D漫剧·长青系列 · 何杰/张芬团队",
+    "whyEn": "抖音累计播放（多季）: 41亿+ · 3D漫剧·长青系列 · 何杰/张芬团队",
+    "flag": "AI短剧系列",
+    "tags": [
+      "种田",
+      "边关",
+      "系列",
+      "AI短剧"
+    ],
+    "cover": "src/img/dy_series_s10_bianguan.jpg",
+    "platform": "douyin-series",
+    "kind": "3D漫剧·长青系列",
+    "studio": "何杰/张芬团队",
+    "heatLabel": "抖音累计播放（多季）",
+    "metricsSrc": "DataEye Sep/Aug 2026 Douyin AI drama charts + press (play delta / cumulative); cover=title_card",
+    "batch": "2026-11-01d",
+    "rank": 10
+  }
+];
+
 /* ===== TikTok — APPEND ONLY by video id. Floor: views≥500K OR likes≥50K. Window Oct 29–Nov 1 (inaugural widen Sep 8–Nov 1). ===== */
 const TT_UPDATED = "Nov 1, 2026 04:00 CST";
 const TT_UPDATED_ZH = "2026-11-01 04:00（北京时间）";
@@ -13131,11 +13479,48 @@ function layoutDouyin(){
   const cols=Array.from({length:n},()=>[]);
   if(!dySorted.length){
     document.getElementById("dy-grid").innerHTML=`<div class="rd-empty">本窗暂无已核实且过门槛的抖音条目（故意空表，不灌水）。<span class="en">No verified Douyin rows above floor this window — left empty on purpose.</span></div>`;
+  } else {
+    sortRows("dy",dySorted).forEach((r,i)=>cols[i%n].push(dyTileHTML(r,i)));
+    document.getElementById("dy-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+  }
+  layoutDySeries();
+}
+
+/* ---- Douyin AI short-drama series subsection ---- */
+const dySeriesTileHTML=(r,i)=>`
+  <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="cover">
+      ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.title||r.handle||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">AI短剧</div>`}
+      <div class="rank">${String(r.rank||i+1).padStart(2,"0")}</div>
+      <div class="views">▶ ${na(r.views)} <small>${esc(r.heatLabel||"热度")}</small></div>
+      <div class="flag">${esc(r.flag||"AI短剧系列")}</div>
+      <div class="play">抖音搜剧名 · Search ↗</div>
+    </div>
+    <div class="meta">
+      <div class="handle">${esc(r.title||r.handle||"?")} ${batchBadge(r)}</div>
+      <div class="note">${r.noteZh?`${esc(r.noteZh)}<span class="en">${na(r.note)}</span>`:na(r.note)}</div>
+      ${whyHTML(r)}
+      <div class="row"><span>${esc(r.kind||"AI短剧")}</span><span>${esc(r.studio||r.handle||"")}</span><span>${na(r.date)}</span></div>
+      ${(String(r.metricsSrc||"").includes("cover=title_card"))?`<div class="row"><span>非官方海报 · title card</span></div>`:""}
+      ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
+    </div>
+  </a>`;
+function layoutDySeries(){
+  const rows=(typeof DY_SERIES_POSTS!=="undefined"?DY_SERIES_POSTS:[]).slice().sort((a,b)=>(a.rank||0)-(b.rank||0));
+  const foot=document.getElementById("dy-series-foot");
+  if(foot) foot.innerHTML=`${esc(typeof DY_SERIES_NOTE_ZH!=="undefined"?DY_SERIES_NOTE_ZH:"")}<span class="en">${esc(typeof DY_SERIES_NOTE!=="undefined"?DY_SERIES_NOTE:"")}</span> · 更新 ${esc(typeof DY_SERIES_UPDATED_ZH!=="undefined"?DY_SERIES_UPDATED_ZH:"")}`;
+  const host=document.getElementById("dy-series-grid");
+  if(!host) return;
+  const w=innerWidth, n=w>1200?5:w>820?4:w>520?3:2;
+  const cols=Array.from({length:n},()=>[]);
+  if(!rows.length){
+    host.innerHTML=`<div class="rd-empty">暂无已核实的 AI 短剧系列。<span class="en">No verified AI short-drama series yet.</span></div>`;
     return;
   }
-  sortRows("dy",dySorted).forEach((r,i)=>cols[i%n].push(dyTileHTML(r,i)));
-  document.getElementById("dy-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+  rows.forEach((r,i)=>cols[i%n].push(dySeriesTileHTML(r,i)));
+  host.innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
 }
+
 addEventListener("resize",()=>{ if(document.getElementById("page-douyin")?.classList.contains("active")) layoutDouyin(); });
 
 /* ---- TikTok page ---- */
