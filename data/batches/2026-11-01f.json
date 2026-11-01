@@ -1,0 +1,48 @@
+{
+  "batch": "2026-11-01f",
+  "version": "v36c",
+  "theme": "Douyin craft AI short-drama series +4 (expand TOP10→14)",
+  "kept_top10": [
+    "The Accident",
+    "备用联系人",
+    "万物生",
+    "异邪录",
+    "漂亮的恶意",
+    "被裁掉的女孩",
+    "Shame",
+    "血誓",
+    "零号档案",
+    "丧尸清道夫"
+  ],
+  "added": [
+    {
+      "rank": 11,
+      "title": "The Other Self",
+      "heat": "系列约8700万+（澎湃）",
+      "cover": "src/img/dy_series_11_otherself.jpg",
+      "cover_src": "thepaper still Maxine Hale"
+    },
+    {
+      "rank": 12,
+      "title": "持械入宋",
+      "heat": "全网40亿+/红果10月S10日榜TOP1",
+      "cover": "src/img/dy_series_12_chimai.jpg",
+      "cover_src": "toutiao public poster"
+    },
+    {
+      "rank": 13,
+      "title": "渡骸",
+      "heat": "系列约6800万+（新榜）；账号近8000万",
+      "cover": "src/img/dy_series_13_duhai.jpg",
+      "cover_src": "ifeng press poster"
+    },
+    {
+      "rank": 14,
+      "title": "燕然",
+      "heat": "平遥火山引擎AI影视铜奖·96分钟分集（播放未独立核验）",
+      "cover": "src/img/dy_series_14_yanran.jpg",
+      "cover_src": "ep4 public poster toutiao/dy"
+    }
+  ],
+  "notes": "Junie chose Other Self/持械入宋/渡骸; steering also added 燕然. Prefer expand to 14, keep craft bar, real covers only."
+}
