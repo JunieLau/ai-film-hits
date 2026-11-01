@@ -150,6 +150,14 @@
   .plat{position:absolute;bottom:10px;right:12px;z-index:2;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);padding:3px 8px;border-radius:999px}
 
   /* ---- Douyin AI short-drama series subsection (v36) ---- */
+  /* v38 Douyin sub-pages */
+  .dy-subtabs{max-width:min(1800px,96vw);margin:14px auto 0;padding:0 24px;display:flex;gap:4px 18px;align-items:flex-end;border-bottom:1px solid var(--line)}
+  .dy-subtabs button{all:unset;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.03em;color:var(--mute);padding:8px 2px 7px;border-bottom:2px solid transparent;line-height:1.15;text-align:center;transition:color .2s,border-color .2s}
+  .dy-subtabs button .en{display:block;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;margin-top:2px;opacity:.75}
+  .dy-subtabs button:hover{color:var(--text)}
+  .dy-subtabs button.on{color:var(--text);border-bottom-color:var(--accent)}
+  .dy-sub{display:none}.dy-sub.on{display:block}
+  .dy-series .sortbar{margin:0 0 16px}
   .dy-series{margin:36px auto 8px;padding:22px 18px 8px;border:1px solid #3a3040;border-radius:18px;background:linear-gradient(180deg,rgba(245,195,107,.07),rgba(18,18,24,.92))}
   .dy-series .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
   .dy-series .sec-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
@@ -270,11 +278,16 @@
 
 
 <section class="page" id="page-douyin">
+<div class="dy-subtabs" role="tablist" id="dy-subtabs">
+  <button type="button" data-sub="hits" class="on">抖音热门<span class="en">Douyin hits</span></button>
+  <button type="button" data-sub="series">最火 AI 短剧<span class="en">Top AI short dramas</span></button>
+</div>
+<div class="dy-sub on" data-sub="hits">
 <header>
   <div class="kicker">抖音 · Douyin · Moodboard · for @junielaux</div>
   <h1>抖音 <em>爆款</em> AI 视频<span class="en">Douyin Viral AI Videos</span></h1>
   <p class="sub">发布窗口 <b>2026 年 10 月 29–11 月 1 日</b> · 本批追加 · 历史保留 · <b id="dy-updated"></b> · 点击打开抖音<span class="en">Publish window <b>Oct 29–Nov 1, 2026</b> · new appended, history kept · <b id="dy-updated-en"></b> · Click to open Douyin.</span></p>
-  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水；短剧系列见下方分区）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · short-drama series → subsection below · <b>append-only</b></span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥100 万 <b>或</b> 点赞 ≥10 万 · 优先有分享数 · 每位创作者最多 2 条 · AI 电影/短片/电影感成片（拒舞蹈模板与流水线短剧灌水；短剧系列见「最火 AI 短剧」子页）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥1M <b>or</b> likes ≥100K · prefer shares · max 2 per creator · cinematic AI film/shorts only · short-drama series → 「最火 AI 短剧」 sub-page · <b>append-only</b></span></p>
   <div class="stats" id="dy-stats"></div>
 </header>
 <section class="insights">
@@ -286,21 +299,25 @@
   <div id="dy-note" class="rd-empty" style="max-width:min(1800px,96vw);margin:0 auto 18px"></div>
   <div class="sortbar" data-sort="dy"></div>
   <div class="grid" id="dy-grid"></div>
-
+</main>
+</div>
+<div class="dy-sub" data-sub="series">
+<main>
 <div class="dy-series" id="dy-series">
   <div class="sec-head">
     <div>
-      <div class="sec-kicker">分区 · Subsection · not craft hits</div>
+      <div class="sec-kicker">子页 · Sub-page · not craft hits</div>
       <h2>最火 <em>AI 短剧系列</em><span class="en" style="display:inline;margin-left:10px;font-size:.42em;letter-spacing:.04em">Top AI Short-Drama Series</span></h2>
-      <p class="sec-sub">与上方「电影感 AI 短片」分开：这里收抖音端 <b>craft AI 短剧 / 系列</b>（角色一致、叙事完成、有破圈讨论）。标尺：《The Accident》《备用联系人》《万物生》《异邪录》——<b>不</b>再灌 DataEye 月榜装穷/漫剧工厂剧。排序看近十日热度（日榜/合集增量），不是终身累计。优先真实剧照/海报。<span class="en">Separate from craft shorts above — series-level craft AI dramas only. Order by ~10-day heat (charts / collection deltas), not lifetime totals. Bar set by The Accident / 备用联系人 / 万物生 / 异邪录 — NOT DataEye factory farms. Prefer real posters.</span></p>
+      <p class="sec-sub">与「抖音热门」子页的电影感 AI 短片分开：这里收抖音端 <b>craft AI 短剧 / 系列</b>（角色一致、叙事完成、有破圈讨论）。标尺：《The Accident》《备用联系人》《万物生》《异邪录》——<b>不</b>再灌 DataEye 月榜装穷/漫剧工厂剧。综合最佳＝策展名次（前 15 按近十日热度，16–23 为 v38 新增）；可切换 最新 / 最多观看（报道累计播放）/ 增长最快。只用官方海报/剧集封面。<span class="en">Separate from the craft shorts on the 抖音热门 sub-page — series-level craft AI dramas only. Best = curated rank (top 15 by ~10-day heat; 16–23 added in v38); switch to Newest / Most viewed (reported cumulative) / Fastest growth. Bar set by The Accident / 备用联系人 / 万物生 / 异邪录 — NOT DataEye factory farms. Prefer real posters.</span></p>
     </div>
-    <div class="sec-badge">TOP 15 · 近十日热度</div>
+    <div class="sec-badge">TOP 23 · Craft 标尺</div>
   </div>
+  <div class="sortbar" data-sort="dys"></div>
   <div class="grid" id="dy-series-grid"></div>
   <p class="series-foot" id="dy-series-foot"></p>
 </div>
-
 </main>
+</div>
 <footer>播放/点赞/评论/分享来自抖音公开分享页或 yt-dlp 可核实字段；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。上方精片与下方「AI 短剧系列」分区口径不同——短剧系列不混入精片榜。封面版权归原作者；标题卡仅作私人参考。<span class="en">Views/likes/comments/shares from public Douyin share pages or yt-dlp-verifiable fields; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Craft hits and the AI short-drama series subsection use different floors — series never mix into craft. Covers © creators; title cards private reference only.</span></footer>
 </section>
 
@@ -8085,10 +8102,10 @@ const DY_INSIGHTS = [
 
 /* ===== Douyin AI short-drama SERIES subsection (v36) — series-level, NOT craft hits. ===== */
 /* ===== Douyin AI short-drama SERIES subsection (v36b craft rebuild + v36c +4 + v36d 相骨) — series-level craft hits, NOT factory farms. ===== */
-const DY_SERIES_UPDATED = "2026-11-01";
-const DY_SERIES_UPDATED_ZH = "2026年11月1日 22:15（北京时间）· v37e 近十日热度重排";
-const DY_SERIES_NOTE_ZH = "分区口径：craft AI 短剧/系列（角色一致、叙事完成、破圈讨论）。展示顺序按近十日热度（红果日榜热播指数加总 / 抖音合集近端增量；不是终身累计播放）。不收 DataEye 装穷/漫剧工厂剧。封面均为真实剧照/海报。";
-const DY_SERIES_NOTE = "Craft shelf: character lock + storytelling + breakout heat. Display order by ~10-day heat (Hongguo daily heat-index sum / Douyin collection delta — not lifetime totals). No DataEye factory farms. Real posters only.";
+const DY_SERIES_UPDATED = "2026-11-02";
+const DY_SERIES_UPDATED_ZH = "2026年11月2日 07:30（北京时间）· v38 +8 部 · 独立子页 + 排序";
+const DY_SERIES_NOTE_ZH = "分区口径：craft AI 短剧/系列（角色一致、叙事完成、破圈讨论）。综合最佳＝策展名次（前 15 按近十日热度，16–23 为 v38 新增、按报道累计播放排）；最新＝首集上线日（≈为月份估计，未知排最后）；最多观看＝报道累计播放（无可靠累计排最后）；增长最快＝近十日热度信号优先，其次 累计播放÷上线天数，再按名次。不收 DataEye 装穷/漫剧工厂剧。封面均为官方海报/剧集封面。";
+const DY_SERIES_NOTE = "Craft shelf. Best = curated rank (top 15 by ~10-day heat; 16–23 new in v38 by reported cumulative plays). Newest = first-episode date (≈ month estimate; unknown last). Most viewed = reported cumulative plays (unknown last). Fastest growth = ~10-day heat signal first, then cumulative plays ÷ days live, then rank. No factory farms. Official posters / episode covers only.";
 const DY_SERIES_POSTS = [
   {
     "id": "s02_beiyong",
@@ -8096,10 +8113,14 @@ const DY_SERIES_POSTS = [
     "title": "备用联系人",
     "views": "近10日红果日榜累计热播指数≈7.36亿",
     "viewsRaw": 72470000,
+    "playsRaw": null,
+    "playsAsOf": null,
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026-10-17 上架",
+    "releaseDate": "2026-10-17",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E5%A4%87%E7%94%A8%E8%81%94%E7%B3%BB%E4%BA%BA",
     "noteZh": "《备用联系人（完）》· 都市暗恋成真 · 红果/抖音日榜最高 TOP2（10/28 热播指数 7247 万）· 建模/OST 被观众称为「演员都追不上」",
     "note": "备用联系人 — urban AI drama — Hongguo/Douyin daily chart peak TOP2 (heat idx 72.47M on Oct 28)",
@@ -8128,10 +8149,14 @@ const DY_SERIES_POSTS = [
     "title": "持械入宋",
     "views": "近10日S9交接+S10日榜累计热播指数≈7.27亿",
     "viewsRaw": 4000000000,
+    "playsRaw": 4000000000,
+    "playsAsOf": "2026-10-08",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026 多季连载（至第10季）",
+    "releaseDate": null,
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B",
     "noteZh": "《持械入宋》· 现代特战队携械穿越北宋 · 红果现象级（报道全网播放 40 亿+ @10/8；第10季 10/24 红果日榜 TOP1 / 热播指数 7921 万）· 历史仿真人非装穷工厂片",
     "note": "持械入宋 — modern SOF squad armed into Northern Song — Hongguo phenomenon (press 40B+ plays by Oct 8; S10 daily chart TOP1 / heat idx 79.21M on Oct 24)",
@@ -8160,10 +8185,14 @@ const DY_SERIES_POSTS = [
     "title": "漂亮的恶意",
     "views": "近12日抖音合集+2800万（1.83→2.11亿）",
     "viewsRaw": 211000000,
+    "playsRaw": 211000000,
+    "playsAsOf": "2026-10-31",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026-08-28 起",
+    "releaseDate": "2026-08-28",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E6%BC%82%E4%BA%AE%E7%9A%84%E6%81%B6%E6%84%8F",
     "noteZh": "《漂亮的恶意》· 川渝女主闯韩国财阀校园 · 合集播放约 2.11 亿（2026-10-31）· OST 传媒 / 海底蟹黄堡",
     "note": "漂亮的恶意 — Sichuan heroine in Korean chaebol school — ~211M collection plays @2026-10-31 — 海底蟹黄堡 / OST",
@@ -8192,10 +8221,14 @@ const DY_SERIES_POSTS = [
     "title": "The Accident",
     "views": "近12日抖音合集+1000万（1.41→1.51亿）",
     "viewsRaw": 151000000,
+    "playsRaw": 151000000,
+    "playsAsOf": "2026-10-31",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026-08 起连载",
+    "releaseDate": "2026-08-14",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/The%20Accident%20whata-ha",
     "noteZh": "《The Accident》· 美高校园群像 AI 美剧 · 合集播放约 1.51 亿（2026-10-31 观测）· whata-ha × 枸橼酸钠手搓",
     "note": "The Accident — US-high-school AI drama — ~151M Douyin collection plays (obs. 2026-10-31) — whata-ha × 枸橼酸钠",
@@ -8224,10 +8257,14 @@ const DY_SERIES_POSTS = [
     "title": "异邪录",
     "views": "10/18上线·窗口建仓估（置信折算后≈960万）",
     "viewsRaw": 40147900,
+    "playsRaw": 40147900,
+    "playsAsOf": "2026-10-31",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026-10-18 起",
+    "releaseDate": "2026-10-18",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E5%BC%82%E9%82%AA%E5%BD%95",
     "noteZh": "《异邪录》· 东方志怪 × 西方黑暗神话 · 合集播放约 4014.79 万（2026-10-31）· 全片声明即梦 AI 制作",
     "note": "异邪录 — East-meets-West occult hunt — ~40.15M collection plays @2026-10-31 — full Jimeng AI disclosure",
@@ -8256,10 +8293,14 @@ const DY_SERIES_POSTS = [
     "title": "被裁掉的女孩",
     "views": "近12日合集仅+200万（5.54→5.56亿）",
     "viewsRaw": 200000000,
+    "playsRaw": 556000000,
+    "playsAsOf": "2026-10-31",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026 上半年爆款",
+    "releaseDate": "2026-06-01",
+    "releaseApprox": true,
     "url": "https://www.douyin.com/search/%E8%A2%AB%E8%A3%81%E6%8E%89%E7%9A%84%E5%A5%B3%E5%AD%A9",
     "noteZh": "《被裁掉的女孩》· 仿真人职场/模特线 · 播放破 2 亿 · 女主「方桃子」独立社群运营；早期 craft 里程碑",
     "note": "被裁掉的女孩 — photoreal workplace/model arc — 200M+ plays — Fang Taozi social-universe milestone",
@@ -8288,10 +8329,14 @@ const DY_SERIES_POSTS = [
     "title": "The Other Self",
     "views": "8700万+",
     "viewsRaw": 87000000,
+    "playsRaw": 87000000,
+    "playsAsOf": "2026-09-18",
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026 季播（含 S2）",
+    "releaseDate": null,
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/The%20Other%20Self%20Spongecake",
     "noteZh": "《The Other Self》系列（含 S2）· 美高灵魂互换 / 灰姑娘继姐重生 · 与《The Accident》同档国产 AI 美剧 · 累计播放约 8700 万+（澎湃 2026-09）· Spongecake",
     "note": "The Other Self (incl. S2) — US-HS body-swap / Cinderella-stepsister arc — Accident-tier AI US-drama — ~87M+ plays (The Paper Sep 2026) — Spongecake",
@@ -8320,10 +8365,14 @@ const DY_SERIES_POSTS = [
     "title": "万物生",
     "views": "1亿+",
     "viewsRaw": 100000000,
+    "playsRaw": 100000000,
+    "playsAsOf": null,
     "likes": "400万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026-05 起系列",
+    "releaseDate": "2026-05-17",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E4%B8%87%E7%89%A9%E7%94%9F%20%E5%91%BD%E6%AF%94%E6%A2%A6%E9%95%BF",
     "noteZh": "《万物生》系列 · 中式机械朋克 · 系列播放 1 亿+ / 点赞 400 万+ · 命比梦长；《尘泥》获抖音 AI 创作大赛铜奖+最具 IP 潜力奖",
     "note": "万物生 — Sino-mech-punk series — 100M+ plays / 4M+ likes — 命比梦长; Dust chapter Douyin AI contest bronze + IP potential",
@@ -8352,10 +8401,14 @@ const DY_SERIES_POSTS = [
     "title": "零号档案",
     "views": "亿级",
     "viewsRaw": 100000000,
+    "playsRaw": 170000000,
+    "playsAsOf": null,
     "likes": "176万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026 连载",
+    "releaseDate": null,
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E9%9B%B6%E5%8F%B7%E6%A1%A3%E6%A1%88%20%E7%99%BD%E8%A2%8B%E5%AD%90",
     "noteZh": "《零号档案》· 白袋子原创 · 与《万物生》同批被媒体并列为亿级 AI 超创连续剧；EP1 点赞约 176 万级",
     "note": "零号档案 — 白袋子 original — press-paired with 万物生 as 100M-class AI serial; EP1 ~1.76M likes",
@@ -8384,10 +8437,14 @@ const DY_SERIES_POSTS = [
     "title": "渡骸",
     "views": "6800万+",
     "viewsRaw": 68000000,
+    "playsRaw": 68000000,
+    "playsAsOf": "2026-09-21",
     "likes": "300万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026-05 起连载",
+    "releaseDate": "2026-05-01",
+    "releaseApprox": true,
     "url": "https://www.douyin.com/search/%E6%B8%A1%E9%AA%B8%20CHunye",
     "noteZh": "《渡骸》· 日语船员打捞中式僵尸 · 22 岁大学生 CHunye 手搓 · 系列播放约 6800 万+（新榜 09/21）；个人账号近 8000 万播 / 点赞超 300 万（大江新闻 09/20）· 与《漂亮的恶意》同属外语成片线",
     "note": "渡骸 — JP-crew / Chinese-jiangshi ferry horror — CHunye solo craft — series ~68M+ plays (Newrank Sep 21); account ~80M plays / 3M+ likes (Dajiang News Sep 20)",
@@ -8416,10 +8473,14 @@ const DY_SERIES_POSTS = [
     "title": "相骨",
     "views": "4300万+",
     "viewsRaw": 43000000,
+    "playsRaw": 43000000,
+    "playsAsOf": null,
     "likes": "194万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026-08-18 起",
+    "releaseDate": "2026-08-18",
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E7%9B%B8%E9%AA%A8%20%E6%B7%AE%E5%B7%A6",
     "noteZh": "《相骨》· AI 兽人国风武侠动画番剧 · 导演淮左（抖音「淮左｜万木生春」/「淮左 | 提示炼金师」；与梦工作室；万物生宇宙关联）· 抖音播放约 4300 万+ / 点赞约 194 万+（新榜/voice.newrank ~2026-08）；全网约 5000 万+；EP1 ~13 分钟 · 约 21 天 / ~¥2 万算力 · Seedance2 / 小云雀 · 海报由《深海》美术指导翁铭绘制 · Junie 点名补仓",
     "note": "相骨 — AI orc/beastfolk guofeng wuxia anime short — Huaizuo (Douyin 淮左｜万木生春 / 提示炼金师; YuMeng Studio; Wanwusheng universe) — Douyin ~43M+ plays / ~1.94M+ likes (newrank/voice.newrank ~2026-08); all-net ~50M+; EP1 ~13 min; ~21 days / ~¥20k compute; Seedance2 / Xiaoyunque; poster by Deep Sea AD Weng Ming",
@@ -8448,10 +8509,14 @@ const DY_SERIES_POSTS = [
     "title": "丧尸清道夫",
     "views": "7000万+",
     "viewsRaw": 70000000,
+    "playsRaw": 70000000,
+    "playsAsOf": null,
     "likes": "300万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026-05 爆款",
+    "releaseDate": "2026-05-01",
+    "releaseApprox": true,
     "url": "https://www.douyin.com/search/%E4%B8%A7%E5%B0%B8%E6%B8%85%E9%81%93%E5%A4%AB",
     "noteZh": "《丧尸清道夫》· 刘梓瑜 3000 元手搓 · 抖音播放破 7000 万 / 点赞超 300 万；PJ Ace 公开寻人的 craft 短片里程碑（系列化 IP 中）",
     "note": "丧尸清道夫 — Liu Ziyu ¥3k solo craft short — 70M+ Douyin / 3M+ likes; PJ Ace shout-out landmark (IP extending)",
@@ -8480,10 +8545,14 @@ const DY_SERIES_POSTS = [
     "title": "Shame",
     "views": "1706万+",
     "viewsRaw": 17063000,
+    "playsRaw": 17063000,
+    "playsAsOf": null,
     "likes": "250万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026-10 破圈",
+    "releaseDate": "2026-10-01",
+    "releaseApprox": true,
     "url": "https://www.douyin.com/search/Shame%20AI%E7%BE%8E%E9%AB%98",
     "noteZh": "《Shame》· 美高转学生侦探线 · 首集 6 天点赞破 250 万 / 播放约 1706 万 · 「美国人知道我们拍美剧了吗」出圈评论",
     "note": "Shame — US-HS transfer-student detective — EP1 2.5M+ likes / ~17.06M views in 6 days",
@@ -8512,10 +8581,14 @@ const DY_SERIES_POSTS = [
     "title": "血誓",
     "views": "多平台连载",
     "viewsRaw": 450000,
+    "playsRaw": null,
+    "playsAsOf": null,
     "likes": "45.3万+",
     "comments": "N/A",
     "shares": null,
     "date": "2026 连载至30+集",
+    "releaseDate": null,
+    "releaseApprox": false,
     "url": "https://www.douyin.com/search/%E8%A1%80%E8%AA%93%20Angel",
     "noteZh": "《血誓》· AI 英剧风吸血鬼 · Angel 个人手搓 · 首集点赞约 45.3 万；B 站/抖音/红果多端连载至 30+ 集",
     "note": "血誓 / Blood Oath — AI British-vampire romance — Angel solo craft — EP1 ~453K likes; 30+ eps across Bilibili/Douyin",
@@ -8544,10 +8617,14 @@ const DY_SERIES_POSTS = [
     "title": "燕然",
     "views": "平遥铜奖",
     "viewsRaw": 9600000,
+    "playsRaw": null,
+    "playsAsOf": null,
     "likes": "N/A",
     "comments": "N/A",
     "shares": null,
     "date": "2026-08 起分集上线",
+    "releaseDate": "2026-08-01",
+    "releaseApprox": true,
     "url": "https://www.douyin.com/search/%E7%87%95%E7%84%B6%20%E5%BC%A0%E5%B0%8F%E5%8D%83",
     "noteZh": "《燕然》· 张小千历时三月自制约 96 分钟大型传统仙侠电影，分集全网发布（更新至 5+ 集）· 第十届平遥国际电影展·2026 火山引擎 AI 影视创作大赛「拟人叙事篇」铜奖 · 御兽/万灵大会世界观 · Junie 点名同级补仓",
     "note": "燕然 — Zhang Xiaoqian ~96-min AI xianxia film released episodically (5+ eps) — Pingyao 2026 Volcano Engine AI Film Contest copper (anthropomorphic narrative) — spirit-beast / Wanling Assembly world",
@@ -8569,6 +8646,294 @@ const DY_SERIES_POSTS = [
     "batch": "2026-11-01f",
     "rank": 15,
     "heatRaw": 1
+  },
+  {
+    "id": "s16_zhanxiantai",
+    "handle": "妙想制片厂 / 爱看互动 × 可梦AI",
+    "title": "斩仙台真人AI版",
+    "views": "抖音 1.8亿+（1/31）",
+    "viewsRaw": 180000000,
+    "playsRaw": 180000000,
+    "playsAsOf": "2026-01-31",
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-01-12 上线（红果/抖音，81集）",
+    "releaseDate": "2026-01-12",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/search/%E6%96%A9%E4%BB%99%E5%8F%B0%E7%9C%9F%E4%BA%BAAI%E7%89%88",
+    "noteZh": "《斩仙台真人AI版》· 现代青年穿越斩仙台，孙悟空/杨戬助阵 · 12人30天、算力约10万 · 红果漫剧榜登顶 · 偏网文改编（爽剧向），但镜头调度/光影/特效被新华网点名「不输真人剧」",
+    "note": "Zhanxiantai (AI live-action) — 12 people, 30 days, ~¥100K compute; topped Hongguo comic-drama chart; web-novel adaptation but praised for staging/lighting/VFX",
+    "whyZh": "AI 仿真人剧破圈标杆（开年现象级）；题材偏爽剧，作为工业化 craft 参照",
+    "whyEn": "Breakout AI live-action benchmark of early 2026; genre is power-fantasy, kept as industrial-craft reference",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "仙侠",
+      "西游",
+      "红果",
+      "AI仿真人"
+    ],
+    "cover": "src/img/dy_series_16_zhanxiantai.jpg",
+    "platform": "douyin-series",
+    "kind": "AI仿真人仙侠剧（81集）",
+    "studio": "爱看互动出品 · 可梦AI承制",
+    "heatLabel": "抖音原生播放",
+    "metricsSrc": "news.cn 2026-01-29 (抖音端原生播放累计超1.8亿, 红果84万收藏); baike: 抖音1.8亿+ @2026-01-31; duanjubaike: 2026-01-12 上线·81集; cover=official Hongguo series poster (duanjubaike series 7594424837573971006)",
+    "batch": "2026-11-02v38",
+    "rank": 16,
+    "heatRaw": 0
+  },
+  {
+    "id": "s17_fanxiang",
+    "handle": "潘鱼晏（胡海 / 潘钿）",
+    "title": "反相之地",
+    "views": "全网 1.4亿+（4集）",
+    "viewsRaw": 140000000,
+    "playsRaw": 140000000,
+    "playsAsOf": "2026-08-31",
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-07-26 首集",
+    "releaseDate": "2026-07-26",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/video/7666776326598135080",
+    "noteZh": "《反相之地》· 大学室友困入「反相世界」的规则怪谈/逃生悬疑 · 即梦 Seedance 2.5 · 被称「中国版怪奇物语」· 第4集「梦中情屋」衰老段落被评有现实指向 · 账号涨至199万粉",
+    "note": "The Inverse Zone — rule-horror escape thriller (Seedance 2.5), dubbed a Chinese Stranger Things; 4 eps 140M+ plays all-net; account 1.99M followers",
+    "whyZh": "类型完成度高的悬疑惊悚系列，镜头与节奏被点名精良",
+    "whyEn": "Polished genre thriller — staging and pacing singled out",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "悬疑",
+      "规则怪谈",
+      "惊悚",
+      "craft"
+    ],
+    "cover": "src/img/dy_series_17_fanxiang.jpg",
+    "platform": "douyin-series",
+    "kind": "AI悬疑惊悚系列",
+    "studio": "潘鱼晏团队",
+    "heatLabel": "全网播放",
+    "metricsSrc": "chinanews(jx) 2026-08-31: 4集全网播放破1.4亿, 账号199万粉; ep1 aweme 7666776326598135080 (2026-07-26); cover=official ep1 cover (Douyin)",
+    "batch": "2026-11-02v38",
+    "rank": 17,
+    "heatRaw": 0
+  },
+  {
+    "id": "s18_feiyaozai",
+    "handle": "不吃榨菜AIGC",
+    "title": "非妖哉",
+    "views": "播放破亿 · 赞600万+",
+    "viewsRaw": 100000000,
+    "playsRaw": 100000000,
+    "playsAsOf": "2026-09-17",
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-07-23 首集（单元剧，3集+）",
+    "releaseDate": "2026-07-23",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/search/%E9%9D%9E%E5%A6%96%E5%93%89%20%E4%B8%8D%E5%90%83%E6%A6%A8%E8%8F%9C",
+    "noteZh": "《非妖哉》· 聊斋式中式志怪单元剧：哑女小荷 / 莽夫阿牛 / 永痣 · 「妖不是妖，恶来自人」· 一人手搓，集均约万元、10–13 天一集 · 真人CV配音 · LibTV",
+    "note": "Fei Yao Zai — Liaozhai-style anthology (\"the monster is human\"); solo-made, ~¥10K & 10–13 days per ep; human VO; LibTV",
+    "whyZh": "2026 年最被称道的中式志怪 craft：分镜/构图/克制运镜 + 现实隐喻",
+    "whyEn": "Most-praised Chinese folk-horror craft of 2026 — framing, restrained camera, social allegory",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "志怪",
+      "聊斋",
+      "单元剧",
+      "craft"
+    ],
+    "cover": "src/img/dy_series_18_feiyaozai.jpg",
+    "platform": "douyin-series",
+    "kind": "AI中式志怪单元剧",
+    "studio": "不吃榨菜（一人）",
+    "heatLabel": "抖音播放 · 点赞",
+    "metricsSrc": "thepaper 2026-09-16: 3集播放破亿·点赞600万+; nfnews 2026-09-17: 破亿·525万赞·65.1万粉; first ep 2026-07-23 (ifeng/szxw); link=Douyin search (no verified episode ID); cover=official episode key art「最终章·谁是妖」(thepaper interview header)",
+    "batch": "2026-11-02v38",
+    "rank": 18,
+    "heatRaw": 0
+  },
+  {
+    "id": "s19_guixu",
+    "handle": "泫九",
+    "title": "归墟",
+    "views": "全网破亿",
+    "viewsRaw": 100000000,
+    "playsRaw": 100000000,
+    "playsAsOf": "2026-08-31",
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-03-27 首集（13集+）",
+    "releaseDate": "2026-03-27",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/video/7621827567305231666",
+    "noteZh": "《归墟》· 原创末日连载：巨蚁出现、城市失守、新物种时代 · 泫九一人编剧/角色/生成/剪辑/配乐 · Seedance 2.0/2.5 + Suno · 第一季投入近20万",
+    "note": "Guixu — solo-made original apocalypse serial (giant ants, fallen cities); Seedance 2.0/2.5 + Suno; ~¥200K season 1; 100M+ plays all-net",
+    "whyZh": "一人长线世界观连载，末日题材头部",
+    "whyEn": "Solo long-form worldbuilding serial — top of the apocalypse lane",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "末日",
+      "科幻",
+      "连载",
+      "craft"
+    ],
+    "cover": "src/img/dy_series_19_guixu.jpg",
+    "platform": "douyin-series",
+    "kind": "AI末日科幻连载",
+    "studio": "泫九（一人）",
+    "heatLabel": "全网播放",
+    "metricsSrc": "newrank 34677 interview: 截至8月更至13集, 全网播放破亿 (抖音7月中约6000万); thepaper 33761449; ep1 aweme 7621827567305231666 (2026-03-27); cover=official ep1 title cover",
+    "batch": "2026-11-02v38",
+    "rank": 19,
+    "heatRaw": 0
+  },
+  {
+    "id": "s20_tianshu",
+    "handle": "AIGC十三",
+    "title": "天枢防线",
+    "views": "8000万+",
+    "viewsRaw": 80000000,
+    "playsRaw": 80000000,
+    "playsAsOf": "2026-06-04",
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-03-03 首集（另有40分钟电影版）",
+    "releaseDate": "2026-03-03",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/video/7612870112881757455",
+    "noteZh": "《天枢防线》· 中国机甲 / 架空近未来硬科幻 ·「宇宙即长梦者的梦」设定 · 小云雀 Seedance 2.0 · 第一季另剪 40 分钟电影版 · 红果上架",
+    "note": "Tianshu Line — Chinese mecha hard-SF serial (\"the universe is a dreamer's dream\"); Seedance 2.0; 40-min S1 film cut; on Hongguo",
+    "whyZh": "一人硬核科幻机甲，奇观+世界观",
+    "whyEn": "Solo hard-SF mecha — spectacle plus worldbuilding",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "机甲",
+      "科幻",
+      "世界观",
+      "craft"
+    ],
+    "cover": "src/img/dy_series_20_tianshu.jpg",
+    "platform": "douyin-series",
+    "kind": "AI硬科幻机甲系列",
+    "studio": "AIGC十三",
+    "heatLabel": "抖音播放",
+    "metricsSrc": "thepaper 33309168 (~2026-06): 《天枢防线》播放量8000万+; ep1 aweme 7612870112881757455 (2026-03-03); cover=official ep1 poster (Douyin)",
+    "batch": "2026-11-02v38",
+    "rank": 20,
+    "heatRaw": 0
+  },
+  {
+    "id": "s21_meimei",
+    "handle": "罗臣臣",
+    "title": "我的妹妹不可爱",
+    "views": "4集抖音 6912万+",
+    "viewsRaw": 69120000,
+    "playsRaw": 69120000,
+    "playsAsOf": null,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "≈2026-09（上部加长版 9/12）",
+    "releaseDate": "2026-09-12",
+    "releaseApprox": true,
+    "url": "https://www.douyin.com/video/7684524455984385314",
+    "noteZh": "《我的妹妹不可爱》· 千禧年小县城非主流纯爱 + 玄幻 · 男性向 AI 偶像剧（男粉约80%）· 全片小云雀制作",
+    "note": "My Sister Isn't Cute — Y2K small-town romance + fantasy, male-skewing (80% male fans); made with Xiaoyunque",
+    "whyZh": "男性向偶像剧赛道代表，年代质感强",
+    "whyEn": "Flagship of male-skewing AI idol drama; strong period texture",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "偶像剧",
+      "千禧年",
+      "纯爱",
+      "玄幻"
+    ],
+    "cover": "src/img/dy_series_21_meimei.jpg",
+    "platform": "douyin-series",
+    "kind": "AI千禧年纯爱剧",
+    "studio": "罗臣臣",
+    "heatLabel": "抖音播放（4集）",
+    "metricsSrc": "huxiu 4887947: 4集抖音播放超6912万, 男粉80%; link/cover=Douyin aweme 7684524455984385314 (上部加长版, 2026-09-12 by ID timestamp; first ep earlier → date approx); cover=official episode cover",
+    "batch": "2026-11-02v38",
+    "rank": 21,
+    "heatRaw": 0
+  },
+  {
+    "id": "s22_bone",
+    "handle": "Kavan the Kid (Kavan Cardoza)",
+    "title": "The Chronicles of Bone",
+    "views": "≈300万/集 · 50万订阅",
+    "viewsRaw": 0,
+    "playsRaw": null,
+    "playsAsOf": null,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2025-11-04 起（YouTube 月更，12集）",
+    "releaseDate": "2025-11-04",
+    "releaseApprox": false,
+    "url": "https://www.youtube.com/watch?v=y7gIoHq-YDo",
+    "noteZh": "《The Chronicles of Bone》· 多线群像暗黑奇幻 AI 剧集 · 每集≤30分钟、YouTube 月更 · Seedance 解决角色一致性 · 作者以自拍面具造型做角色参考",
+    "note": "The Chronicles of Bone — ensemble dark-fantasy AI series, ≤30-min monthly YouTube episodes; Seedance for character lock; avg ~3M views/ep, 500K subs",
+    "whyZh": "海外 craft 标杆（LA Times 报道），长片级叙事",
+    "whyEn": "International craft benchmark (LA Times) — long-form storytelling",
+    "flag": "Craft AI剧集 · YouTube",
+    "tags": [
+      "YouTube",
+      "暗黑奇幻",
+      "群像",
+      "international"
+    ],
+    "cover": "src/img/dy_series_22_bone.jpg",
+    "platform": "youtube",
+    "kind": "AI暗黑奇幻剧集（YouTube）",
+    "studio": "Kavan the Kid",
+    "heatLabel": "YouTube 集均观看",
+    "metricsSrc": "LA Times 2026-07-03: averages 3M views per episode, 500K YouTube audience; aifilmhistory: 12 eps, first 2025-11-04, Ch.6 2026-10-06; cover=official YouTube thumbnail Chapter One",
+    "batch": "2026-11-02v38",
+    "rank": 22,
+    "heatRaw": 0
+  },
+  {
+    "id": "s23_baizhou",
+    "handle": "白昼与茄（OST传媒 · 栗子组）",
+    "title": "白昼与茄",
+    "views": "2个月涨粉117万",
+    "viewsRaw": 0,
+    "playsRaw": null,
+    "playsAsOf": null,
+    "likes": "N/A",
+    "comments": "N/A",
+    "shares": null,
+    "date": "2026-07-31 首集（爱奇艺上架名《闺蜜穿书进男校》）",
+    "releaseDate": "2026-07-31",
+    "releaseApprox": false,
+    "url": "https://www.douyin.com/hot/2610954",
+    "noteZh": "《白昼与茄》· 闺蜜穿书、女扮男装进男校的双 CP 校园偶像剧 · OST传媒（漂亮的恶意同公司）· 角色形象已登记版权 · 爱奇艺以《闺蜜穿书进男校》上架",
+    "note": "Baizhou & Qie — two besties transmigrate into a novel and cross-dress into a boys' school; OST Media (Piaoliang de Eyi studio); on iQIYI as 闺蜜穿书进男校",
+    "whyZh": "AI 偶像剧双 CP 爆款，女粉88%",
+    "whyEn": "Dual-couple AI idol hit; 88% female audience",
+    "flag": "Craft AI短剧",
+    "tags": [
+      "偶像剧",
+      "穿书",
+      "校园",
+      "OST"
+    ],
+    "cover": "src/img/dy_series_23_baizhou.jpg",
+    "platform": "douyin-series",
+    "kind": "AI校园偶像剧",
+    "studio": "OST传媒",
+    "heatLabel": "抖音涨粉",
+    "metricsSrc": "huxiu 4887947: 2个月涨粉117万, 女粉88%; newrank 34740: OST传媒编导栗子组; douyin hot 2610954 (2026-07-31); cover=official iQIYI series poster (闺蜜穿书进男校)",
+    "batch": "2026-11-02v38",
+    "rank": 23,
+    "heatRaw": 0
   }
 ];
 
@@ -9413,7 +9778,7 @@ const XHS_INSIGHTS = [
 
 /* FILMMAKERS — APPEND/MERGE by handle: update followers when re-verified; never silently delete creators.
    Only MIN_FOLLOWERS+ are shown (auto-filtered + sorted by followers).
-   TO ADD: paste a line; avatar img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
+   TO ADD: paste a line; avatar src/img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
    topReelUrl, topReelViews, profileUrl, avatar, tags[], optional addedAt/batch. */
 const MIN_FOLLOWERS = 100000;
 const FILMMAKERS = 
@@ -11084,7 +11449,7 @@ const FILMMAKERS =
 ];
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
-   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
+   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: src/img/tut_<videoId>.jpg ===== */
 const TUT_UPDATED = "Oct 31, 2026 10:28 CST";
 const TUT_UPDATED_ZH = "2026-10-31 10:28（北京时间）";
 const TUT_LATEST_BATCH = "2026-10-31";
@@ -13866,6 +14231,8 @@ const SORT_CFG={
   yt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>null, viewsLabel:["最多观看","Most viewed"]},
   dy:{views:r=>num(r.views), fallback:r=>num(r.likes), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多点赞","Most liked"], hint:"抖音网页常无播放，按点赞 · likes when views N/A"},
   tt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
+  /* v38 Douyin series sub-page: custom ordering in sortDySeries() (new=first-episode date, best=curated rank, views=reported cumulative plays, growth=10-day heat → plays/day → rank) */
+  dys:{views:r=>r.playsRaw??null, likes:r=>null, comments:r=>null, shares:r=>null, viewsLabel:["最多观看","Most viewed"], hint:"最新=首集日（≈月份估计，未知排末）· 观看=报道累计 · 增长=近十日热度→日均播放→名次"},
   bl:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
   /* Xiaohongshu: no public views — reach = likes; "likes" slot = saves (collects). */
   xhs:{views:r=>num(r.likesRaw??r.likes), likes:r=>num(r.collectsRaw??r.collects), comments:r=>num(r.commentsRaw??r.comments), shares:r=>num(r.sharesRaw??r.shares), viewsLabel:["最多点赞","Most liked"], hint:"小红书不公开播放，按点赞（综合含收藏）· likes (no public views; Best adds saves)"},
@@ -14192,7 +14559,15 @@ const dyTileHTML=(r,i)=>`
     </div>
   </a>`;
 const dySorted=(typeof DOUYIN_POSTS!=="undefined"?DOUYIN_POSTS:[]).slice().sort((a,b)=>(parseNum(b.likes)||parseNum(b.views)||0)-(parseNum(a.likes)||parseNum(a.views)||0));
+function getDySub(){ let v=null; try{v=sessionStorage.getItem("dySub");}catch(e){} return v==="series"?"series":"hits"; }
+function applyDySub(){
+  const sub=getDySub();
+  document.querySelectorAll("#page-douyin .dy-sub").forEach(el=>el.classList.toggle("on",el.dataset.sub===sub));
+  document.querySelectorAll("#dy-subtabs button").forEach(b=>{ const on=b.dataset.sub===sub; b.classList.toggle("on",on); b.setAttribute("aria-selected",on); });
+}
+document.querySelectorAll("#dy-subtabs button").forEach(b=>b.onclick=()=>{ try{sessionStorage.setItem("dySub",b.dataset.sub);}catch(e){} applyDySub(); scrollTo(0,0); });
 function layoutDouyin(){
+  applyDySub();
   if(typeof renderTrends==="function") renderTrends();
   const note=document.getElementById("dy-note");
   if(note) note.innerHTML=`${esc(typeof DY_NOTE_ZH!=="undefined"?DY_NOTE_ZH:"")}<span class="en">${esc(typeof DY_NOTE!=="undefined"?DY_NOTE:"")}</span>`;
@@ -14220,21 +14595,34 @@ const dySeriesTileHTML=(r,i)=>`
   <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
     <div class="cover">
       ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.title||r.handle||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">AI短剧</div>`}
-      <div class="rank">${String(r.rank||i+1).padStart(2,"0")}</div>
+      <div class="rank">${String(i+1).padStart(2,"0")}</div>
       <div class="views">▶ ${na(r.views)} <small>${esc(r.heatLabel||"热度")}</small></div>
       <div class="flag">${esc(r.flag||"AI短剧系列")}</div>
-      <div class="play">抖音搜剧名 · Search ↗</div>
+      <div class="play">${r.platform==="youtube"?"打开 YouTube · Open ↗":/douyin\.com\/search\//.test(r.url||"")?"抖音搜剧名 · Search ↗":"打开抖音 · Open ↗"}</div>
     </div>
     <div class="meta">
       <div class="handle">${esc(r.title||r.handle||"?")} ${batchBadge(r)}</div>
       <div class="note">${r.noteZh?`${esc(r.noteZh)}<span class="en">${na(r.note)}</span>`:na(r.note)}</div>
       ${whyHTML(r)}
-      <div class="row"><span>${esc(r.kind||"AI短剧")}</span><span>${esc(r.studio||r.handle||"")}</span><span>${na(r.date)}</span></div>
+      <div class="row"><span>${esc(r.kind||"AI短剧")}</span><span>${esc(r.studio||r.handle||"")}</span><span>${na(r.date)}</span><span>名次 #${esc(r.rank)}</span></div>
       ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
     </div>
   </a>`;
+function sortDySeries(rows){
+  const mode=getSort("dys"), rk=r=>r.rank||999, dn=r=>dateNum(r.releaseDate);
+  const nl=(x,y)=>(x===null||x===undefined)-(y===null||y===undefined);
+  const days=(a,b)=>{const x=dateNum(a),y=dateNum(b);return (x===null||y===null)?null:Math.max((y-x)/864e5,1);};
+  const ppd=r=>{ if(r.playsRaw==null||r.releaseApprox||!r.playsAsOf) return null; const d=days(r.releaseDate,r.playsAsOf); return d?r.playsRaw/d:null; };
+  const recent=r=>(r.heatRaw||0)>=1e6?r.heatRaw:null;
+  const out=rows.slice();
+  if(mode==="new") out.sort((a,b)=>nl(dn(a),dn(b))||(dn(b)??0)-(dn(a)??0)||rk(a)-rk(b));
+  else if(mode==="views") out.sort((a,b)=>nl(a.playsRaw,b.playsRaw)||(b.playsRaw??0)-(a.playsRaw??0)||rk(a)-rk(b));
+  else if(mode==="growth") out.sort((a,b)=>nl(recent(a),recent(b))||(recent(b)??0)-(recent(a)??0)||nl(ppd(a),ppd(b))||(ppd(b)??0)-(ppd(a)??0)||rk(a)-rk(b));
+  else out.sort((a,b)=>rk(a)-rk(b));
+  return out;
+}
 function layoutDySeries(){
-  const rows=(typeof DY_SERIES_POSTS!=="undefined"?DY_SERIES_POSTS:[]).slice().sort((a,b)=>(b.heatRaw||0)-(a.heatRaw||0)||(a.rank||0)-(b.rank||0));
+  const rows=sortDySeries(typeof DY_SERIES_POSTS!=="undefined"?DY_SERIES_POSTS:[]);
   const foot=document.getElementById("dy-series-foot");
   if(foot) foot.innerHTML=`${esc(typeof DY_SERIES_NOTE_ZH!=="undefined"?DY_SERIES_NOTE_ZH:"")}<span class="en">${esc(typeof DY_SERIES_NOTE!=="undefined"?DY_SERIES_NOTE:"")}</span> · 更新 ${esc(typeof DY_SERIES_UPDATED_ZH!=="undefined"?DY_SERIES_UPDATED_ZH:"")}`;
   const host=document.getElementById("dy-series-grid");
@@ -14414,7 +14802,7 @@ function layoutTutorials(){
   document.getElementById("tut-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
 }
 addEventListener("resize",()=>{ if(document.getElementById("page-tutorials")?.classList.contains("active")) layoutTutorials(); });
-Object.assign(SORT_RELAYOUT,{ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),dy:()=>layoutDouyin(),tt:()=>layoutTikTok(),bl:()=>layoutBilibili(),xhs:()=>layoutXhs(),tut:()=>layoutTutorials()});
+Object.assign(SORT_RELAYOUT,{dys:()=>layoutDySeries(),ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),dy:()=>layoutDouyin(),tt:()=>layoutTikTok(),bl:()=>layoutBilibili(),xhs:()=>layoutXhs(),tut:()=>layoutTutorials()});
 renderSortBars();
 
 /* ---- tab routing (#hits / #x / #reddit / #youtube / #douyin / #tiktok / #bilibili / #xiaohongshu / #tutorials / #filmmakers) ---- */
