@@ -56,7 +56,7 @@
   nav.top .in::-webkit-scrollbar{display:none}
   nav.top .brand{font-family:var(--serif);font-size:18px;margin-right:8px;flex:0 0 auto;white-space:nowrap}
   nav.top .brand em{color:var(--gold)}
-  nav.top .tabs-plat{display:flex;flex-wrap:nowrap;align-items:center;gap:2px 6px;flex:0 0 auto}
+  nav.top .tabs-plat{display:flex;flex-wrap:nowrap;align-items:center;gap:2px 6px;flex:0 0 auto;margin-left:auto}
   nav.top .tabs-sec{display:flex;flex-wrap:nowrap;align-items:center;gap:2px 8px;flex:0 0 auto;padding:0;margin:0 0 0 4px;border-left:1px solid var(--line);padding-left:10px}
   nav.top a.tab{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:700;padding:19px 2px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
   nav.top a.tab:hover{color:var(--text)}
@@ -9413,7 +9413,7 @@ const XHS_INSIGHTS = [
 
 /* FILMMAKERS — APPEND/MERGE by handle: update followers when re-verified; never silently delete creators.
    Only MIN_FOLLOWERS+ are shown (auto-filtered + sorted by followers).
-   TO ADD: paste a line; avatar src/img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
+   TO ADD: paste a line; avatar img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
    topReelUrl, topReelViews, profileUrl, avatar, tags[], optional addedAt/batch. */
 const MIN_FOLLOWERS = 100000;
 const FILMMAKERS = 
@@ -11084,7 +11084,7 @@ const FILMMAKERS =
 ];
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
-   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: src/img/tut_<videoId>.jpg ===== */
+   rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
 const TUT_UPDATED = "Oct 31, 2026 10:28 CST";
 const TUT_UPDATED_ZH = "2026-10-31 10:28（北京时间）";
 const TUT_LATEST_BATCH = "2026-10-31";
@@ -11696,6 +11696,7 @@ const TUTORIALS =
     "learnEn": "Character-sheet approach for multi-view consistency",
     "metricLabel": "score",
     "metricsAt": "2026-10-31T10:23:14+08:00",
+    "cover": "src/img/tut_rd_1xiag6d.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
   },
