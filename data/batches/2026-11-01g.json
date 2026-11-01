@@ -1,0 +1,33 @@
+{
+  "batch": "2026-11-01g",
+  "version": "v36d",
+  "theme": "Douyin craft AI short-drama series +1 《相骨》 (expand TOP14→15)",
+  "kept_top14": [
+    "The Accident",
+    "备用联系人",
+    "万物生",
+    "异邪录",
+    "漂亮的恶意",
+    "被裁掉的女孩",
+    "Shame",
+    "血誓",
+    "零号档案",
+    "丧尸清道夫",
+    "The Other Self",
+    "持械入宋",
+    "渡骸",
+    "燕然"
+  ],
+  "added": [
+    {
+      "rank": 15,
+      "id": "s15_xianggu",
+      "title": "相骨",
+      "studio": "淮左 / 与梦工作室",
+      "heat": "抖音约4300万+/点赞194万+（新榜报道）；全网约5000万+",
+      "cover": "src/img/dy_series_15_xianggu.jpg",
+      "cover_src": "aitop100 press still Maine Coon 二当家 https://www.aitop100.cn/infomation/details/34605.html"
+    }
+  ],
+  "notes": "Junie named 《相骨》. Craft peer of 万物生 (same YuMeng / 命比梦长 family). Heat labeled 报道 only. Real cover — not dark title card."
+}
