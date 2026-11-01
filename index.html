@@ -175,6 +175,7 @@
   <a class="tab" href="#douyin" data-page="douyin">抖音<span class="en">Douyin Hits</span></a>
   <a class="tab" href="#tiktok" data-page="tiktok">TikTok<span class="en">TikTok Hits</span></a>
   <a class="tab" href="#bilibili" data-page="bilibili">哔哩哔哩<span class="en">Bilibili Hits</span></a>
+  <a class="tab" href="#xiaohongshu" data-page="xiaohongshu">小红书<span class="en">Xiaohongshu Hits</span></a>
   <a class="tab" href="#tutorials" data-page="tutorials">AI 教程<span class="en">AI Tutorial</span></a>
   <a class="tab" href="#filmmakers" data-page="filmmakers">顶尖 AI 电影人<span class="en">Top AI Filmmakers</span></a>
 </div></nav>
@@ -337,6 +338,27 @@
 <footer>播放/点赞/评论来自 B 站公开接口（web-interface/view）；缺省显示 N/A，不编造。窗口 10/29–11/1（北京时间）。封面为官方封面图，版权归 UP 所有，仅作私人参考。历史条目永久保留。<span class="en">Views/likes/comments from public Bilibili view API; missing values show N/A — nothing invented. Window Oct 29–Nov 1 (China time). Covers are official thumbnails © their uploaders. Historical rows kept forever.</span></footer>
 </section>
 
+<section class="page" id="page-xiaohongshu">
+<header>
+  <div class="kicker">小红书 · Xiaohongshu / RED · Moodboard · for @junielaux</div>
+  <h1>小红书 <em>爆款</em> AI 视频<span class="en">Xiaohongshu Viral AI Videos</span></h1>
+  <p class="sub">发布窗口 <b>2026 年 10 月 10–11 月 1 日</b>（首发扩窗；严窗 10/29–11/1 仅 2 条过线）· 本批追加 · 历史保留 · <b id="xhs-updated"></b> · 点击打开小红书<span class="en">Publish window <b>Oct 10–Nov 1, 2026</b> (inaugural widen; strict Oct 29–Nov 1 had only 2 clears) · new appended, history kept · <b id="xhs-updated-en"></b> · Click to open RED.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：点赞 ≥2 万 <b>或</b> 赞+藏 ≥5 万（小红书不公开播放）· 每位创作者最多 2 条 · AI 电影感短片 / AI MV / AIGC 精片（拒教程、拉片、漫剧、短剧农场）· <b>只叠加不删除</b>（按 noteId 合并） <span class="en-i">Rule: likes ≥20K <b>or</b> likes+saves ≥50K (no public views on RED) · max 2 per creator · cinematic AI shorts / MVs / AIGC craft · <b>append-only</b> (merge by noteId)</span></p>
+  <div class="stats" id="xhs-stats"></div>
+</header>
+<section class="insights">
+  <h2>小红书上的爆款规律 <span class="en-i">What's working on Xiaohongshu</span></h2>
+  <div class="cards" id="xhs-insights"></div>
+</section>
+<div class="trend" id="xhs-trend"></div>
+<main>
+  <div id="xhs-note" class="rd-empty" style="max-width:1400px;margin:0 auto 18px"></div>
+  <div class="sortbar" data-sort="xhs"></div>
+  <div class="grid" id="xhs-grid"></div>
+</main>
+<footer>点赞/收藏/评论/分享来自小红书网页搜索接口 interact_info 精确计数（2026-11-01 约 16:05 北京时间只读抓取）；小红书不公开播放，缺省显示 N/A，不编造。窗口 10/10–11/1（首发扩窗；北京时间）。封面为笔记官方封面，版权归作者，仅作私人参考。历史条目永久保留。<span class="en">Likes/saves/comments/shares are exact interact_info counts from RED web search (read-only capture ~16:05 China time, Nov 1, 2026); RED shows no public views — missing values show N/A, nothing invented. Window Oct 10–Nov 1 inaugural widen (China time). Covers are official note covers © their creators, private reference only. Historical rows kept forever.</span></footer>
+</section>
+
 <section class="page" id="page-tutorials">
 <header>
   <div class="kicker">AI 教程 · Tutorials · for @junielaux</div>
@@ -365,11 +387,11 @@
 </section>
 
 <script>
-/* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS wholesale.
+/* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS / XHS_POSTS wholesale.
    Merge new hits by id (IG shortcode / tweet id / reddit id / youtube video id). Keep older posts.
    Set addedAt (ISO Asia/Shanghai) + batch on every new row; UI badges "本批新增" when post.batch === LATEST_BATCH.
    Also append JSON under /workspace/moodboard_history/posts_archive.json after each refresh.
-   EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND / DY_TREND / TT_TREND / BL_TREND blurbs; keep whyZh/whyEn on every video card.
+   EVERY UPDATE: rewrite IG_TREND / X_TREND / REDDIT_TREND / YT_TREND / DY_TREND / TT_TREND / BL_TREND / XHS_TREND blurbs; keep whyZh/whyEn on every video card.
    Covers: src/img/<id>.jpg · src/img/x_<id>.jpg · src/img/rd_<id>.jpg · src/img/yt_<id>.jpg · src/img/dy_<id>.jpg · src/img/tt_<id>.jpg · src/img/bl_<id>.jpg; cover:null = placeholder. ===== */
 
 /* ===== PER-PLATFORM TREND BLURBS · rewrite on EVERY refresh (dated).
@@ -391,9 +413,9 @@ const YT_TREND_DATE = "2026-10-28 → 10-31";
 const YT_TREND_ZH = "窗口 10/28–31：只收上传日在窗内且播放≥5万的 AI 片，+10。长篇 AI 连续剧/长片（巴基斯坦言情、尼莱坞、国风玄幻漫剧）冲量最大，同人 IP（海贼王、哈利波特、Jailer 3 概念预告）紧随；赞助片、非 AI、教程与解说已拒。";
 const YT_TREND = "Window Oct 28–31: AI films uploaded in-window with ≥50k views only, +10. Long-form AI serials/features (Pakistani romance, Nollywood, xianxia anime) pull the most views, followed by fan-IP shorts (One Piece, Harry Potter, Jailer 3 concept trailer). Sponsored, non-AI, tutorials and commentary rejected.";
 
-const UPDATED = "Nov 1, 2026 08:40 CST";
-const UPDATED_ZH = "2026-11-01 08:40（北京时间）";
-const LATEST_BATCH = "2026-11-01g"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 1, 2026 16:30 CST";
+const UPDATED_ZH = "2026-11-01 16:30（北京时间）";
+const LATEST_BATCH = "2026-11-01h"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -8845,6 +8867,529 @@ const BL_INSIGHTS = [
   }
 ];
 
+/* ===== 小红书 / Xiaohongshu (RED) — APPEND ONLY by noteId. Floor: likes≥2万 OR likes+collects≥5万 (RED shows no public views). Window Oct 29–Nov 1 (inaugural widen Oct 10–Nov 1). ===== */
+const XHS_UPDATED = "Nov 1, 2026 16:30 CST";
+const XHS_UPDATED_ZH = "2026-11-01 16:30（北京时间）";
+const XHS_NOTE_ZH = "硬门槛：点赞≥2万 或 赞+藏≥5万（小红书不公开播放量）；只收电影感 AI 短片/AI MV/AIGC 精片——拒教程、拉片解析、漫剧与短剧农场。批次 2026-11-01h（首发）：严格 10/29–11/1 窗内过线精片仅 2 条（《朝花夕拾》微剧预告、《回家》），故首发扩窗至 10/10–11/1，共收 11 条（封面齐）。指标来自小红书网页搜索接口 interact_info 精确计数（只读登录态抓取）；发布时间取笔记页。每位创作者最多 2 条。";
+const XHS_NOTE = "Hard floor: likes ≥20K OR likes+saves ≥50K (RED shows no public views). Cinematic AI shorts / AI MVs / AIGC craft only — tutorials, breakdown/拉片 videos, 漫剧 and short-drama farms rejected. Batch 2026-11-01h (inaugural): strict Oct 29–Nov 1 had only 2 craft clears (Lu Xun micro-drama trailer, Coming Home), so the inaugural window widened to Oct 10–Nov 1 for 11 verified rows with covers. Metrics = exact interact_info counts from RED web search (read-only logged-in pass); publish time from note page. Max 2 per creator.";
+const XHS_TREND_DATE = "2026-10-10 → 11-01";
+const XHS_TREND_ZH = "窗口 10/10–11/1（首发扩窗）：小红书 AI 影像爆款集中在「超现实梦核」与「互动式微恐」——闲不住的比尔《登陆新地球》43.8万赞/9.1万藏、《没逝》25万赞、喆FILM 古人说唱 MV《过来人》17.9万赞、芥末机器「选择你的藏身之处」8.4万赞。收藏率高是 RED 特征（审美积累/灵感收藏）。严格 10/29–11/1 仅 2 条过线；漫剧/短剧农场与拉片教程未收。";
+const XHS_TREND = "Window Oct 10–Nov 1 (inaugural widen): RED AI-video hits cluster in surreal dream-core and interactive uncanny shorts — New Earth 438K likes / 91K saves, Mei Shi 250K, 喆FILM's ancients-rap MV The OGs 179K, 'choose your hiding place' 84K. High save ratios are RED-native (mood/inspiration bookmarking). Strict Oct 29–Nov 1 had only 2 clears; 漫剧/short-drama farms and breakdown tutorials rejected.";
+const XHS_POSTS = [
+  {
+    "id": "6acb74f0000000001500bdd1",
+    "channel": "闲不住的比尔",
+    "handle": "@闲不住的比尔",
+    "userId": "65e2c4fa000000000500e3ce",
+    "likes": "438.0K",
+    "likesRaw": 438013,
+    "collects": "91.1K",
+    "collectsRaw": 91081,
+    "comments": "4.8K",
+    "commentsRaw": 4792,
+    "shares": "29.2K",
+    "sharesRaw": 29236,
+    "date": "Oct 11, 2026",
+    "publishedAt": "2026-10-11T19:37:20+08:00",
+    "ip": "广东",
+    "url": "https://www.xiaohongshu.com/explore/6acb74f0000000001500bdd1",
+    "titleZh": "登陆新地球",
+    "title": "Landing on New Earth",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Surreal",
+      "Dream-core",
+      "AIGC"
+    ],
+    "whyZh": "超现实「换个地球生活」：月亮、金鱼、星河一镜一梗，43.8万赞+9.1万藏，RED 本季最强 AIGC 梦核",
+    "whyEn": "Surreal 'new Earth' vignettes — moon, goldfish, galaxy gags; 438K likes + 91K saves, RED's top AIGC dream-core of the season",
+    "xhsTags": [
+      "脑洞",
+      "aha这也是艺术",
+      "aha修云朵也是艺术",
+      "AIGC",
+      "梦核",
+      "创意",
+      "月亮",
+      "梦幻与现实",
+      "怪诞美学",
+      "换个地球生活"
+    ],
+    "cover": "src/img/xhs_6acb74f0.jpg",
+    "coverLum": 96.4,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/c2138d2514411c2f1d83f89b437e5103/spectrum/1040g34o3266c1hpc58105pf2ojt19oueuls27o0!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6ad5f7b400000000310045cb",
+    "channel": "HUAN的克隆体",
+    "handle": "@HUAN的克隆体",
+    "userId": "62f732910000000015015cad",
+    "likes": "250.4K",
+    "likesRaw": 250359,
+    "collects": "43.0K",
+    "collectsRaw": 43021,
+    "comments": "3.5K",
+    "commentsRaw": 3516,
+    "shares": "15.3K",
+    "sharesRaw": 15315,
+    "date": "Oct 19, 2026",
+    "publishedAt": "2026-10-19T18:57:56+08:00",
+    "ip": "北京",
+    "url": "https://www.xiaohongshu.com/explore/6ad5f7b400000000310045cb",
+    "titleZh": "AI科幻喜剧《没逝》",
+    "title": "Mei Shi — AI sci-fi comedy (immortality)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Sci-fi",
+      "Comedy",
+      "AI short"
+    ],
+    "whyZh": "「天才导演招募计划」AI 科幻喜剧短片，永生题材，25万赞/4.3万藏，叙事型精片",
+    "whyEn": "'Genius director' program AI sci-fi comedy on immortality — 250K likes / 43K saves; story-driven craft",
+    "xhsTags": [
+      "天才导演招募计划",
+      "我的第一部短电影",
+      "AI",
+      "永生",
+      "AI短片"
+    ],
+    "cover": "src/img/xhs_6ad5f7b4.jpg",
+    "coverLum": 143.8,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/5afb354ad768fc9918d998a54c491913/1040g2sg326gkjpmr4ed05onn6a8lan5d77qstgo!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6ad12575000000000a01da25",
+    "channel": "喆FILM",
+    "handle": "@喆FILM",
+    "userId": "5af483e96b58b73b62549b6e",
+    "likes": "178.6K",
+    "likesRaw": 178575,
+    "collects": "91.7K",
+    "collectsRaw": 91729,
+    "comments": "7.3K",
+    "commentsRaw": 7349,
+    "shares": "137.8K",
+    "sharesRaw": 137800,
+    "date": "Oct 16, 2026",
+    "publishedAt": "2026-10-16T19:35:03+08:00",
+    "ip": "湖北",
+    "url": "https://www.xiaohongshu.com/explore/6ad12575000000000a01da25",
+    "titleZh": "过来人 The OGs（古人开麦特别篇）",
+    "title": "The OGs — ten ancients rap (AI MV)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI MV",
+      "Rap",
+      "LibTV"
+    ],
+    "whyZh": "杜甫苏轼刘邦李白等十位古人同台说唱 AI MV，LibTV 生成，17.9万赞+9.2万藏，分享 10万+",
+    "whyEn": "AI MV: Du Fu, Su Shi, Li Bai & co. rap together — LibTV-made; 179K likes + 92K saves, 100K+ shares",
+    "xhsTags": [
+      "古人开麦",
+      "LibTV创作者成长计划",
+      "ai说唱",
+      "过来人",
+      "喆film"
+    ],
+    "cover": "src/img/xhs_6ad12575.jpg",
+    "coverLum": 49.9,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/fa23f8ca6f181f45a2dbde6019bab4d0/spectrum/1040g34o326brruhvk6104a57cm1uj6re9vhg0eo!nd_dft_wgth_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6aca4eb50000000013019080",
+    "channel": "芥末机器",
+    "handle": "@芥末机器",
+    "userId": "60cebf7a0000000020024873",
+    "likes": "83.6K",
+    "likesRaw": 83611,
+    "collects": "11.4K",
+    "collectsRaw": 11396,
+    "comments": "1.0K",
+    "commentsRaw": 1045,
+    "shares": "2.0K",
+    "sharesRaw": 1989,
+    "date": "Oct 10, 2026",
+    "publishedAt": "2026-10-10T22:41:57+08:00",
+    "ip": "英国",
+    "url": "https://www.xiaohongshu.com/explore/6aca4eb50000000013019080",
+    "titleZh": "选择你的深夜藏身之处",
+    "title": "Choose your midnight hiding place",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Interactive",
+      "Uncanny",
+      "AI short"
+    ],
+    "whyZh": "互动式奇幻微恐短片：观众「选庇护所」，8.4万赞，英国创作者，暗调电影感",
+    "whyEn": "Interactive uncanny short — pick-your-shelter format; 84K likes, UK-based creator, low-key cinematic",
+    "xhsTags": [
+      "情绪短片",
+      "悬疑短片",
+      "奇幻微恐",
+      "互动剧情",
+      "AI短片",
+      "沉浸式故事"
+    ],
+    "cover": "src/img/xhs_6aca4eb5.jpg",
+    "coverLum": 69.4,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/b55e970d0ad73610a4062895b9970e51/spectrum/1040g34o32657th09l8105o6entt84i3j62a5qu8!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6adea638000000001703e6e6",
+    "channel": "芥末机器",
+    "handle": "@芥末机器",
+    "userId": "60cebf7a0000000020024873",
+    "likes": "39.2K",
+    "likesRaw": 39233,
+    "collects": "4.9K",
+    "collectsRaw": 4901,
+    "comments": "638",
+    "commentsRaw": 638,
+    "shares": "977",
+    "sharesRaw": 977,
+    "date": "Oct 26, 2026",
+    "publishedAt": "2026-10-26T19:00:54+08:00",
+    "ip": "英国",
+    "url": "https://www.xiaohongshu.com/explore/6adea638000000001703e6e6",
+    "titleZh": "选择你的露营藏身之处",
+    "title": "Choose your camping hiding place",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Interactive",
+      "Uncanny",
+      "AI short"
+    ],
+    "whyZh": "同系列露营篇，3.9万赞，夜景怪物+蘑菇灯光的暗黑童话质感",
+    "whyEn": "Camping chapter of the same series — 39K likes; dark-fairytale night creatures and mushroom glow",
+    "xhsTags": [
+      "情绪短片",
+      "悬疑短片",
+      "奇幻微恐",
+      "互动剧情",
+      "AI短片",
+      "沉浸式故事"
+    ],
+    "cover": "src/img/xhs_6adea638.jpg",
+    "coverLum": 38.3,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011612/733eee77544faf1594aa2434a04bae12/spectrum/1040g34o326p3vq4k460g5o6entt84i3jpnhq6n8!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6ae0753e0000000036013ddf",
+    "channel": "兆ape",
+    "handle": "@兆ape",
+    "userId": "61ee4c83000000001000afa6",
+    "likes": "52.0K",
+    "likesRaw": 51953,
+    "collects": "9.4K",
+    "collectsRaw": 9439,
+    "comments": "310",
+    "commentsRaw": 310,
+    "shares": "1.1K",
+    "sharesRaw": 1072,
+    "date": "Oct 27, 2026",
+    "publishedAt": "2026-10-27T17:56:14+08:00",
+    "ip": "河北",
+    "url": "https://www.xiaohongshu.com/explore/6ae0753e0000000036013ddf",
+    "titleZh": "《售龄市生活实录》Ep.13",
+    "title": "Shouling City Life, Ep.13",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Chinese dream-core",
+      "Y2K",
+      "Series"
+    ],
+    "whyZh": "中式梦核千禧年回忆系列第 13 集，5.2万赞，旧家电+怪诞面具的 AIGC 怀旧美学",
+    "whyEn": "Chinese dream-core Y2K memory series ep.13 — 52K likes; uncanny masks & old-home nostalgia",
+    "xhsTags": [
+      "中式梦核",
+      "回到小时候",
+      "千禧年",
+      "AIGC",
+      "数字艺术"
+    ],
+    "cover": "src/img/xhs_6ae0753e.jpg",
+    "coverLum": 75.1,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/47c9cda3047146a1832f34026b4623e7/1040g2sg326qoum0j50e05ofe9i1k1bt66fiifco!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6ae48f550000000015005797",
+    "channel": "学小思拾光书场",
+    "handle": "@学小思拾光书场",
+    "userId": "69aa3d17000000003402c200",
+    "likes": "39.2K",
+    "likesRaw": 39164,
+    "collects": "12.9K",
+    "collectsRaw": 12885,
+    "comments": "1.3K",
+    "commentsRaw": 1317,
+    "shares": "2.2K",
+    "sharesRaw": 2167,
+    "date": "Oct 30, 2026",
+    "publishedAt": "2026-10-30T20:36:37+08:00",
+    "ip": "北京",
+    "url": "https://www.xiaohongshu.com/explore/6ae48f550000000015005797",
+    "titleZh": "《朝花夕拾》微剧预告",
+    "title": "Dawn Blossoms Plucked at Dusk — AI micro-drama trailer",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Literary",
+      "Trailer",
+      "AI drama"
+    ],
+    "whyZh": "鲁迅《朝花夕拾》AI 微剧预告，长妈妈/三味书屋民国质感，3.9万赞，严格窗内",
+    "whyEn": "AI micro-drama trailer of Lu Xun's memoir — Republican-era look; 39K likes, inside strict window",
+    "xhsTags": [
+      "鲁迅",
+      "朝花夕拾",
+      "AI短剧",
+      "语文课文",
+      "长妈妈",
+      "周树人",
+      "预告片",
+      "微电影",
+      "AI的回响"
+    ],
+    "cover": "src/img/xhs_6ae48f55.jpg",
+    "coverLum": 84.6,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011606/d9915ffd3099ef968ee2815adb750cae/spectrum/1040g34o326ussmjm6a105qda7kbt5gg0clambhg!nd_dft_wgth_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "strict Oct 29–Nov 1"
+  },
+  {
+    "id": "6ae5b54b000000001401f266",
+    "channel": "俊俊和朗朗",
+    "handle": "@俊俊和朗朗",
+    "userId": "6a649efd000000000d034c01",
+    "likes": "25.9K",
+    "likesRaw": 25899,
+    "collects": "1.6K",
+    "collectsRaw": 1615,
+    "comments": "1.7K",
+    "commentsRaw": 1728,
+    "shares": "6.0K",
+    "sharesRaw": 6024,
+    "date": "Oct 31, 2026",
+    "publishedAt": "2026-10-31T17:30:51+08:00",
+    "ip": "日本",
+    "url": "https://www.xiaohongshu.com/explore/6ae5b54b000000001401f266",
+    "titleZh": "回家（万圣节）",
+    "title": "Coming Home (Halloween)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Pets",
+      "Halloween",
+      "AI short"
+    ],
+    "whyZh": "俊俊和朗朗万圣节 AI 原创短片，写实猫狗+南瓜道具，2.6万赞、6千分享，严格窗内",
+    "whyEn": "Halloween AI original short from the 俊俊和朗朗 pet universe — photoreal cat & dog; 26K likes, 6K shares, strict window",
+    "xhsTags": [
+      "俊俊和朗朗",
+      "原创",
+      "猫咪的迷惑行为",
+      "ai原创短片",
+      "万圣节"
+    ],
+    "cover": "src/img/xhs_6ae5b54b.jpg",
+    "coverLum": 102.4,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011611/e9cda98435311cf7cd052756c1a1f065/oss-sg/notes/1040g3l032700i28tkm0g5qj4jrujej01qabb2kg!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "strict Oct 29–Nov 1"
+  },
+  {
+    "id": "6addc770000000002c03be4e",
+    "channel": "DIGIMONSTER",
+    "handle": "@DIGIMONSTER",
+    "userId": "6086d473000000000101f466",
+    "likes": "23.4K",
+    "likesRaw": 23404,
+    "collects": "7.7K",
+    "collectsRaw": 7718,
+    "comments": "3.3K",
+    "commentsRaw": 3259,
+    "shares": "3.2K",
+    "sharesRaw": 3239,
+    "date": "Oct 25, 2026",
+    "publishedAt": "2026-10-25T17:10:08+08:00",
+    "ip": "四川",
+    "url": "https://www.xiaohongshu.com/explore/6addc770000000002c03be4e",
+    "titleZh": "清理日 合集 1-5",
+    "title": "Purge Day — Ep.1-5 compilation",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Sci-fi",
+      "Thriller",
+      "PixVerse"
+    ],
+    "whyZh": "PixLight 全球 AI 类型片大赛参赛：城市被白光静止、主角遇见另一个自己，2.3万赞/3259评",
+    "whyEn": "PixLight AI genre-film entry: city frozen by white light, heroine meets her double — 23K likes / 3.3K comments",
+    "xhsTags": [
+      "天才导演招募计划",
+      "小红书短电影",
+      "我的第一部短电影",
+      "戏思极恐",
+      "PixLight2026",
+      "PixVerse",
+      "PixLight全球AI类型片大赛"
+    ],
+    "cover": "src/img/xhs_6addc770.jpg",
+    "coverLum": 58.9,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011611/a853075eaf133c1d91275e8716ca17f1/spectrum/1040g34o326o7ktbs58105o46qhpgbt36sqr0af0!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6addeb330000000033030af6",
+    "channel": "工号404上怪班",
+    "handle": "@工号404上怪班",
+    "userId": "5f76da070000000001003b9c",
+    "likes": "22.5K",
+    "likesRaw": 22516,
+    "collects": "4.3K",
+    "collectsRaw": 4349,
+    "comments": "108",
+    "commentsRaw": 108,
+    "shares": "507",
+    "sharesRaw": 507,
+    "date": "Oct 28, 2026",
+    "publishedAt": "2026-10-28T17:30:33+08:00",
+    "ip": "上海",
+    "url": "https://www.xiaohongshu.com/explore/6addeb330000000033030af6",
+    "titleZh": "中式梦核恐怖消除员",
+    "title": "Chinese dream-core horror cleaner (POV)",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "POV",
+      "Dream-core",
+      "Horror"
+    ],
+    "whyZh": "「每天体验一个不存在的职业」第一视角：废弃乐园糖童巨像、人偶、旧吉祥物，2.3万赞",
+    "whyEn": "'A job that doesn't exist' POV — candy giant, mannequins, old mascots in an abandoned park; 23K likes",
+    "xhsTags": [
+      "工号404上怪班",
+      "中式梦核",
+      "不存在的职业",
+      "第一视角",
+      "沉浸式体验",
+      "脑洞职业",
+      "AIGC",
+      "AI视频",
+      "WeeklyPick"
+    ],
+    "cover": "src/img/xhs_6addeb33.jpg",
+    "coverLum": 83.1,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011611/35f18a08195441755b143d343e0d6ad6/spectrum/1040g0k0326od4bee44005nrmr83g8esshg9a5v8!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  },
+  {
+    "id": "6ad20c0f000000001801956a",
+    "channel": "闲不住的比尔",
+    "handle": "@闲不住的比尔",
+    "userId": "65e2c4fa000000000500e3ce",
+    "likes": "21.0K",
+    "likesRaw": 20973,
+    "collects": "4.8K",
+    "collectsRaw": 4766,
+    "comments": "244",
+    "commentsRaw": 244,
+    "shares": "976",
+    "sharesRaw": 976,
+    "date": "Oct 16, 2026",
+    "publishedAt": "2026-10-16T19:35:43+08:00",
+    "ip": "广东",
+    "url": "https://www.xiaohongshu.com/explore/6ad20c0f000000001801956a",
+    "titleZh": "古早的浪漫世界",
+    "title": "An old-fashioned romantic world",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Surreal",
+      "Dream-core",
+      "AIGC"
+    ],
+    "whyZh": "《登陆新地球》同作者续篇：水母气球、推太阳下班，2.1万赞",
+    "whyEn": "Follow-up by the New Earth creator — jellyfish balloons, pushing the sun off shift; 21K likes",
+    "xhsTags": [
+      "脑洞",
+      "aha这也是艺术",
+      "aha修云朵也是艺术",
+      "AIGC",
+      "梦核",
+      "创意",
+      "月亮",
+      "梦幻与现实",
+      "怪诞美学",
+      "换个地球生活"
+    ],
+    "cover": "src/img/xhs_6ad20c0f.jpg",
+    "coverLum": 111.7,
+    "thumb": "http://sns-webpic-qc.xhscdn.com/202611011612/41faa45aabd37ddf859bc693a46bd49f/1040g008326gopeamkq005pf2ojt19ouefrodqjg!nd_dft_wlteh_webp_3",
+    "addedAt": "2026-11-01T16:30:00+08:00",
+    "batch": "2026-11-01h",
+    "platform": "xiaohongshu",
+    "metricsSrc": "xiaohongshu.com web search API interact_info (liked/collected/comment/shared exact counts), logged-in read-only pass 2026-11-01 ~16:05 CST; publish time from note page __INITIAL_STATE__",
+    "windowNote": "inaugural widen Oct 10–Nov 1 (strict window had only 2 craft clears)"
+  }
+];
+const XHS_INSIGHTS = [
+  {"tZh":"梦核超现实 = RED 头部","t":"Surreal dream-core leads RED","pZh":"《登陆新地球》《古早的浪漫世界》《售龄市》：一镜一个反常识浪漫小梗，配散文体文案，赞藏双高。","p":"New Earth / Old Romantic World / Shouling City: one impossible-but-tender gag per shot plus prose captions — high likes AND saves."},
+  {"tZh":"互动「选择」格式","t":"Interactive 'choose your…' format","pZh":"芥末机器「选择你的藏身之处」把评论区变成投票区，暗调微恐+电影光，单条 8.4 万赞。","p":"'Choose your hiding place' turns comments into a vote; low-key uncanny lighting — 84K likes on one note."},
+  {"tZh":"收藏率是 RED 独有信号","t":"Saves are the RED-native signal","pZh":"无公开播放，看赞+藏：《过来人》9.2 万藏接近点赞的一半，说明被当作灵感素材收藏。","p":"No public views — read likes+saves: The OGs has 92K saves (~half its likes), i.e. bookmarked as reference."},
+  {"tZh":"只追加、不覆盖","t":"Append-only","pZh":"按 noteId 合并；历史永久保留。指标为抓取时快照，非实时。","p":"Merge by noteId; history kept forever. Metrics are a snapshot at capture time."}
+];
+
 /* FILMMAKERS — APPEND/MERGE by handle: update followers when re-verified; never silently delete creators.
    Only MIN_FOLLOWERS+ are shown (auto-filtered + sorted by followers).
    TO ADD: paste a line; avatar src/img/av_<handle>.jpg. Fields: handle, name, followers, bio, knownFor(Zh),
@@ -13269,6 +13814,8 @@ function renderTrends(){
   if(tt && typeof TT_TREND_ZH!=="undefined") tt.innerHTML=trendHTML(TT_TREND_DATE, TT_TREND_ZH, TT_TREND);
   const bl=document.getElementById("bl-trend");
   if(bl && typeof BL_TREND_ZH!=="undefined") bl.innerHTML=trendHTML(BL_TREND_DATE, BL_TREND_ZH, BL_TREND);
+  const xh=document.getElementById("xhs-trend");
+  if(xh && typeof XHS_TREND_ZH!=="undefined") xh.innerHTML=trendHTML(XHS_TREND_DATE, XHS_TREND_ZH, XHS_TREND);
 }
 
 
@@ -13298,6 +13845,8 @@ const SORT_CFG={
   dy:{views:r=>num(r.views), fallback:r=>num(r.likes), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多点赞","Most liked"], hint:"抖音网页常无播放，按点赞 · likes when views N/A"},
   tt:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
   bl:{views:r=>num(r.views), likes:r=>num(r.likes), comments:r=>num(r.comments), shares:r=>num(r.shares), viewsLabel:["最多观看","Most viewed"]},
+  /* Xiaohongshu: no public views — reach = likes; "likes" slot = saves (collects). */
+  xhs:{views:r=>num(r.likesRaw??r.likes), likes:r=>num(r.collectsRaw??r.collects), comments:r=>num(r.commentsRaw??r.comments), shares:r=>num(r.sharesRaw??r.shares), viewsLabel:["最多点赞","Most liked"], hint:"小红书不公开播放，按点赞（综合含收藏）· likes (no public views; Best adds saves)"},
   /* Tutorials mix platforms: reach = YouTube views / X impressions / Reddit score. Percentiles are computed WITHIN each platform
      (group), so a 973-score Reddit post is compared with Reddit posts, not with YouTube views. "Most viewed" sorts by real
      views/impressions; Reddit (no public views) goes after them, ordered by score.
@@ -13764,6 +14313,48 @@ function layoutBilibili(){
 }
 addEventListener("resize",()=>{ if(document.getElementById("page-bilibili")?.classList.contains("active")) layoutBilibili(); });
 
+/* ---- Xiaohongshu / 小红书 page ---- */
+const xhsTileHTML=(r,i)=>`
+  <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="cover">
+      ${r.cover?`<img src="${esc(r.cover)}" alt="${esc(r.title||r.id)}" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>No cover</div>'">`:`<div class="placeholder">小红书</div>`}
+      <div class="rank">${String(i+1).padStart(2,"0")}</div>
+      <div class="views">♥ ${na(r.likes)} <small>点赞</small></div>
+      ${flagHTML(r)}
+      <div class="play">打开小红书 · Open ↗</div>
+    </div>
+    <div class="meta">
+      <div class="handle">${esc(r.handle||r.channel||"?")} ${batchBadge(r)}</div>
+      <div class="note">${r.noteZh||r.titleZh?`${esc(r.noteZh||r.titleZh)}<span class="en">${na(r.note||r.title)}</span>`:na(r.note||r.title)}</div>
+      ${whyHTML(r)}
+      <div class="row"><span>♥ <b>${na(r.likes)}</b></span><span title="收藏 Saves">★ <b>${na(r.collects)}</b></span>${r.shares?`<span>↗ <b>${na(r.shares)}</b></span>`:""}<span>💬 <b>${na(r.comments)}</b></span><span>${na(r.date)}</span></div>
+      ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>tagHTML(t)).join("")}</div>`:""}
+    </div>
+  </a>`;
+const xhsSorted=(typeof XHS_POSTS!=="undefined"?XHS_POSTS:[]).slice().sort((a,b)=>(b.likesRaw||0)-(a.likesRaw||0));
+function layoutXhs(){
+  if(typeof renderTrends==="function") renderTrends();
+  const note=document.getElementById("xhs-note");
+  if(note) note.innerHTML=`${esc(typeof XHS_NOTE_ZH!=="undefined"?XHS_NOTE_ZH:"")}<span class="en">${esc(typeof XHS_NOTE!=="undefined"?XHS_NOTE:"")}</span>`;
+  const u=document.getElementById("xhs-updated"); if(u) u.textContent="更新于 "+(typeof XHS_UPDATED_ZH!=="undefined"?XHS_UPDATED_ZH:"");
+  const ue=document.getElementById("xhs-updated-en"); if(ue) ue.textContent="Updated "+(typeof XHS_UPDATED!=="undefined"?XHS_UPDATED:"");
+  const newCount=xhsSorted.filter(isNewBatch).length;
+  document.getElementById("xhs-stats").innerHTML=`<div class="stat"><div class="n">${xhsSorted.length}</div><div class="l">条累计<span class="en">Total (kept)</span></div></div>
+    <div class="stat"><div class="n">${newCount}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
+    <div class="stat"><div class="n">${xhsSorted.length?na(xhsSorted[0].likes):"—"}</div><div class="l">最高点赞<span class="en">Top likes</span></div></div>`;
+  const ins=document.getElementById("xhs-insights");
+  if(ins && typeof XHS_INSIGHTS!=="undefined") ins.innerHTML=XHS_INSIGHTS.map(i=>`<div class="card"><div class="t">${esc(i.tZh)}<span class="en">${esc(i.t)}</span></div><p>${esc(i.pZh)}</p><p class="en">${esc(i.p)}</p></div>`).join("");
+  const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
+  const cols=Array.from({length:n},()=>[]);
+  if(!xhsSorted.length){
+    document.getElementById("xhs-grid").innerHTML=`<div class="rd-empty">本窗暂无已核实且过门槛的小红书条目（故意空表，不灌水）。<span class="en">No verified Xiaohongshu rows above floor this window — left empty on purpose.</span></div>`;
+    return;
+  }
+  sortRows("xhs",xhsSorted).forEach((r,i)=>cols[i%n].push(xhsTileHTML(r,i)));
+  document.getElementById("xhs-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
+}
+addEventListener("resize",()=>{ if(document.getElementById("page-xiaohongshu")?.classList.contains("active")) layoutXhs(); });
+
 /* ---- AI Tutorials page (v23) ---- */
 const tutTileHTML=(r,i)=>`
   <a class="tile" href="${esc(r.url)}" target="_blank" rel="noopener">
@@ -13801,11 +14392,11 @@ function layoutTutorials(){
   document.getElementById("tut-grid").innerHTML=cols.map(c=>`<div class="col">${c.join("")}</div>`).join("");
 }
 addEventListener("resize",()=>{ if(document.getElementById("page-tutorials")?.classList.contains("active")) layoutTutorials(); });
-Object.assign(SORT_RELAYOUT,{ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),dy:()=>layoutDouyin(),tt:()=>layoutTikTok(),bl:()=>layoutBilibili(),tut:()=>layoutTutorials()});
+Object.assign(SORT_RELAYOUT,{ig:()=>layout(),x:()=>layoutX(),reddit:()=>layoutReddit(),yt:()=>layoutYouTube(),dy:()=>layoutDouyin(),tt:()=>layoutTikTok(),bl:()=>layoutBilibili(),xhs:()=>layoutXhs(),tut:()=>layoutTutorials()});
 renderSortBars();
 
-/* ---- tab routing (#hits / #x / #reddit / #youtube / #douyin / #tiktok / #bilibili / #tutorials / #filmmakers) ---- */
-const PAGES={hits:"Instagram 爆款 IG Hits",x:"X 爆款 X Hits",reddit:"Reddit 爆款 Reddit Hits",youtube:"YouTube 爆款 YT Hits",douyin:"抖音爆款 Douyin Hits",tiktok:"TikTok 爆款 TikTok Hits",bilibili:"哔哩哔哩爆款 Bilibili Hits",tutorials:"AI 教程 AI Tutorial",filmmakers:"顶尖 AI 电影人 Top AI Filmmakers"};
+/* ---- tab routing (#hits / #x / #reddit / #youtube / #douyin / #tiktok / #bilibili / #xiaohongshu / #tutorials / #filmmakers) ---- */
+const PAGES={hits:"Instagram 爆款 IG Hits",x:"X 爆款 X Hits",reddit:"Reddit 爆款 Reddit Hits",youtube:"YouTube 爆款 YT Hits",douyin:"抖音爆款 Douyin Hits",tiktok:"TikTok 爆款 TikTok Hits",bilibili:"哔哩哔哩爆款 Bilibili Hits",xiaohongshu:"小红书爆款 Xiaohongshu Hits",tutorials:"AI 教程 AI Tutorial",filmmakers:"顶尖 AI 电影人 Top AI Filmmakers"};
 function route(){
   const h=(location.hash||"#hits").slice(1); const p=PAGES[h]?h:"hits";
   document.querySelectorAll(".page").forEach(el=>el.classList.toggle("active",el.id==="page-"+p));
@@ -13818,6 +14409,7 @@ function route(){
   if(p==="douyin") layoutDouyin();
   if(p==="tiktok") layoutTikTok();
   if(p==="bilibili") layoutBilibili();
+  if(p==="xiaohongshu") layoutXhs();
   if(p==="tutorials") layoutTutorials();
   scrollTo(0,0);
 }
