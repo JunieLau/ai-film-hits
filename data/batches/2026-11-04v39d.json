@@ -1,0 +1,31 @@
+{
+  "batch": "2026-11-04v39d",
+  "date": "2026-11-04",
+  "tz": "Asia/Shanghai",
+  "type": "filmmakers-append",
+  "added": [
+    {
+      "handle": "refikanadol",
+      "name": "Refik Anadol",
+      "followers": "1.1M",
+      "followersRaw": 1068125,
+      "followersAt": "2026-11-04",
+      "followersSrc": "PicMany 1,068,125 as of 2026-11-02",
+      "profileUrl": "https://www.instagram.com/refikanadol/",
+      "avatar": "src/img/av_refikanadol.jpg",
+      "tags": ["Installation", "Art", "Cinema"]
+    },
+    {
+      "handle": "haniverse_00",
+      "name": "Hanbyul Oh / Haniverse",
+      "followers": "260K",
+      "followersRaw": 260000,
+      "followersAt": "2026-11-04",
+      "followersSrc": "Public reports ~240–260K (HKTDC ~240K+; WOWTALE 2025 260K+); display 260K per Junie ballpark",
+      "profileUrl": "https://www.instagram.com/haniverse_00/",
+      "avatar": "src/img/av_haniverse_00.jpg",
+      "tags": ["Miniature", "Worldbuilding", "Cinema"]
+    }
+  ],
+  "notes": "Junie confirmed both adds after v39c brain_racked. Filmmakers 81→83. Subtitle date remains Nov 4, 2026."
+}
