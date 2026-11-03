@@ -1,0 +1,274 @@
+{
+  "batch": "2026-11-03v39",
+  "version": "v39",
+  "window": "2026-10-31..2026-11-03",
+  "windowNote": "craft pubdate Oct 31–Nov 3 Asia/Shanghai; series ~10-day heat Oct 24–Nov 3",
+  "updated": "Nov 3, 2026 10:35 CST",
+  "updated_zh": "2026-11-03 10:35（北京时间）",
+  "addedAt": "2026-11-03T10:35:00+08:00",
+  "ig": {
+    "new": 17,
+    "total": 111,
+    "ids": [
+      "DfPl1EkoLcs",
+      "DfKg0lwIwbT",
+      "DfPwKzwIFiu",
+      "DfMxcGNhKxi",
+      "DfPWNiphUwC",
+      "DfPk9Gtskx3",
+      "DfJWAwCtl7S",
+      "DfKl0hqx8qJ",
+      "DfN6DJyPmSi",
+      "DfKRmQ9JBZf",
+      "DfLDPURoPz5",
+      "DfKOHafJGjk",
+      "DfImz75NUtS",
+      "DfM0zIaNCBa",
+      "DfMW-rzxBNj",
+      "DfLgef6IJQd",
+      "DfL2-aEJl2Q"
+    ]
+  },
+  "x": {
+    "new": 6,
+    "total": 70,
+    "ids": [
+      "2117014339945394630",
+      "2117280886567719068",
+      "2117020491378720868",
+      "2116847145349435721",
+      "2117292256822792626",
+      "2116498281639690527"
+    ]
+  },
+  "reddit": {
+    "new": 2,
+    "total": 80,
+    "ids": [
+      "1xlbsb6",
+      "1xl6shf"
+    ]
+  },
+  "youtube": {
+    "new": 2,
+    "total": 109,
+    "ids": [
+      "-FbFhsy6DCQ",
+      "gq6I-muf1AY"
+    ]
+  },
+  "tutorials": {
+    "new": 5,
+    "total": 98,
+    "ids": [
+      "yt_H_f4vrjyaxs",
+      "yt_N9-5yy56zww",
+      "rd_1xlp0kg",
+      "rd_1xly4rw",
+      "rd_1xlni9b"
+    ]
+  },
+  "bilibili": {
+    "new": 2,
+    "total": 6,
+    "ids": [
+      "BV1HvHN6gEha",
+      "BV1bTxv61EXH"
+    ]
+  },
+  "douyin": {
+    "new": 0,
+    "total": 3,
+    "note": "under-fill intentional — no jingxuan multi-million craft in window"
+  },
+  "tiktok": {
+    "new": 0,
+    "total": 3,
+    "note": "under-fill intentional — geo-wall"
+  },
+  "xhs": {
+    "new": 0,
+    "total": 11,
+    "note": "under-fill intentional — login wall"
+  },
+  "series": {
+    "count": 28,
+    "new_titles": 0,
+    "rerank": "heatRaw DESC (stable by previous rank/id); fixed Accident 6.5M below 异邪录 9.6M",
+    "top5": [
+      {
+        "rank": 1,
+        "id": "s02_beiyong",
+        "title": "备用联系人",
+        "heatRaw": 746140000
+      },
+      {
+        "rank": 2,
+        "id": "s12_chimai",
+        "title": "持械入宋",
+        "heatRaw": 710040000
+      },
+      {
+        "rank": 3,
+        "id": "s05_piaoliang",
+        "title": "漂亮的恶意",
+        "heatRaw": 22300000
+      },
+      {
+        "rank": 4,
+        "id": "s04_yixie",
+        "title": "异邪录",
+        "heatRaw": 9600000
+      },
+      {
+        "rank": 5,
+        "id": "s01_accident",
+        "title": "The Accident",
+        "heatRaw": 6500000
+      }
+    ]
+  },
+  "covers": [
+    {
+      "file": "DfPl1EkoLcs.jpg",
+      "bytes": 73392
+    },
+    {
+      "file": "DfKg0lwIwbT.jpg",
+      "bytes": 72487
+    },
+    {
+      "file": "DfPwKzwIFiu.jpg",
+      "bytes": 299831
+    },
+    {
+      "file": "DfMxcGNhKxi.jpg",
+      "bytes": 149622
+    },
+    {
+      "file": "DfPWNiphUwC.jpg",
+      "bytes": 170778
+    },
+    {
+      "file": "DfPk9Gtskx3.jpg",
+      "bytes": 72752
+    },
+    {
+      "file": "DfJWAwCtl7S.jpg",
+      "bytes": 122530
+    },
+    {
+      "file": "DfKl0hqx8qJ.jpg",
+      "bytes": 179106
+    },
+    {
+      "file": "DfN6DJyPmSi.jpg",
+      "bytes": 111102
+    },
+    {
+      "file": "DfKRmQ9JBZf.jpg",
+      "bytes": 119890
+    },
+    {
+      "file": "DfLDPURoPz5.jpg",
+      "bytes": 120735
+    },
+    {
+      "file": "DfKOHafJGjk.jpg",
+      "bytes": 156342
+    },
+    {
+      "file": "DfImz75NUtS.jpg",
+      "bytes": 28801
+    },
+    {
+      "file": "DfM0zIaNCBa.jpg",
+      "bytes": 42064
+    },
+    {
+      "file": "DfMW-rzxBNj.jpg",
+      "bytes": 79626
+    },
+    {
+      "file": "DfLgef6IJQd.jpg",
+      "bytes": 59470
+    },
+    {
+      "file": "DfL2-aEJl2Q.jpg",
+      "bytes": 30300
+    },
+    {
+      "file": "x_2117014339945394630.jpg",
+      "bytes": 68936
+    },
+    {
+      "file": "x_2117280886567719068.jpg",
+      "bytes": 81431
+    },
+    {
+      "file": "x_2117020491378720868.jpg",
+      "bytes": 79312
+    },
+    {
+      "file": "x_2116847145349435721.jpg",
+      "bytes": 184143
+    },
+    {
+      "file": "x_2117292256822792626.jpg",
+      "bytes": 93771
+    },
+    {
+      "file": "x_2116498281639690527.jpg",
+      "bytes": 169558
+    },
+    {
+      "file": "rd_1xlbsb6.jpg",
+      "bytes": 130648
+    },
+    {
+      "file": "rd_1xl6shf.jpg",
+      "bytes": 135645
+    },
+    {
+      "file": "yt_-FbFhsy6DCQ.jpg",
+      "bytes": 354986
+    },
+    {
+      "file": "yt_gq6I-muf1AY.jpg",
+      "bytes": 146459
+    },
+    {
+      "file": "tut_H_f4vrjyaxs.jpg",
+      "bytes": 226787
+    },
+    {
+      "file": "tut_N9-5yy56zww.jpg",
+      "bytes": 162269
+    },
+    {
+      "file": "tut_rd_1xlp0kg.jpg",
+      "bytes": 59135
+    },
+    {
+      "file": "tut_rd_1xly4rw.jpg",
+      "bytes": 23497
+    },
+    {
+      "file": "tut_rd_1xlni9b.jpg",
+      "bytes": 183003
+    },
+    {
+      "file": "bl_BV1HvHN6gEha.jpg",
+      "bytes": 255339
+    },
+    {
+      "file": "bl_BV1bTxv61EXH.jpg",
+      "bytes": 241725
+    }
+  ],
+  "schemaFixes": [
+    "IG: added likesRaw/viewsRaw/commentsRaw via formatted-string parse",
+    "series: re-sorted all 28 by heatRaw DESC; renumbered rank 1..28",
+    "cover paths working-tree img/; ship index uses src/img/ for Pages"
+  ]
+}
