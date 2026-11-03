@@ -1,0 +1,20 @@
+{
+  "batch": "2026-11-04-brain_racked",
+  "date": "2026-11-04",
+  "tz": "Asia/Shanghai",
+  "type": "filmmakers-append",
+  "added": [
+    {
+      "handle": "brain_racked",
+      "name": "Ryan McCoy",
+      "followers": "435K",
+      "followersRaw": 435002,
+      "followersAt": "2026-11-04",
+      "followersSrc": "PicMany public count as of 2026-10-30 (435,002); Junie said ~400K",
+      "profileUrl": "https://www.instagram.com/brain_racked/",
+      "avatar": "src/img/av_brain_racked.jpg",
+      "tags": ["Sci-Fi", "Worldbuilding", "Cinema"]
+    }
+  ],
+  "notes": "Junie approved add. Miss scan: planner list already in; recommend refikanadol / haniverse_00 / azealter (verify IG floor) for next confirm — not auto-added."
+}
