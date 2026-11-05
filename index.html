@@ -325,7 +325,7 @@
 <header>
   <div class="kicker">TikTok · Moodboard · for @junielaux</div>
   <h1>TikTok <em>爆款</em> AI 视频<span class="en">TikTok Viral AI Videos</span></h1>
-  <p class="sub">发布窗口 <b>2026 年 9 月 8–11 月 5 日</b>（首发扩窗保留；严窗 11/2–11/5 仍无过线精片）· 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Sep 8–Nov 5, 2026</b> (inaugural widen kept; strict Nov 2–5, 2026 still empty at craft floor) · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
+  <p class="sub">发布窗口 <b>2026 年 9 月 8–11 月 5 日</b>（首发扩窗保留；严窗 11/2–11/5 仍无过线精片）· 本批追加 · 历史保留 · <b id="tt-updated"></b> · 点击打开 TikTok<span class="en">Publish window <b>Sep 8–Nov 5, 2026</b> (inaugural widen kept; strict Nov 2–5, 2026 +Part.2; strict new still thin) · new appended, history kept · <b id="tt-updated-en"></b> · Click to open TikTok.</span></p>
   <p class="sub" style="margin-top:6px;font-size:12.5px">入选：播放 ≥50 万 <b>或</b> 点赞 ≥5 万 · 优先有分享数 · 每位创作者最多 2 条 · AI film / cinematic shorts（拒纯舞蹈与泛娱乐灌水）· <b>只叠加不删除</b> <span class="en-i">Rule: views ≥500K <b>or</b> likes ≥50K · prefer shares · max 2 per creator · AI film/cinematic shorts only · <b>append-only</b></span></p>
   <div class="stats" id="tt-stats"></div>
 </header>
@@ -438,9 +438,9 @@ const YT_TREND_DATE = "2026-10-31 → 11-03";
 const YT_TREND_ZH = "窗口 11/2–11/5：上传日在窗且播放≥5万的 AI 片 +2。DUST《HYPERBURN》16.3万领跑；Theoretically Media《行星地狱》Seedance 续作 11.1万。DramaEx/长季工厂与未过 5万已拒。";
 const YT_TREND = "Window Nov 2–5: in-window uploads with ≥50k views +2. DUST “HYPERBURN” 163K leads; Theoretically Media Planet Hell Seedance continuation 111K. DramaEx / long-form farms / under-50k rejected.";
 
-const UPDATED = "Nov 5, 2026 10:30 CST";
-const UPDATED_ZH = "2026-11-05 10:30（北京时间）";
-const LATEST_BATCH = "2026-11-05v40"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "Nov 5, 2026 16:55 CST";
+const UPDATED_ZH = "2026-11-05 16:55（北京时间）";
+const LATEST_BATCH = "2026-11-05v40b"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -2732,7 +2732,7 @@ const INSIGHTS = [
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
    cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
 const X_UPDATED = "Nov 5, 2026 10:30 CST";
-const X_UPDATED_ZH = "2026-11-05 10:30（北京时间）";
+const X_UPDATED_ZH = "2026-11-05 16:55（北京时间）";
 const X_POSTS = 
 [
   {
@@ -2791,7 +2791,7 @@ const X_POSTS =
     ],
     "whyZh": "382转/9.5万曝光：夜之城质感动作场面，craft 明确",
     "whyEn": "382 RTs / 96k views: Night City–grade action craft",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117517528582995968/src/img/7dAT_wDFcVn9OXZF.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117517528582995968/img/7dAT_wDFcVn9OXZF.jpg",
     "cover": "src/img/x_2117517616457879811.jpg",
     "platform": "x",
     "batch": "2026-11-05v40",
@@ -2822,7 +2822,7 @@ const X_POSTS =
     ],
     "whyZh": "323转：亡灵节四日系列收官，角色一致性与情感落点扎实",
     "whyEn": "323 RTs: Día series finale — character consistency and emotional landing",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117199442436829184/src/img/WpRWsP3jd-tmE8da.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117199442436829184/img/WpRWsP3jd-tmE8da.jpg",
     "cover": "src/img/x_2117199573911490773.jpg",
     "platform": "x",
     "batch": "2026-11-05v40",
@@ -2853,7 +2853,7 @@ const X_POSTS =
     ],
     "whyZh": "24万级曝光/242转：角色传记式叙事完整，世界观续写强",
     "whyEn": "~95k views / 242 RTs: character-biography beat with strong world continuity",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2118011817297424384/src/img/B1GgMeRvlC1SrgDe.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2118011817297424384/img/B1GgMeRvlC1SrgDe.jpg",
     "cover": "src/img/x_2118012020717191663.jpg",
     "platform": "x",
     "batch": "2026-11-05v40",
@@ -2884,7 +2884,7 @@ const X_POSTS =
     ],
     "whyZh": "107转：圣保罗赛道记忆影像，情绪与运动镜头到位",
     "whyEn": "107 RTs: São Paulo racing-memory piece with strong motion emotion",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117943616169799681/src/img/2n0GjqhqR83rUZpw.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117943616169799681/img/2n0GjqhqR83rUZpw.jpg",
     "cover": "src/img/x_2117943786429173808.jpg",
     "platform": "x",
     "batch": "2026-11-05v40",
@@ -2915,7 +2915,7 @@ const X_POSTS =
     ],
     "whyZh": "本窗口最强热度之一（1052转/55万浏览）：音乐短片叙事完整、镜头语言紧，跨平台破圈",
     "whyEn": "Window's top heat (1052 RTs / 550k views): complete music-short storytelling with tight boarding — cross-platform breakout",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117014084784713728/src/img/_DAX44D3_f0ez_X-.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117014084784713728/img/_DAX44D3_f0ez_X-.jpg",
     "cover": "src/img/x_2117014339945394630.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -2946,7 +2946,7 @@ const X_POSTS =
     ],
     "whyZh": "55万浏览/473转：情感叙事节奏稳，封面与演技感强，craft+热度双在线",
     "whyEn": "554k views / 473 RTs: steady emotional pacing with strong acting presence — craft and heat both clear",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117279469152935936/src/img/5JfeOPKA5bg5dHwc.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117279469152935936/img/5JfeOPKA5bg5dHwc.jpg",
     "cover": "src/img/x_2117280886567719068.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -2977,7 +2977,7 @@ const X_POSTS =
     ],
     "whyZh": "455转/11.8万浏览：Runway 体系创作者的 F1 影像，运动片镜头感干净有冲击",
     "whyEn": "455 RTs / 118k views: Runway-side F1 cinematic — clean sports-film camera energy",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117020404816424960/src/img/rWnVsT2ghXgDsSyD.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117020404816424960/img/rWnVsT2ghXgDsSyD.jpg",
     "cover": "src/img/x_2117020491378720868.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -3008,7 +3008,7 @@ const X_POSTS =
     ],
     "whyZh": "365转：Midjourney+SeeDance+SHOWĀ 复古动画质感，亡灵节系列高潮篇",
     "whyEn": "365 RTs: Midjourney+SeeDance+SHOWĀ retro-anime look — peak piece in Día series",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116847007755345920/src/img/7rotqCQKwBs2VW_h.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116847007755345920/img/7rotqCQKwBs2VW_h.jpg",
     "cover": "src/img/x_2116847145349435721.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -3039,7 +3039,7 @@ const X_POSTS =
     ],
     "whyZh": "231转/13万浏览：世界观续章，分镜与角色一致性格鲜明，系列 craft 标杆",
     "whyEn": "231 RTs / 132k views: lore continuation with consistent character boarding — series craft benchmark",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117292099548626944/src/img/vz0TCSXTJdhwnQ45.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2117292099548626944/img/vz0TCSXTJdhwnQ45.jpg",
     "cover": "src/img/x_2117292256822792626.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -3070,7 +3070,7 @@ const X_POSTS =
     ],
     "whyZh": "228转：系列开篇，Shōwa 复古胶片感+SeeDance 动作干净，节日主题清晰",
     "whyEn": "228 RTs: series opener — Shōwa retro-film grain with clean SeeDance motion, clear holiday theme",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116498224773283840/src/img/1Se8QFzC2cXAva4S.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116498224773283840/img/1Se8QFzC2cXAva4S.jpg",
     "cover": "src/img/x_2116498281639690527.jpg",
     "platform": "x",
     "batch": "2026-11-03v39",
@@ -3097,7 +3097,7 @@ const X_POSTS =
     ],
     "whyZh": "劫案片语法讲加密新闻，动画分镜紧凑",
     "whyEn": "Heist-film grammar for crypto news — tight anime boarding",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116028198576164864/src/img/FnbH946JbE_SLUJp.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116028198576164864/img/FnbH946JbE_SLUJp.jpg",
     "cover": "src/img/x_2116028251353358645.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3123,7 +3123,7 @@ const X_POSTS =
     ],
     "whyZh": "把金属名曲做成 40 年代老片质感，年代美术还原度高",
     "whyEn": "Metal classic reimagined as 1940s film — high period-look fidelity",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115615498586988544/src/img/b1Ve2KK-ByqBcsBa.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115615498586988544/img/b1Ve2KK-ByqBcsBa.jpg",
     "cover": "src/img/x_2115615625838285230.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3149,7 +3149,7 @@ const X_POSTS =
     ],
     "whyZh": "Psyop 动画化金融梗，角色夸张表演+快剪",
     "whyEn": "Psyop anime-style finance meme — exaggerated acting, snappy cuts",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116302298657783808/src/img/eklZItZ7JUYT6Y1C.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116302298657783808/img/eklZItZ7JUYT6Y1C.jpg",
     "cover": "src/img/x_2116302384179892467.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3175,7 +3175,7 @@ const X_POSTS =
     ],
     "whyZh": "70 年代胶片颗粒与调色，系列化“年代翻拍”玩法",
     "whyEn": "70s grain and grade — serialized “period remake” format",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115124556171993088/src/img/w-LNZ059QwdyiG19.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115124556171993088/img/w-LNZ059QwdyiG19.jpg",
     "cover": "src/img/x_2115124762959626312.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3226,7 +3226,7 @@ const X_POSTS =
     ],
     "whyZh": "反乌托邦农场世界观，美术统一、氛围压抑",
     "whyEn": "Dystopian farm world — unified art direction, oppressive mood",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115834824090963968/src/img/QKwpLG6btsY0eLYX.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115834824090963968/img/QKwpLG6btsY0eLYX.jpg",
     "cover": "src/img/x_2115834999974834586.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3252,7 +3252,7 @@ const X_POSTS =
     ],
     "whyZh": "Claude 自动写稿、动画并卡点剪成片，开放下载",
     "whyEn": "Claude writes, animates and cuts to the beat — downloadable skill",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115444778493964288/src/img/T9Z_UHP3lELIwa23.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115444778493964288/img/T9Z_UHP3lELIwa23.jpg",
     "cover": "src/img/x_2115446592236823031.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3277,7 +3277,7 @@ const X_POSTS =
     ],
     "whyZh": "世界模型实机演示，可交互镜头+原生音频",
     "whyEn": "World-model demo — interactive camera with native audio",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115113026135392256/src/img/d9VX08ehiAo74R1M.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115113026135392256/img/d9VX08ehiAo74R1M.jpg",
     "cover": "src/img/x_2115114238943568324.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3303,7 +3303,7 @@ const X_POSTS =
     ],
     "whyZh": "系列化 AI 剧集公开预算与流程，制作方法可复用",
     "whyEn": "Serialized AI show with open budget + process — reusable production method",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116043488785829888/src/img/qodRK5rB9BBFo6UP.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116043488785829888/img/qodRK5rB9BBFo6UP.jpg",
     "cover": "src/img/x_2116160696971088319.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3328,7 +3328,7 @@ const X_POSTS =
     ],
     "whyZh": "都市怪谈短片，纪实质感+超现实元素",
     "whyEn": "Urban weird-tale — documentary texture meets surreal beats",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116183224976044032/src/img/mvKKFym03LdxgaBc.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116183224976044032/img/mvKKFym03LdxgaBc.jpg",
     "cover": "src/img/x_2116183272489124041.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3354,7 +3354,7 @@ const X_POSTS =
     ],
     "whyZh": "实时可交互视频，游戏化镜头语言",
     "whyEn": "Real-time interactive video — game-like camera language",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115138665844502529/src/img/abHQ7K2u55acRp8J.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115138665844502529/img/abHQ7K2u55acRp8J.jpg",
     "cover": "src/img/x_2115139352330400102.jpg",
     "addedAt": "2026-10-31T10:28:24+08:00",
     "batch": "2026-10-31"
@@ -3382,7 +3382,7 @@ const X_POSTS =
     "whyEn": "Krea Scooby tribute — coherent character acting and edit rhythm",
     "addedAt": "2026-10-29T10:13:40+08:00",
     "batch": "2026-10-29",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115402493228462080/src/img/m6zhP9iNoAsCZD19.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115402493228462080/img/m6zhP9iNoAsCZD19.jpg",
     "cover": "src/img/x_2115402956317323575.jpg"
   },
   {
@@ -3408,7 +3408,7 @@ const X_POSTS =
     "whyEn": "Viral AI comedy — punchy character beats and dialogue timing",
     "addedAt": "2026-10-29T10:13:40+08:00",
     "batch": "2026-10-29",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115101470433374209/src/img/O_g_SB9rNTMK6fZ3.jpg",
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115101470433374209/img/O_g_SB9rNTMK6fZ3.jpg",
     "cover": "src/img/x_2115101721793794224.jpg"
   },
   {
@@ -3460,7 +3460,7 @@ const X_POSTS =
     "batch": "2026-10-28b",
     "whyZh": "MJ+Seedance 老鼠短片：角色表演连贯、镜头调度有电影感",
     "whyEn": "MJ+Seedance Mice Tale — coherent creature performance and cinematic framing",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114660232068800513/src/img/38qkVrncxZpWrRqC.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114660232068800513/img/38qkVrncxZpWrRqC.jpg"
   },
   {
     "id": "2114529967937851562",
@@ -3510,7 +3510,7 @@ const X_POSTS =
     "batch": "2026-10-27",
     "whyZh": "世界观反差笑点+角色一致",
     "whyEn": "Worldbuild contrast gag with character lock",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114302440862265344/src/img/OhIYnZVBOHtcImNt.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114302440862265344/img/OhIYnZVBOHtcImNt.jpg"
   },
   {
     "id": "2111979046221586724",
@@ -3534,7 +3534,7 @@ const X_POSTS =
     "batch": "2026-10-27",
     "whyZh": "丧系对白配赛璐璐表演",
     "whyEn": "Deadpan dialogue with cel-locked acting",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111978841300144128/src/img/2v736lIE-h6fm0zV.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111978841300144128/img/2v736lIE-h6fm0zV.jpg"
   },
   {
     "id": "2113739942174359693",
@@ -3558,7 +3558,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "丧黑幽默卡点精准、角色表情统一",
     "whyEn": "Deadpan timing with locked character faces",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113739813111177216/src/img/0AMp5-L1hcYdgxKb.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113739813111177216/img/0AMp5-L1hcYdgxKb.jpg"
   },
   {
     "id": "2111858080652685782",
@@ -3582,7 +3582,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "政治人物一致性强、笑点节奏稳",
     "whyEn": "Strong likeness consistency with punchline timing",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111857936548950017/src/img/Cn7znd3tohcDp05v.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111857936548950017/img/Cn7znd3tohcDp05v.jpg"
   },
   {
     "id": "2113579263656071218",
@@ -3607,7 +3607,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "动态构图强、风格辨识度高",
     "whyEn": "Dynamic framing with high style signature",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113578944733802496/src/img/d0nYKCduWXgKmtip.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113578944733802496/img/d0nYKCduWXgKmtip.jpg"
   },
   {
     "id": "2112819561586455016",
@@ -3655,7 +3655,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "产品演示节奏清晰、画面信息密",
     "whyEn": "Dense demo pacing with clear product beats",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112671333414776832/src/img/wQKP94SqNFyChN5N.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112671333414776832/img/wQKP94SqNFyChN5N.jpg"
   },
   {
     "id": "2112474412586852367",
@@ -3679,7 +3679,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "三人同框稳定、魔术转场干净",
     "whyEn": "Stable multi-character frame with clean magic cut",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112474325945057280/src/img/VQ6dkaVlGBz0eCNv.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112474325945057280/img/VQ6dkaVlGBz0eCNv.jpg"
   },
   {
     "id": "2113863998340751811",
@@ -3703,7 +3703,7 @@ const X_POSTS =
     "batch": "2026-10-25",
     "whyZh": "字幕叙事+节奏剪辑贴合",
     "whyEn": "Subtitle storytelling locked to beat edits",
-    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113863801359450112/src/img/-PqHJa8hGH1z8bX-.jpg"
+    "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113863801359450112/img/-PqHJa8hGH1z8bX-.jpg"
   },
   {
     "id": "2110758072083751046",
@@ -4633,7 +4633,7 @@ const X_INSIGHTS = [
   { tZh:"只追加、不覆盖", t:"Append-only — never overwrite", pZh:"Oct 23 批次卡片全部保留；指标可原地刷新，行不删除。", p:"Oct 23 rows all kept; metrics may refresh in place, rows never deleted." }
 ]
 const REDDIT_UPDATED = "Nov 5, 2026 10:30 CST";
-const REDDIT_UPDATED_ZH = "2026-11-05 10:30（北京时间）";
+const REDDIT_UPDATED_ZH = "2026-11-05 16:55（北京时间）";
 const REDDIT_NOTE_ZH = "窗口 10/28–10/31（北京时间），扫描 r/aivideo、r/ChatGPT、r/StableDiffusion 等 AI 版块的视频帖；Reddit 直连不可达，数据来自 arctic-shift；分数为归档抓取时数字。";
 const REDDIT_NOTE = "Window Oct 28–31 (China time): AI video posts from r/aivideo, r/ChatGPT, r/StableDiffusion and more; Reddit blocked, data from arctic-shift; scores as captured.";
 const REDDIT_POSTS = 
@@ -6452,7 +6452,7 @@ const REDDIT_POSTS =
    Also refresh YT_TREND_ZH / YT_TREND each update, and keep whyZh/whyEn on every card.
    CANE MAN (20GbzQQyvsU, Sep 15) restored by request after the 09-20 date filter removed it. ===== */
 const YT_UPDATED = "Nov 5, 2026 10:30 CST";
-const YT_UPDATED_ZH = "2026-11-05 10:30（北京时间）";
+const YT_UPDATED_ZH = "2026-11-05 16:55（北京时间）";
 const YT_NOTE_ZH = "硬门槛：上传日在 10/28–10/31（北京时间）窗口内且播放 ≥5 万；本批以 AI 长篇剧集与同人 IP 为主。播放/点赞来自 YouTube 公开数据（yt-dlp），无编造。";
 const YT_NOTE = "Hard floor: uploaded within Oct 28–31 (China time) and ≥50K views; this batch is mostly long-form AI serials and fan-IP shorts. Views/likes from public YouTube data (yt-dlp); nothing invented.";
 const YT_POSTS = 
@@ -8973,21 +8973,55 @@ const YT_INSIGHTS = [
 
 
 /* ===== Douyin / 抖音 — APPEND ONLY by video id. Floor: views≥1M OR likes≥100K. Window Oct 29–Nov 1. ===== */
-const DY_UPDATED = "Nov 5, 2026 10:30 CST";
-const DY_UPDATED_ZH = "2026-11-05 10:30（北京时间）";
-const DY_NOTE_ZH = "硬门槛：发布日在 10/29–11/1（北京时间）且播放≥几百万（优先 ≥300万–1000万+；可到几千万）。只收电影感 AI 短片/微电影。播放来自 jingxuan.douyin.com play_count；封面 CDN 本地缓存。本批 3 条已核实（1810万/1080万/783万）并补齐封面。无播放时才用点赞≥100万作代理。";
-const DY_NOTE = "Hard floor: published Oct 29–Nov 1 (China time) and views ≥ millions (prefer ≥3M–10M+; tens of millions OK). Cinematic AI shorts/microfilms only. Metrics from jingxuan.douyin.com play_count; covers from CDN. This ship: 3 verified (18.1M / 10.8M / 7.8M) with covers filled. Likes≥1M proxy only if views unavailable.";
-const DY_TREND_DATE = "2026-10-31 → 11-03";
-const DY_TREND_ZH = "窗口 11/2–11/5：抖音精片本窗无可核实「几百万播」新片（jingxuan/公开页软墙），棚架仍为《成人礼》1810万 /《硫酸洗头案》1080万 /《听海者》783万。短剧切片未混入精片；系列见「最火 AI 短剧」近十日重排。";
-const DY_TREND = "Window Nov 2–5: no new jingxuan-verified multi-million Douyin craft clears (share pages soft-walled). Shelf stays Coming-of-Age 18.1M / Sulfuric-acid case 10.8M / 听海者 7.8M. Short-drama slices kept out of craft; series → 「最火 AI 短剧」 10-day rerank.";
+const DY_UPDATED = "Nov 5, 2026 16:55 CST";
+const DY_UPDATED_ZH = "2026-11-05 16:55（北京时间）";
+const DY_NOTE_ZH = "硬门槛：电影感 AI 短片/微电影；播放≥几百万（优先 ≥300万–1000万+）。本批新增金奖长片《合龙》（jingxuan 核实 1036万播），并刷新既有 3 条播放。严格 11/2–11/5 窗内可核实新精片仍稀缺（公开页软墙）；短剧切片不混入精片。";
+const DY_NOTE = "Hard floor: cinematic AI shorts/microfilms; views ≥ millions (prefer ≥3M–10M+). This ship adds gold-prize The Last Span / 合龙 (jingxuan ~10.36M) and refreshes the prior 3. Strict Nov 2–5 still thin after soft-wall; short-drama slices stay out of craft.";
+const DY_TREND_DATE = "2026-11-02 → 11-05";
+const DY_TREND_ZH = "窗口 11/2–11/5 补扫：新增《合龙》1036万（仍在涨，精片棚此前漏收）；既有《成人礼》≈2000万 /《听海者》≈1698万 /《硫酸洗头案》≈1113万 已刷新。本窗严格新发且过「几百万」的公开可核实精片仍不足，未硬凑。";
+const DY_TREND = "Nov 2–5 refill: added 合龙 / The Last Span at 10.36M (still climbing; was missing from craft). Refreshed Coming-of-Age ~20.0M / 听海者 ~17.0M / sulfuric-acid case ~11.1M. Strict in-window multi-million clears remain scarce after soft-wall — no padding.";
 const DOUYIN_POSTS = [
+  {
+    "id": "7676103932166425919",
+    "handle": "2XLabs",
+    "views": "10.4M",
+    "viewsRaw": 10364275,
+    "likes": "603.1K",
+    "likesRaw": 603077,
+    "comments": "N/A",
+    "commentsRaw": null,
+    "shares": "N/A",
+    "sharesRaw": null,
+    "date": "Aug 20, 2026",
+    "url": "https://www.douyin.com/video/7676103932166425919",
+    "noteZh": "金奖 AI 长片《合龙》· 17 分钟水墨叙事",
+    "note": "Gold-prize AI short The Last Span / 合龙",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI short",
+      "2XLabs",
+      "Jimeng",
+      "Craft"
+    ],
+    "whyZh": "抖音 AI 创作大赛金奖 + 阿斯塔纳最佳故事；jingxuan 核实约 1036 万播 / 60.3 万赞（11/5）；本窗仍在涨，精片棚此前未收",
+    "whyEn": "Douyin AI Contest gold + Astana Best Story; jingxuan-verified ~10.36M plays / 603K likes (Nov 5); still climbing this week — missing from craft shelf until now",
+    "upload_date": "20260820",
+    "cover": "src/img/dy_7676103932166425919.jpg",
+    "addedAt": "2026-11-05T16:55:00+08:00",
+    "batch": "2026-11-05v40b",
+    "platform": "douyin",
+    "thumb": "https://p3-sign.douyinpic.com/tos-cn-i-dy/4faa63cb91314740b81a567cecca29e5~tplv-dy-resize-origshort-autoq-75:0.jpeg?lk3s=138a59ce&x-expires=1795075200&x-signature=0qP5gYU4a4%2BEdzkHm4LzJ7gMeNk%3D&from=327834062_large&s=PackSourceEnum_YUMME_DETAIL&se=false&sc=cover&biz_tag=aweme_video&l=2026110516540114B7D9F0E73233144A79",
+    "metricsSrc": "jingxuan.douyin.com play_count/digg_count",
+    "floorNote": "views≥几百万 craft; still-hot this week (Digipunk Nov 4 obs 10.34M)"
+  },
   {
     "id": "7702422092326636834",
     "handle": "人间帧",
-    "views": "18.1M",
-    "viewsRaw": 18107344,
-    "likes": "815.2K",
-    "likesRaw": 815152,
+    "views": "20.0M",
+    "viewsRaw": 20000239,
+    "likes": "872.4K",
+    "likesRaw": 872403,
     "comments": "25K",
     "commentsRaw": 25000,
     "shares": "64K",
@@ -9017,10 +9051,10 @@ const DOUYIN_POSTS = [
   {
     "id": "7702427003235863834",
     "handle": "Ai卢少骅",
-    "views": "10.8M",
-    "viewsRaw": 10837154,
-    "likes": "279.7K",
-    "likesRaw": 279745,
+    "views": "11.1M",
+    "viewsRaw": 11129568,
+    "likes": "282.4K",
+    "likesRaw": 282362,
     "comments": "3,882",
     "commentsRaw": 3882,
     "shares": "286K",
@@ -9049,10 +9083,10 @@ const DOUYIN_POSTS = [
   {
     "id": "7701997178981535030",
     "handle": "吉吉AIGC",
-    "views": "7.8M",
-    "viewsRaw": 7833059,
-    "likes": "261.2K",
-    "likesRaw": 261236,
+    "views": "17.0M",
+    "viewsRaw": 16975719,
+    "likes": "538.6K",
+    "likesRaw": 538632,
     "comments": "2,796",
     "commentsRaw": 2796,
     "shares": "131K",
@@ -10132,25 +10166,59 @@ const DY_SERIES_POSTS = [
 ];
 
 /* ===== TikTok — APPEND ONLY by video id. Floor: views≥500K OR likes≥50K. Window Oct 29–Nov 1 (inaugural widen Sep 8–Nov 1). ===== */
-const TT_UPDATED = "Nov 5, 2026 10:30 CST";
-const TT_UPDATED_ZH = "2026-11-05 10:30（北京时间）";
-const TT_NOTE_ZH = "硬门槛：播放≥50万或点赞≥5万；只收电影感 AI 短片/影院体验。批次 2026-11-01c：严格 10/29–11/1 窗内过门槛的只有短剧教程（拒收），故首发扩窗至 9/8–11/1，收 3 条已核实精片（封面齐）。指标来自 tiktok.com/embed/v2；封面 CDN 本地缓存。每位最多 2 条。";
-const TT_NOTE = "Hard floor: ≥500K views or ≥50K likes; cinematic AI shorts/cinema-experience only. Batch 2026-11-01c: strict Oct 29–Nov 1 had zero craft clears (only short-drama how-tos — rejected), so inaugural window widened to Sep 8–Nov 1 for 3 verified hits with covers. Metrics from tiktok.com/embed/v2; covers CDN-cached. Max 2 per creator.";
-const TT_TREND_DATE = "2026-10-31 → 11-03";
-const TT_TREND_ZH = "窗口 11/2–11/5：TikTok 本窗无公开可核实 ≥50万播 / ≥5万赞精片（地区墙）。看板仍为扩窗首发 3 条——kennyslowbird 4D 电影院 1.556亿、nash.ai6《Double Force Miami》910万、日本 4DX 520万。";
-const TT_TREND = "Window Nov 2–5: no public-verified TikTok craft ≥500k views / ≥50k likes (geo-wall). Board still inaugural-widen 3 — kennyslowbird 4D cinema 155.6M, nash.ai6 Double Force Miami 9.1M, JP 4DX 5.2M.";
+const TT_UPDATED = "Nov 5, 2026 16:55 CST";
+const TT_UPDATED_ZH = "2026-11-05 16:55（北京时间）";
+const TT_NOTE_ZH = "硬门槛：播放≥50万或赞≥5万；电影感 AI 短片/影院体验。本批新增 nash.ai6《Double Force Miami》Part.2（≈108万播），并刷新既有 3 条。严格 11/2–11/5 过线电影感新片仍空；教程号（lulu.ai04 等）已排除。";
+const TT_NOTE = "Floor: views≥500K or likes≥50K; cinematic AI shorts/cinema setpieces. This ship adds nash.ai6 Double Force Miami Part.2 (~1.08M) and refreshes the prior 3. Strict Nov 2–5 cinematic clears still empty; tutorial farms (lulu.ai04 etc.) rejected.";
+const TT_TREND_DATE = "2026-11-02 → 11-05";
+const TT_TREND_ZH = "窗口 11/2–11/5：严格新发过线精片仍空（geo/软墙）。补收仍热的 Part.2（108万）；kennyslowbird 4D 影院 ≈1.568 亿 / nash Part.1 ≈919 万 已刷新。教程向过线片未入精片。";
+const TT_TREND = "Nov 2–5: strict in-window cinematic clears still empty (geo/soft-wall). Added still-hot Part.2 (1.08M); refreshed kennyslowbird ~156.8M / nash Part.1 ~9.19M. Tutorial clears kept out of craft.";
 const TIKTOK_POSTS = [
+  {
+    "id": "7690588719157398814",
+    "handle": "@nash.ai6",
+    "views": "1.1M",
+    "viewsRaw": 1083117,
+    "likes": "119.1K",
+    "likesRaw": 119068,
+    "comments": "1.7K",
+    "commentsRaw": 1659,
+    "shares": "7.9K",
+    "sharesRaw": 7913,
+    "date": "Sep 28, 2026",
+    "url": "https://www.tiktok.com/@nash.ai6/video/7690588719157398814",
+    "noteZh": "Double Force Miami Part.2 · 80s AI 动作短片",
+    "note": "Double Force Miami Part.2 — 80s AI action short",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "AI movie",
+      "nash.ai6",
+      "Seedance",
+      "80s"
+    ],
+    "whyZh": "tikwm 核实约 108 万播 / 11.9 万赞；《Double Force Miami》续集电影感动作片，精片棚此前仅有 Part.1",
+    "whyEn": "tikwm-verified ~1.08M plays / 119K likes; Double Force Miami sequel cinematic action — Part.1 already on shelf, Part.2 was missing",
+    "upload_date": "20260928",
+    "cover": "src/img/tt_7690588719157398814.jpg",
+    "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o0cIhiPuaCyAnwQEplClA9ERABA7r6l7d1AiB~tplv-tiktokx-cropcenter-q:300:400:q70.jpeg?dr=8596&refresh_token=d7d76ef7&x-expires=1793952000&x-signature=4iMr30ud2JIK5l9HrvwPGQyZBP8%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=1d1a97fc&idc=useast5&biz_tag=tt_video&s=AWEME_DETAIL&sc=cover",
+    "addedAt": "2026-11-05T16:55:00+08:00",
+    "batch": "2026-11-05v40b",
+    "platform": "tiktok",
+    "metricsSrc": "tikwm.com play_count/digg_count",
+    "floorNote": "views≥500K; still-hot AI movie craft (inaugural widen kept)"
+  },
   {
     "id": "7682921175172828423",
     "handle": "@kennyslowbird",
-    "views": "155.6M",
-    "viewsRaw": 155600000,
-    "likes": "17.3M",
-    "likesRaw": 17300000,
+    "views": "156.8M",
+    "viewsRaw": 156821273,
+    "likes": "17.5M",
+    "likesRaw": 17475669,
     "comments": "60.4K",
-    "commentsRaw": 60400,
-    "shares": "1.8M",
-    "sharesRaw": 1800000,
+    "commentsRaw": 60360,
+    "shares": "1.9M",
+    "sharesRaw": 1851933,
     "date": "Sep 8, 2026",
     "url": "https://www.tiktok.com/@kennyslowbird/video/7682921175172828423",
     "noteZh": "Higgsfield「4D 电影院」前排冲击 · AI 影院体验",
@@ -10177,14 +10245,14 @@ const TIKTOK_POSTS = [
   {
     "id": "7689674827648535839",
     "handle": "@nash.ai6",
-    "views": "9.1M",
-    "viewsRaw": 9100000,
-    "likes": "930.3K",
-    "likesRaw": 930300,
-    "comments": "6,393",
-    "commentsRaw": 6393,
-    "shares": "25.2K",
-    "sharesRaw": 25200,
+    "views": "9.2M",
+    "viewsRaw": 9194006,
+    "likes": "934.7K",
+    "likesRaw": 934694,
+    "comments": "6.4K",
+    "commentsRaw": 6415,
+    "shares": "25.3K",
+    "sharesRaw": 25309,
     "date": "Sep 26, 2026",
     "url": "https://www.tiktok.com/@nash.ai6/video/7689674827648535839",
     "noteZh": "《Double Force Miami》Part.1 · 原创 AI 电影",
@@ -10211,14 +10279,14 @@ const TIKTOK_POSTS = [
   {
     "id": "7684077290174598418",
     "handle": "@kennyslowbird",
-    "views": "5.2M",
-    "viewsRaw": 5200000,
-    "likes": "333.3K",
-    "likesRaw": 333300,
-    "comments": "799",
-    "commentsRaw": 799,
-    "shares": "28.7K",
-    "sharesRaw": 28700,
+    "views": "5.4M",
+    "viewsRaw": 5352145,
+    "likes": "337.3K",
+    "likesRaw": 337321,
+    "comments": "801",
+    "commentsRaw": 801,
+    "shares": "29.2K",
+    "sharesRaw": 29182,
     "date": "Sep 11, 2026",
     "url": "https://www.tiktok.com/@kennyslowbird/video/7684077290174598418",
     "noteZh": "日本 4DX 影院质感 · Higgsfield 续作",

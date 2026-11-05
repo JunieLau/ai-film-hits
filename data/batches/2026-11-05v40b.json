@@ -1,0 +1,145 @@
+{
+  "id": "2026-11-05v40b",
+  "updated": "Nov 5, 2026 16:55 CST",
+  "updatedZh": "2026-11-05 16:55（北京时间）",
+  "window": {
+    "zh": "2026 年 11 月 2–5 日",
+    "en": "Nov 2–5, 2026"
+  },
+  "deltas": {
+    "douyin": {
+      "new": 1,
+      "total": 4,
+      "refreshed": 3
+    },
+    "tiktok": {
+      "new": 1,
+      "total": 4,
+      "refreshed": 3
+    }
+  },
+  "added": {
+    "douyin": [
+      {
+        "id": "7676103932166425919",
+        "handle": "2XLabs",
+        "views": "10.4M",
+        "viewsRaw": 10364275,
+        "likes": "603.1K",
+        "likesRaw": 603077,
+        "comments": "N/A",
+        "commentsRaw": null,
+        "shares": "N/A",
+        "sharesRaw": null,
+        "date": "Aug 20, 2026",
+        "url": "https://www.douyin.com/video/7676103932166425919",
+        "noteZh": "金奖 AI 长片《合龙》· 17 分钟水墨叙事",
+        "note": "Gold-prize AI short The Last Span / 合龙",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "tags": [
+          "AI short",
+          "2XLabs",
+          "Jimeng",
+          "Craft"
+        ],
+        "whyZh": "抖音 AI 创作大赛金奖 + 阿斯塔纳最佳故事；jingxuan 核实约 1036 万播 / 60.3 万赞（11/5）；本窗仍在涨，精片棚此前未收",
+        "whyEn": "Douyin AI Contest gold + Astana Best Story; jingxuan-verified ~10.36M plays / 603K likes (Nov 5); still climbing this week — missing from craft shelf until now",
+        "upload_date": "20260820",
+        "cover": "img/dy_7676103932166425919.jpg",
+        "addedAt": "2026-11-05T16:55:00+08:00",
+        "batch": "2026-11-05v40b",
+        "platform": "douyin",
+        "thumb": "https://p3-sign.douyinpic.com/tos-cn-i-dy/4faa63cb91314740b81a567cecca29e5~tplv-dy-resize-origshort-autoq-75:0.jpeg?lk3s=138a59ce&x-expires=1795075200&x-signature=0qP5gYU4a4%2BEdzkHm4LzJ7gMeNk%3D&from=327834062_large&s=PackSourceEnum_YUMME_DETAIL&se=false&sc=cover&biz_tag=aweme_video&l=2026110516540114B7D9F0E73233144A79",
+        "metricsSrc": "jingxuan.douyin.com play_count/digg_count",
+        "floorNote": "views≥几百万 craft; still-hot this week (Digipunk Nov 4 obs 10.34M)"
+      }
+    ],
+    "tiktok": [
+      {
+        "id": "7690588719157398814",
+        "handle": "@nash.ai6",
+        "views": "1.1M",
+        "viewsRaw": 1083117,
+        "likes": "119.1K",
+        "likesRaw": 119068,
+        "comments": "1.7K",
+        "commentsRaw": 1659,
+        "shares": "7.9K",
+        "sharesRaw": 7913,
+        "date": "Sep 28, 2026",
+        "url": "https://www.tiktok.com/@nash.ai6/video/7690588719157398814",
+        "noteZh": "Double Force Miami Part.2 · 80s AI 动作短片",
+        "note": "Double Force Miami Part.2 — 80s AI action short",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "tags": [
+          "AI movie",
+          "nash.ai6",
+          "Seedance",
+          "80s"
+        ],
+        "whyZh": "tikwm 核实约 108 万播 / 11.9 万赞；《Double Force Miami》续集电影感动作片，精片棚此前仅有 Part.1",
+        "whyEn": "tikwm-verified ~1.08M plays / 119K likes; Double Force Miami sequel cinematic action — Part.1 already on shelf, Part.2 was missing",
+        "upload_date": "20260928",
+        "cover": "img/tt_7690588719157398814.jpg",
+        "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o0cIhiPuaCyAnwQEplClA9ERABA7r6l7d1AiB~tplv-tiktokx-cropcenter-q:300:400:q70.jpeg?dr=8596&refresh_token=d7d76ef7&x-expires=1793952000&x-signature=4iMr30ud2JIK5l9HrvwPGQyZBP8%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=1d1a97fc&idc=useast5&biz_tag=tt_video&s=AWEME_DETAIL&sc=cover",
+        "addedAt": "2026-11-05T16:55:00+08:00",
+        "batch": "2026-11-05v40b",
+        "platform": "tiktok",
+        "metricsSrc": "tikwm.com play_count/digg_count",
+        "floorNote": "views≥500K; still-hot AI movie craft (inaugural widen kept)"
+      }
+    ]
+  },
+  "blockers": [
+    "Douyin www search soft-wall (72KB shell); jingxuan detail OK for known IDs",
+    "Strict Nov 2–5 cinematic multi-million DY clears not publicly discoverable without login/browser creator sweep",
+    "TikTok www geo/CF on search+user APIs; tikwm single-video OK; lulu.ai04 tutorial clears rejected",
+    "Bilibili search API blocked (-412/HTML interstitial)"
+  ],
+  "near_misses": [
+    {
+      "id": "7702040128797101330",
+      "platform": "tiktok",
+      "play": 3194939,
+      "reason": "tutorial not craft (lulu.ai04)"
+    },
+    {
+      "id": "7702716488595049735",
+      "platform": "tiktok",
+      "play": 1300451,
+      "reason": "tutorial not craft"
+    },
+    {
+      "id": "7704313079958141146",
+      "platform": "douyin",
+      "play": 526206,
+      "reason": "AI pet cooking meme — below craft bar / not film"
+    },
+    {
+      "id": "7704257375879941416",
+      "platform": "douyin",
+      "play": 750457,
+      "reason": "meme encyclopedia 大飞鼠 — not AI film craft"
+    },
+    {
+      "id": "7702311550077455646",
+      "platform": "tiktok",
+      "play": 7214,
+      "reason": "nash Triple Force Part.9 in-window but under floor"
+    }
+  ],
+  "suggested_notify_picks_from_new": [
+    {
+      "zh": "2XLabs《合龙》",
+      "url": "https://www.douyin.com/video/7676103932166425919",
+      "why": "金奖 17 分钟 AI 长片 · jingxuan 1036 万播 / 60 万赞 · 本窗仍在涨"
+    },
+    {
+      "zh": "nash.ai6《Double Force Miami》Part.2",
+      "url": "https://www.tiktok.com/@nash.ai6/video/7690588719157398814",
+      "why": "80s AI 动作续集 · 108 万播 / 11.9 万赞"
+    }
+  ]
+}
