@@ -1,0 +1,185 @@
+{
+  "batch": "2026-11-05v40",
+  "version": "v40",
+  "window": "2026-11-02..2026-11-05",
+  "windowNote": "craft pubdate Nov 2–5 Asia/Shanghai; series ~10-day heat Oct 26–Nov 5",
+  "updated": "Nov 5, 2026 10:35 CST",
+  "updated_zh": "2026-11-05 10:35（北京时间）",
+  "addedAt": "2026-11-05T10:35:00+08:00",
+  "ig": {
+    "new": 0,
+    "total": 111,
+    "ids": []
+  },
+  "x": {
+    "new": 5,
+    "total": 75,
+    "ids": [
+      "2117443401800929429",
+      "2117517616457879811",
+      "2117199573911490773",
+      "2118012020717191663",
+      "2117943786429173808"
+    ]
+  },
+  "reddit": {
+    "new": 3,
+    "total": 83,
+    "ids": [
+      "1xnsdkj",
+      "1xn8w48",
+      "1xnw0jq"
+    ]
+  },
+  "youtube": {
+    "new": 2,
+    "total": 111,
+    "ids": [
+      "JiGrx-9RDYw",
+      "1yLAbK5F3E8"
+    ]
+  },
+  "tutorials": {
+    "new": 5,
+    "total": 103,
+    "ids": [
+      "yt_rQkQ7xFVshM",
+      "rd_1xnui9u",
+      "rd_1xmyovx",
+      "rd_1xnrt67",
+      "rd_1xnpbvh"
+    ]
+  },
+  "bilibili": {
+    "new": 0,
+    "total": 6,
+    "ids": []
+  },
+  "douyin": {
+    "new": 0,
+    "total": 3,
+    "note": "under-fill intentional — no jingxuan multi-million craft in window"
+  },
+  "tiktok": {
+    "new": 0,
+    "total": 3,
+    "note": "under-fill intentional — geo-wall"
+  },
+  "xhs": {
+    "new": 1,
+    "total": 12,
+    "ids": [
+      "6ae864f8000000003303b315"
+    ],
+    "note": "post-merge clear via logged-in box browser; likes 2.9万 ≥2万 floor"
+  },
+  "series": {
+    "count": 28,
+    "new_titles": 0,
+    "rerank": "heatRaw DESC (stable by previous rank/id); fixed Accident 6.5M below 异邪录 9.6M",
+    "top5": [
+      {
+        "rank": 1,
+        "id": "s02_beiyong",
+        "title": "备用联系人",
+        "heatRaw": 741230000
+      },
+      {
+        "rank": 2,
+        "id": "s12_chimai",
+        "title": "持械入宋",
+        "heatRaw": 609270000
+      },
+      {
+        "rank": 3,
+        "id": "s05_piaoliang",
+        "title": "漂亮的恶意",
+        "heatRaw": 22300000
+      },
+      {
+        "rank": 4,
+        "id": "s04_yixie",
+        "title": "异邪录",
+        "heatRaw": 9600000
+      },
+      {
+        "rank": 5,
+        "id": "s01_accident",
+        "title": "The Accident",
+        "heatRaw": 6500000
+      }
+    ]
+  },
+  "covers": [
+    {
+      "file": "x_2117443401800929429.jpg",
+      "bytes": 68825
+    },
+    {
+      "file": "x_2117517616457879811.jpg",
+      "bytes": 76374
+    },
+    {
+      "file": "x_2117199573911490773.jpg",
+      "bytes": 152889
+    },
+    {
+      "file": "x_2118012020717191663.jpg",
+      "bytes": 104601
+    },
+    {
+      "file": "x_2117943786429173808.jpg",
+      "bytes": 67696
+    },
+    {
+      "file": "rd_1xnsdkj.jpg",
+      "bytes": 211414
+    },
+    {
+      "file": "rd_1xn8w48.jpg",
+      "bytes": 202288
+    },
+    {
+      "file": "rd_1xnw0jq.jpg",
+      "bytes": 46841
+    },
+    {
+      "file": "yt_JiGrx-9RDYw.jpg",
+      "bytes": 36568
+    },
+    {
+      "file": "yt_1yLAbK5F3E8.jpg",
+      "bytes": 50206
+    },
+    {
+      "file": "tut_rQkQ7xFVshM.jpg",
+      "bytes": 99265
+    },
+    {
+      "file": "tut_rd_1xnui9u.jpg",
+      "bytes": 448971
+    },
+    {
+      "file": "tut_rd_1xmyovx.jpg",
+      "bytes": 130562
+    },
+    {
+      "file": "tut_rd_1xnrt67.jpg",
+      "bytes": 262154
+    },
+    {
+      "file": "tut_rd_1xnpbvh.jpg",
+      "bytes": 15703
+    },
+    {
+      "file": "xhs_6ae864f8000000003303b315.jpg",
+      "bytes": 553002
+    }
+  ],
+  "schemaFixes": [
+    "IG: added likesRaw/viewsRaw/commentsRaw via formatted-string parse",
+    "series: re-sorted all 28 by heatRaw DESC; renumbered rank 1..28",
+    "cover paths working-tree img/; ship index uses src/img/ for Pages",
+    "XHS: post-merge +1 《没逝2》 after login scout cleared floor"
+  ]
+}
