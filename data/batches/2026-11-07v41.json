@@ -1,0 +1,176 @@
+{
+  "id": "2026-11-07v41",
+  "window": {
+    "zh": "2026 年 11 月 4–7 日",
+    "en": "Nov 4–7, 2026"
+  },
+  "updated": "2026-11-07 10:20（北京时间）",
+  "summary": {
+    "batch": "2026-11-07v41",
+    "window": "Nov 4–7, 2026",
+    "updated": "2026-11-07 10:20（北京时间）",
+    "deltas": {
+      "ig": {
+        "added": 0,
+        "total": 111
+      },
+      "x": {
+        "added": 5,
+        "total": 80
+      },
+      "rd": {
+        "added": 2,
+        "total": 85
+      },
+      "yt": {
+        "added": 0,
+        "total": 111
+      },
+      "dy": {
+        "added": 0,
+        "total": 4,
+        "refreshed": [
+          "7676103932166425919",
+          "7702422092326636834",
+          "7702427003235863834",
+          "7701997178981535030"
+        ]
+      },
+      "tt": {
+        "added": 0,
+        "total": 4,
+        "refreshed": [
+          "7690588719157398814",
+          "7682921175172828423",
+          "7689674827648535839",
+          "7684077290174598418"
+        ]
+      },
+      "bl": {
+        "added": 0,
+        "total": 6
+      },
+      "xhs": {
+        "added": 0,
+        "total": 12
+      },
+      "tut": {
+        "added": 0,
+        "total": 103
+      },
+      "series": {
+        "added": 0,
+        "total": 28
+      },
+      "filmmakers": {
+        "added": 0,
+        "total": 83
+      }
+    },
+    "covers": [
+      [
+        "x_2117831235967897622.jpg",
+        132946
+      ],
+      [
+        "x_2118801351882813664.jpg",
+        128437
+      ],
+      [
+        "x_2118453840827576607.jpg",
+        59464
+      ],
+      [
+        "x_2118396958289346810.jpg",
+        60607
+      ],
+      [
+        "x_2118374993696575996.jpg",
+        51440
+      ],
+      [
+        "rd_1xpma58.jpg",
+        59797
+      ],
+      [
+        "rd_1xoozaq.jpg",
+        818521
+      ]
+    ],
+    "x_added_ids": [
+      "2117831235967897622",
+      "2118801351882813664",
+      "2118453840827576607",
+      "2118396958289346810",
+      "2118374993696575996"
+    ],
+    "rd_added_ids": [
+      "1xpma58",
+      "1xoozaq"
+    ],
+    "series_top5": [
+      {
+        "rank": 1,
+        "title": "备用联系人",
+        "heatRaw": 741230000,
+        "id": "s02_beiyong"
+      },
+      {
+        "rank": 2,
+        "title": "持械入宋",
+        "heatRaw": 609270000,
+        "id": "s12_chimai"
+      },
+      {
+        "rank": 3,
+        "title": "漂亮的恶意",
+        "heatRaw": 22300000,
+        "id": "s05_piaoliang"
+      },
+      {
+        "rank": 4,
+        "title": "异邪录",
+        "heatRaw": 9600000,
+        "id": "s04_yixie"
+      },
+      {
+        "rank": 5,
+        "title": "The Accident",
+        "heatRaw": 6500000,
+        "id": "s01_accident"
+      }
+    ]
+  },
+  "top6": [
+    {
+      "zh": "PsyopAnime《中期选举结束了》",
+      "url": "https://x.com/PsyopAnime/status/2117831235967897622",
+      "why": "本窗 X 最高转（711）政治讽刺动画，节奏紧、表演夸张"
+    },
+    {
+      "zh": "纽约国际电影奖最佳 AI 影片（minchoi 转发）",
+      "url": "https://x.com/minchoi/status/2118374993696575996",
+      "why": "9 分钟奇幻短片拿下 NYIFA Best AI Film+剧本，破「AI slop」叙事"
+    },
+    {
+      "zh": "Gossip Goblin《诸神不赠礼》预告",
+      "url": "https://x.com/Gossip_Goblin/status/2118396958289346810",
+      "why": "Grimes 出演长片预告，15.7万曝光/200转，电影感镜头"
+    },
+    {
+      "zh": "李小龙闯入《黑客帝国》（r/aivideo）",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xpma58/bruce_lee_enters_the_matrix/",
+      "why": "本窗 Reddit 最高分 963，跨界武打短片"
+    },
+    {
+      "zh": "henrydaubrez《MOLT》暗黑宇宙片花",
+      "url": "https://x.com/henrydaubrez/status/2118453840827576607",
+      "why": "Odd Kid 成熟向美术第二瞥，147转"
+    },
+    {
+      "zh": "抖音《成人礼》（刷新）",
+      "url": "https://www.douyin.com/video/7702422092326636834",
+      "why": "jingxuan 刷新≈2013万播，精片棚头部仍在涨"
+    }
+  ]
+}
