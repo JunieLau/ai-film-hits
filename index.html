@@ -172,7 +172,7 @@
   .dy-series .flag{background:var(--accent);color:#fff}
   .dy-series .series-foot{margin-top:14px;padding-top:10px;border-top:1px dashed #3a3442;color:var(--mute);font-size:12px;line-height:1.55}
 
-  /* ---- film festivals (v42) · open submissions, text-forward cards ---- */
+  /* ---- film festivals (v42b) · open submissions + 片子长度 runtime ---- */
   .fest-note{max-width:min(1800px,96vw);margin:0 auto 14px;padding:0 40px;color:var(--mute);font-size:13.5px;line-height:1.5}
   .fest-filters{max-width:min(1800px,96vw);margin:0 auto 16px;padding:0 40px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   .fest-filters button{all:unset;cursor:pointer;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13.5px;color:var(--mute);background:rgba(21,21,28,.85);line-height:1.2}
@@ -196,6 +196,9 @@
   .fest-tz{font-size:12.5px;color:var(--mute);line-height:1.4}
   .fest-fee{font-size:14px;line-height:1.45;color:#e2dfe8}
   .fest-fee b{color:var(--gold);font-weight:700;margin-right:6px}
+  .fest-runtime{font-size:14px;line-height:1.45;color:#e2dfe8}
+  .fest-runtime b{color:var(--accent);font-weight:700;margin-right:6px}
+  .fest-runtime .en{display:inline;margin-left:6px;font-size:12.5px;color:var(--mute);font-weight:400}
   .fest .why{margin-top:2px;font-size:14px;line-height:1.5}
   .fest-fit{font-size:13.5px;line-height:1.45;color:#d6d2da;border-left:2px solid var(--accent);padding-left:8px}
   .fest .tags{margin-top:2px}
@@ -16827,318 +16830,363 @@ Object.assign(SORT_RELAYOUT,{dys:()=>layoutDySeries(),ig:()=>layout(),x:()=>layo
 renderSortBars();
 
 
-/* ---- Film Festivals · open submissions (v42). Merge by id. Source: festivals_2026-11-08. ---- */
-const FEST_UPDATED = "2026-11-08";
-const FEST_UPDATED_ZH = "2026-11-08（北京时间）";
+/* ---- Film Festivals · open submissions (v42b runtime). Merge by id. Source: festivals_2026-11-09. ---- */
+const FEST_UPDATED = "2026-11-09";
+const FEST_UPDATED_ZH = "2026-11-09（北京时间）";
 const FEST_WINDOW_ZH = "本周/近十日可递交 · 截止日请以官网为准";
-const FESTIVALS = [
-  {
-    "id": "maiff-2026",
-    "nameZh": "墨尔本 AI 电影节",
-    "nameEn": "Melbourne AI Film Festival (MAIFF)",
-    "deadline": "2026-11-08",
-    "deadlineLabelZh": "正规档 11/08；晚档至 11/29",
-    "timezoneNote": "时区未公布，按墨尔本日末",
-    "openUntil": "2026-11-29",
-    "url": "https://maiff.com.au/submit",
-    "sourceUrl": "https://maiff.com.au/submit",
-    "tags": [
-      "AI专场",
-      "短片",
-      "混合AI"
-    ],
-    "feeNote": "分档，见 FilmFreeway",
-    "whyZh": "明确要求 AI 元素，不要求世界首映",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "open-this-week"
-  },
-  {
-    "id": "iasff-2026",
-    "nameZh": "国际 AI 短片节",
-    "nameEn": "International AI Short Film Festival (IASFF)",
-    "deadline": "2026-11-10",
-    "deadlineLabelZh": "延展档 11/10",
-    "openUntil": "2026-11-10",
-    "url": "https://filmmakers.festhome.com/",
-    "sourceUrl": "https://aifilmcontests.com/contests/iasff-2026",
-    "tags": [
-      "AI专场",
-      "短片",
-      "国际竞赛"
-    ],
-    "feeNote": "延展约 $30",
-    "whyZh": "全球国际竞赛开放，AI 工具不限",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "open-this-week"
-  },
-  {
-    "id": "ai-in-anime-2026",
-    "nameZh": "AI 动漫展映",
-    "nameEn": "The AI in Anime 2026",
-    "deadline": "2026-11-10",
-    "deadlineLabelZh": "截止 11/10",
-    "openUntil": "2026-11-10",
-    "url": "https://filmfreeway.com/AnimeAI",
-    "sourceUrl": "https://aifilmcontests.com/contests/ai-in-anime-prometheus-2026",
-    "tags": [
-      "AI专场",
-      "动漫",
-      "短片"
-    ],
-    "feeNote": "付费，见门户",
-    "whyZh": "高度贴合动漫风 AI 影像",
-    "aiPolicy": "explicit",
-    "prestige": 2,
-    "status": "open-this-week"
-  },
-  {
-    "id": "saaff-2027",
-    "nameZh": "西雅图亚裔电影节",
-    "nameEn": "Seattle Asian American Film Festival (SAAFF 2027)",
-    "deadline": "2026-11-10",
-    "deadlineLabelZh": "晚档 11/10",
-    "openUntil": "2026-11-10",
-    "url": "https://www.seattleaaff.org/news/call-for-films-saaff-2027-is-open",
-    "sourceUrl": "https://www.seattleaaff.org/news/call-for-films-saaff-2027-is-open",
-    "tags": [
-      "亚裔",
-      "短片",
-      "动画"
-    ],
-    "feeNote": "短片晚档约 $32",
-    "whyZh": "亚裔/离散叙事友好",
-    "aiPolicy": "unknown",
-    "fitNoteZh": "AI 政策未写明",
-    "prestige": 2,
-    "status": "open-this-week"
-  },
-  {
-    "id": "ikebukuro-mirai-11",
-    "nameZh": "池袋みらい国际映画祭",
-    "nameEn": "Ikebukuro Mirai International Film Festival",
-    "deadline": "2026-11-11",
-    "deadlineLabelZh": "截止 11/11 23:59 JST",
-    "timezoneNote": "JST 23:59",
-    "openUntil": "2026-11-11",
-    "url": "https://miraifilmfes.tokyo/entry",
-    "sourceUrl": "https://miraifilmfes.tokyo/entry",
-    "tags": [
-      "东京",
-      "免费",
-      "允许AI"
-    ],
-    "feeNote": "免费",
-    "whyZh": "明确允许 AI，须在备考栏注明",
-    "aiPolicy": "allowed-disclose",
-    "fitNoteZh": "限青春/若手且无剧场公映历；有上影节放映经历则慎投",
-    "prestige": 2,
-    "status": "open-this-week"
-  },
-  {
-    "id": "ai-ny-awards",
-    "nameZh": "纽约 AI 奖",
-    "nameEn": "AI New York Awards",
-    "deadline": "2026-11-15",
-    "deadlineLabelZh": "延展档 11/15",
-    "openUntil": "2026-11-15",
-    "url": "https://filmfreeway.com/ainyfestival",
-    "sourceUrl": "https://filmfreeway.com/ainyfestival",
-    "tags": [
-      "AI专场",
-      "短片",
-      "流程奖"
-    ],
-    "feeNote": "延展 $29",
-    "whyZh": "含 Prompt/Workflow、角色一致性等适合 cinematic AI",
-    "aiPolicy": "explicit",
-    "prestige": 2,
-    "status": "open-soon"
-  },
-  {
-    "id": "cine-prague-ai",
-    "nameZh": "布拉格 Cine Prague · AI 短片版",
-    "nameEn": "Cine Prague AI Short Film Edition",
-    "deadline": "2026-11-18",
-    "deadlineLabelZh": "延展档 11/18",
-    "openUntil": "2026-11-18",
-    "url": "https://www.cineprague.com/indexen.php",
-    "sourceUrl": "https://www.cineprague.com/indexen.php",
-    "tags": [
-      "AI专场",
-      "超短片",
-      "≤5min"
-    ],
-    "feeNote": "延展 $50",
-    "whyZh": "专设 AI 短片，适合超短高燃片",
-    "aiPolicy": "explicit",
-    "fitNoteZh": "一律 ≤5 分钟",
-    "prestige": 2,
-    "status": "open-soon"
-  },
-  {
-    "id": "mai-fest",
-    "nameZh": "M.AI 国际 AI 短片节",
-    "nameEn": "M.AI International AI Short Film Festival",
-    "deadline": "2026-11-20",
-    "deadlineLabelZh": "截止 11/20",
-    "openUntil": "2026-11-20",
-    "url": "https://www.maifestival.org/",
-    "sourceUrl": "https://www.maifestival.org/",
-    "tags": [
-      "AI专场",
-      "免费",
-      "奖金"
-    ],
-    "feeNote": "免费；奖金合计约 €5,750",
-    "whyZh": "免费 + 现金奖 + 明确 AI under human direction",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "open-soon"
-  },
-  {
-    "id": "cue-xmas-26",
-    "nameZh": "Cue 圣诞 AI 影展",
-    "nameEn": "Cue Xmas ’26",
-    "deadline": "2026-11-20",
-    "deadlineLabelZh": "截止 11/20 23:59 ET",
-    "timezoneNote": "ET 23:59",
-    "openUntil": "2026-11-20",
-    "url": "https://cuefilmfest.com/",
-    "sourceUrl": "https://cuefilmfest.com/",
-    "tags": [
-      "圣诞主题",
-      "免费",
-      "AI短片"
-    ],
-    "feeNote": "免费",
-    "whyZh": "仅当你有圣诞向成片时值得投",
-    "aiPolicy": "explicit",
-    "fitNoteZh": "主题锁圣诞",
-    "prestige": 1,
-    "status": "open-soon"
-  },
-  {
-    "id": "aiiff",
-    "nameZh": "AI 国际电影节",
-    "nameEn": "AI International Film Festival",
-    "deadline": "2026-11-21",
-    "deadlineLabelZh": "正规档 11/21",
-    "openUntil": "2026-11-21",
-    "url": "https://aifilmfest.org/",
-    "sourceUrl": "https://aifilmfest.org/",
-    "tags": [
-      "AI专场",
-      "好莱坞展映"
-    ],
-    "feeNote": "见 FilmFreeway",
-    "whyZh": "老牌独立 AI 影展；中国导演作品曾入选",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "open-soon"
-  },
-  {
-    "id": "svaiff-korea-2026",
-    "nameZh": "SVAIFF 韩国站",
-    "nameEn": "SVAIFF KOREA 2026",
-    "deadline": "2026-11-25",
-    "deadlineLabelZh": "截止 11/25 23:59:59 KST",
-    "timezoneNote": "KST 23:59:59",
-    "openUntil": "2026-11-25",
-    "url": "https://korea.svaiff.com/submit",
-    "sourceUrl": "https://korea.svaiff.com/guide?lang=en",
-    "tags": [
-      "亚洲",
-      "免费",
-      "大奖"
-    ],
-    "feeNote": "免费；大奖池约 KRW 3000万",
-    "whyZh": "亚洲、免费、奖金大；适合完整 AI 短片",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "open-soon"
-  },
-  {
-    "id": "ai-zone-2026",
-    "nameZh": "AI ZONE 国际 AI 电影节",
-    "nameEn": "AI ZONE International AI Film Festival 2026",
-    "deadline": "2026-11-30",
-    "deadlineLabelZh": "截止 11/30",
-    "openUntil": "2026-11-30",
-    "url": "https://ai-zone.net/festival/",
-    "sourceUrl": "https://ai-zone.net/festival/",
-    "tags": [
-      "AI专场",
-      "线上"
-    ],
-    "feeNote": "以 FilmFreeway 为准；Grand Prize $500",
-    "whyZh": "纯 AI 影展、线上",
-    "aiPolicy": "explicit",
-    "prestige": 2,
-    "status": "open-soon"
-  },
-  {
-    "id": "veritas-ai",
-    "nameZh": "Veritas AI 电影节（多伦多）",
-    "nameEn": "Veritas AI Film Festival",
-    "deadline": "2026-11-30",
-    "deadlineLabelZh": "截止 11/30",
-    "openUntil": "2026-11-30",
-    "url": "https://filmfreeway.com/VeritasAIFF",
-    "sourceUrl": "https://aifilmcontests.com/contests/veritas-ai-film-festival-2026",
-    "tags": [
-      "AI专场",
-      "超短片",
-      "加拿大"
-    ],
-    "feeNote": "约 $9",
-    "whyZh": "加拿大首个专 AI 影展，适合超短片",
-    "aiPolicy": "explicit",
-    "fitNoteZh": "片长 <7 分钟",
-    "prestige": 2,
-    "status": "open-soon"
-  },
-  {
-    "id": "artefact-ai-paris",
-    "nameZh": "Artefact AI 电影节 × mk2（巴黎）",
-    "nameEn": "Artefact AI Film Festival × mk2",
-    "deadline": "2026-12-02",
-    "deadlineLabelZh": "截止 12/02",
-    "openUntil": "2026-12-02",
-    "url": "https://artefact-ai-film-festival.com/",
-    "sourceUrl": "https://artefact-ai-film-festival.com/",
-    "tags": [
-      "巴黎",
-      "免费",
-      "大奖"
-    ],
-    "feeNote": "免费；大奖 €10,000",
-    "whyZh": "须前中后期都用 gen-AI；奖金高",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "later"
-  },
-  {
-    "id": "ai-artist-festival-beijing",
-    "nameZh": "AI Artist Festival（北京 UCCA）",
-    "nameEn": "AI Artist Festival Season 6",
-    "deadline": "2026-12-05",
-    "deadlineLabelZh": "约 12/05",
-    "openUntil": "2026-12-05",
-    "url": "https://filmfreeway.com/AIArtistFestival",
-    "sourceUrl": "https://filmfreeway.com/AIArtistFestival",
-    "tags": [
-      "中国",
-      "AI展映"
-    ],
-    "feeNote": "约 $12/类",
-    "whyZh": "中国本土 AI 展映",
-    "aiPolicy": "explicit",
-    "prestige": 3,
-    "status": "later"
-  }
-];
+const FESTIVALS =   [
+    {
+      "id": "maiff-2026",
+      "nameZh": "墨尔本 AI 电影节",
+      "nameEn": "Melbourne AI Film Festival (MAIFF)",
+      "deadline": "2026-11-08",
+      "deadlineLabelZh": "正规档 11/08；晚档至 11/29",
+      "timezoneNote": "时区未公布，按墨尔本日末",
+      "openUntil": "2026-11-29",
+      "url": "https://maiff.com.au/submit",
+      "sourceUrl": "https://maiff.com.au/submit",
+      "tags": [
+        "AI专场",
+        "短片",
+        "混合AI"
+      ],
+      "feeNote": "分档，见 FilmFreeway",
+      "whyZh": "明确要求 AI 元素，不要求世界首映",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "open-this-week",
+      "runtimeZh": "1–12分钟",
+      "runtimeEn": "1–12 min",
+      "runtimeSource": "https://maiff.com.au/submit"
+    },
+    {
+      "id": "iasff-2026",
+      "nameZh": "国际 AI 短片节",
+      "nameEn": "International AI Short Film Festival (IASFF)",
+      "deadline": "2026-11-10",
+      "deadlineLabelZh": "延展档 11/10",
+      "openUntil": "2026-11-10",
+      "url": "https://filmmakers.festhome.com/",
+      "sourceUrl": "https://aifilmcontests.com/contests/iasff-2026",
+      "tags": [
+        "AI专场",
+        "短片",
+        "国际竞赛"
+      ],
+      "feeNote": "延展约 $30",
+      "whyZh": "全球国际竞赛开放，AI 工具不限",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "open-this-week",
+      "runtimeZh": "≤30分钟",
+      "runtimeEn": "≤30 min",
+      "runtimeSource": "https://aifilmcontests.com/contests/iasff-2026"
+    },
+    {
+      "id": "ai-in-anime-2026",
+      "nameZh": "AI 动漫展映",
+      "nameEn": "The AI in Anime 2026",
+      "deadline": "2026-11-10",
+      "deadlineLabelZh": "截止 11/10",
+      "openUntil": "2026-11-10",
+      "url": "https://filmfreeway.com/AnimeAI",
+      "sourceUrl": "https://aifilmcontests.com/contests/ai-in-anime-prometheus-2026",
+      "tags": [
+        "AI专场",
+        "动漫",
+        "短片"
+      ],
+      "feeNote": "付费，见门户",
+      "whyZh": "高度贴合动漫风 AI 影像",
+      "aiPolicy": "explicit",
+      "prestige": 2,
+      "status": "open-this-week",
+      "runtimeZh": "2–30分钟（类目常写3–20）",
+      "runtimeEn": "2–30 min (cat. often 3–20)",
+      "runtimeSource": "https://aifc.news/contest/the-ai-in-anime-2026-k756"
+    },
+    {
+      "id": "saaff-2027",
+      "nameZh": "西雅图亚裔电影节",
+      "nameEn": "Seattle Asian American Film Festival (SAAFF 2027)",
+      "deadline": "2026-11-10",
+      "deadlineLabelZh": "晚档 11/10",
+      "openUntil": "2026-11-10",
+      "url": "https://www.seattleaaff.org/news/call-for-films-saaff-2027-is-open",
+      "sourceUrl": "https://www.seattleaaff.org/news/call-for-films-saaff-2027-is-open",
+      "tags": [
+        "亚裔",
+        "短片",
+        "动画"
+      ],
+      "feeNote": "短片晚档约 $32",
+      "whyZh": "亚裔/离散叙事友好",
+      "aiPolicy": "unknown",
+      "fitNoteZh": "AI 政策未写明",
+      "prestige": 2,
+      "status": "open-this-week",
+      "runtimeZh": "短片＜45分钟；长片≥45分钟",
+      "runtimeEn": "shorts <45 min; features ≥45",
+      "runtimeSource": "https://www.seattleaaff.org/filmmakerresource"
+    },
+    {
+      "id": "ikebukuro-mirai-11",
+      "nameZh": "池袋みらい国际映画祭",
+      "nameEn": "Ikebukuro Mirai International Film Festival",
+      "deadline": "2026-11-11",
+      "deadlineLabelZh": "截止 11/11 23:59 JST",
+      "timezoneNote": "JST 23:59",
+      "openUntil": "2026-11-11",
+      "url": "https://miraifilmfes.tokyo/entry",
+      "sourceUrl": "https://miraifilmfes.tokyo/entry",
+      "tags": [
+        "东京",
+        "免费",
+        "允许AI"
+      ],
+      "feeNote": "免费",
+      "whyZh": "明确允许 AI，须在备考栏注明",
+      "aiPolicy": "allowed-disclose",
+      "fitNoteZh": "限青春/若手且无剧场公映历；有上影节放映经历则慎投",
+      "prestige": 2,
+      "status": "open-this-week",
+      "runtimeZh": "≤60分钟",
+      "runtimeEn": "≤60 min",
+      "runtimeSource": "https://miraifilmfes.tokyo/entry"
+    },
+    {
+      "id": "ai-ny-awards",
+      "nameZh": "纽约 AI 奖",
+      "nameEn": "AI New York Awards",
+      "deadline": "2026-11-15",
+      "deadlineLabelZh": "延展档 11/15",
+      "openUntil": "2026-11-15",
+      "url": "https://filmfreeway.com/ainyfestival",
+      "sourceUrl": "https://filmfreeway.com/ainyfestival",
+      "tags": [
+        "AI专场",
+        "短片",
+        "流程奖"
+      ],
+      "feeNote": "延展 $29",
+      "whyZh": "含 Prompt/Workflow、角色一致性等适合 cinematic AI",
+      "aiPolicy": "explicit",
+      "prestige": 2,
+      "status": "open-soon",
+      "runtimeZh": "30秒–25分钟",
+      "runtimeEn": "30s–25 min",
+      "runtimeSource": "https://aifc.news/contest/ai-new-york-awards-k7j1"
+    },
+    {
+      "id": "cine-prague-ai",
+      "nameZh": "布拉格 Cine Prague · AI 短片版",
+      "nameEn": "Cine Prague AI Short Film Edition",
+      "deadline": "2026-11-18",
+      "deadlineLabelZh": "延展档 11/18",
+      "openUntil": "2026-11-18",
+      "url": "https://www.cineprague.com/indexen.php",
+      "sourceUrl": "https://www.cineprague.com/indexen.php",
+      "tags": [
+        "AI专场",
+        "超短片",
+        "≤5min"
+      ],
+      "feeNote": "延展 $50",
+      "whyZh": "专设 AI 短片，适合超短高燃片",
+      "aiPolicy": "explicit",
+      "fitNoteZh": "一律 ≤5 分钟",
+      "prestige": 2,
+      "status": "open-soon",
+      "runtimeZh": "≤5分钟",
+      "runtimeEn": "≤5 min",
+      "runtimeSource": "https://www.cineprague.com/indexen.php"
+    },
+    {
+      "id": "mai-fest",
+      "nameZh": "M.AI 国际 AI 短片节",
+      "nameEn": "M.AI International AI Short Film Festival",
+      "deadline": "2026-11-20",
+      "deadlineLabelZh": "截止 11/20",
+      "openUntil": "2026-11-20",
+      "url": "https://www.maifestival.org/",
+      "sourceUrl": "https://www.maifestival.org/",
+      "tags": [
+        "AI专场",
+        "免费",
+        "奖金"
+      ],
+      "feeNote": "免费；奖金合计约 €5,750",
+      "whyZh": "免费 + 现金奖 + 明确 AI under human direction",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "open-soon",
+      "runtimeZh": "≤20分钟（含字幕/片尾；实验可例外）",
+      "runtimeEn": "≤20 min incl. credits (expt. except.)",
+      "runtimeSource": "https://filmfreeway.com/MAIINTERNATIONALAISHORTFILMFESTIVAL"
+    },
+    {
+      "id": "cue-xmas-26",
+      "nameZh": "Cue 圣诞 AI 影展",
+      "nameEn": "Cue Xmas ’26",
+      "deadline": "2026-11-20",
+      "deadlineLabelZh": "截止 11/20 23:59 ET",
+      "timezoneNote": "ET 23:59",
+      "openUntil": "2026-11-20",
+      "url": "https://cuefilmfest.com/",
+      "sourceUrl": "https://cuefilmfest.com/",
+      "tags": [
+        "圣诞主题",
+        "免费",
+        "AI短片"
+      ],
+      "feeNote": "免费",
+      "whyZh": "仅当你有圣诞向成片时值得投",
+      "aiPolicy": "explicit",
+      "fitNoteZh": "主题锁圣诞",
+      "prestige": 1,
+      "status": "open-soon",
+      "runtimeZh": "2–6分钟（最长6:00）",
+      "runtimeEn": "2:00–6:00 (max 6 min)",
+      "runtimeSource": "https://cuefilmfest.com/"
+    },
+    {
+      "id": "aiiff",
+      "nameZh": "AI 国际电影节",
+      "nameEn": "AI International Film Festival",
+      "deadline": "2026-11-21",
+      "deadlineLabelZh": "正规档 11/21",
+      "openUntil": "2026-11-21",
+      "url": "https://aifilmfest.org/",
+      "sourceUrl": "https://aifilmfest.org/",
+      "tags": [
+        "AI专场",
+        "好莱坞展映"
+      ],
+      "feeNote": "见 FilmFreeway",
+      "whyZh": "老牌独立 AI 影展；中国导演作品曾入选",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "open-soon",
+      "runtimeZh": "无硬性上限（短片/长片均可）",
+      "runtimeEn": "no hard max (shorts & features)",
+      "runtimeSource": "https://aifilmfest.org/"
+    },
+    {
+      "id": "svaiff-korea-2026",
+      "nameZh": "SVAIFF 韩国站",
+      "nameEn": "SVAIFF KOREA 2026",
+      "deadline": "2026-11-25",
+      "deadlineLabelZh": "截止 11/25 23:59:59 KST",
+      "timezoneNote": "KST 23:59:59",
+      "openUntil": "2026-11-25",
+      "url": "https://korea.svaiff.com/submit",
+      "sourceUrl": "https://korea.svaiff.com/guide?lang=en",
+      "tags": [
+        "亚洲",
+        "免费",
+        "大奖"
+      ],
+      "feeNote": "免费；大奖池约 KRW 3000万",
+      "whyZh": "亚洲、免费、奖金大；适合完整 AI 短片",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "open-soon",
+      "runtimeZh": "叙事/动画/纪录片≤20分钟；广告≤3；MV≤7",
+      "runtimeEn": "narr/anim/doc ≤20; ad ≤3; MV ≤7",
+      "runtimeSource": "https://korea.svaiff.com/guide?lang=en"
+    },
+    {
+      "id": "ai-zone-2026",
+      "nameZh": "AI ZONE 国际 AI 电影节",
+      "nameEn": "AI ZONE International AI Film Festival 2026",
+      "deadline": "2026-11-30",
+      "deadlineLabelZh": "截止 11/30",
+      "openUntil": "2026-11-30",
+      "url": "https://ai-zone.net/festival/",
+      "sourceUrl": "https://ai-zone.net/festival/",
+      "tags": [
+        "AI专场",
+        "线上"
+      ],
+      "feeNote": "以 FilmFreeway 为准；Grand Prize $500",
+      "whyZh": "纯 AI 影展、线上",
+      "aiPolicy": "explicit",
+      "prestige": 2,
+      "status": "open-soon",
+      "runtimeZh": "未写明片长",
+      "runtimeEn": "runtime not stated",
+      "runtimeSource": "https://ai-zone.net/festival/"
+    },
+    {
+      "id": "veritas-ai",
+      "nameZh": "Veritas AI 电影节（多伦多）",
+      "nameEn": "Veritas AI Film Festival",
+      "deadline": "2026-11-30",
+      "deadlineLabelZh": "截止 11/30",
+      "openUntil": "2026-11-30",
+      "url": "https://filmfreeway.com/VeritasAIFF",
+      "sourceUrl": "https://aifilmcontests.com/contests/veritas-ai-film-festival-2026",
+      "tags": [
+        "AI专场",
+        "超短片",
+        "加拿大"
+      ],
+      "feeNote": "约 $9",
+      "whyZh": "加拿大首个专 AI 影展，适合超短片",
+      "aiPolicy": "explicit",
+      "fitNoteZh": "片长 <7 分钟",
+      "prestige": 2,
+      "status": "open-soon",
+      "runtimeZh": "＜7分钟",
+      "runtimeEn": "under 7 min",
+      "runtimeSource": "https://aifilmcontests.com/contests/veritas-ai-film-festival-2026"
+    },
+    {
+      "id": "artefact-ai-paris",
+      "nameZh": "Artefact AI 电影节 × mk2（巴黎）",
+      "nameEn": "Artefact AI Film Festival × mk2",
+      "deadline": "2026-12-02",
+      "deadlineLabelZh": "截止 12/02",
+      "openUntil": "2026-12-02",
+      "url": "https://artefact-ai-film-festival.com/",
+      "sourceUrl": "https://artefact-ai-film-festival.com/",
+      "tags": [
+        "巴黎",
+        "免费",
+        "大奖"
+      ],
+      "feeNote": "免费；大奖 €10,000",
+      "whyZh": "须前中后期都用 gen-AI；奖金高",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "later",
+      "runtimeZh": "≤314秒（约5分14秒）",
+      "runtimeEn": "≤314 sec (~5:14)",
+      "runtimeSource": "https://artefact-ai-film-festival.com/rules"
+    },
+    {
+      "id": "ai-artist-festival-beijing",
+      "nameZh": "AI Artist Festival（北京 UCCA）",
+      "nameEn": "AI Artist Festival Season 6",
+      "deadline": "2026-12-05",
+      "deadlineLabelZh": "约 12/05",
+      "openUntil": "2026-12-05",
+      "url": "https://filmfreeway.com/AIArtistFestival",
+      "sourceUrl": "https://filmfreeway.com/AIArtistFestival",
+      "tags": [
+        "中国",
+        "AI展映"
+      ],
+      "feeNote": "约 $12/类",
+      "whyZh": "中国本土 AI 展映",
+      "aiPolicy": "explicit",
+      "prestige": 3,
+      "status": "later",
+      "runtimeZh": "不限片长",
+      "runtimeEn": "any length",
+      "runtimeSource": "https://aifc.news/contest/ai-artist-festival-6th-season-p650"
+    }
+  ];
 const FEST_TAG_CHIPS = ["AI专场","免费","亚洲"];
 let festTag = "all";
 const FEST_STATUS = {
@@ -17196,6 +17244,7 @@ function layoutFestivals(){
         <div class="fest-name">${esc(f.nameZh||"")}<span class="en">${esc(f.nameEn||"")}</span></div>
         <div class="fest-dead">${esc(f.deadlineLabelZh||"")}</div>
         ${f.timezoneNote?`<div class="fest-tz">${esc(f.timezoneNote)}</div>`:""}
+        <div class="fest-runtime"><b>片子长度</b>${esc(f.runtimeZh||"未写明片长")}${f.runtimeEn?`<span class="en">${esc(f.runtimeEn)}</span>`:""}</div>
         ${f.feeNote?`<div class="fest-fee"><b>费用</b>${esc(f.feeNote)}</div>`:""}
         ${f.whyZh?`<div class="why">${esc(f.whyZh)}</div>`:""}
         ${f.fitNoteZh?`<div class="fest-fit">${esc(f.fitNoteZh)}</div>`:""}
