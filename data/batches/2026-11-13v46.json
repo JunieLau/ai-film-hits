@@ -1,0 +1,23 @@
+{
+  "batch": "2026-11-13v46",
+  "updated": "2026-11-13 02:30（北京时间）",
+  "window": "Nov 9–13, 2026 Asia/Shanghai",
+  "adds": {
+    "REELS": [
+      "DfmORR0oF5E",
+      "DfnUtS8oMhD",
+      "DflJpiZhXVI"
+    ],
+    "TIKTOK_POSTS": [
+      "7706125298319805710",
+      "7706601189789453576"
+    ]
+  },
+  "counts_after": {
+    "REELS": 114,
+    "TIKTOK_POSTS": 6,
+    "XHS_POSTS": 14
+  },
+  "festivals_sha256": "708c7f2d8bc3da1cf27d679bc8b75320fd5c3c1b10ce6daa25c38640fddf8e56",
+  "notes": "Mid-cycle: IG +3 (PicMany profile title attributes, not official IG dashboard); TT +2 (tikwm); XHS browser sweep +0. Other shelves date-chrome only; last full sweep Nov 12 v45. Festivals untouched."
+}
