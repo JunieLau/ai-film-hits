@@ -1,0 +1,137 @@
+{
+  "batch": "2026-11-18v48",
+  "updatedZh": "2026-11-18 23:02（北京时间）",
+  "window": "2026-11-15 through 2026-11-18 Asia/Shanghai (craft); series heat 2026-11-05 through 2026-11-14",
+  "baseCommit": "5e1f99a06dd18554964ee71d5ca862fa1e8b8506",
+  "adds": {
+    "REELS": [
+      "Df2BxL0R8xK",
+      "Dfw4niDReWM",
+      "Dfu-K45IkTs",
+      "Df0EMNlIYpJ",
+      "DfvXaf8PxIe",
+      "Dfx95JDtbsZ",
+      "DfxY1ybmQor",
+      "Df2a2hgIl6o",
+      "Dfv9LT6pJNY",
+      "Df2tC6StEGl",
+      "Df1ECgLxecD"
+    ],
+    "X_POSTS": [
+      "2122310961692569716",
+      "2121657841090232521",
+      "2122804385738592476",
+      "2122801788420333576",
+      "2122733440886075599"
+    ],
+    "YT_POSTS": [
+      "P6y6bITmn08"
+    ],
+    "TUTORIALS": [
+      "yt__X7KQVwsn9U"
+    ]
+  },
+  "updates": {
+    "REELS": [
+      "DfpJ4-kKz3_",
+      "Dfmlqzcqh5b",
+      "DfJWAwCtl7S",
+      "DeiW2ABNye2",
+      "DfkkkcluHVE",
+      "DfAticFuaYH",
+      "DfPk9Gtskx3",
+      "DfPl1EkoLcs",
+      "DfnUtS8oMhD",
+      "DfmORR0oF5E",
+      "Deh4PdJIAsC",
+      "DflJpiZhXVI",
+      "DemFDXsIIjE",
+      "Dej5EcaoH0l",
+      "DejJKSroLYh",
+      "DegsgCmo1SZ",
+      "DfPwKzwIFiu",
+      "DfFYar2IHNm",
+      "DeroehKIbGf",
+      "DehUbLSoX5M",
+      "DfCn1PsqPsC",
+      "DfqzyNFpXo5",
+      "DfKRmQ9JBZf",
+      "DfEP6wsp30B",
+      "DfCsmPNJOMm"
+    ],
+    "X_POSTS": [
+      "2120636946187759854",
+      "2121249226575511854",
+      "2120252357619630573",
+      "2120671501787738601",
+      "2121038582706286795",
+      "2120559705416520024",
+      "2120813538407289337",
+      "2120844246660071578",
+      "2120121003091308809",
+      "2120222748442013752"
+    ],
+    "DOUYIN_POSTS": [
+      "7698287665296215323",
+      "7676103932166425919",
+      "7702422092326636834",
+      "7702427003235863834",
+      "7701997178981535030"
+    ],
+    "TIKTOK_POSTS": [
+      "7706601189789453576",
+      "7690588719157398814",
+      "7682921175172828423",
+      "7689674827648535839",
+      "7684077290174598418"
+    ]
+  },
+  "seriesTop": [
+    "s12_chimai",
+    "s02_beiyong"
+  ],
+  "festivalsDropped": [
+    "ai-ny-awards",
+    "hiiff-ai-2026",
+    "ikebukuro-mirai-11"
+  ],
+  "festivalsAdded": [
+    "aima-magaluf-2027",
+    "higgsfield-talent-contest-2026"
+  ],
+  "festivalsCount": 15,
+  "sixPicks": [
+    {
+      "nameZh": "《老鼠发现储藏室没锁》",
+      "creator": "aliaboutine",
+      "url": "https://www.instagram.com/reel/Df2BxL0R8xK/"
+    },
+    {
+      "nameZh": "《想象》（译名）",
+      "creator": "PsyopAnime",
+      "url": "https://x.com/PsyopAnime/status/2121657841090232521",
+      "nameEn": "imagine"
+    },
+    {
+      "nameZh": "《毛皮病毒》",
+      "creator": "gossipgoblin",
+      "url": "https://www.instagram.com/reel/Df2a2hgIl6o/"
+    },
+    {
+      "nameZh": "《持械入宋：第一季》",
+      "creator": "持械入宋",
+      "url": "https://www.douyin.com/search/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B"
+    },
+    {
+      "nameZh": "《听海者》",
+      "creator": "吉吉AIGC",
+      "url": "https://www.douyin.com/video/7701997178981535030"
+    },
+    {
+      "nameZh": "《为王国效力》",
+      "creator": "Lennard Smith",
+      "url": "https://www.youtube.com/watch?v=P6y6bITmn08"
+    }
+  ],
+  "festivalsHiggsfieldDeadline": "2026-11-27 03:00 Asia/Shanghai (Official Rules 2026-11-26 19:00 UTC)"
+}
