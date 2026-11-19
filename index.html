@@ -497,9 +497,9 @@ const YT_TREND_DATE = "2026-11-16 → 11-19";
 const YT_TREND_ZH = "窗口 11/16–11/19：YouTube 成片发现完整但质量未审，本批 +0。Eigi 等未审候补继续 HOLD，不把未看 HOLD 写成无新。Lennard《为王国效力》播放刷新为 148,507（10:07 watch；赞 942 未覆盖）。";
 const YT_TREND = "Window Nov 16–19, 2026: YouTube viral discovery is complete but quality is unreviewed; +0 this batch. Unreviewed HOLDs including Eigi stay off the shelf — an unwatched HOLD is not a zero. Lennard In Service of the Realm views refreshed to 148,507 (watch 10:07; likes stay 942).";
 
-const UPDATED = "2026-11-19 10:43 (v50 partial update for the 11/16–11/19 window: scoped adds + festival recheck; not a full 11-tab pass)";
-const UPDATED_ZH = "2026-11-19 10:43（北京时间）；v50 为 11/16–11/19 窗口的部分更新，不是 11 栏全量通过。";
-const LATEST_BATCH = "2026-11-19v50"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "2026-11-19 18:40 (v50 remains the partial 11/16–11/19 window; festival shelf also adds Chroma Awards Season 2 — not a full 11-tab pass)";
+const UPDATED_ZH = "2026-11-19 18:40（北京时间）；在 v50 部分更新之上增补 Chroma Awards 第2季电影节卡片，仍不是 11 栏全量通过。";
+const LATEST_BATCH = "2026-11-19chroma"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -20841,8 +20841,8 @@ renderSortBars();
 
 /* ---- Film Festivals · open submissions (v43 weekly refresh, runtime on every card). Merge by id. Source: festivals_2026-11-10. ---- */
 const FEST_UPDATED = "2026-11-19";
-const FEST_UPDATED_ZH = "2026-11-19（北京时间；11/16–11/19 部分重核，不是全量新征片目录，不是 11 栏全量更新）";
-const FEST_WINDOW_ZH = "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-16 至 11/19 部分重核，不是全量新征片目录，不是 11 栏全量更新。Cue 已核截止 11/20 23:59 ET（不要改写成上海 11/21）。M.AI 已核日历截止 11/20（时区官网未标明，不猜）。已核本周截止为 4：1bfs、Cue、M.AI、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）；列出不等于可投资格，不判断具体作品可投。";
+const FEST_UPDATED_ZH = "2026-11-19（北京时间；在 11/16–11/19 部分重核之上增补 Chroma Awards 第2季，不是全量新征片目录，不是 11 栏全量更新）";
+const FEST_WINDOW_ZH = "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-16 至 11/19 部分重核，不是全量新征片目录，不是 11 栏全量更新。Cue 已核截止 11/20 23:59 ET（不要改写成上海 11/21）。M.AI 已核日历截止 11/20（时区官网未标明，不猜）。已核本周截止为 4：1bfs、Cue、M.AI、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。2026-11-19 晚间增补 Chroma Awards 第2季：官网 FAQ/条款截止 2027-01-07 23:45 PT（对应北京时间 1/8 15:45，不以北京日历改写官方截止日）；ElevenLabs 博客导语另写 until January 1, 2027，同文正文与官网均为 1 月 7 日 23:45 PT，本卡以官网条款/FAQ 为准。列出不等于可投资格，不判断具体作品可投。";
 const FESTIVALS = [
   {
     "id": "1bfs-ai-film-award-2027",
@@ -21290,6 +21290,34 @@ const FESTIVALS = [
     "status": "later",
     "batch": "2026-11-19v50",
     "addedAt": "2026-11-19T10:20:00+08:00"
+  },
+  {
+    "id": "chroma-awards-s2",
+    "nameZh": "Chroma Awards 第2季",
+    "nameEn": "The Chroma Awards Season 2",
+    "deadline": "2027-01-07",
+    "openUntil": "2027-01-07",
+    "deadlineLabelZh": "截止 1/7 23:45 PT（官网 FAQ/条款：January 7th, 2027, 11:45pm Pacific Time；对应北京时间 1/8 15:45，不以北京日历改写官方截止日）",
+    "timezoneNote": "Official FAQ and Official Rules (https://chromaawards.com/faq , https://chromaawards.com/terms)：Submissions close January 7th, 2027 (11:45pm Pacific Time). January 7 is Pacific Standard Time (UTC-8), which is 2027-01-08 15:45 Asia/Shanghai. Keep the official PT deadline; do not replace it with a Beijing-only date of January 8. The ElevenLabs Season 2 blog intro also says “until January 1, 2027,” but the same article body and the official FAQ/Rules say January 7, 2027, 11:45 PM PT. This card follows the Official Rules and FAQ.",
+    "url": "https://submit.chromaawards.com/",
+    "sourceUrl": "https://chromaawards.com/faq",
+    "tags": [
+      "AI专场",
+      "免费递交",
+      "英语对白或字幕"
+    ],
+    "feeNote": "官网 FAQ：There is no entry fee to participate. Official Rules：NO PURCHASE OR PAYMENT OF ANY KIND IS NECESSARY TO ENTER OR WIN THIS COMPETITION.",
+    "runtimeZh": "按类别：电影与剧集（除微短剧外）至少 2 分钟，画幅不限；ReelShort 微短剧须 9:16，至少 3 集、每集 1–3 分钟并剪在一起；广告 15 秒–3 分钟；音乐视频 1–10 分钟；幕后 1–10 分钟；游戏类未写片长（须可公开游玩的网页链接，并附游玩视频下载）。各赛道年度大奖遵循所投类别的技术要求。",
+    "runtimeEn": "By category: Film & TV (except Micro-Drama) at least 2 minutes, any aspect ratio; ReelShort Micro-Drama must be 9:16, at least three 1–3 minute episodes edited together; Ad 15 seconds–3 minutes; Music Video 1–10 minutes; Behind-The-Scenes 1–10 minutes; Games have no runtime (publicly playable web link plus a gameplay-video download). Year-of awards follow the entered category’s technical requirements.",
+    "runtimeSource": "https://chromaawards.com/prizes (Film & TV / Ad / Music Video / Behind-The-Scenes / Game category pages, all fetched 2026-11-19)",
+    "whyZh": "须经 https://submit.chromaawards.com/ 提交；使用公开可嵌入、不可设为私密/密码保护/未列出的网页链接，并须附下载链接和缩略图。须使用至少一种 AI 工具。非音乐视频赛道须英语对白或英文字幕（无对白且无字幕也可）。须年满 18 岁；官方条款写明仅可以个人身份提交，不得代表公司或组织。投稿期开始前已有的作品可以投，但不得曾投过往届 Chroma Awards 或 Project Odyssey（以官网条款/FAQ 为准；ElevenLabs 博客另写 made after February 1, 2026，本卡不以博客覆盖条款）。同一作品不可投多个类别；不同作品数量不限。无报名费。官网 FAQ/条款截止 2027 年 1 月 7 日 23:45 太平洋时间（1 月为 PST，对应北京时间 1 月 8 日 15:45）；不以北京日历把官方截止日改写成 1 月 8 日。ElevenLabs 博客导语另写 until January 1, 2027，同文正文与官网均为 1 月 7 日 23:45 PT，本卡以官网条款/FAQ 为准。本卡只记录当届仍开放的官方限制，不判断 Junie 或任何具体作品可投。",
+    "whyEn": "Submit at https://submit.chromaawards.com/ with a publicly viewable, embeddable web link (not private, password-protected, or unlisted), plus a download link and thumbnail. At least one AI tool is required. Non-Music Video submissions must be voiced or subtitled in English; works with neither dialogue nor subtitles are also accepted. Entrants must be 18+; Official Rules say submissions may be made only in an individual capacity, not on behalf of a company or organization. Works that existed before the submission period may be entered if they were not submitted to a prior Chroma Awards or Project Odyssey season (Official Rules / FAQ; the ElevenLabs blog’s “made after February 1, 2026” line does not override the Official Rules). The same project may not be entered in multiple categories; unique submissions are otherwise unlimited. No entry fee. Official close is January 7, 2027, 11:45pm Pacific Time (PST in January, which is 15:45 Asia/Shanghai on January 8). Do not rewrite the official deadline as a Beijing-only January 8 date. The ElevenLabs blog intro also says “until January 1, 2027,” but the same article body and the official FAQ/Rules say January 7, 11:45 PM PT; this card follows the Official Rules and FAQ. This card records official limits for the current edition; it does not judge eligibility of Junie or any specific work.",
+    "fitNoteZh": "本卡只记录当届仍开放，不判断 Junie / 任何具体作品可投。关键限制：官网截止 2027-01-07 23:45 PT（对应北京时间 1/8 15:45，不以北京日改写）；须公开可嵌入链接+下载+缩略图；须至少一种 AI 工具；非 MV 须英语对白或英文字幕（无对白也可）；18 岁以上；仅可以个人身份提交；往届 Chroma/Odyssey 已投作品不可再投；同一作品不可跨类；片长按类别（电影与剧集至少 2 分钟，微短剧 9:16 且至少 3 集每集 1–3 分钟，广告 15 秒–3 分钟，音乐视频/幕后 1–10 分钟）。",
+    "aiPolicy": "explicit",
+    "prestige": 3,
+    "status": "later",
+    "batch": "2026-11-19chroma",
+    "addedAt": "2026-11-19T18:40:00+08:00"
   }
 ];
 const FEST_TAG_CHIPS = ["AI专场","免费","亚洲"];
