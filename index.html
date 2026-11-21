@@ -494,13 +494,13 @@ const REDDIT_TREND_DATE = "2026-11-16 → 11-19";
 const REDDIT_TREND_ZH = "窗口 11/16–11/19：Reddit 本批 +0。官方 json 仍挂；arctic-shift 见到 6 条窗内过线视频，已有真实 JPEG 封面，但未观看，质量未审，继续 HOLD。分数须标 capture。不是「已确认无新」，也不是 0 过线。";
 const REDDIT_TREND = "Window Nov 16–19, 2026: Reddit +0. Official json still hung; arctic-shift showed 6 in-window over-floor videos that now have real JPEG covers, but they were not watched and stay HOLD. Scores are capture-labelled. This is not a confirmed zero, and not a completed 0-clear.";
 
-const YT_TREND_DATE = "2026-11-16 → 11-19";
-const YT_TREND_ZH = "窗口 11/16–11/19：YouTube 成片发现完整但质量未审，本批 +0。Eigi 等未审候补继续 HOLD，不把未看 HOLD 写成无新。Lennard《为王国效力》播放刷新为 148,507（10:07 watch；赞 942 未覆盖）。";
-const YT_TREND = "Window Nov 16–19, 2026: YouTube viral discovery is complete but quality is unreviewed; +0 this batch. Unreviewed HOLDs including Eigi stay off the shelf — an unwatched HOLD is not a zero. Lennard In Service of the Realm views refreshed to 148,507 (watch 10:07; likes stay 942).";
+const YT_TREND_DATE = "2026-11-19 → 11-22";
+const YT_TREND_ZH = "本批新增《沼泽女巫》1 条。场景悬念来自断裂的木栈道和不要下水的警告；不是把旧片的聚合站收录日当作首发。";
+const YT_TREND = "One new film, Swamp Witch. The broken walkway and warning not to enter the water set up the suspense. Aggregator listing dates are not treated as first publication.";
 
-const UPDATED = "2026-11-21 (Asia/Shanghai); partial update: AIIFF’s deadline is an unresolved conflict, HAIFF is listed with calendar close 11/28 and an unverified cutoff, plus 1 X narrative-reference card (this round +3, including the 2 already live this morning). Still not a full 11-tab pass.";
-const UPDATED_ZH = "2026-11-21（北京时间）；部分更新：AIIFF 截止改为冲突待核，另列 HAIFF（日历日 11/28，关闭瞬间未核），并增补 X 叙事参考 1 条（本轮累计 +3，含今早 2 条）。仍不是 11 栏全量通过。";
-const LATEST_BATCH = "2026-11-21v52partial"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "2026-11-22 (Asia/Shanghai) · Partial update: YouTube +1 and AI Tutorials +1. Historical cards kept; this is not a full eleven-tab release.";
+const UPDATED_ZH = "2026-11-22（北京时间）· 部分更新：YouTube +1，AI 教程 +1。旧卡保留，未作十一栏全量更新。";
+const LATEST_BATCH = "2026-11-22v53partial"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 const elevenTabsPassed = false; /* v52 partial shelf; not an 11-tab pass */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
@@ -8967,12 +8967,43 @@ const REDDIT_POSTS =
    Future batches: merge new hits; NEVER wipe YT_POSTS.
    Also refresh YT_TREND_ZH / YT_TREND each update, and keep whyZh/whyEn on every card.
    CANE MAN (20GbzQQyvsU, Sep 15) restored by request after the 09-20 date filter removed it. ===== */
-const YT_UPDATED = "2026-11-19 10:43";
-const YT_UPDATED_ZH = "2026-11-19 10:43（北京时间）";
-const YT_NOTE_ZH = "上传窗口 2026 年 11 月 16–19 日。成片栏本批无新上架。未审候补（含 Eigi）继续 HOLD。Lennard《为王国效力》播放按 10:07 watch 页刷新为 148,507，赞仍为 942（未复核则不覆盖）。";
-const YT_NOTE = "Upload window Nov 16–19, 2026. No new viral-shelf adds this batch. Unreviewed candidates (including Eigi) stay HOLD. Lennard views refreshed to 148,507 from the 10:07 watch page; likes stay 942 (not overwritten without a recheck).";
+const YT_UPDATED = "2026-11-22";
+const YT_UPDATED_ZH = "2026-11-22（北京时间）";
+const YT_NOTE_ZH = "2026-11-19–11-22（北京时间，滚动 72 小时）。追加 AI Video School 民俗恐怖短片《沼泽女巫》，17,307 播放及 225 赞为 YouTube 原页快照。旧卡未改。";
+const YT_NOTE = "Rolling 72-hour window, Nov 19–22 (China time): +1, AI Video School’s folk-horror short Swamp Witch. 17,307 views and 225 likes at the YouTube watch-page snapshot. Prior cards unchanged.";
 const YT_POSTS = 
 [
+  {
+    "id": "3_8ibLIBeVs",
+    "channel": "AI Video School",
+    "title": "Swamp Witch",
+    "titleZh": "《沼泽女巫》",
+    "url": "https://www.youtube.com/watch?v=3_8ibLIBeVs",
+    "cover": "https://i.ytimg.com/vi/3_8ibLIBeVs/hqdefault.jpg",
+    "date": "Nov 20, 2026",
+    "publishedAt": "2026-11-20T14:00:34Z",
+    "duration": "3:50",
+    "views": "17,307",
+    "viewsRaw": 17307,
+    "likes": "225",
+    "likesRaw": 225,
+    "comments": "N/A",
+    "tags": [
+      "AI short",
+      "Folk horror",
+      "Seedance",
+      "Kling"
+    ],
+    "platform": "youtube",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "whyZh": "完整民俗恐怖短片，用断裂的木栈道、困在对岸的女人和一句不要下水的警告立住悬念。作者公开说明使用 Seedance 2.5、Kling 4、Nano Banana 2.1、ElevenLabs 与 Suno。公开播放与点赞为 YouTube 原页快照，分享数未公开。",
+    "whyEn": "A complete folk-horror short that sets up suspense with a broken walkway, a stranded woman, and a warning not to enter the water. The creator discloses Seedance 2.5, Kling 4, Nano Banana 2.1, ElevenLabs and Suno. Views and likes are a YouTube watch-page snapshot; shares are not public.",
+    "metricsSrc": "YouTube public watch-page metadata: viewCount and public like count; date converted from platform upload timestamp.",
+    "addedAt": "2026-11-21T18:33:48.623Z",
+    "metricsAt": "2026-11-21T18:33:48.623Z",
+    "batch": "2026-11-22v53partial"
+  },
   {
     "id": "P6y6bITmn08",
     "channel": "Lennard Smith",
@@ -16491,14 +16522,47 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "2026-11-19 10:43";
-const TUT_UPDATED_ZH = "2026-11-19 10:43（北京时间）";
-const TUT_LATEST_BATCH = "2026-11-19v50";
-const TREND_TUTORIAL_DATE = "2026-11-15 → 11-18";
-const TREND_TUTORIAL_ZH = "窗口 11/16–11/19：教程 +4，全程待听核 / 未观看，未写质量通过；不得凭标题或自动字幕断言口播英语。不凑约 20 条。v49 T1–T6 / B1–B4 继续 HOLD。Jack 播放刷新为 260,460（赞 2,953 未覆盖）。";
-const TREND_TUTORIAL = "Window Nov 16–19, 2026: tutorials +4, all listen-check pending / not watched, not marked quality-passed; do not assert spoken English from titles or auto-captions. Not padded to ~20. v49 T1–T6 / B1–B4 stay HOLD. Jack views refreshed to 260,460 (likes stay 2,953).";
+const TUT_UPDATED = "2026-11-22";
+const TUT_UPDATED_ZH = "2026-11-22（北京时间）";
+const TUT_LATEST_BATCH = "2026-11-22v53partial";
+const TREND_TUTORIAL_DATE = "2026-11-19 → 11-22";
+const TREND_TUTORIAL_ZH = "本批 +1：Cole Medin 演示用 Claude Code 对现有口播做转录、切点、字幕和 B-roll。作者有公开实现；12,821 播放、236 点赞为 YouTube 原页快照。";
+const TREND_TUTORIAL = "One new tutorial: Cole Medin demonstrates editing recorded footage with Claude Code, from transcript-based cuts to captions and B-roll. Public implementation; 12,821 views and 236 likes at the YouTube watch-page snapshot.";
 const TUTORIALS = 
 [
+  {
+    "id": "yt_a90pZ1DSyls",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=a90pZ1DSyls",
+    "cover": "https://i.ytimg.com/vi/a90pZ1DSyls/hqdefault.jpg",
+    "creator": "Cole Medin",
+    "title": "This Skill Turns Claude Code Into an Expert Video Editor",
+    "titleZh": "用 Claude Code 自动剪辑实拍口播",
+    "date": "Nov 19, 2026",
+    "publishedAt": "2026-11-19T01:00:01Z",
+    "duration": "19:20",
+    "views": "12,821",
+    "viewsRaw": 12821,
+    "likes": "236",
+    "likesRaw": 236,
+    "comments": "N/A",
+    "tags": [
+      "Claude Code",
+      "Editing",
+      "Captions",
+      "FFmpeg"
+    ],
+    "level": "pro",
+    "topicZh": "口播素材后期",
+    "topicEn": "Talking-head post-production",
+    "learnZh": "把现有口播素材按转录、逐词对齐、停顿去除、转场、字幕、B-roll 和导出检查拆成步骤。03:11 看流程，08:37 看脚本，12:32 看实操。作者公开实现；视频获 OpenRouter 赞助，不是镜头生成教程。",
+    "learnEn": "A reproducible edit workflow for existing talking-head footage: transcript and alignment, pause removal, transitions, captions, B-roll and export checks. Start at 03:11 for the pipeline, 08:37 for scripts and 12:32 for examples. Implementation is public; the video is sponsored by OpenRouter and does not teach shot generation.",
+    "metricsSrc": "YouTube public watch-page metadata; creator's published chapter list and edit-video repository.",
+    "sourceUrl": "https://github.com/coleam00/skills/tree/main/.claude/skills/edit-video",
+    "addedAt": "2026-11-21T18:33:48.623Z",
+    "metricsAt": "2026-11-21T18:33:48.623Z",
+    "batch": "2026-11-22v53partial"
+  },
   {
     "id": "yt_GOR4Fn0GGes",
     "platform": "YouTube",
