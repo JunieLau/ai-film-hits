@@ -486,9 +486,9 @@ const IG_TREND_DATE = "2026-11-16 → 11-19";
 const IG_TREND_ZH = "窗口 11/16–11/19：IG 本批 +3（yzavoku / dreamcode_films / voidstomper；播放来自 PicMany 资料页，第三方，非 IG 官方后台）。dreamcode《梦境》按上海时间为 Nov 17，不得用展示日 Nov 16。三条均为公开 mp4 抽帧+片长复核，非完整有声审片，非正式质量通过。";
 const IG_TREND = "Window Nov 16–19, 2026: IG +3 (yzavoku / dreamcode_films / voidstomper; plays from PicMany profile pages, third-party, not official IG). dreamcode Dreamscape is Nov 17 Shanghai time, not the Nov 16 display date. All three are public mp4 frame grabs plus a runtime check — not a full editorial screening with sound, and not a formal quality pass.";
 
-const X_TREND_DATE = "既有架仍为 11/16–11/19；今早已上架 +2；今晚追加 +1";
-const X_TREND_ZH = "部分更新，不是 11 栏全量，也不是 X 整架刷新。今早限定追加 2 条（官方 API 2026-11-21 10:04；转发=转推+引用）：whorange__《大树啊，你看见一切。你看见她了吗？》（神话题材风格化3D动画叙事片段，非完整剧情短片；本批该作者最多 1 条）；Gossip_Goblin《重要广播》（新片宣传小品／奇幻喜剧推广案例；后段为新片宣传，非独立剧情成片）。今晚追加 +1：gokturkaistudio《兄弟》（描述性中译，非官方中文片名；官方片名 BROTHER）——朝鲜战争背景AI剧情／虚构或重现，非纪录史料；仅作叙事/导演参考，非高完成度制作示范。既有旧架未整架刷新指标。本轮累计 +3。现为 113 条。";
-const X_TREND = "Partial update — not an 11-tab pass, and not a full X-shelf metric refresh. This morning added 2 cards (official API 2026-11-21 10:04; reposts = retweet_count + quote_count): whorange__ “Great tree, you see everything. Have you seen her?” (A stylized 3D animated narrative vignette on a mythological subject, not a complete story short; max 1 new for this creator this batch); Gossip_Goblin “An important broadcast” (New-film promotional skit / fantasy-comedy promo case; The latter part is a promo for a new film, not a standalone narrative short). Tonight adds 1: gokturkaistudio BROTHER (descriptive Chinese translation 《兄弟》, not an official Chinese title) — a Korean War–set AI narrative, fiction or reconstruction, not documentary history; narrative/directing reference only, not a high-finish production model. Older cards were not bulk-refreshed. This round is +3. Count is now 113.";
+const X_TREND_DATE = "2026-11-19 → 11-22";
+const X_TREND_ZH = "补录创作者原帖两条：《蜘蛛侠大战毁灭博士》《剑风传奇：黑剑士》。跨平台同片只收一次；互动注明公开镜像快照。";
+const X_TREND = "Two creator posts added: WORTHY SPIDER-MAN VS DOOM and BERSERK: The Black Swordsman. Each work is counted once across platforms; engagement is sourced to public snapshots.";
 
 const REDDIT_TREND_DATE = "2026-11-16 → 11-19";
 const REDDIT_TREND_ZH = "窗口 11/16–11/19：Reddit 本批 +0。官方 json 仍挂；arctic-shift 见到 6 条窗内过线视频，已有真实 JPEG 封面，但未观看，质量未审，继续 HOLD。分数须标 capture。不是「已确认无新」，也不是 0 过线。";
@@ -498,8 +498,8 @@ const YT_TREND_DATE = "2026-11-19 → 11-22";
 const YT_TREND_ZH = "本批新增《沼泽女巫》1 条。场景悬念来自断裂的木栈道和不要下水的警告；不是把旧片的聚合站收录日当作首发。";
 const YT_TREND = "One new film, Swamp Witch. The broken walkway and warning not to enter the water set up the suspense. Aggregator listing dates are not treated as first publication.";
 
-const UPDATED = "2026-11-22 (Asia/Shanghai) · Partial update: YouTube +1 and AI Tutorials +1. Historical cards kept; this is not a full eleven-tab release.";
-const UPDATED_ZH = "2026-11-22（北京时间）· 部分更新：YouTube +1，AI 教程 +1。旧卡保留，未作十一栏全量更新。";
+const UPDATED = "2026-11-22 (Asia/Shanghai) · Partial release: six new cards total (X +2, YouTube +1, Bilibili +1, AI Tutorials +2). Prior cards retained.";
+const UPDATED_ZH = "2026-11-22（北京时间）· 部分更新：累计新增 6 条（X +2、YouTube +1、B 站 +1、AI 教程 +2），旧卡保留。";
 const LATEST_BATCH = "2026-11-22v53partial"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 const elevenTabsPassed = false; /* v52 partial shelf; not an 11-tab pass */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
@@ -3437,10 +3437,77 @@ const INSIGHTS = [
 ]
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
    cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
-const X_UPDATED = "2026-11-21";
-const X_UPDATED_ZH = "2026-11-21（北京时间；今晚限定叙事参考 +1，本轮累计 +3，既有旧架未整架刷新指标，不是 11 栏全量更新）";
+const X_UPDATED = "2026-11-22";
+const X_UPDATED_ZH = "2026-11-22（北京时间；补录原创帖 +2）";
 const X_POSTS = 
 [
+  {
+    "batch": "2026-11-22v53partial",
+    "addedAt": "2026-11-21T18:42:02.812Z",
+    "metricsAt": "2026-11-21T18:42:02.812Z",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "id": "2123418862955757913",
+    "handle": "Goyart_studio",
+    "followers": "N/A",
+    "views": "1.5M",
+    "likes": "29K",
+    "reposts": "≈2K",
+    "replies": "N/A",
+    "date": "Nov 19, 2026",
+    "publishedAt": "2026-11-19T14:11:22.800Z",
+    "duration": "1:07",
+    "url": "https://x.com/Goyart_studio/status/2123418862955757913",
+    "cover": "https://ttanon.com/i/c/7709890480011578656-720.webp",
+    "noteZh": "《蜘蛛侠大战毁灭博士》：谁能举起雷神之锤？",
+    "note": "WORTHY SPIDER-MAN VS DOOM",
+    "tags": [
+      "Fan animation",
+      "Action",
+      "Flick"
+    ],
+    "whyZh": "Goyart 的 67 秒同人动作动画，把雷神之锤设成冲突核心。作者署名 Flick；同作者 TikTok 版本验证封面，是同一作品，不重复计入其他栏。X 指标是公开镜像约数。",
+    "whyEn": "Goyart’s 67-second fan animation makes Mjolnir the focus of a superhero showdown. The creator credits Flick; the cover is from their matching TikTok upload. This film is counted once. X figures are rounded public-mirror snapshots.",
+    "metricsSrc": "Public X post mirror; rounded display counts. Exact posting time from native X status ID; same-film cover from creator TikTok original as mirrored by 24vids.",
+    "sourceUrl": "https://xitter.gq/Goyart_studio/status/2123418862955757913",
+    "coverSourceUrl": "https://www.24vids.com/video/worthy-spiderman-vs-doom-made-with-flickart-get-300-free-credits-and-generate-p-tt-7709890480011578656",
+    "platform": "x"
+  },
+  {
+    "batch": "2026-11-22v53partial",
+    "addedAt": "2026-11-21T18:42:02.812Z",
+    "metricsAt": "2026-11-21T18:42:02.812Z",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "id": "2123453735301267809",
+    "handle": "bluehorizon_ai",
+    "followers": "N/A",
+    "views": "527,259",
+    "viewsRaw": 527259,
+    "likes": "5,697",
+    "likesRaw": 5697,
+    "reposts": "899",
+    "repostsRaw": 899,
+    "replies": "136",
+    "repliesRaw": 136,
+    "date": "Nov 20, 2026",
+    "publishedAt": "2026-11-19T16:29:57.015Z",
+    "url": "https://x.com/bluehorizon_ai/status/2123453735301267809",
+    "cover": "https://i.ytimg.com/vi/Fc9SCWEZxxg/hqdefault.jpg",
+    "noteZh": "《剑风传奇：黑剑士》真人风格同人预告",
+    "note": "BERSERK: The Black Swordsman — live-action-style fan trailer",
+    "tags": [
+      "Trailer",
+      "Dark fantasy",
+      "Higgsfield"
+    ],
+    "whyZh": "The Blue Horizon 将《剑风传奇》的黑暗奇幻转成真人风格预告，作者标记 AI 电影并注明 Higgsfield。非官方预告、非完整正片。封面来自同一作者同片的 YouTube 上传。转贴 780＋引用 119；数据来自公开镜像。",
+    "whyEn": "The Blue Horizon reimagines Berserk as a live-action-style dark-fantasy fan trailer, credited to Higgsfield by the creator. Not official and not a complete film. The cover comes from the creator’s matching YouTube upload. Public mirror: 780 reposts plus 119 quotes.",
+    "metricsSrc": "Public X post mirror (not account analytics); exact posting time from X status ID. Cover from the same film’s corresponding creator YouTube upload.",
+    "sourceUrl": "https://www.teapawt.org/bluehorizon_ai/status/2123453735301267809",
+    "coverSourceUrl": "https://www.youtube.com/watch?v=Fc9SCWEZxxg",
+    "platform": "x"
+  },
   {
     "id": "2123242058890817942",
     "handle": "whorange__",
@@ -13448,14 +13515,50 @@ const TT_INSIGHTS = [
 ];
 
 /* ===== Bilibili / 哔哩哔哩 — APPEND ONLY by bvid. Floor: views≥100K. Window Oct 29–Nov 1. ===== */
-const BL_UPDATED = "2026-11-19 10:43";
-const BL_UPDATED_ZH = "2026-11-19 10:43（北京时间）";
-const BL_NOTE_ZH = "发布窗口 2026 年 11 月 16–19 日。本栏为 limited：搜索 412/200 混杂，播放接口 412，窗内成片无过线。遗留《天生超能力》BV15CsH6SEQD 为 11/15 20:18，已出本窗，不得写成 v50 窗内 clear，也不得自动上架（未审）。既有 13 条旧指标未砸接口。不能写成已确认无新。";
-const BL_NOTE = "Publish window Nov 16–19, 2026. This shelf is limited: mixed search 412/200, view API 412, no in-window craft clears. Leftover BV15CsH6SEQD (Born Superpowered) is Nov 15 20:18, outside this window — not a v50 window clear, and not auto-added (unwatched). The existing 13 rows stay on old metrics (the view API was not hammered). This is not a confirmed zero.";
-const BL_TREND_DATE = "2026-11-16 → 11-19";
-const BL_TREND_ZH = "窗口 11/16–11/19：B 站 limited，窗内 +0。BV15CsH6SEQD 是 11/15 遗留，未审、不上架。既有 13 条播放接口 412，指标未刷新。不写成已确认无新。";
-const BL_TREND = "Window Nov 16–19, 2026: Bilibili is limited, window +0. BV15CsH6SEQD is a Nov 15 leftover, unwatched, not added. Existing 13 rows still 412, metrics not refreshed. Not a confirmed zero.";
+const BL_UPDATED = "2026-11-22";
+const BL_UPDATED_ZH = "2026-11-22（北京时间；新增 1 条）";
+const BL_NOTE_ZH = "滚动 72 小时追加一条。发布时间、热度和封面均取自 B 站原帖，保留旧卡；弹幕与评论分开，不混为一项。";
+const BL_NOTE = "One 72-hour addition. Publication time, engagement, and cover were checked against the Bilibili watch page. Prior cards are unchanged. Bullet comments are not counted as thread comments.";
+const BL_TREND_DATE = "2026-11-19 → 11-22";
+const BL_TREND_ZH = "新增《爱情公寓 4》AI 婚礼续写：约 314 万播放、32.8 万赞、7.3 万转发，B 站原页快照。只有几十次转发或发布时间超窗的作品未收。";
+const BL_TREND = "One new Bilibili post: the AI iPartment 4 wedding fan sequel (3.14M plays, 327.7K likes and 73.1K shares, native watch-page snapshot). Low-share and out-of-window candidates stayed off the shelf.";
 const BILIBILI_POSTS = [
+  {
+    "batch": "2026-11-22v53partial",
+    "addedAt": "2026-11-21T18:42:02.812Z",
+    "metricsAt": "2026-11-21T18:42:02.812Z",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "id": "BV1atse6EEfx",
+    "channel": "Nero_闪灵",
+    "handle": "@Nero_闪灵",
+    "views": "3,138,609",
+    "viewsRaw": 3138609,
+    "likes": "327,733",
+    "likesRaw": 327733,
+    "coins": "285,872",
+    "shares": "73,122",
+    "sharesRaw": 73122,
+    "comments": "N/A",
+    "danmaku": 7963,
+    "favorites": 146147,
+    "date": "Nov 20, 2026",
+    "publishedAt": "2026-11-20T18:00:00+08:00",
+    "duration": "21:06",
+    "url": "https://www.bilibili.com/video/BV1atse6EEfx/",
+    "cover": "https://i2.hdslb.com/bfs/archive/00f04e06ef048d293285a43c8a901e4ecf30d525.jpg@1200w_630h",
+    "titleZh": "当我用 AI 续写《爱情公寓 4》关谷悠悠婚礼",
+    "title": "AI fan sequel to iPartment 4: Guan Gu and Youyou’s wedding",
+    "tags": [
+      "Fan film",
+      "Comedy",
+      "AI 全民制作人"
+    ],
+    "whyZh": "21 分钟同人续写，把老观众未等到的婚礼拍成一集，靠角色关系和未完结的情感兑现带动分享。B 站原页标注含 AI 生成内容，曾登全站榜第 1；7,963 是弹幕数，不是评论。非官方续集。",
+    "whyEn": "A 21-minute fan continuation gives longtime viewers the wedding they were waiting for. The original page labels it AI-generated and shows a peak of No. 1 on Bilibili’s overall chart. The 7,963 figure is bullet comments, not thread comments. Not an official sequel.",
+    "metricsSrc": "Exact snapshot from the original Bilibili watch page’s public metadata (plays, likes, coins, favourites, reshares, bullet comments). Publication time shown on the same watch page; cover from its og:image.",
+    "platform": "bilibili"
+  },
   {
     "id": "BV1FcWg6dEpa",
     "channel": "音乐老友",
@@ -16526,10 +16629,42 @@ const TUT_UPDATED = "2026-11-22";
 const TUT_UPDATED_ZH = "2026-11-22（北京时间）";
 const TUT_LATEST_BATCH = "2026-11-22v53partial";
 const TREND_TUTORIAL_DATE = "2026-11-19 → 11-22";
-const TREND_TUTORIAL_ZH = "本批 +1：Cole Medin 演示用 Claude Code 对现有口播做转录、切点、字幕和 B-roll。作者有公开实现；12,821 播放、236 点赞为 YouTube 原页快照。";
-const TREND_TUTORIAL = "One new tutorial: Cole Medin demonstrates editing recorded footage with Claude Code, from transcript-based cuts to captions and B-roll. Public implementation; 12,821 views and 236 likes at the YouTube watch-page snapshot.";
+const TREND_TUTORIAL_ZH = "本批 +2：Cole Medin 的 Claude Code 口播剪辑，和 Thomas Lundström 的 Claude × Blender 广告预演。后者 34,061 播放、764 赞，取自 YouTube 原页。";
+const TREND_TUTORIAL = "Two tutorials this batch: Cole Medin’s Claude Code edit pipeline and Thomas Lundström’s Claude + Blender commercial previs. The latter had 34,061 views and 764 likes on the native watch page.";
 const TUTORIALS = 
 [
+  {
+    "id": "yt_jc0Qh09Qrlo",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=jc0Qh09Qrlo",
+    "cover": "https://i.ytimg.com/vi/jc0Qh09Qrlo/maxresdefault.jpg",
+    "creator": "Thomas Lundström",
+    "title": "I Let Claude Fable 5.2 Build My AI Commercial in Blender",
+    "titleZh": "Claude Fable 5.2 × Blender：用预演把控 AI 广告镜头",
+    "date": "Nov 20, 2026",
+    "publishedAt": "2026-11-20T15:04:26Z",
+    "duration": "16:49",
+    "views": "34,061",
+    "viewsRaw": 34061,
+    "likes": "764",
+    "likesRaw": 764,
+    "comments": "N/A",
+    "tags": [
+      "Claude Fable 5.2",
+      "Blender",
+      "Seedance 2.5",
+      "Previs"
+    ],
+    "level": "pro",
+    "topicZh": "广告预演与镜头控制",
+    "topicEn": "Commercial previs and shot control",
+    "learnZh": "04:04 看 Claude 在 Blender 搭灰模，先定机位、运动和节奏；07:04 生成视觉素材，09:07 用 Seedance 2.5 出镜头，再分离音频并加动态图形。它展示的是可先审再生成的广告流程，而非一键出片。",
+    "learnEn": "At 04:04 Claude builds a grey Blender blockout to set camera, motion, and timing. At 07:04 it moves to assets, at 09:07 to Seedance 2.5 shots, followed by audio cleanup and motion graphics. Review the previs before generating shots, rather than prompting blindly.",
+    "metricsSrc": "Exact views and upload timestamp from public YouTube watch-page metadata; visible native like button count; native max-resolution cover.",
+    "metricsAt": "2026-11-21T18:43:25.126Z",
+    "addedAt": "2026-11-21T18:43:25.126Z",
+    "batch": "2026-11-22v53partial"
+  },
   {
     "id": "yt_a90pZ1DSyls",
     "platform": "YouTube",
