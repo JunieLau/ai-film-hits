@@ -190,6 +190,7 @@
   .fest-st.near{color:var(--gold)}
   .fest-st.later{color:var(--mute)}
   .fest-st.unverified{color:#e8b86a}
+  .fest-st.expired{color:#d7a3a8}
   .fest-body{min-width:0;flex:1;display:flex;flex-direction:column;gap:6px}
   .fest-name{font-size:18px;font-weight:700;line-height:1.25}
   .fest-name .en{font-size:13.5px;font-weight:400;margin-top:2px}
@@ -267,7 +268,7 @@
 <header>
   <div class="kicker">X / Twitter · 灵感板 · Moodboard · for @junielaux</div>
   <h1>X 每日爆款 <em>AI 视频</em><span class="en">X Daily AI Video Hits</span></h1>
-  <p class="sub">X 上 <b>2026 年 11 月 16–19 日（北京时间）</b>窗口 · 本批追加 +4（转发≥100；Higgsfield 为官方带水印成品 / 官方制作贴，Dor Brothers 为预告片体裁、非剧情成片）· 历史保留 · <b id="x-updated"></b> · 点击卡片打开原帖<span class="en">X window <b>Nov 16–19, 2026</b> · +4 appended (≥100 reposts; Higgsfield is an official watermarked finished film / official making-of post; Dor Brothers is trailer form, not a narrative short), history kept · <b id="x-updated-en"></b> · Click any tile to open the post.</span></p>
+  <p class="sub">X 上部分更新 · 本批限定追加 +2（11/18–11/21 窗内；转发≥100；既有 110 条保留且未整架刷新指标）· whorange__ 为神话题材风格化3D动画叙事片段，非完整剧情短片；Gossip_Goblin 为新片宣传小品／奇幻喜剧推广案例，后段为新片宣传，非独立剧情成片 · 历史保留 · <b id="x-updated"></b> · 点击卡片打开原帖<span class="en">X partial update · +2 limited this batch (in-window 11/18–21; ≥100 reposts; existing 110 kept, metrics not bulk-refreshed) · whorange__ is a stylized 3D animated mythological narrative vignette, not a complete story short; Gossip_Goblin is a new-film promotional skit / fantasy-comedy promo case — the latter part is a promo, not a standalone narrative short · history kept · <b id="x-updated-en"></b> · Click any tile to open the post.</span></p>
   <p class="sub" style="margin-top:6px;font-size:12.5px">入选标准：浏览、点赞、回复都高，且转发（转推+引用）≥100 · 每位作者每批最多 2 条 · 按浏览量排序 · <b>历史只叠加不删</b> <span class="en-i">Rule: high views/likes/replies + ≥100 reposts · max 2 new per author per batch · ranked by views · <b>append-only</b></span></p>
   <div class="stats" id="x-stats"></div>
 </header>
@@ -459,15 +460,15 @@
   <div class="kicker">征片在列 · Listed calls · for @junielaux</div>
   <h1>电影节 <em>投稿</em><span class="en">Film Festivals</span></h1>
   <p class="sub">这一栏列出征片窗口：已核本周按已核 status 计数（近窗/稍后不计）。列出不等于可投资格，不判断具体作品可投。每周更新，不是往届获奖归档。<span class="en">This shelf lists calls. The verified Due-this-week count uses verified statuses only (open-soon / later are excluded). A listing is not entry clearance, and eligibility of any specific work is not judged. Refreshed weekly — not a past-winners archive.</span></p>
-  <p class="sub" style="margin-top:6px">本周/近十日可递交 · 截止日请以官网为准 · 2026-11-16 至 11/19 部分重核，不是全量新征片目录，不是 11 栏全量更新。Cue 已核截止 11/20 23:59 ET（不要改写成上海 11/21）。M.AI 已核日历截止 11/20（时区官网未标明，不猜）。已核本周截止为 4：1bfs、Cue、M.AI、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）；列出不等于可投资格，不判断具体作品可投。<span class="en">Open this week and the next stretch. Confirm the deadline on the official site. Partial recheck for the 11/16–11/19 window, not a full new open-call catalogue, and not an 11-tab pass. Cue is a verified official close on November 20, 2026, 11:59 PM ET (do not rewrite as a Shanghai Nov 21). M.AI is a verified official calendar date of 20 November 2026 (timezone unstated, not invented). Verified Due this week is 4: 1bfs, Cue, M.AI, AIIFF. SVAIFF’s deadline is 25 November 23:59:59 KST — open-soon, not counted in Due this week. The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick are listed with limits on the cards. A listing is not entry clearance; eligibility of any specific work is not judged.</span></p>
-  <p class="sub" style="margin-top:6px;font-size:13.5px">截止与费用以官网为准；本页每周刷新。<span class="en-i">Deadlines and fees follow the official site; this page refreshes weekly.</span></p>
+  <p class="sub" id="fest-window" style="margin-top:6px"></p>
+  <p class="sub" style="margin-top:6px;font-size:13.5px">截止与费用以官网为准；本页每周刷新。 <b id="fest-updated"></b><span class="en-i">Deadlines and fees follow the official site; this page refreshes weekly. <b id="fest-updated-en"></b></span></p>
   <div class="stats" id="fest-stats"></div>
 </header>
 <div class="fest-filters" id="fest-filters"></div>
 <main>
   <div class="fest-grid" id="fest-grid"></div>
 </main>
-<footer>截止日期、报名费和 AI 政策摘自各节官网或投稿门户，于 2026-11-16 至 11/19 部分重核（北京时间）；本页不是全量新征片目录，不是 11 栏全量更新。Cue 已核截止 11/20 23:59 ET；M.AI 已核日历截止 11/20（时区未标明，不猜）。已核本周截止为 4。SVAIFF 为近窗，不计入本周。Higgsfield 规则与 JSON-LD 时差仍见该卡片。布拉格仍不在已核开放列表。有条件传统节与 Flick 的限制写在卡片上；列出不等于可投资格。只作私人投稿参考，不保证与官网同步。投递前请打开官网核对。政策未写明的标为「政策未知」，不臆测接受或拒绝。历史视频架不受本页影响。<span class="en">Deadlines, fees and AI policies are quoted from each festival’s official site or submission portal, partially rechecked in the 11/16–11/19 window — not a full new open-call catalogue, and not an 11-tab pass. Cue is verified 11:59 PM ET Nov 20; M.AI is a verified calendar date of Nov 20 (timezone unstated). Verified Due this week is 4. SVAIFF is open-soon, not counted in this week. See the Higgsfield card for the Official Rules vs JSON-LD time conflict. Cine Prague stays off the verified-open list. Limits for the conditional traditional festivals and Flick are on the cards. A listing is not entry clearance. Private reference only — not guaranteed live. Check the official page before you submit. Where a policy is unstated it is marked unknown; nothing is guessed. Other shelves are unchanged.</span></footer>
+<footer id="fest-footer"></footer>
 </section>
 
 <script>
@@ -485,9 +486,9 @@ const IG_TREND_DATE = "2026-11-16 → 11-19";
 const IG_TREND_ZH = "窗口 11/16–11/19：IG 本批 +3（yzavoku / dreamcode_films / voidstomper；播放来自 PicMany 资料页，第三方，非 IG 官方后台）。dreamcode《梦境》按上海时间为 Nov 17，不得用展示日 Nov 16。三条均为公开 mp4 抽帧+片长复核，非完整有声审片，非正式质量通过。";
 const IG_TREND = "Window Nov 16–19, 2026: IG +3 (yzavoku / dreamcode_films / voidstomper; plays from PicMany profile pages, third-party, not official IG). dreamcode Dreamscape is Nov 17 Shanghai time, not the Nov 16 display date. All three are public mp4 frame grabs plus a runtime check — not a full editorial screening with sound, and not a formal quality pass.";
 
-const X_TREND_DATE = "2026-11-16 → 11-19";
-const X_TREND_ZH = "窗口 11/16–11/19：X 本批 +4（转发=转推+引用≥100；官方 API 10:05）。Gossip_Goblin《肉欲追逐》、whorange__《悉多的脚镯》、higgsfield_ai《你以为你已经晚了？》（官方带水印成品 / 官方制作贴，不得写成独立作者成片）、TheDorBrothers《GTA VI：诅咒预告片》（预告片体裁，非剧情成片）。既有 21 条指标于 09:57 刷新。";
-const X_TREND = "Window Nov 16–19, 2026: X +4 (reposts = retweets+quotes ≥100; official API 10:05). Gossip_Goblin Carnal Chase; whorange__ Sita’s Anklets; higgsfield_ai You Think You're Too Late? (official watermarked finished film / official making-of post, not an independent filmmaker short); TheDorBrothers GTA VI Cursed Trailer (trailer form, not a narrative short). 21 existing rows refreshed at 09:57.";
+const X_TREND_DATE = "既有架仍为 11/16–11/19；本批限定追加窗内 11/18–11/21 的 2 条";
+const X_TREND_ZH = "部分更新，不是 11 栏全量，也不是 X 整架刷新。本批限定追加 2 条（官方 API 2026-11-21 10:04；转发=转推+引用）：whorange__《大树啊，你看见一切。你看见她了吗？》（神话题材风格化3D动画叙事片段，非完整剧情短片；本批该作者最多 1 条）；Gossip_Goblin《重要广播》（新片宣传小品／奇幻喜剧推广案例；后段为新片宣传，非独立剧情成片）。既有 110 条保留且未整架刷新指标。现为 112 条。";
+const X_TREND = "Partial update — not an 11-tab pass, and not a full X-shelf metric refresh. This batch adds exactly 2 cards (official API 2026-11-21 10:04; reposts = retweet_count + quote_count): whorange__ “Great tree, you see everything. Have you seen her?” (A stylized 3D animated narrative vignette on a mythological subject, not a complete story short; max 1 new for this creator this batch); Gossip_Goblin “An important broadcast” (New-film promotional skit / fantasy-comedy promo case; The latter part is a promo for a new film, not a standalone narrative short.). The existing 110 rows are kept and were not bulk-refreshed. Count is now 112.";
 
 const REDDIT_TREND_DATE = "2026-11-16 → 11-19";
 const REDDIT_TREND_ZH = "窗口 11/16–11/19：Reddit 本批 +0。官方 json 仍挂；arctic-shift 见到 6 条窗内过线视频，已有真实 JPEG 封面，但未观看，质量未审，继续 HOLD。分数须标 capture。不是「已确认无新」，也不是 0 过线。";
@@ -497,9 +498,10 @@ const YT_TREND_DATE = "2026-11-16 → 11-19";
 const YT_TREND_ZH = "窗口 11/16–11/19：YouTube 成片发现完整但质量未审，本批 +0。Eigi 等未审候补继续 HOLD，不把未看 HOLD 写成无新。Lennard《为王国效力》播放刷新为 148,507（10:07 watch；赞 942 未覆盖）。";
 const YT_TREND = "Window Nov 16–19, 2026: YouTube viral discovery is complete but quality is unreviewed; +0 this batch. Unreviewed HOLDs including Eigi stay off the shelf — an unwatched HOLD is not a zero. Lennard In Service of the Realm views refreshed to 148,507 (watch 10:07; likes stay 942).";
 
-const UPDATED = "2026-11-19 18:40 (v50 remains the partial 11/16–11/19 window; festival shelf also adds Chroma Awards Season 2 — not a full 11-tab pass)";
-const UPDATED_ZH = "2026-11-19 18:40（北京时间）；在 v50 部分更新之上增补 Chroma Awards 第2季电影节卡片，仍不是 11 栏全量通过。";
-const LATEST_BATCH = "2026-11-19chroma"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const UPDATED = "2026-11-21 (Asia/Shanghai); partial update: festival deadline-field corrections, plus 2 X cards (one is a new-film promotional skit — see the on-card warning). Still not a full 11-tab pass.";
+const UPDATED_ZH = "2026-11-21（北京时间）；部分更新：电影节截止字段纠正，并增补 X 2 条（其中 1 条为新片宣传小品，须见卡片警示）。仍不是 11 栏全量通过。";
+const LATEST_BATCH = "2026-11-21v52partial"; /* badge "本批新增" when post.batch === LATEST_BATCH */
+const elevenTabsPassed = false; /* v52 partial shelf; not an 11-tab pass */
 /* IG rule: Instagram hides share counts logged-out, so a hit needs high views AND likes >= 10K AND comments >= 100. */
 const REELS = 
 [
@@ -3435,10 +3437,76 @@ const INSIGHTS = [
 ]
 /* ===== X AI VIDEO HITS · APPEND ONLY: merge by tweet id into X_POSTS; never wipe.
    cover = img/x_<postId>.jpg; views = impression_count; reposts = retweet+quote; rule: reposts >= 100. ===== */
-const X_UPDATED = "2026-11-19 10:43";
-const X_UPDATED_ZH = "2026-11-19 10:43（北京时间）";
+const X_UPDATED = "2026-11-21";
+const X_UPDATED_ZH = "2026-11-21（北京时间；仅限定追加 2 条，既有 110 条未整架刷新指标，不是 11 栏全量更新）";
 const X_POSTS = 
 [
+  {
+    "id": "2123242058890817942",
+    "handle": "whorange__",
+    "followers": "5.4K",
+    "viewsRaw": 24344,
+    "likesRaw": 860,
+    "repostsRaw": 119,
+    "repliesRaw": 28,
+    "date": "Nov 19, 2026",
+    "url": "https://x.com/whorange__/status/2123242058890817942",
+    "noteZh": "whorange__《大树啊，你看见一切。你看见她了吗？》：神话题材风格化3D动画叙事片段，非完整剧情短片",
+    "note": "whorange__ “Great tree, you see everything. Have you seen her?”: A stylized 3D animated narrative vignette on a mythological subject, not a complete story short.",
+    "tags": [
+      "Mythology",
+      "3D animation",
+      "Vignette"
+    ],
+    "whyZh": "神话题材风格化3D动画叙事片段，非完整剧情短片。约 30.93 秒横屏。叙事为寻悉多：向树木与河流寻人，拾花落泪，同伴安慰后转为坚定。未见工具标识、水印或商业推广。与架上已有《悉多的脚镯》同属罗摩衍那循环，本批该作者最多新增 1 条，不得再加同作者未过线帖。不得称作完整成片或独立完整剧情短片。转贴 111+引用 8=119，播放 24,344，赞 860（官方 X API 2026-11-21 10:04 北京时间）。",
+    "whyEn": "A stylized 3D animated narrative vignette on a mythological subject, not a complete story short. About 30.93s, 1280×720. The beat is a search for Sita: calling to the trees and the river, picking up a flower and weeping, then a companion comforts him and his expression turns to resolve. No visible tool logo, watermark, or promotion. Same Ramayana cycle as the existing shelf card “Sita’s Anklets”; maximum one new card for this creator this batch. Never present as a complete standalone story. 111+8=119 reposts, 24,344 views, 860 likes (official X API, 2026-11-21 10:04 Asia/Shanghai).",
+    "cover": "src/img/x_2123242058890817942.jpg",
+    "views": "24.3K",
+    "likes": "860",
+    "reposts": "119",
+    "replies": "28",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "platform": "x",
+    "batch": "2026-11-21v52partial",
+    "addedAt": "2026-11-21T10:48:00+08:00",
+    "metricsSrc": "connectors/x getPostsByIds official API public_metrics. Floor uses repost_count+quote_count. Field is repost_count, not retweet_count. Do not use shortlist_metrics_refresh.json (that file’s reposts field is wrong for this id).",
+    "metricsAt": "2026-11-21T10:04:00+08:00",
+    "publishedAt": "2026-11-19T10:28:49+08:00"
+  },
+  {
+    "id": "2123815371606012104",
+    "handle": "Gossip_Goblin",
+    "followers": "125.4K",
+    "viewsRaw": 104096,
+    "likesRaw": 2354,
+    "repostsRaw": 165,
+    "repliesRaw": 58,
+    "date": "Nov 21, 2026",
+    "url": "https://x.com/Gossip_Goblin/status/2123815371606012104",
+    "noteZh": "Gossip_Goblin《重要广播》：新片宣传小品／奇幻喜剧推广案例。后段为新片宣传，非独立剧情成片。",
+    "note": "Gossip_Goblin “An important broadcast”: New-film promotional skit / fantasy-comedy promo case. The latter part is a promo for a new film, not a standalone narrative short.",
+    "tags": [
+      "Promotional",
+      "Fantasy",
+      "Comedy"
+    ],
+    "whyZh": "后段为新片宣传，非独立剧情成片。本卡是新片宣传小品／奇幻喜剧推广案例，不是独立剧情成片。全片约 149 秒竖屏（1080×1920），经完整 720p 有声复核：先为奇幻救援，后段转为新片宣传，并出现访问网站的行动号召。官方帖文为 “An important broadcast that you should certainly not skip.” 不从视频分析复制未经官方帖文核验的片名或网址拼写。转贴 151+引用 14=165，播放 104,096，赞 2,354（官方 X API 2026-11-21 10:04 北京时间）。",
+    "whyEn": "The latter part is a promo for a new film, not a standalone narrative short. This card is a New-film promotional skit / fantasy-comedy promo case, not a standalone narrative film. About 149s vertical (1080×1920), reviewed in full with audio via a full-length 720p copy: it first builds a fantasy rescue, then turns into a promo for a new film, including a call to visit a website. Official post text is “An important broadcast that you should certainly not skip.” Do not copy a film title or site spelling from the video analysis; those were not verified in official post data. 151+14=165 reposts, 104,096 views, 2,354 likes (official X API, 2026-11-21 10:04 Asia/Shanghai).",
+    "cover": "src/img/x_2123815371606012104.jpg",
+    "views": "104.1K",
+    "likes": "2,354",
+    "reposts": "165",
+    "replies": "58",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "platform": "x",
+    "batch": "2026-11-21v52partial",
+    "addedAt": "2026-11-21T10:48:00+08:00",
+    "metricsSrc": "connectors/x getPostsByIds official API public_metrics at 10:04 Asia/Shanghai (clears_draft.json). Do not use shortlist_metrics_refresh.json (reposts field wrong). Earlier shortlist snapshots had slightly lower impressions/likes; the 10:04 getPostsByIds figures are the intended card metrics.",
+    "metricsAt": "2026-11-21T10:04:00+08:00",
+    "publishedAt": "2026-11-21T00:26:57+08:00"
+  },
   {
     "id": "2122005491794722988",
     "handle": "Gossip_Goblin",
@@ -6483,7 +6551,7 @@ const X_POSTS =
   }
 ];
 const X_INSIGHTS = [
-  {"tZh": "本批追加 4 条（转发≥100）· 合计 110", "t": "+4 this window (≥100 reposts) · 110 total", "pZh": "窗口 11/16–11/19。官方 API 10:05：Gossip_Goblin《肉欲追逐》、whorange__《悉多的脚镯》、higgsfield_ai《你以为你已经晚了？》（官方带水印成品 / 官方制作贴，不得写成独立作者成片）、TheDorBrothers《GTA VI：诅咒预告片》（预告片体裁，非剧情成片）。既有 21 条指标于 09:57 刷新。", "p": "Window Nov 16–19, 2026. Official API 10:05: Gossip_Goblin Carnal Chase; whorange__ Sita’s Anklets; higgsfield_ai You Think You're Too Late? (official watermarked finished film / official making-of post, not an independent filmmaker short); TheDorBrothers GTA VI Cursed Trailer (trailer form, not a narrative short). 21 existing rows refreshed at 09:57."},
+  {"tZh": "本批限定追加 2 条 · 合计 112（既有 110 未整架刷新）", "t": "+2 limited this batch · 112 total (existing 110 not bulk-refreshed)", "pZh": "部分更新，不是 11 栏全量。官方 API 2026-11-21 10:04：whorange__《大树啊，你看见一切。你看见她了吗？》（神话题材风格化3D动画叙事片段，非完整剧情短片）；Gossip_Goblin《重要广播》（新片宣传小品／奇幻喜剧推广案例；后段为新片宣传，非独立剧情成片）。不得把后者写成独立剧情成片。既有 110 条保留，指标未整架刷新。", "p": "Partial update, not an 11-tab pass. Official API 2026-11-21 10:04: whorange__ “Great tree, you see everything. Have you seen her?” (A stylized 3D animated narrative vignette on a mythological subject, not a complete story short.); Gossip_Goblin “An important broadcast” (New-film promotional skit / fantasy-comedy promo case; The latter part is a promo for a new film, not a standalone narrative short.). Do not describe the latter as a standalone narrative film. The existing 110 rows are kept; metrics were not bulk-refreshed."},
   { tZh:"赛璐璐二创与系列短剧仍是主力", t:"Cel secondaries and episodic shorts still dominate", pZh:"PsyopAnime / HatimsShorts / EHuanglu 等本批各最多 2 条；政治小品与工具展示帖穿插，但排除纯实拍机器人新闻。", p:"PsyopAnime / HatimsShorts / EHuanglu capped at 2 new each; political skits and tool showcases appear, real-robot news excluded." },
   { tZh:"关键词会漏无 AI 文案的帖", t:"Keyword search misses caption-less AI", pZh:"本轮再次证明：不写 AI 的爆款只能靠创作者主页扫到（如概念广告级动作片）。", p:"Again: hits that never say “AI” only show up via creator sweeps (e.g. spec-ad action cuts)." },
   { tZh:"只追加、不覆盖", t:"Append-only — never overwrite", pZh:"Oct 23 批次卡片全部保留；指标可原地刷新，行不删除。", p:"Oct 23 rows all kept; metrics may refresh in place, rows never deleted." }
@@ -20333,6 +20401,7 @@ const TUTORIALS =
 /* TAG_ZH: Chinese label for each tag (tool names like Higgsfield/Dreamina/Seedance/Kling stay as-is, so leave them out).
    New tag? Add "English":"中文" here; unmapped tags show English only. */
 const TAG_ZH = {
+  "3D animation":"3D动画","Vignette":"叙事片段","Promotional":"宣传",
   "Comedy":"喜剧","Comedy skit":"喜剧短剧","Sequel":"续集","Retro drama":"复古剧情","90s Hollywood":"90 年代好莱坞","90s":"90 年代",
   "Holiday mini movie":"节日迷你电影","Course CTA":"课程引导","Cinematic showcase":"电影感展示","Fantasy":"奇幻","Tool launch":"工具发布",
   "Halloween":"万圣节","Fashion":"时尚","Photoreal parody":"复古剧集恶搞","Drama":"剧情","Short film":"短片","Meme":"梗片",
@@ -20987,17 +21056,17 @@ renderSortBars();
 
 
 /* ---- Film Festivals · open submissions (v43 weekly refresh, runtime on every card). Merge by id. Source: festivals_2026-11-10. ---- */
-const FEST_UPDATED = "2026-11-19";
-const FEST_UPDATED_ZH = "2026-11-19（北京时间；在 11/16–11/19 部分重核之上增补 Chroma Awards 第2季，不是全量新征片目录，不是 11 栏全量更新）";
-const FEST_WINDOW_ZH = "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-16 至 11/19 部分重核，不是全量新征片目录，不是 11 栏全量更新。Cue 已核截止 11/20 23:59 ET（不要改写成上海 11/21）。M.AI 已核日历截止 11/20（时区官网未标明，不猜）。已核本周截止为 4：1bfs、Cue、M.AI、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。2026-11-19 晚间增补 Chroma Awards 第2季：官网 FAQ/条款截止 2027-01-07 23:45 PT（对应北京时间 1/8 15:45，不以北京日历改写官方截止日）；ElevenLabs 博客导语另写 until January 1, 2027，同文正文与官网均为 1 月 7 日 23:45 PT，本卡以官网条款/FAQ 为准。列出不等于可投资格，不判断具体作品可投。";
+const FEST_UPDATED = "2026-11-21";
+const FEST_UPDATED_ZH = "2026-11-21（北京时间；仅电影节截止字段纠正，不是全量新征片目录，不是 11 栏全量更新）";
+
 const FESTIVALS = [
-  {
+    {
     "id": "1bfs-ai-film-award-2027",
     "nameZh": "10亿粉丝峰会 AI 电影奖 2027（迪拜）",
     "nameEn": "1 Billion Followers Summit AI Film Award 2027",
-    "deadline": "2026-11-20",
-    "deadlineLabelZh": "11/20 截止",
-    "openUntil": "2026-11-20",
+    "deadline": "2026-12-05",
+    "deadlineLabelZh": "截止 12/5（官网现为 5 December 2026；提交仍开放。这是官方延期，不是到期关闭）",
+    "openUntil": "2026-12-05",
     "url": "https://www.1billionsummit.com/ai-award-2027/submit",
     "sourceUrl": "https://www.1billionsummit.com/ai-award-2027",
     "tags": [
@@ -21006,21 +21075,24 @@ const FESTIVALS = [
       "短片"
     ],
     "feeNote": "免费报名",
-    "whyZh": "100万美元大奖；须至少70%由 Seedance 生成，16:9、英文字幕、片头需加官方 intro；Top5 迪拜首映。官网今晚仍写 Submissions are open，截止 20 November 2026，片长 5–7 分钟。",
+    "whyZh": "100万美元大奖；须至少70%由 Seedance 生成，16:9、英文字幕、片头需加官方 intro；Top5 迪拜首映。2026-11-21 独立复核官网 home + submit 仍写 Submissions are open，截止为 5 December 2026（现网卡片上的 20 November 2026 已过时）。片长 5–7 分钟。这是官方延期，不是到期关闭。时区官网未标明，不猜。本卡不判断具体作品可投。",
     "aiPolicy": "explicit",
     "prestige": 4,
     "runtimeZh": "5–7分钟",
     "runtimeEn": "5–7 min",
     "runtimeSource": "https://www.1billionsummit.com/ai-award-2027",
-    "status": "open-this-week"
+    "status": "later",
+    "deadlineLabelEn": "Closes 12/5 (official page now: 5 December 2026; submissions still open. Official extension, not an expiry close.)",
+    "timezoneNote": "官网首页与提交页写 close on / Deadline 5 December 2026，时区未标明，不猜、不编造午夜或时区。不以北京日历改写官方日期。",
+    "whyEn": "$1,000,000 grand prize; at least 70% of the final film must be generated with Seedance; 16:9; English subtitles; official intro required; Top 5 premiere in Dubai. Independent official recheck on 2026-11-21 still reads “Submissions are open” and close / deadline 5 December 2026 (the live card’s 20 November 2026 is stale). Runtime 5–7 min. This is an official extension, not an expiry close. Timezone unstated on the official pages — not invented. This card does not judge eligibility of any specific work."
   },
-  {
+    {
     "id": "cue-xmas-26",
     "nameZh": "Cue 圣诞 AI 影展",
     "nameEn": "Cue Xmas ’26",
     "deadline": "2026-11-20",
-    "deadlineLabelZh": "截止 11/20 23:59 ET（已从官网条款页与首页证实）",
-    "timezoneNote": "官网条款：For Cue Xmas ’26, submissions open October 5 and close November 20, 2026 (Eastern Time). 官网首页：Submission deadline November 20 · 11:59 PM ET。不要改写成上海日历的 11/21。curl 仍是薄 JS 壳；2026-11-19 约 10:28 无 cookie 的官方渲染页已核到上述句子。",
+    "deadlineLabelZh": "截止 11/20 23:59 ET（官网首页：Submission deadline November 20 · 11:59 PM ET。不要改写成上海 11/21 截止日）",
+    "timezoneNote": "官方截止 November 20, 2026, 11:59 PM ET（EST, UTC−5）＝ 2026-11-21 12:59 Asia/Shanghai。保留官方 ET，不得把官方截止日改写成上海日历 11/21。2026-11-21 约 10:33 WebFetch 渲染首页仍见 “Now accepting films” / “Submission deadline November 20 · 11:59 PM ET”，当时尚未到点，不得提前关闭。今日 /rules 为 HTTP 404；条款原句来自 2026-11-19 约 10:28 官方渲染条款页：For Cue Xmas ’26, submissions open October 5 and close November 20, 2026 (Eastern Time)。curl 仍是薄 JS 壳，不得用壳页否定渲染页原句。",
     "openUntil": "2026-11-20",
     "url": "https://cuefilmfest.com/",
     "sourceUrl": "https://cuefilmfest.com/",
@@ -21030,7 +21102,7 @@ const FESTIVALS = [
       "AI短片"
     ],
     "feeNote": "免费",
-    "whyZh": "已核截止 11/20 23:59 ET（官网条款与首页原句），不是上海日历 11/21。仅当你有圣诞向成片时值得核对官网；本卡不判断具体作品可投。片长 2:00–6:00。",
+    "whyZh": "已核截止 11/20 23:59 ET（官网首页原句；条款页 11/19 已核，今日 /rules 404）。换算为 2026-11-21 12:59 北京时间，但官方截止日仍是 ET 的 11/20，不是上海日历 11/21。若在 12:59 之前上线，必须保持开放 / 本周截止，不得提前标过期。仅当你有圣诞向成片时值得核对官网；本卡不判断具体作品可投。片长 2:00–6:00。",
     "aiPolicy": "explicit",
     "fitNoteZh": "主题锁圣诞",
     "prestige": 1,
@@ -21038,15 +21110,48 @@ const FESTIVALS = [
     "runtimeZh": "2–6分钟（最长6:00）",
     "runtimeEn": "2:00–6:00 (max 6 min)",
     "runtimeSource": "https://cuefilmfest.com/",
-    "whyEn": "Verified official close November 20, 2026, 11:59 PM ET (terms + homepage). Do not rewrite as a Shanghai calendar date of Nov 21. Christmas-theme shorts only; this card does not judge eligibility of any specific work. Runtime 2:00–6:00."
+    "whyEn": "Verified official close November 20, 2026, 11:59 PM ET (homepage sentence reconfirmed; terms sentence verified 2026-11-19, /rules is 404 today). That instant is 2026-11-21 12:59 Asia/Shanghai, but the official deadline date remains Nov 20 ET — do not rewrite it as a Shanghai Nov 21 deadline. If this ships before 12:59, keep it open / due this week; never close it early. Christmas-theme shorts only; this card does not judge eligibility of any specific work. Runtime 2:00–6:00.",
+    "deadlineLabelEn": "Closes 11/20 11:59 PM ET (official homepage: “Submission deadline November 20 · 11:59 PM ET”). Do not rewrite as a Shanghai calendar deadline of 11/21.",
+    "clock": {
+      "beforeCue": {
+        "deadline": "2026-11-20",
+        "openUntil": "2026-11-20",
+        "status": "open-this-week",
+        "deadlineLabelZh": "截止 11/20 23:59 ET（官网首页：Submission deadline November 20 · 11:59 PM ET。不要改写成上海 11/21 截止日）",
+        "deadlineLabelEn": "Closes 11/20 11:59 PM ET (official homepage: “Submission deadline November 20 · 11:59 PM ET”). Do not rewrite as a Shanghai calendar deadline of 11/21.",
+        "timezoneNote": "官方截止 November 20, 2026, 11:59 PM ET（EST, UTC−5）＝ 2026-11-21 12:59 Asia/Shanghai。保留官方 ET，不得把官方截止日改写成上海日历 11/21。2026-11-21 约 10:33 WebFetch 渲染首页仍见 “Now accepting films” / “Submission deadline November 20 · 11:59 PM ET”，当时尚未到点，不得提前关闭。今日 /rules 为 HTTP 404；条款原句来自 2026-11-19 约 10:28 官方渲染条款页：For Cue Xmas ’26, submissions open October 5 and close November 20, 2026 (Eastern Time)。curl 仍是薄 JS 壳，不得用壳页否定渲染页原句。",
+        "whyZh": "已核截止 11/20 23:59 ET（官网首页原句；条款页 11/19 已核，今日 /rules 404）。换算为 2026-11-21 12:59 北京时间，但官方截止日仍是 ET 的 11/20，不是上海日历 11/21。若在 12:59 之前上线，必须保持开放 / 本周截止，不得提前标过期。仅当你有圣诞向成片时值得核对官网；本卡不判断具体作品可投。片长 2:00–6:00。",
+        "whyEn": "Verified official close November 20, 2026, 11:59 PM ET (homepage sentence reconfirmed; terms sentence verified 2026-11-19, /rules is 404 today). That instant is 2026-11-21 12:59 Asia/Shanghai, but the official deadline date remains Nov 20 ET — do not rewrite it as a Shanghai Nov 21 deadline. If this ships before 12:59, keep it open / due this week; never close it early. Christmas-theme shorts only; this card does not judge eligibility of any specific work. Runtime 2:00–6:00."
+      },
+      "afterCueSameDay": {
+        "deadline": "2026-11-20",
+        "openUntil": "2026-11-20",
+        "status": "expired",
+        "deadlineLabelZh": "已过截止：官方截止为 11/20 23:59 ET（＝ 2026-11-21 12:59 北京时间）。官方时区不变，不要改写成上海日历 11/21 作为官方截止日。卡片保留，不撤下。",
+        "deadlineLabelEn": "Deadline passed: official close was 11/20 11:59 PM ET (= 2026-11-21 12:59 Asia/Shanghai). Keep the official ET timezone; do not rewrite the official deadline date as a Shanghai calendar 11/21. Keep the card; do not wipe it.",
+        "timezoneNote": "官方截止仍是 November 20, 2026, 11:59 PM ET（EST, UTC−5）＝ 2026-11-21 12:59 Asia/Shanghai。已过该时刻后去掉 open-this-week，改标已过截止，不得继续显示过时开放。不得把官方截止日改写成上海 11/21。",
+        "whyZh": "官方截止 11/20 23:59 ET 已过（对应 2026-11-21 12:59 北京时间）。官方时区不变。卡片保留，不撤下，不判断可投。片长 2:00–6:00。",
+        "whyEn": "The official close of November 20, 2026, 11:59 PM ET has passed (that instant is 2026-11-21 12:59 Asia/Shanghai). Official timezone unchanged. Keep the card; do not wipe it; this card does not judge eligibility. Runtime 2:00–6:00."
+      },
+      "fromNov22": {
+        "deadline": "2026-11-20",
+        "openUntil": "2026-11-20",
+        "status": "expired",
+        "deadlineLabelZh": "已过截止：官方截止为 11/20 23:59 ET（＝ 2026-11-21 12:59 北京时间）。官方时区不变，不要改写成上海日历 11/21 作为官方截止日。卡片保留，不撤下。",
+        "deadlineLabelEn": "Deadline passed: official close was 11/20 11:59 PM ET (= 2026-11-21 12:59 Asia/Shanghai). Keep the official ET timezone; do not rewrite the official deadline date as a Shanghai calendar 11/21. Keep the card; do not wipe it.",
+        "timezoneNote": "官方截止仍是 November 20, 2026, 11:59 PM ET（EST, UTC−5）＝ 2026-11-21 12:59 Asia/Shanghai。已过该时刻后去掉 open-this-week，改标已过截止，不得继续显示过时开放。不得把官方截止日改写成上海 11/21。",
+        "whyZh": "官方截止 11/20 23:59 ET 已过（对应 2026-11-21 12:59 北京时间）。官方时区不变。卡片保留，不撤下，不判断可投。片长 2:00–6:00。",
+        "whyEn": "The official close of November 20, 2026, 11:59 PM ET has passed (that instant is 2026-11-21 12:59 Asia/Shanghai). Official timezone unchanged. Keep the card; do not wipe it; this card does not judge eligibility. Runtime 2:00–6:00."
+      }
+    }
   },
-  {
+    {
     "id": "mai-fest",
     "nameZh": "M.AI 国际 AI 短片节",
     "nameEn": "M.AI International AI Short Film Festival",
-    "deadline": "2026-11-20",
-    "deadlineLabelZh": "截止 11/20（官网英/意文页已证实；时区官网未标明，不猜）",
-    "openUntil": "2026-11-20",
+    "deadline": null,
+    "deadlineLabelZh": "截止待核：今日官网征片仍 open，不见截止日与时区。2026-11-19 曾核到 “by 20 November 2026 / Deadline 20 November 2026”，该句今日不可见。不得用旧 11/20 断言当前已关，也不得断言当前已无截止。",
+    "openUntil": null,
     "url": "https://www.maifestival.org/",
     "sourceUrl": "https://www.maifestival.org/",
     "tags": [
@@ -21055,22 +21160,23 @@ const FESTIVALS = [
       "奖金"
     ],
     "feeNote": "免费；奖金合计约 €5,750",
-    "whyZh": "已核日历截止 11/20（官网英/意文页）。时区官网未标明，不猜。免费 + 现金奖 + 明确 AI under human direction。本卡不判断具体作品可投。",
+    "whyZh": "今日（2026-11-21）官网征片仍写 open，截止日与时区均未见——这是今日发现，不是「已确认无截止」。另：2026-11-19 约 10:28 独立渲染页曾核到英/意文 20 November 2026 / 20 novembre 2026 历史句，该句今日不可见，只作历史证据，不得再写成当前已核截止。去掉现网 open-this-week + deadline=2026-11-20 的组合；日期芯片应显示 —（不要继续把 11/20 当作当前官方截止）。免费 + 现金奖 + 明确 AI under human direction。卡片保留，不清空。本卡不判断具体作品可投。",
     "aiPolicy": "explicit",
     "prestige": 3,
-    "status": "open-this-week",
+    "status": "unverified-deadline",
     "runtimeZh": "≤20分钟（含字幕/片尾；实验可例外）",
     "runtimeEn": "≤20 min incl. credits (expt. except.)",
     "runtimeSource": "https://filmfreeway.com/MAIINTERNATIONALAISHORTFILMFESTIVAL",
-    "timezoneNote": "官网英文：Send us your AI short film by 20 November 2026. / Deadline 20 November 2026 · Entry fee FREE。意文页同为 20 novembre 2026。时区官网未标明，不猜、不编造。curl 仍是薄 JS 壳；2026-11-19 约 10:28 无 cookie 的官方渲染页已核到上述句子。首页仍写经 FilmFreeway 提交，FilmFreeway 墙保持披露，不推翻首页日期。",
-    "whyEn": "Verified official calendar date 20 November 2026 (English and Italian official pages). Timezone still unstated — not invented. Free entry, cash prizes, AI under human direction. This card does not judge eligibility of any specific work."
+    "timezoneNote": "【今日 2026-11-21 约 10:33 发现，与 11/19 历史句分开保存】今日渲染首页/rules/submit 可见：“18–20 December 2026, Cagliari, Sardinia.”“The 2026 call for entries is open to filmmakers worldwide.” 不见截止日，也不见时区。时区不猜。【历史证据，不得写成今日官方截止】v50 独立 Chrome 渲染页 2026-11-19 约 10:28 Asia/Shanghai 曾见英文 “Send us your AI short film by 20 November 2026.” / “Deadline 20 November 2026 · Entry fee FREE”，意文页 “entro il 20 novembre 2026” / “Scadenza 20 novembre 2026”。该句今日不可见。不得用旧倒计时或旧日期断言「当前已无截止」或「已关闭」。待 FilmFreeway 或后续渲染页跟进。curl 今日仍是薄 JS 壳。",
+    "whyEn": "Today (2026-11-21) the official pages still say the 2026 call is open, and no deadline or timezone is visible — that is today’s finding, not a confirmation that there is no deadline. Separately, an independent rendered-page check around 2026-11-19 10:28 Asia/Shanghai previously saw the English/Italian official sentences “by 20 November 2026” / “Deadline 20 November 2026” / “20 novembre 2026”; that sentence is not visible today and is retained only as historical evidence, not as a current verified deadline. Remove the live pairing of open-this-week + deadline 2026-11-20; the date chip should show — (do not keep 11/20 as the current official close). Free entry, cash prizes, AI under human direction. Keep the card; do not wipe it. This card does not judge eligibility of any specific work.",
+    "deadlineLabelEn": "Deadline unverified: today’s official pages still say the call is open, with no deadline or timezone visible. A 2026-11-19 check previously saw “by 20 November 2026 / Deadline 20 November 2026”; that sentence is not visible today. Do not use the old 11/20 date to declare the call now closed, and do not declare that there is currently no deadline."
   },
-  {
+    {
     "id": "aiiff",
     "nameZh": "AI 国际电影节",
     "nameEn": "AI International Film Festival",
     "deadline": "2026-11-21",
-    "deadlineLabelZh": "正规档 11/21",
+    "deadlineLabelZh": "正规档 11/21（时区官网未标明，不猜。页上 2026-11-15T18:00:00-08:00 是 11/15 活动倒计时，不得当成投稿时区）",
     "openUntil": "2026-11-21",
     "url": "https://aifilmfest.org/",
     "sourceUrl": "https://aifilmfest.org/",
@@ -21079,13 +21185,48 @@ const FESTIVALS = [
       "好莱坞展映"
     ],
     "feeNote": "见 FilmFreeway",
-    "whyZh": "老牌独立 AI 影展；中国导演作品曾入选",
+    "whyZh": "老牌独立 AI 影展；中国导演作品曾入选。官网正规档日历日为 11/21，时区未标明，不猜。早鸟 10/31。本卡不判断具体作品可投。",
     "aiPolicy": "explicit",
     "prestige": 3,
     "status": "open-this-week",
     "runtimeZh": "无硬性上限（短片/长片均可）",
     "runtimeEn": "no hard max (shorts & features)",
-    "runtimeSource": "https://aifilmfest.org/"
+    "runtimeSource": "https://aifilmfest.org/",
+    "deadlineLabelEn": "Regular deadline 11/21 (timezone unstated on the official site — not invented. The page’s 2026-11-15T18:00:00-08:00 is a Nov 15 event countdown, not a submission timezone).",
+    "timezoneNote": "官网正文：“Early bird deadline October 31 · regular deadline November 21”。HTML 中无投稿截止时区（未见 ET/PT/UTC/GMT）。页上 JavaScript `2026-11-15T18:00:00-08:00` 注释为 countdown to November 15, 2026，是 11/15 活动倒计时，不得当成投稿时区，也不得据此把截止延后。submit/rules 路径今日 404。今日（上海 11/21 全天）不得提前关闭，也不得猜时区。",
+    "whyEn": "Long-running independent AI festival; Chinese directors have been selected before. Official regular deadline is the calendar date November 21; timezone unstated — not invented. Early bird October 31. This card does not judge eligibility of any specific work.",
+    "clock": {
+      "beforeCue": {
+        "deadline": "2026-11-21",
+        "openUntil": "2026-11-21",
+        "status": "open-this-week",
+        "deadlineLabelZh": "正规档 11/21（时区官网未标明，不猜。页上 2026-11-15T18:00:00-08:00 是 11/15 活动倒计时，不得当成投稿时区）",
+        "deadlineLabelEn": "Regular deadline 11/21 (timezone unstated on the official site — not invented. The page’s 2026-11-15T18:00:00-08:00 is a Nov 15 event countdown, not a submission timezone).",
+        "timezoneNote": "官网正文：“Early bird deadline October 31 · regular deadline November 21”。HTML 中无投稿截止时区（未见 ET/PT/UTC/GMT）。页上 JavaScript `2026-11-15T18:00:00-08:00` 注释为 countdown to November 15, 2026，是 11/15 活动倒计时，不得当成投稿时区，也不得据此把截止延后。submit/rules 路径今日 404。今日（上海 11/21 全天）不得提前关闭，也不得猜时区。",
+        "whyZh": "老牌独立 AI 影展；中国导演作品曾入选。官网正规档日历日为 11/21，时区未标明，不猜。早鸟 10/31。本卡不判断具体作品可投。",
+        "whyEn": "Long-running independent AI festival; Chinese directors have been selected before. Official regular deadline is the calendar date November 21; timezone unstated — not invented. Early bird October 31. This card does not judge eligibility of any specific work."
+      },
+      "afterCueSameDay": {
+        "deadline": "2026-11-21",
+        "openUntil": "2026-11-21",
+        "status": "open-this-week",
+        "deadlineLabelZh": "正规档 11/21（时区官网未标明，不猜。页上 2026-11-15T18:00:00-08:00 是 11/15 活动倒计时，不得当成投稿时区）",
+        "deadlineLabelEn": "Regular deadline 11/21 (timezone unstated on the official site — not invented. The page’s 2026-11-15T18:00:00-08:00 is a Nov 15 event countdown, not a submission timezone).",
+        "timezoneNote": "官网正文：“Early bird deadline October 31 · regular deadline November 21”。HTML 中无投稿截止时区（未见 ET/PT/UTC/GMT）。页上 JavaScript `2026-11-15T18:00:00-08:00` 注释为 countdown to November 15, 2026，是 11/15 活动倒计时，不得当成投稿时区，也不得据此把截止延后。submit/rules 路径今日 404。今日（上海 11/21 全天）不得提前关闭，也不得猜时区。",
+        "whyZh": "老牌独立 AI 影展；中国导演作品曾入选。官网正规档日历日为 11/21，时区未标明，不猜。早鸟 10/31。本卡不判断具体作品可投。",
+        "whyEn": "Long-running independent AI festival; Chinese directors have been selected before. Official regular deadline is the calendar date November 21; timezone unstated — not invented. Early bird October 31. This card does not judge eligibility of any specific work."
+      },
+      "fromNov22": {
+        "deadline": "2026-11-21",
+        "openUntil": "2026-11-21",
+        "status": "unverified-deadline",
+        "deadlineLabelZh": "截止待核：官网日历日为 11/21，时区仍未标明，不猜已关或仍开到某刻。卡片保留。",
+        "deadlineLabelEn": "Deadline unverified: the official calendar date is 11/21, timezone still unstated — do not guess that it has closed or that it remains open until a specific instant. Keep the card.",
+        "timezoneNote": "官网正文仍只写 regular deadline November 21，时区未标明。11/22 及以后不得凭猜测宣布已关或仍开到某刻；改为截止待核。页上 2026-11-15T18:00:00-08:00 仍不得当成投稿时区。",
+        "whyZh": "老牌独立 AI 影展；中国导演作品曾入选。官网日历日为 11/21，时区仍未标明，故截止待核，不得猜测已关或仍开到某刻。卡片保留。本卡不判断具体作品可投。",
+        "whyEn": "Long-running independent AI festival; Chinese directors have been selected before. Official calendar date is November 21, timezone still unstated, so the deadline is unverified — do not guess that it has closed or remains open until a specific instant. Keep the card. This card does not judge eligibility of any specific work."
+      }
+    }
   },
   {
     "id": "svaiff-korea-2026",
@@ -21473,37 +21614,124 @@ const FEST_STATUS = {
   "open-this-week": ["本周截止","This week","week"],
   "open-soon": ["近窗","Soon","near"],
   "later": ["稍后","Later","later"],
-  "unverified-deadline": ["截止待核","Deadline unverified","unverified"]
+  "unverified-deadline": ["截止待核","Deadline unverified","unverified"],
+  "expired": ["已过截止","Deadline passed","expired"]
 };
 const FEST_AI = {
   "explicit": ["明确接受AI","AI accepted","explicit"],
   "allowed-disclose": ["允许并须披露","Allowed, disclose","disclose"],
   "unknown": ["政策未知","Policy unstated","unknown"]
 };
-function festDateKey(f){ return f.openUntil || f.deadline || "9999-12-31"; }
+function festDateKey(f){ return f.openUntil || f.deadline || ""; }
+function festSortKey(f){ return f.openUntil || f.deadline || "9999-12-31"; }
 function festMD(iso){
   const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso||""));
   return m ? {y:m[1], md:String(+m[2])+"/"+String(+m[3])} : {y:"", md:"—"};
 }
+/* v52 clock: evaluate Cue and AIIFF at read time in Asia/Shanghai.
+   Cue official close is 2026-11-20 23:59 ET = 2026-11-21 12:59 +08.
+   Do not freeze preparedAt 10:48. An open page re-resolves at those instants. */
+const CUE_END_MS = Date.parse("2026-11-21T12:59:00+08:00");
+const AIIFF_ROLL_MS = Date.parse("2026-11-22T00:00:00+08:00");
+function festClockOverride(){
+  if(typeof globalThis.__AFH_FEST_NOW==="number" && Number.isFinite(globalThis.__AFH_FEST_NOW)) return globalThis.__AFH_FEST_NOW;
+  try{
+    const q=new URLSearchParams(location.search).get("festNow");
+    if(q){
+      const n=Date.parse(q);
+      if(Number.isFinite(n)) return n;
+    }
+  }catch(_e){}
+  return null;
+}
+function festEvalTs(){
+  const o=festClockOverride();
+  return o==null ? Date.now() : o;
+}
+function festPhase(ts){
+  const t=(ts==null)?festEvalTs():ts;
+  if(t < CUE_END_MS) return "beforeCue";
+  if(t < AIIFF_ROLL_MS) return "afterCueSameDay";
+  return "fromNov22";
+}
+function resolveFestival(f, ts){
+  if(!f || !f.clock) return f;
+  const v=f.clock[festPhase(ts)];
+  if(!v) return f;
+  const out=Object.assign({}, f);
+  delete out.clock;
+  return Object.assign(out, v);
+}
+function resolvedFestivals(ts){
+  return (typeof FESTIVALS!=="undefined"?FESTIVALS:[]).map(f=>resolveFestival(f, ts));
+}
+const FEST_CHROME = {
+  "beforeCue": {
+    "zh": "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-21 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 已核截止 11/20 23:59 ET（＝今日北京时间 12:59；不要改写成上海 11/21 截止日），此刻尚未到点，保持本周截止。AIIFF 正规档日历日 11/21，时区官网未标明，不猜。M.AI 今日官网征片仍 open、不见截止，改为截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存，不得再用 11/20 作为当前已核截止。已核本周截止为 2：Cue、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留：官网 FAQ/条款截止 2027-01-07 23:45 PT（不以北京日历改写官方截止日）。列出不等于可投资格，不判断具体作品可投。",
+    "en": "Open this week and the next stretch. Confirm the deadline on the official site. 2026-11-21 partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue is a verified official close on November 20, 2026, 11:59 PM ET (= 12:59 Asia/Shanghai today; do not rewrite as a Shanghai Nov 21 deadline) and is still due this week because that instant has not arrived. AIIFF’s regular deadline is the calendar date November 21; timezone unstated, not invented. M.AI’s official pages today still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding, and is no longer a current verified close. Verified Due this week is 2: Cue, AIIFF. SVAIFF’s deadline is 25 November 23:59:59 KST — open-soon, not counted in Due this week. The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept (official close 7 January 2027, 11:45pm PT; do not rewrite the official date as a Beijing calendar date). A listing is not entry clearance; eligibility of any specific work is not judged.",
+    "footerZh": "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-21 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 已核截止 11/20 23:59 ET（＝今日北京时间 12:59；不要改写成上海 11/21 截止日），此刻尚未到点，保持本周截止。AIIFF 正规档日历日 11/21，时区官网未标明，不猜。M.AI 今日官网征片仍 open、不见截止，改为截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存，不得再用 11/20 作为当前已核截止。已核本周截止为 2：Cue、AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留：官网 FAQ/条款截止 2027-01-07 23:45 PT（不以北京日历改写官方截止日）。列出不等于可投资格，不判断具体作品可投。 只作私人投稿参考，不保证与官网同步。投递前请打开官网核对。政策未写明的标为「政策未知」，不臆测接受或拒绝。历史视频架不受本页影响。",
+    "footerEn": "Open this week and the next stretch. Confirm the deadline on the official site. 2026-11-21 partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue is a verified official close on November 20, 2026, 11:59 PM ET (= 12:59 Asia/Shanghai today; do not rewrite as a Shanghai Nov 21 deadline) and is still due this week because that instant has not arrived. AIIFF’s regular deadline is the calendar date November 21; timezone unstated, not invented. M.AI’s official pages today still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding, and is no longer a current verified close. Verified Due this week is 2: Cue, AIIFF. SVAIFF’s deadline is 25 November 23:59:59 KST — open-soon, not counted in Due this week. The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept (official close 7 January 2027, 11:45pm PT; do not rewrite the official date as a Beijing calendar date). A listing is not entry clearance; eligibility of any specific work is not judged. Private reference only — not guaranteed live. Check the official page before you submit. Where a policy is unstated it is marked unknown; nothing is guessed. Other shelves are unchanged."
+  },
+  "afterCueSameDay": {
+    "zh": "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-21 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 官方截止 11/20 23:59 ET（＝今日北京时间 12:59）已过，改为已过截止；官方时区不变，不要改写成上海 11/21 截止日；卡片保留。AIIFF 正规档日历日 11/21，时区官网未标明，不猜。M.AI 今日官网征片仍 open、不见截止，改为截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存。已核本周截止为 1：AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留。列出不等于可投资格，不判断具体作品可投。",
+    "en": "Open this week and the next stretch. Confirm the deadline on the official site. 2026-11-21 partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue’s official close of November 20, 2026, 11:59 PM ET (= 12:59 Asia/Shanghai today) has passed, so the card is marked Deadline passed; official timezone unchanged; do not rewrite as a Shanghai Nov 21 deadline; keep the card. AIIFF’s regular deadline is the calendar date November 21; timezone unstated, not invented. M.AI’s official pages today still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding. Verified Due this week is 1: AIIFF. SVAIFF’s deadline is 25 November 23:59:59 KST — open-soon, not counted in Due this week. The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept. A listing is not entry clearance; eligibility of any specific work is not judged.",
+    "footerZh": "本周/近十日可递交 · 截止日请以官网为准 · 2026-11-21 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 官方截止 11/20 23:59 ET（＝今日北京时间 12:59）已过，改为已过截止；官方时区不变，不要改写成上海 11/21 截止日；卡片保留。AIIFF 正规档日历日 11/21，时区官网未标明，不猜。M.AI 今日官网征片仍 open、不见截止，改为截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存。已核本周截止为 1：AIIFF。SVAIFF 截止 11/25 23:59:59 KST，属近窗，不计入已核本周。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留。列出不等于可投资格，不判断具体作品可投。 只作私人投稿参考，不保证与官网同步。投递前请打开官网核对。政策未写明的标为「政策未知」，不臆测接受或拒绝。历史视频架不受本页影响。",
+    "footerEn": "Open this week and the next stretch. Confirm the deadline on the official site. 2026-11-21 partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue’s official close of November 20, 2026, 11:59 PM ET (= 12:59 Asia/Shanghai today) has passed, so the card is marked Deadline passed; official timezone unchanged; do not rewrite as a Shanghai Nov 21 deadline; keep the card. AIIFF’s regular deadline is the calendar date November 21; timezone unstated, not invented. M.AI’s official pages today still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding. Verified Due this week is 1: AIIFF. SVAIFF’s deadline is 25 November 23:59:59 KST — open-soon, not counted in Due this week. The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept. A listing is not entry clearance; eligibility of any specific work is not judged. Private reference only — not guaranteed live. Check the official page before you submit. Where a policy is unstated it is marked unknown; nothing is guessed. Other shelves are unchanged."
+  },
+  "fromNov22": {
+    "zh": "本周/近十日可递交 · 截止日请以官网为准 · 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 官方截止 11/20 23:59 ET 已过，改为已过截止；官方时区不变；卡片保留。AIIFF 官网日历日为 11/21，时区仍未标明，改为截止待核，不猜已关或仍开到某刻；卡片保留。M.AI 官网征片仍 open、不见截止，截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存。已核本周截止为 0。已核最近截止为 SVAIFF 11/25 23:59:59 KST（近窗，不计入已核本周）。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留。列出不等于可投资格，不判断具体作品可投。",
+    "en": "Open this week and the next stretch. Confirm the deadline on the official site. Partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue’s official close of November 20, 2026, 11:59 PM ET has passed; mark Deadline passed; official timezone unchanged; keep the card. AIIFF’s official calendar date is November 21, timezone still unstated, so the deadline is unverified — do not guess that it has closed or remains open until a specific instant; keep the card. M.AI’s official pages still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding. Verified Due this week is 0. Soonest verified deadline is SVAIFF 11/25 23:59:59 KST (open-soon, not counted in Due this week). The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept. A listing is not entry clearance; eligibility of any specific work is not judged.",
+    "footerZh": "本周/近十日可递交 · 截止日请以官网为准 · 部分更新：只纠正电影节截止字段，不是全量新征片目录，不是 11 栏全量更新。1BFS 官网现为 12/5 截止、提交仍开放，已改为稍后（官方延期，不是到期关闭）。Cue 官方截止 11/20 23:59 ET 已过，改为已过截止；官方时区不变；卡片保留。AIIFF 官网日历日为 11/21，时区仍未标明，改为截止待核，不猜已关或仍开到某刻；卡片保留。M.AI 官网征片仍 open、不见截止，截止待核；2026-11-19 曾核到的 11/20 历史句与今日发现分开保存。已核本周截止为 0。已核最近截止为 SVAIFF 11/25 23:59:59 KST（近窗，不计入已核本周）。Higgsfield 规则 19:00 UTC 与 JSON-LD 17:00 UTC 冲突仍写在该卡片上。布拉格仍不在已核开放列表。另列有条件传统节（北海道 / 地拉那 / ITFS）及 Flick（限制写在卡片上）。Chroma Awards 第2季保留。列出不等于可投资格，不判断具体作品可投。 只作私人投稿参考，不保证与官网同步。投递前请打开官网核对。政策未写明的标为「政策未知」，不臆测接受或拒绝。历史视频架不受本页影响。",
+    "footerEn": "Open this week and the next stretch. Confirm the deadline on the official site. Partial update: festival deadline fields only — not a full new open-call catalogue, and not an 11-tab pass. 1BFS official close is now 5 December 2026 with submissions still open; moved to Later (official extension, not an expiry close). Cue’s official close of November 20, 2026, 11:59 PM ET has passed; mark Deadline passed; official timezone unchanged; keep the card. AIIFF’s official calendar date is November 21, timezone still unstated, so the deadline is unverified — do not guess that it has closed or remains open until a specific instant; keep the card. M.AI’s official pages still say the call is open with no deadline visible, so the deadline is unverified; the 20 November 2026 sentence seen on 2026-11-19 is kept as historical evidence, distinct from today’s finding. Verified Due this week is 0. Soonest verified deadline is SVAIFF 11/25 23:59:59 KST (open-soon, not counted in Due this week). The Higgsfield Official Rules 19:00 UTC vs JSON-LD 17:00 UTC conflict remains on that card. Cine Prague stays off the verified-open list. Conditional traditional festivals (Hokkaido / Tirana / ITFS) and Flick stay listed with limits on the cards. Chroma Awards Season 2 is kept. A listing is not entry clearance; eligibility of any specific work is not judged. Private reference only — not guaranteed live. Check the official page before you submit. Where a policy is unstated it is marked unknown; nothing is guessed. Other shelves are unchanged."
+  }
+};
+let FEST_WINDOW_ZH = "";
+function applyFestivalChrome(ts){
+  const c=FEST_CHROME[festPhase(ts)];
+  FEST_WINDOW_ZH=c.zh;
+  const sub=document.getElementById("fest-window");
+  if(sub) sub.innerHTML=`${esc(c.zh)}<span class="en">${esc(c.en)}</span>`;
+  const foot=document.getElementById("fest-footer");
+  if(foot) foot.innerHTML=`${esc(c.footerZh)}<span class="en">${esc(c.footerEn)}</span>`;
+  const fu=document.getElementById("fest-updated");
+  if(fu) fu.textContent="更新于 "+FEST_UPDATED_ZH;
+  const fue=document.getElementById("fest-updated-en");
+  if(fue) fue.textContent="Updated "+FEST_UPDATED;
+}
+function armFestClock(){
+  if(festClockOverride()!=null) return;
+  const now=Date.now();
+  [CUE_END_MS, AIIFF_ROLL_MS].forEach(t=>{
+    const delay=t-now;
+    if(delay>0 && delay<2147483647){
+      setTimeout(()=>{
+        applyFestivalChrome();
+        if(document.getElementById("page-festivals")&&document.getElementById("page-festivals").classList.contains("active")) layoutFestivals();
+      }, delay+30);
+    }
+  });
+}
 function layoutFestivals(){
+  applyFestivalChrome();
   const host=document.getElementById("fest-grid");
   const chips=document.getElementById("fest-filters");
   const st=document.getElementById("fest-stats");
   if(!host) return;
-  const all=(typeof FESTIVALS!=="undefined"?FESTIVALS:[]).slice();
-  const byDate=(a,b)=>festDateKey(a).localeCompare(festDateKey(b))||String(a.nameZh||"").localeCompare(String(b.nameZh||""),"zh");
+  const all=resolvedFestivals();
+  const byDate=(a,b)=>festSortKey(a).localeCompare(festSortKey(b))||String(a.nameZh||"").localeCompare(String(b.nameZh||""),"zh");
   const rows=all.filter(f=>festTag==="all"||(f.tags||[]).includes(festTag)).sort(byDate);
   if(st){
-    const verified=all.filter(f=>f.status!=="unverified-deadline");
+    const verifiedForCount=all.filter(f=>f.status!=="unverified-deadline");
     const pending=all.filter(f=>f.status==="unverified-deadline").length;
-    const week=verified.filter(f=>f.status==="open-this-week").length;
-    const soonest=verified.slice().sort(byDate)[0];
-    const d=soonest?festMD(festDateKey(soonest)):null;
+    const verifiedOpen=all.filter(f=>["open-this-week","open-soon","later"].includes(f.status));
+    const week=verifiedOpen.filter(f=>f.status==="open-this-week").length;
+    const soonest=verifiedOpen.slice().sort(byDate)[0];
+    const d=soonest?festMD(festDateKey(soonest)):{y:"", md:"—"};
     st.innerHTML=`<div class="stat"><div class="n">${all.length}</div><div class="l">条在列<span class="en">Listed</span></div></div>
-      <div class="stat"><div class="n">${verified.length}</div><div class="l">已核截止（含有条件，非可投资格）<span class="en">Deadlines checked, incl. conditional — not entry clearance</span></div></div>
+      <div class="stat"><div class="n">${verifiedForCount.length}</div><div class="l">已核截止（含有条件，非可投资格）<span class="en">Deadlines checked, incl. conditional — not entry clearance</span></div></div>
       <div class="stat"><div class="n">${pending}</div><div class="l">截止待核<span class="en">Deadline unverified</span></div></div>
       <div class="stat"><div class="n">${week}</div><div class="l">已核本周截止<span class="en">Verified due this week</span></div></div>
-      <div class="stat"><div class="n">${d?esc(d.md):"—"}</div><div class="l">已核最近截止<span class="en">Soonest verified deadline</span></div></div>`;
+      <div class="stat"><div class="n">${esc(d.md)}</div><div class="l">已核最近截止<span class="en">Soonest verified deadline</span></div></div>`;
   }
   if(chips){
     const opts=[["all","全部","All"]].concat(FEST_TAG_CHIPS.filter(t=>all.some(f=>(f.tags||[]).includes(t))).map(t=>[t,t,""]));
@@ -21519,15 +21747,16 @@ function layoutFestivals(){
     const stt=FEST_STATUS[f.status]||["","",""];
     const ai=FEST_AI[f.aiPolicy]||["政策未知","Policy unstated","unknown"];
     const tags=(f.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
-    return `<article class="fest" id="fest-${esc(f.id)}">
-      <div class="fest-when" title="开放至 ${esc(festDateKey(f))}">
+    const when=festDateKey(f)||"—";
+    return `<article class="fest" id="fest-${esc(f.id)}" data-status="${esc(f.status||"")}">
+      <div class="fest-when" title="开放至 ${esc(when)}">
         <div class="fest-md">${esc(d.md)}</div>
         <div class="fest-yr">${esc(d.y)}</div>
         ${stt[0]?`<div class="fest-st ${esc(stt[2])}">${esc(stt[0])}<span class="en">${esc(stt[1])}</span></div>`:""}
       </div>
       <div class="fest-body">
         <div class="fest-name">${esc(f.nameZh||"")}<span class="en">${esc(f.nameEn||"")}</span></div>
-        <div class="fest-dead">${esc(f.deadlineLabelZh||"")}</div>
+        <div class="fest-dead">${esc(f.deadlineLabelZh||"")}${f.deadlineLabelEn?`<span class="en">${esc(f.deadlineLabelEn)}</span>`:""}</div>
         ${f.timezoneNote?`<div class="fest-tz">${esc(f.timezoneNote)}</div>`:""}
         <div class="fest-runtime"><b>片子长度</b>${esc(f.runtimeZh||"未写明片长")}${f.runtimeEn?`<span class="en">${esc(f.runtimeEn)}</span>`:""}</div>
         ${f.feeNote?`<div class="fest-fee"><b>费用</b>${esc(f.feeNote)}</div>`:""}
@@ -21540,6 +21769,7 @@ function layoutFestivals(){
     </article>`;
   }).join("");
 }
+
 
 /* ---- tab routing (#hits / #x / #reddit / #youtube / #douyin / #tiktok / #bilibili / #xiaohongshu / #tutorials / #filmmakers / #festivals) ---- */
 const PAGES={hits:"Instagram 爆款 IG Hits",x:"X 爆款 X Hits",reddit:"Reddit 爆款 Reddit Hits",youtube:"YouTube 爆款 YT Hits",douyin:"抖音爆款 Douyin Hits",tiktok:"TikTok 爆款 TikTok Hits",bilibili:"哔哩哔哩爆款 Bilibili Hits",xiaohongshu:"小红书爆款 Xiaohongshu Hits",tutorials:"AI 教程 AI Tutorial",filmmakers:"顶尖 AI 电影人 Top AI Filmmakers",festivals:"电影节 Film Festivals"};
@@ -21560,6 +21790,8 @@ function route(){
   if(p==="festivals") layoutFestivals();
   scrollTo(0,0);
 }
+applyFestivalChrome();
+armFestClock();
 renderTrends();
 addEventListener("hashchange",route); route();
 </script>
