@@ -1,0 +1,90 @@
+{
+  "batch": "2026-11-23-reddit-weekly-backfill",
+  "scope": "One-time Reddit backfill from the community showcase; Xiaohongshu and other lanes unchanged.",
+  "publishedAt": "2026-11-23T02:04:09+08:00",
+  "rankingSource": "https://www.reddit.com/r/aivideos/comments/1y2nqgu/hotshot_showcase/",
+  "scoreBasis": "Community showcase snapshot (Reddit net score, not likes).",
+  "additions": [
+    {
+      "id": "1y02vac",
+      "sub": "aivideos",
+      "author": "egarcia74",
+      "score": "919",
+      "comments": "38",
+      "date": "Nov 19, 2026",
+      "titleZh": "《澳洲鸸鹋战争》：假装是 1932 年战地档案",
+      "title": "Australia’s Emu War — a fictional 1932 battle reel",
+      "url": "https://www.reddit.com/r/aivideos/comments/1y02vac/rare_footage_of_the_final_moments_of_an/",
+      "flag": "Weekly backfill · r/aivideos #6",
+      "flagZh": "周榜补录 · r/aivideos 第 6 名",
+      "tags": [
+        "AI Satire",
+        "Mockumentary",
+        "Alt History"
+      ],
+      "cover": "src/img/rd_1y02vac.jpg",
+      "whyZh": "社区榜第 6：919 分、38 条评论。用褪色战地影像和突然中断的镜头，把士兵对阵鸸鹋拍成一段伪纪录喜剧。是 AI 虚构影像，不是真实历史档案。",
+      "whyEn": "No. 6 on the community showcase: 919 score and 38 comments. Sepia war-reel imagery and an abrupt cut turn soldiers facing emus into a mockumentary gag. Fictional AI footage, not an archival recording.",
+      "addedAt": "2026-11-23T02:04:09+08:00",
+      "batch": "2026-11-23-reddit-weekly-backfill",
+      "platform": "reddit",
+      "postedAt": "2026-11-19T14:51:34+08:00",
+      "showcaseRank": 6,
+      "coverSource": "https://external-preview.redd.it/ODkxYTR1b2duaTJpMQwFlC0skKyJwWsbWmTKoR_SFEphsmbbXlxFMbanUfAn.png?format=pjpg&auto=webp&s=094ce04e7f7bad575ee428b4abbf93d08268c666",
+      "sourceMetadata": "https://www.reddit.com/r/aivideos/comments/1y02vac/rare_footage_of_the_final_moments_of_an/.json?limit=1",
+      "provenance": "The Reddit uploader participates in the comments; credited as uploader, not independently identified as the filmmaker."
+    }
+  ],
+  "review": [
+    {
+      "rank": 1,
+      "postId": "1xz2yz8",
+      "decision": "Third-party repost; credits the TikTok original."
+    },
+    {
+      "rank": 2,
+      "postId": "1xwyvg8",
+      "decision": "Credits a different creator, not original Reddit upload."
+    },
+    {
+      "rank": 3,
+      "postId": "1xwuu86",
+      "decision": "Original creator not verified."
+    },
+    {
+      "rank": 4,
+      "postId": "1y0spg8",
+      "decision": "Same work already on the X lane."
+    },
+    {
+      "rank": 5,
+      "postId": "1xzz8ub",
+      "decision": "Original creator not verified; surreal montage rather than a clear narrative."
+    },
+    {
+      "rank": 6,
+      "postId": "1y02vac",
+      "decision": "Added: distinct finished AI parody with native cover."
+    },
+    {
+      "rank": 7,
+      "postId": "1xzowdd",
+      "decision": "Same Dor Brothers work already on the X lane."
+    },
+    {
+      "rank": 8,
+      "postId": "1y0eci9",
+      "decision": "Same BERSERK trailer already on the X lane."
+    },
+    {
+      "rank": 9,
+      "postId": "1xzxtte",
+      "decision": "Credits a different creator."
+    },
+    {
+      "rank": 10,
+      "postId": "1xz5vvu",
+      "decision": "Uploader described it as a character test, not a finished film."
+    }
+  ]
+}

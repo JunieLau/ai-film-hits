@@ -2,12 +2,12 @@
 // Detailed verification: data/batches/2026-11-23-reddit-xhs.json.
 const LANE_SCAN_STATUS = Object.freeze({
   reddit: {
-    batch: "2026-11-23-reddit-xhs",
-    scannedAt: "2026-11-23T01:15:00+08:00",
-    labelZh: "已扫描 · 未核到达标新作",
-    labelEn: "Scan completed · no new verified qualifying work",
-    detailZh: "核对了 49 个 Reddit 原帖的发布日期、分数和评论，其中 34 条在 72 小时内。高热度作品《Spider-Man vs Doom》已跨栏收录；其余没有核实到同时达标的全新作品。",
-    detailEn: "Checked date, score and comments for 49 original Reddit posts, 34 within 72 hours. The highly engaged Spider-Man vs Doom is already listed elsewhere on this board, and no other new clip met all criteria in this sample."
+    "batch": "2026-11-23-reddit-weekly-backfill",
+    "scannedAt": "2026-11-23T02:04:09+08:00",
+    "labelZh": "已补录 · 社区周榜",
+    "labelEn": "Backfill published · community showcase",
+    "detailZh": "复核 r/aivideos 社区周榜前 10 条，补录第 6 名《澳洲鸸鹋战争》。保留 11 月 19 日原帖日期；不算作近 72 小时首发。",
+    "detailEn": "Reviewed all 10 r/aivideos showcase posts and backfilled the No. 6 entry. Its November 19 post date is unchanged; it is not a 72-hour premiere."
   },
   xhs: {
     batch: "2026-11-23-reddit-xhs",
