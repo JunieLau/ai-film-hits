@@ -287,7 +287,7 @@
 <header>
   <div class="kicker">Reddit · 灵感板 · Moodboard · for @junielaux</div>
   <h1>Reddit <em>爆款</em> AI 视频<span class="en">Reddit AI Video Hits</span></h1>
-  <p class="sub" id="reddit-sub"></p>
+  <p class="sub" id="reddit-sub">扫描记录加载中…<span class="en">Loading scan status…</span></p>
   <div class="stats" id="reddit-stats"></div>
 </header>
 <div class="trend" id="reddit-trend"></div>
@@ -296,7 +296,7 @@
   <div class="sortbar" data-sort="reddit"></div>
   <div class="grid" id="reddit-grid"></div>
 </main>
-<footer>Reddit 数据来自公开归档（arctic-shift），窗口 11/15–11/18 北京时间，多个 AI 版块（有过线候选但封面 403，未新增）的视频帖按分数取前 20。不编造 upvote / 评论数。封面若缺失则显示占位。<span class="en">Reddit rows from public archive (arctic-shift), window Nov 15–18, 2026 China time, top 20 video posts (in-window candidates lacked covers; none added) by score across AI subreddits. No invented upvotes/comments. Missing covers show a placeholder.</span></footer>
+<footer>分数与评论以原帖或标明的公开归档采集为准，数值会变化，归档不能替代看片。新卡需核实首发、互动、原始封面和制作质量；旧卡保留。<span class="en">Scores and comments come from original posts or explicitly labeled archive snapshots, and can change. New cards require a verified original date, engagement, artwork and craft. Older cards are kept.</span></footer>
 </section>
 
 
@@ -412,7 +412,7 @@
 <header>
   <div class="kicker">小红书 · Xiaohongshu / RED · Moodboard · for @junielaux</div>
   <h1>小红书 <em>爆款</em> AI 视频<span class="en">Xiaohongshu Viral AI Videos</span></h1>
-  <p class="sub">发布窗口 <b>2026 年 10 月 10–11 月 19 日</b>（首发扩窗保留；严窗 11/16–11/19 核到芥末机器冰箱篇，因同系列已有 2 张而 withheld，不上架；不是 0 过线，也不是已确认无新；既有条目保留）· 本批未追加 · 历史保留 · <b id="xhs-updated"></b> · 点击打开小红书<span class="en">Publish window <b>Oct 10–Nov 19, 2026</b> (inaugural widen kept; strict Nov 16–19 found the 芥末机器 fridge chapter and withheld it because the same series already has 2 cards — not a zero-hit, and not a confirmed zero; existing rows kept) · no new this batch, history kept · <b id="xhs-updated-en"></b> · Click to open RED.</span></p>
+  <p class="sub" id="xhs-sub">扫描记录加载中…<span class="en">Loading scan status…</span></p>
   <p class="sub" style="margin-top:6px;font-size:12.5px">原帖核实点赞超过 1 万可达到热度条件（小红书不公开播放）；仍查日期、原创与封面，仅收 AI 影像成片 · <b>只叠加不删除</b><span class="en-i">Over 10K verified likes can meet the popularity threshold (no public plays). Still check date, originality and covers for finished AI films · <b>append-only</b></span></p>
   <div class="stats" id="xhs-stats"></div>
 </header>
@@ -426,7 +426,7 @@
   <div class="sortbar" data-sort="xhs"></div>
   <div class="grid" id="xhs-grid"></div>
 </main>
-<footer>点赞/收藏/评论/分享来自小红书网页搜索接口 interact_info 精确计数（2026-11-01 约 16:05 北京时间只读抓取）；小红书不公开播放，缺省显示 N/A，不编造。窗口 10/10–11/18（首发扩窗保留 + v40 严窗 +1；v44b 严窗 +1、漏收补 +1；v45 +0；v46/v47 浏览器扫描 +0；v48 浏览器扫描受阻，结果区未出卡；北京时间）。封面为笔记官方封面，版权归作者，仅作私人参考。历史条目永久保留。<span class="en">Likes/saves/comments/shares are exact interact_info counts from RED web search (read-only capture ~16:05 China time, Nov 1, 2026); RED shows no public views — missing values show N/A, nothing invented. Window Oct 10–Nov 18 inaugural widen kept + v40 strict +1; v44b strict +1 and prior-window +1; v45 +0; v46/v47 browser sweep +0; v48 browser sweep blocked, no result cards (China time). Covers are official note covers © their creators, private reference only. Historical rows kept forever.</span></footer>
+<footer>新卡以小红书原帖可核实的发布日期、公开互动、真实封面与成片为准；播放量不是必填项。看不到的数据不推算，旧卡保留。<span class="en">New cards use verifiable original Xiaohongshu dates, public engagement, genuine covers and finished films. Play counts are not required. Unavailable metrics are not estimated. Older cards are kept.</span></footer>
 </section>
 
 <section class="page" id="page-tutorials">
@@ -502,6 +502,7 @@
 <footer id="fest-footer"></footer>
 </section>
 
+<script src="data/lane-scan-status.js"></script>
 <script>
 /* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS / XHS_POSTS wholesale.
    Merge new hits by id (IG shortcode / tweet id / reddit id / youtube video id). Keep older posts.
@@ -21243,16 +21244,26 @@ const rdTileHTML=(r,i)=>`
     </div>
   </a>`;
 const rdSorted=(typeof REDDIT_POSTS!=="undefined"?REDDIT_POSTS:[]).slice().sort((a,b)=>(num(b.score)??-1)-(num(a.score)??-1));
+function renderLaneScan(key,rows){
+  const status=typeof LANE_SCAN_STATUS==="undefined"?null:LANE_SCAN_STATUS[key];
+  const top=document.getElementById(key+"-sub");
+  const note=document.getElementById(key+"-note");
+  const times=rows.map(r=>r.addedAt).filter(d=>typeof d==="string"&&Number.isFinite(Date.parse(d)));
+  const add=times.reduce((a,b)=>!a||Date.parse(b)>Date.parse(a)?b:a,"");
+  const fmt=(value,english=false)=>{
+    if(!value||!Number.isFinite(Date.parse(value))) return english?"Not recorded":"暂无记录";
+    return new Intl.DateTimeFormat(english?"en-GB":"zh-CN",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date(value));
+  };
+  if(top) top.innerHTML=`最近扫描：<b>${esc(fmt(status?.scannedAt))}</b> · 最近新增：<b>${esc(fmt(add))}</b>（北京时间）<span class="en">Last scan: <b>${esc(fmt(status?.scannedAt,true))}</b> · Last addition: <b>${esc(fmt(add,true))}</b> (Beijing time)</span>`;
+  const recent=status?rows.filter(r=>r.batch===status.batch).length:0;
+  if(note) note.innerHTML=`<b>${esc(status?.labelZh||"扫描状态暂不可用")}</b> · 本次新增 ${recent} 条 · 历史保留 ${rows.length} 条${status?.detailZh?"<br>"+esc(status.detailZh):""}<span class="en"><b>${esc(status?.labelEn||"Scan status unavailable")}</b> · ${recent} added in this scan · ${rows.length} archive entries kept${status?.detailEn?"<br>"+esc(status.detailEn):""}</span>`;
+  return recent;
+}
 function layoutReddit(){
   if(typeof renderTrends==="function") renderTrends();
-  const note=document.getElementById("reddit-note");
-  if(note) note.innerHTML=`${esc(typeof REDDIT_NOTE_ZH!=="undefined"?REDDIT_NOTE_ZH:"")}<span class="en">${esc(typeof REDDIT_NOTE!=="undefined"?REDDIT_NOTE:"")}</span>`;
-  const sub=document.getElementById("reddit-sub");
-  if(sub) sub.innerHTML=`目标 20 条 · 窗口 11/16–11/19（北京时间）· 6 条窗内过线已有封面但未观看，继续 HOLD，本批未新增 · 不是已确认无新 · 历史 ${rdSorted.length} 条保留 · <b id="reddit-updated"></b><span class="en">Target 20 · window Nov 16–19 (China time) · 6 in-window over-floor videos now have covers but were not watched, so they stay HOLD and were not added · not a confirmed zero · ${rdSorted.length} historical rows kept · <b id="reddit-updated-en"></b></span>`;
-  const u=document.getElementById("reddit-updated"); if(u) u.textContent="更新于 "+(typeof REDDIT_UPDATED_ZH!=="undefined"?REDDIT_UPDATED_ZH:"");
-  const ue=document.getElementById("reddit-updated-en"); if(ue) ue.textContent="Updated "+(typeof REDDIT_UPDATED!=="undefined"?REDDIT_UPDATED:"");
+  const newCount=renderLaneScan("reddit",rdSorted);
   document.getElementById("reddit-stats").innerHTML=`<div class="stat"><div class="n">${rdSorted.length}</div><div class="l">条可核实<span class="en">Verified rows</span></div></div>
-    <div class="stat"><div class="n">${rdSorted.length}</div><div class="l">近窗完整榜<span class="en">In-window board</span></div></div>
+    <div class="stat"><div class="n">${newCount}</div><div class="l">本次新增<span class="en">New this scan</span></div></div>
     <div class="stat"><div class="n">${rdSorted.length?na(rdSorted[0].score):"—"}</div><div class="l">最高分<span class="en">Top score</span></div></div>`;
   const w=innerWidth, n=w>1200?4:w>820?3:w>520?2:1;
   const cols=Array.from({length:n},()=>[]);
@@ -21513,11 +21524,7 @@ const xhsTileHTML=(r,i)=>`
 const xhsSorted=(typeof XHS_POSTS!=="undefined"?XHS_POSTS:[]).slice().sort((a,b)=>(b.likesRaw||0)-(a.likesRaw||0));
 function layoutXhs(){
   if(typeof renderTrends==="function") renderTrends();
-  const note=document.getElementById("xhs-note");
-  if(note) note.innerHTML=`${esc(typeof XHS_NOTE_ZH!=="undefined"?XHS_NOTE_ZH:"")}<span class="en">${esc(typeof XHS_NOTE!=="undefined"?XHS_NOTE:"")}</span>`;
-  const u=document.getElementById("xhs-updated"); if(u) u.textContent="更新于 "+(typeof XHS_UPDATED_ZH!=="undefined"?XHS_UPDATED_ZH:"");
-  const ue=document.getElementById("xhs-updated-en"); if(ue) ue.textContent="Updated "+(typeof XHS_UPDATED!=="undefined"?XHS_UPDATED:"");
-  const newCount=xhsSorted.filter(isNewBatch).length;
+  const newCount=renderLaneScan("xhs",xhsSorted);
   document.getElementById("xhs-stats").innerHTML=`<div class="stat"><div class="n">${xhsSorted.length}</div><div class="l">条累计<span class="en">Total (kept)</span></div></div>
     <div class="stat"><div class="n">${newCount}</div><div class="l">本批新增<span class="en">New this update</span></div></div>
     <div class="stat"><div class="n">${xhsSorted.length?na(xhsSorted[0].likes):"—"}</div><div class="l">最高点赞<span class="en">Top likes</span></div></div>`;

@@ -1,0 +1,30 @@
+{
+  "batch": "2026-11-23-reddit-xhs",
+  "scope": "Reddit and Xiaohongshu only; scan-status update; no new cards",
+  "window": {
+    "start": "2026-11-20T01:15:00+08:00",
+    "end": "2026-11-23T01:15:00+08:00"
+  },
+  "reddit": {
+    "checkedOriginalPosts": 49,
+    "added": 0,
+    "lastAddedAt": "2026-11-14T10:45:00+08:00",
+    "coverage": [
+      "r/aivideo",
+      "r/aivideos",
+      "r/StableDiffusion",
+      "r/ClaudeAI",
+      "r/singularity",
+      "r/ChatGPT (limited cache)",
+      "supplemental public results"
+    ],
+    "notes": "Sampled current, top/day and top/week original posts; checked time, net score and comments as snapshots. The in-window high-heat Spider-Man vs Doom is already on the X lane. Other candidates lacked sufficient verified heat, authorship, story or cover. Not a platform-wide zero.",
+    "withinWindow": 34
+  },
+  "xiaohongshu": {
+    "checkedLeads": 9,
+    "added": 0,
+    "lastAddedAt": "2026-11-10T17:15:00+08:00",
+    "notes": "Public original-post dates and engagement could not be verified for fresh leads. Three traceable over-10K leads were outside the 72-hour window. Other-platform metrics were not substituted."
+  }
+}
