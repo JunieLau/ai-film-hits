@@ -160,7 +160,7 @@
         "platform": "bilibili",
         "url": "https://www.bilibili.com/video/BV1K8yhzFEb7",
         "sourceUrl": "https://www.bilibili.com/zh-Hans/video/BV1K8yhzFEb7/",
-        "cover": "https://i1.hdslb.com/bfs/archive/2defcda5f5fb10f6a5e9c0bc9eb5fb4110e03ede.jpg@1200w_630h",
+        "cover": "data/covers/2026-11-24-m78-BV1K8yhzFEb7.jpg",
         "coverSource": "https://i1.hdslb.com/bfs/archive/2defcda5f5fb10f6a5e9c0bc9eb5fb4110e03ede.jpg@1200w_630h",
         "publishedAt": "2026-11-22T08:00:00+08:00",
         "date": "Nov 22, 2026",
