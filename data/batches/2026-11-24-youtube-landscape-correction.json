@@ -1,0 +1,32 @@
+{
+  "batch": "2026-11-24-youtube-landscape-correction",
+  "supersedesYouTubeCountsIn": [
+    "2026-11-24-evening-radar",
+    "2026-11-24-evening-supplement"
+  ],
+  "scope": "Only this batch's newly listed YouTube videos; historical entries and other lanes untouched.",
+  "removed": [
+    {
+      "id": "2ZV1yKt1ewU",
+      "reason": "Portrait video, not eligible for landscape-only YouTube lane."
+    },
+    {
+      "id": "2_XvQtghKrQ",
+      "reason": "Portrait video, not eligible for landscape-only YouTube lane."
+    },
+    {
+      "id": "bvxXE9WRAbs",
+      "reason": "Portrait video, not eligible for landscape-only YouTube lane."
+    },
+    {
+      "id": "trs6hHfAmjI",
+      "reason": "Portrait video, not eligible for landscape-only YouTube lane."
+    },
+    {
+      "id": "UEkxU8dCqd4",
+      "reason": "Portrait video, not eligible for landscape-only YouTube lane."
+    }
+  ],
+  "finalYouTubeAdditions": 0,
+  "finalBatchTotal": 9
+}
