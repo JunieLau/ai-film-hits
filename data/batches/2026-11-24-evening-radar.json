@@ -1,0 +1,440 @@
+{
+  "batch": "2026-11-24-evening-radar",
+  "verifiedThrough": "2026-11-24T14:03:50Z",
+  "preparedAt": "2026-11-24T14:04:58.751Z",
+  "scope": "Regular editorial lanes only; film festivals and residencies untouched.",
+  "window": {
+    "start": "2026-11-21T14:04:58.751Z",
+    "end": "2026-11-24T14:04:58.751Z"
+  },
+  "added": {
+    "YT_POSTS": [
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "UEkxU8dCqd4",
+        "channel": "Gossip Goblin",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/shorts/UEkxU8dCqd4",
+        "sourceUrl": "https://www.youtube.com/shorts/UEkxU8dCqd4",
+        "coverSource": "https://i.ytimg.com/vi/UEkxU8dCqd4/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8RHbfk_FCF8PAmvC-C70GWxeB-g",
+        "cover": "https://i.ytimg.com/vi/UEkxU8dCqd4/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8RHbfk_FCF8PAmvC-C70GWxeB-g",
+        "publishedAt": "2026-11-22T16:06:53Z",
+        "date": "Nov 23, 2026",
+        "duration": "2:32",
+        "views": "633,618",
+        "viewsRaw": 633618,
+        "likes": "21,299",
+        "likesRaw": 21299,
+        "comments": "1,062",
+        "commentsRaw": 1062,
+        "titleZh": "《Fishbowl Spartacus》",
+        "title": "Fishbowl Spartacus",
+        "whyZh": "用老式彩色史诗的调度拍弓手对战骷髅，再靠一本正经的旁白和中途换曲制造喜剧反差。",
+        "whyEn": "An archer and skeleton warriors get the old Technicolor-epic treatment; deadpan narration and a mid-film music switch turn it into parody.",
+        "tags": [
+          "Parody",
+          "Fantasy",
+          "Seedance"
+        ],
+        "metricsAt": "2026-11-24T14:00:00Z",
+        "metricsSrc": "Original YouTube video public metrics, 2026-11-24 (UTC).",
+        "contextSource": "https://aifilmhistory.org/entry/fishbowl-spartacus"
+      }
+    ],
+    "TIKTOK_POSTS": [
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "7710670527735663905",
+        "handle": "@anotherworldcore",
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@anotherworldcore/video/7710670527735663905",
+        "sourceUrl": "https://www.tiktok.com/@anotherworldcore/video/7710670527735663905",
+        "cover": "https://ttanon.com/i/c/7710670527735663905-720.webp",
+        "coverSource": "https://ttanon.com/i/c/7710670527735663905-720.webp",
+        "publishedAt": "2026-11-21T16:59:41Z",
+        "date": "Nov 22, 2026",
+        "duration": "0:31",
+        "views": "N/A",
+        "viewsRaw": null,
+        "likes": "83.8K",
+        "likesRaw": null,
+        "comments": "714",
+        "commentsRaw": 714,
+        "shares": "7,026",
+        "sharesRaw": 7026,
+        "noteZh": "《回家的最后一段路，是垂直的》",
+        "note": "Home Is a Long Way Up",
+        "whyZh": "搬家公司没说最后几英里得垂直往上走；这一句话把梦核场景变成一条看得懂的回家路线。",
+        "whyEn": "A moving-company mix-up gives the vertical final miles a clear story hook, not just a dreamcore backdrop.",
+        "tags": [
+          "Dreamcore",
+          "Dreamina"
+        ],
+        "metricsAt": "2026-11-24T10:51:00+08:00",
+        "metricsSrc": "Original TikTok post: rounded shown likes, visible comments and shares; views not visible. Time derived from native post ID and checked against public post date. Image is the same video poster."
+      },
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "7710735419628965153",
+        "handle": "@velia.labsx",
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@velia.labsx/video/7710735419628965153",
+        "sourceUrl": "https://www.tiktok.com/@velia.labsx/video/7710735419628965153",
+        "cover": "https://ttanon.com/i/c/7710735419628965153-720.webp",
+        "coverSource": "https://ttanon.com/i/c/7710735419628965153-720.webp",
+        "publishedAt": "2026-11-21T21:11:30Z",
+        "date": "Nov 22, 2026",
+        "duration": "1:01",
+        "views": "N/A",
+        "viewsRaw": null,
+        "likes": "56.7K",
+        "likesRaw": null,
+        "comments": "357",
+        "commentsRaw": 357,
+        "shares": "1,958",
+        "sharesRaw": 1958,
+        "noteZh": "《公交站》",
+        "note": "The Bus Stop",
+        "whyZh": "在公交站用一场短对话，让两个陌生人渐渐露出各自的生活负担。作者注明是受《The Wait》启发的 AI 重拍，不是原创剧本。",
+        "whyEn": "A brief encounter at a bus stop lets two strangers’ burdens surface through dialogue. The creator credits The Wait as the inspiration for this AI remake.",
+        "tags": [
+          "AI Drama",
+          "Dreamina"
+        ],
+        "metricsAt": "2026-11-24T10:51:00+08:00",
+        "metricsSrc": "Original TikTok post: rounded shown likes, visible comments and shares; views not visible. Time derived from native post ID and checked against public post date. Image is the same video poster."
+      },
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "7710988578985151776",
+        "handle": "@cinematicmuse.soc",
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@cinematicmuse.soc/video/7710988578985151776",
+        "sourceUrl": "https://www.tiktok.com/@cinematicmuse.soc/video/7710988578985151776",
+        "cover": "https://ttanon.com/i/c/7710988578985151776-720.webp",
+        "coverSource": "https://ttanon.com/i/c/7710988578985151776-720.webp",
+        "publishedAt": "2026-11-22T13:33:54Z",
+        "date": "Nov 22, 2026",
+        "duration": "0:31",
+        "views": "N/A",
+        "viewsRaw": null,
+        "likes": "10.4K",
+        "likesRaw": null,
+        "comments": "152",
+        "commentsRaw": 152,
+        "shares": "310",
+        "sharesRaw": 310,
+        "noteZh": "《小小的善意，有了回响》",
+        "note": "A Splash of … Karma",
+        "whyZh": "把面试和节日善意放在同一个短场景，最后用身份转折收住笑点。",
+        "whyEn": "A compact holiday workplace sketch pays off an act of kindness with a job-interview reversal.",
+        "tags": [
+          "Comedy",
+          "Dreamina"
+        ],
+        "metricsAt": "2026-11-24T10:51:00+08:00",
+        "metricsSrc": "Original TikTok post: rounded shown likes, visible comments and shares; views not visible. Time derived from native post ID and checked against public post date. Image is the same video poster."
+      }
+    ],
+    "BILIBILI_POSTS": [
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "BV1K8yhzFEb7",
+        "channel": "香菜左转不送",
+        "handle": "@香菜左转不送",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1K8yhzFEb7",
+        "sourceUrl": "https://www.bilibili.com/zh-Hans/video/BV1K8yhzFEb7/",
+        "cover": "https://i1.hdslb.com/bfs/archive/2defcda5f5fb10f6a5e9c0bc9eb5fb4110e03ede.jpg@1200w_630h",
+        "coverSource": "https://i1.hdslb.com/bfs/archive/2defcda5f5fb10f6a5e9c0bc9eb5fb4110e03ede.jpg@1200w_630h",
+        "publishedAt": "2026-11-22T08:00:00+08:00",
+        "date": "Nov 22, 2026",
+        "duration": "3:57",
+        "views": "约 23.6 万",
+        "viewsRaw": 236000,
+        "likes": "约 1.8 万",
+        "likesRaw": 18000,
+        "shares": "452",
+        "sharesRaw": 452,
+        "comments": "N/A",
+        "commentsRaw": null,
+        "danmaku": "641",
+        "titleZh": "《黑暗M78》第82集",
+        "title": "Dark M78, Episode 82",
+        "whyZh": "把奥特兄弟集结与反复升级的对阵压缩进不到四分钟。作者连载原帖标注含 AI 生成，属于特摄同人，不按原创 IP 介绍。",
+        "whyEn": "An Ultraman fan serial builds a compact escalation around the heroes assembling. The creator’s Bilibili original labels AI-generated content; this is fan work.",
+        "tags": [
+          "AI生成",
+          "特摄",
+          "系列"
+        ],
+        "metricsAt": "2026-11-24T13:59:00Z",
+        "metricsSrc": "Bilibili native visible original video and share toolbar; views and likes are rounded, danmaku is not comments."
+      }
+    ],
+    "TUTORIALS": [
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "yt_9l8LCZBDaiE",
+        "creator": "Youri van Hofwegen",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=9l8LCZBDaiE",
+        "sourceUrl": "https://www.youtube.com/watch?v=9l8LCZBDaiE",
+        "cover": "https://i.ytimg.com/vi/9l8LCZBDaiE/maxresdefault.jpg",
+        "coverSource": "https://i.ytimg.com/vi/9l8LCZBDaiE/maxresdefault.jpg",
+        "publishedAt": "2026-11-22T14:55:12Z",
+        "date": "Nov 22, 2026",
+        "duration": "15:17",
+        "views": "35,662",
+        "viewsRaw": 35662,
+        "likes": "N/A",
+        "likesRaw": null,
+        "comments": "N/A",
+        "commentsRaw": null,
+        "title": "How to Make Animated Cartoon Videos with AI (Full Guide)",
+        "titleZh": "AI 卡通短片：用角色参考板保持四场戏连续",
+        "level": "pro",
+        "topicZh": "卡通短片连续性",
+        "topicEn": "Animated continuity",
+        "learnZh": "先做角色和场景参考板，再逐场做有对白的侦探故事；把上一场成片作为连续性参考，最后到 CapCut 剪接。包含 OpenArt 赞助演示。",
+        "learnEn": "Build character and set references, make a dialogue detective story scene by scene, carry earlier footage into the next scene as a continuity reference, then assemble in CapCut. OpenArt-sponsored demo.",
+        "tags": [
+          "Character Consistency",
+          "Animation",
+          "CapCut"
+        ],
+        "metricsAt": "2026-11-24T14:00:00Z",
+        "metricsSrc": "Original YouTube video public metrics, 2026-11-24 (UTC)."
+      },
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "yt_s5lhrzcRNqc",
+        "creator": "JOEY",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=s5lhrzcRNqc",
+        "sourceUrl": "https://www.youtube.com/watch?v=s5lhrzcRNqc",
+        "cover": "https://i.ytimg.com/vi/s5lhrzcRNqc/maxresdefault.jpg",
+        "coverSource": "https://i.ytimg.com/vi/s5lhrzcRNqc/maxresdefault.jpg",
+        "publishedAt": "2026-11-22T19:04:46Z",
+        "date": "Nov 23, 2026",
+        "duration": "11:37",
+        "views": "21,972",
+        "viewsRaw": 21972,
+        "likes": "593",
+        "likesRaw": 593,
+        "comments": "N/A",
+        "commentsRaw": null,
+        "title": "How We Make AI Films Faster and Save Thousands of Credits (Free Claude Skills in Description)",
+        "titleZh": "AI 短片省额度：先试拍，再挑镜头精修",
+        "level": "pro",
+        "topicZh": "低成本预演与挑镜头",
+        "topicEn": "Low-cost previs and take selection",
+        "learnZh": "先整理人物与场景素材，用 480p 做测试，再由人挑镜头并补有差异的机位，最后才把额度花在选中的镜头上。作者附 Claude Skills 链接；节省额度是作者说法。",
+        "learnEn": "Organise assets, draft at 480p, choose takes and vary camera coverage by hand before spending credits on finalists. Creator links Claude Skills; savings are self-reported.",
+        "tags": [
+          "Claude Skills",
+          "Previs",
+          "Higgsfield"
+        ],
+        "metricsAt": "2026-11-24T14:00:00Z",
+        "metricsSrc": "Original YouTube video public metrics, 2026-11-24 (UTC)."
+      },
+      {
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "id": "yt_siZcUPnoRE4",
+        "creator": "Roboverse",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=siZcUPnoRE4",
+        "sourceUrl": "https://www.youtube.com/watch?v=siZcUPnoRE4",
+        "cover": "https://i.ytimg.com/vi/siZcUPnoRE4/maxresdefault.jpg",
+        "coverSource": "https://i.ytimg.com/vi/siZcUPnoRE4/maxresdefault.jpg",
+        "publishedAt": "2026-11-22T15:17:15Z",
+        "date": "Nov 22, 2026",
+        "duration": "19:27",
+        "views": "19,900",
+        "viewsRaw": 19900,
+        "likes": "N/A",
+        "likesRaw": null,
+        "comments": "N/A",
+        "commentsRaw": null,
+        "title": "How to Make AI Short Films Better than 99% of People",
+        "titleZh": "AI 短片全流程：从剧本和参考图到剪辑",
+        "level": "pro",
+        "topicZh": "短片从策划到剪辑",
+        "topicEn": "Short film from planning to edit",
+        "learnZh": "从 Claude 梳理故事，到用 GPT Image 做参考画面，按场景生成 Seedance 镜头，最后在 CapCut 组接成片。包含 OpenArt 赞助演示。",
+        "learnEn": "Use Claude to plan the story, GPT Image for visual anchors, Seedance for scene-by-scene shots, and CapCut for assembly. OpenArt-sponsored demo.",
+        "tags": [
+          "Claude",
+          "Storyboarding",
+          "Seedance"
+        ],
+        "metricsAt": "2026-11-24T14:00:00Z",
+        "metricsSrc": "Original YouTube video public metrics, 2026-11-24 (UTC)."
+      }
+    ],
+    "REELS": [
+      {
+        "id": "DgDSqX9B74B",
+        "handle": "whispered.visions",
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reel/DgDSqX9B74B/",
+        "sourceUrl": "https://www.instagram.com/reel/DgDSqX9B74B/",
+        "cover": "data/covers/2026-11-24-seabound-DgDSqX9B74B.jpg",
+        "coverSource": "https://www.instagram.com/reel/DgDSqX9B74B/",
+        "publishedAt": "2026-11-22T17:00:07Z",
+        "date": "Nov 22, 2026",
+        "likes": "11.6K",
+        "likesRaw": 11600,
+        "comments": "603",
+        "commentsRaw": 603,
+        "shares": null,
+        "sharesRaw": null,
+        "views": "N/A",
+        "viewsRaw": null,
+        "noteZh": "《SEABOUND》第二季第7集",
+        "note": "SEABOUND · Season 2, Episode 7",
+        "whyZh": "海盗达莉娅与人鱼尼尔希恩的奇幻连载；阿德里安回归推进人物关系。服装、海上氛围和角色表演延续前作风格。创作者披露使用 Seedance 和 Suno。",
+        "whyEn": "A serialized pirate-and-merman fantasy, with a returning character driving the relationships forward. Costume, atmosphere and performance support continuity; the creator disclosed Seedance and Suno.",
+        "tags": [
+          "Fantasy",
+          "Serial narrative",
+          "Seedance"
+        ],
+        "metricsAt": "2026-11-24T14:01:50Z",
+        "metricsSrc": "Original Instagram Reel: rounded likes, visible comments, native creator cover resized for the archive.",
+        "flagZh": "本批新增",
+        "flag": "New this update",
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z"
+      }
+    ],
+    "FILMMAKERS": [
+      {
+        "handle": "hoonjakga",
+        "name": "훈작가의 숏드라마 · Hoonjak",
+        "followers": "295K",
+        "followersRaw": 295000,
+        "followersAt": "2026-11-24",
+        "bio": "Korean AI short drama channel",
+        "profileUrl": "https://www.youtube.com/@hoonjak/shorts",
+        "topReelUrl": "https://www.youtube.com/shorts/RvS_UkE566A",
+        "sourceUrl": "https://www.youtube.com/shorts/RvS_UkE566A",
+        "topReelViews": "1,069,444",
+        "viewsSrc": "YouTube original Short",
+        "publishedAt": "2026-11-22T05:00:10Z",
+        "avatar": "https://yt3.googleusercontent.com/ae6_L_LtRFyAiNPub58eBfxnfgCkrp4cAMFxIL4nwVu9C32hUaDMop3l0Rj34CIGfmRNC7Ym=s160-c-k-c0x00ffffff-no-rj",
+        "coverSource": "https://i.ytimg.com/vi/RvS_UkE566A/maxresdefault.jpg",
+        "topReelTitle": "两家见面时，新郎父亲为什么一直盯着新娘父亲？",
+        "knownForZh": "韩国 AI 微短剧。代表作从两家正式见面时的一次凝视出发，把礼仪变成戏剧悬念。原帖标注人物为 AI 虚构。",
+        "knownFor": "Korean short dramas with AI-generated fictional characters. In this episode an unexplained gaze at a formal family meeting becomes the hook.",
+        "strengthZh": "用视线和礼仪制造悬念",
+        "strength": "Visual hooks through looks and social etiquette",
+        "hitNoteZh": "原片约 106.9 万播放、2.4 万赞；发布于北京时间 11 月 22 日 13:00。",
+        "hitNote": "Original Short: 1,069,444 views and 24,029 likes captured November 24.",
+        "tags": [
+          "Korean microdrama",
+          "AI characters",
+          "Visual storytelling"
+        ],
+        "metricsAt": "2026-11-24T14:03:50Z",
+        "metricsSrc": "Original YouTube Short public counters and native channel subscriber count.",
+        "flag": "New this update",
+        "flagZh": "本批新增",
+        "batch": "2026-11-24-evening-radar",
+        "addedAt": "2026-11-24T14:04:58.751Z"
+      }
+    ]
+  },
+  "expired": [
+    {
+      "id": "epicaifilms2024",
+      "t": "2026-11-21T12:01:20Z"
+    }
+  ],
+  "coverage": {
+    "instagram": {
+      "label": "one native original verified",
+      "detail": "SEABOUND S2E7, 11.6K likes / 603 comments; original timestamp and creator cover verified.",
+      "added": 1
+    },
+    "x": {
+      "label": "partially checked; native metrics unavailable",
+      "detail": "Original creator leads checked; same-film Fishbowl is counted on YouTube. KOF recreation and other secondary leads not independently established.",
+      "added": 0
+    },
+    "reddit": {
+      "label": "direct automated access denied",
+      "detail": "No attempt to bypass platform restriction; available historical evidence does not qualify another card.",
+      "added": 0
+    },
+    "youtube": {
+      "label": "native original refreshed",
+      "detail": "The native source corroborated publish time, cover and 633,618 views / 21,299 likes for Fishbowl Spartacus. Recent Good Boy and Friendly Fire did not meet heat. No duplicates.",
+      "added": 1
+    },
+    "douyinTrending": {
+      "label": "partially checked",
+      "detail": "Separate trending pass: 《进门以前先敲门》 and 《菜篮子工程》 have original date leads but lacked post-level engagement and cover. Non-film AI clips excluded.",
+      "added": 0
+    },
+    "douyinDrama": {
+      "label": "partially checked",
+      "detail": "Separate chart and native-origin pass: 《茅山阴判》12, 《未终之境》9 and 死神校园 date leads did not expose complete engagement and original artwork. No repeat on prior series without current independently verified item.",
+      "added": 0
+    },
+    "tiktok": {
+      "label": "prior native snapshots; direct reader restricted on recheck",
+      "detail": "No additional verifiable original since the previously observed posts. Native view counts remain unavailable.",
+      "added": 3
+    },
+    "bilibili": {
+      "label": "native original refreshed",
+      "detail": "One original serial episode rechecked. Same-series leads not added without verified independent new qualification.",
+      "added": 1
+    },
+    "xiaohongshu": {
+      "label": "partial; original metrics pending",
+      "detail": "Original publication time, native likes and genuine cover could not be verified together; not a platform-wide zero.",
+      "added": 0
+    },
+    "tutorials": {
+      "label": "native originals refreshed",
+      "detail": "Three distinct workflow tutorials (35,662 / 21,972 / 19,900 views); native source and artwork verified.",
+      "added": 3
+    },
+    "topFilmmakers": {
+      "label": "native directory and hit verified",
+      "detail": "Hoonjak 295K public channel subscribers; recent creator Short 1,069,444 views / 24,029 likes, relevant original artwork and theater of social etiquette. Counted only once. Epic AI Films has expired and was excluded.",
+      "added": 1
+    },
+    "douyin": {
+      "label": "see separate trend and drama coverage",
+      "added": 0
+    }
+  }
+}
