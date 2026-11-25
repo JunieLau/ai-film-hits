@@ -304,8 +304,8 @@
 <header>
   <div class="kicker">YouTube · 灵感板 · Moodboard · for @junielaux</div>
   <h1>YouTube <em>爆火</em> AI 视频<span class="en">YouTube Viral AI Videos</span></h1>
-  <p class="sub">2026-11-25 发现检查已扫描 · 本轮未新增 · 历史条目保留 · <b id="yt-updated"></b> · 点击打开 YouTube<span class="en">2026-11-25 discovery check scanned · no new cards this pass · archive retained · <b id="yt-updated-en"></b> · Click to open YouTube.</span></p>
-  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：<b>仅横屏原片</b> · 高播放，优先可核验的点赞和评论 · 每频道最多 2 条 <span class="en-i">Rule: <b>landscape originals only</b> · high views, with verifiable likes and comments preferred · max 2 per channel</span></p>
+  <p class="sub">2026-11-25 发现检查已扫描 · 新增 2 条竖屏 · 历史条目保留 · <b id="yt-updated"></b> · 点击打开 YouTube<span class="en">2026-11-25 discovery check scanned · +2 portrait films · archive retained · <b id="yt-updated-en"></b> · Click to open YouTube.</span></p>
+  <p class="sub" style="margin-top:6px;font-size:12.5px">入选：优先横屏原片 · 本轮另收 2 条 Gossip Goblin 竖屏 · 高播放，优先可核验的点赞和评论 · 每频道最多 2 条 <span class="en-i">Rule: landscape preferred · this pass also lists 2 Gossip Goblin portrait films · high views, verifiable likes and comments preferred · max 2 per channel</span></p>
   <div class="stats" id="yt-stats"></div>
 </header>
 <section class="insights">
@@ -502,7 +502,7 @@
 <footer id="fest-footer"></footer>
 </section>
 
-<script src="data/lane-scan-status.js?v=20261125"></script>
+<script src="data/lane-scan-status.js?v=20261125b"></script>
 <script>
 /* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS / XHS_POSTS wholesale.
    Merge new hits by id (IG shortcode / tweet id / reddit id / youtube video id). Keep older posts.
@@ -523,15 +523,15 @@ const X_TREND_ZH = "已扫描。新增 1 条：@0xInk_《NOT REAL》（作者自
 const X_TREND = "Scanned. One addition: @0xInk_ NOT REAL (the author credits Suno for the music and Seedance 2.5 for lipsync). Full-sound review passed. Older cards were not metric-refreshed.";
 
 const REDDIT_TREND_DATE = "2026-11-25";
-const REDDIT_TREND_ZH = "2026-11-25 发现检查 limited：arctic-shift 档案分，官方 JSON 未用。r/aivideo 与 r/aivideos 有翻页缺口。过线帖没有成片，未上架。不是已确认无新。";
-const REDDIT_TREND = "2026-11-25 discovery check was limited (arctic-shift archive scores; official JSON not used). r/aivideo and r/aivideos have page gaps. Over-floor posts had no full file and were not added. Not a confirmed zero.";
+const REDDIT_TREND_ZH = "2026-11-25 已扫描并新增 4 条。1y4ca6n 用直播页分数；其余 3 条因直播页被机器人验证挡住，分数标明为 arctic-shift 档案分。翻页缺口仍在，不是全站扫完。";
+const REDDIT_TREND = "Scanned 2026-11-25 with 4 additions. 1y4ca6n uses a live-page score; the other three are labeled arctic-shift archive scores because the live pages were bot-challenged. Page gaps remain, so this is not a finished sweep.";
 
 const YT_TREND_DATE = "2026-11-25";
-const YT_TREND_ZH = "2026-11-25 已扫描，本轮未新增。仍只收横屏；早先条目保留，未整架刷新。";
-const YT_TREND = "Scanned 2026-11-25; no new cards this pass. Landscape-only rule unchanged. Earlier entries were not refreshed.";
+const YT_TREND_ZH = "2026-11-25 已扫描，新增 2 条 Gossip Goblin 竖屏：《Fishbowl Spartacus》《The Art Chippa》。播放来自官方 RSS。早先横屏条目保留，未整架刷新。";
+const YT_TREND = "Scanned 2026-11-25; two portrait Gossip Goblin films added, Fishbowl Spartacus and The Art Chippa. Views are official RSS counts. Earlier landscape entries were not refreshed.";
 
-const UPDATED = "2026-11-25 (Asia/Shanghai). Discovery check: X scanned, +1. YouTube, tutorials and festivals scanned (festival deadlines only; no new festivals). Instagram, Reddit, Bilibili and filmmakers limited. Douyin hits, Douyin series, TikTok and Xiaohongshu incomplete. Older cards kept.";
-const UPDATED_ZH = "2026-11-25（北京时间）。发现检查：X 已扫描并新增 1 条；YouTube、教程、电影节已扫描（电影节只改正截止，未新增节）；Instagram、Reddit、B 站、电影人 limited；抖音热门、抖音短剧、TikTok、小红书未完成。旧卡保留。";
+const UPDATED = "2026-11-25 (Asia/Shanghai). Discovery check: X +1, Reddit +4, YouTube +2, tutorials +1; festival deadlines already corrected. Instagram, Bilibili and filmmakers limited. Douyin hits, Douyin series, TikTok and Xiaohongshu incomplete (Xiaohongshu logged-out search was blank). Older cards kept.";
+const UPDATED_ZH = "2026-11-25（北京时间）。发现检查：X +1，Reddit +4，YouTube +2，教程 +1；电影节已改正截止。Instagram、B 站、电影人 limited；抖音热门、抖音短剧、TikTok、小红书未完成（小红书未登录搜索为空白）。旧卡保留。";
 const LATEST_BATCH = "2026-11-25"; /* badge "本批新增" when post.batch === LATEST_BATCH */
 const elevenTabsPassed = false; /* v52 partial shelf; not an 11-tab pass */
 /* IG rule: Instagram hides share counts logged-out, verified original-post likes over 10K can qualify even without public play counts. */
@@ -6729,10 +6729,115 @@ const X_INSIGHTS = [
 ]
 const REDDIT_UPDATED = "2026-11-19 10:43";
 const REDDIT_UPDATED_ZH = "2026-11-19 10:43（北京时间）";
-const REDDIT_NOTE_ZH = "窗口 11/16–11/19（北京时间）。官方 Reddit JSON 仍挂起；arctic-shift 见到 6 条窗内过线视频，封面已补为真实 JPEG，但未观看，质量未审，本批未上架，继续 HOLD。分数是抓取当时的存档值。不把受阻写成已确认无新。";
-const REDDIT_NOTE = "Window Nov 16–19, 2026 (China time). Official Reddit JSON still hung; arctic-shift showed 6 in-window over-floor videos. Real JPEG covers now exist, but the films were not watched, so nothing was added (HOLD). Scores are archive-at-capture. A blocked/limited sweep is not a confirmed zero.";
+const REDDIT_NOTE_ZH = "2026-11-25 新增 4 条。1y4ca6n 的 820 分 / 66 评论来自约 14:30 的直播页。1y3m7ub、1y4l3rf、1y3lcd2 的分数是 arctic-shift 档案分（约 13:55），直播页被机器人验证挡住。1y3lcd2 按梗图列出，不是叙事短片。";
+const REDDIT_NOTE = "2026-11-25 adds 4 cards. 1y4ca6n’s 820 score and 66 comments are from the live page around 14:30. 1y3m7ub, 1y4l3rf and 1y3lcd2 use arctic-shift archive scores from about 13:55 because the live pages were bot-challenged. 1y3lcd2 is listed as meme-like, not as a narrative short.";
 const REDDIT_POSTS = 
 [
+  {
+    "id": "1y4ca6n",
+    "sub": "aivideo",
+    "author": "Canadianmicrowave",
+    "score": "820",
+    "comments": "66",
+    "date": "Nov 24, 2026",
+    "titleZh": "《外面已经不存在了》：雪隧式第一人称恐怖短片",
+    "title": "There is no longer an Outside ❄️ (snow tunnel horror)",
+    "url": "https://www.reddit.com/r/aivideo/comments/1y4ca6n/there_is_no_longer_an_outside_snow_tunnel_horror/",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Horror",
+      "Found footage",
+      "Minimax"
+    ],
+    "cover": "src/img/rd_1y4ca6n.jpg",
+    "whyZh": "约 70 秒的伪纪录恐怖短片：雪隧式空间，flair 为 MINIMAX SHORT FILM，楼主写明用 Minimax H3。直播页分数 820、评论 66（2026-11-25 约 14:30 北京时间）。这是原帖可见数据，不是 arctic-shift 档案分。",
+    "whyEn": "About 70 seconds of found-footage horror in a snow-tunnel space. Flair is MINIMAX SHORT FILM, and the OP says it was made with Minimax H3. Live page: score 820 and 66 comments, sampled 2026-11-25 about 14:30 Asia/Shanghai. These are live-page counts, not an arctic-shift archive score.",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "batch": "2026-11-25",
+    "platform": "reddit",
+    "publishedAt": "2026-11-24T12:39:35Z",
+    "metricsAt": "2026-11-25T14:30:00+08:00",
+    "metricsSrc": "Live Reddit page, sampled 2026-11-25 about 14:30 Asia/Shanghai. Score and comments are the live counts, not arctic-shift."
+  },
+  {
+    "id": "1y3m7ub",
+    "sub": "aivideos",
+    "author": "hackerix",
+    "score": "3,508",
+    "comments": "116",
+    "date": "Nov 24, 2026",
+    "titleZh": "《我见过最好的 AI 用法》",
+    "title": "Best use of AI I've seen",
+    "url": "https://www.reddit.com/r/aivideos/comments/1y3m7ub/best_use_of_ai_ive_seen/",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Archive score",
+      "Preview cover"
+    ],
+    "cover": "src/img/rd_1y3m7ub.jpg",
+    "whyZh": "档案分 3,508、评论 116（arctic-shift，2026-11-25 约 13:55 北京时间）。直播页当时被机器人验证挡住，所以不用直播分。封面是公开预览，不是完整有声审片。预览里是几位公众人物坐在户外的场面。",
+    "whyEn": "Archive score 3,508 and 116 comments (arctic-shift, sampled 2026-11-25 about 13:55 Asia/Shanghai). The live page was bot-challenged, so this is not a live score. The cover is a public preview, not a full-sound review. The preview shows public figures seated outdoors.",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "batch": "2026-11-25",
+    "platform": "reddit",
+    "publishedAt": "2026-11-24T00:08:20+08:00",
+    "metricsAt": "2026-11-25T13:55:00+08:00",
+    "metricsSrc": "arctic-shift archive score, sampled 2026-11-25 about 13:55 Asia/Shanghai. Not a live Reddit count; the live page was bot-challenged."
+  },
+  {
+    "id": "1y4l3rf",
+    "sub": "aivideos",
+    "author": "CremeSubject7594",
+    "score": "1,195",
+    "comments": "55",
+    "date": "Nov 25, 2026",
+    "titleZh": "《有超人蝙蝠侠，还要电台干嘛？》",
+    "title": "Who needs radio when you've got Superman and Batman?",
+    "url": "https://www.reddit.com/r/aivideos/comments/1y4l3rf/who_needs_radio_when_youve_got_superman_and_batman/",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Archive score",
+      "Parody"
+    ],
+    "cover": "src/img/rd_1y4l3rf.jpg",
+    "whyZh": "档案分 1,195、评论 55（arctic-shift，2026-11-25 约 13:55 北京时间）。直播页被机器人验证挡住，不把档案分写成直播分。预览是超人与小丑同框的戏仿画面，封面不是完整审片。",
+    "whyEn": "Archive score 1,195 and 55 comments (arctic-shift, sampled 2026-11-25 about 13:55 Asia/Shanghai). The live page was bot-challenged, so the archive score is not presented as a live count. The preview is a Superman-and-Joker parody still, not a full-sound review.",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "batch": "2026-11-25",
+    "platform": "reddit",
+    "publishedAt": "2026-11-25T02:39:51+08:00",
+    "metricsAt": "2026-11-25T13:55:00+08:00",
+    "metricsSrc": "arctic-shift archive score, sampled 2026-11-25 about 13:55 Asia/Shanghai. Not a live Reddit count; the live page was bot-challenged."
+  },
+  {
+    "id": "1y3lcd2",
+    "sub": "aivideos",
+    "author": "MilesLongthe3rd",
+    "score": "891",
+    "comments": "30",
+    "date": "Nov 23, 2026",
+    "titleZh": "《现在的股市》：更像梗图，不是叙事短片",
+    "title": "The stock market right now",
+    "url": "https://www.reddit.com/r/aivideos/comments/1y3lcd2/the_stock_market_right_now/",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "tags": [
+      "Archive score",
+      "Meme"
+    ],
+    "cover": "src/img/rd_1y3lcd2.jpg",
+    "whyZh": "更像梗，不是叙事成片。标题把股市当下做成一句玩笑，预览是舞台表演静帧，带 updream 水印。档案分 891、评论 30（arctic-shift，2026-11-25 约 13:55 北京时间）。直播页被机器人验证挡住，所以分数标明为档案分。",
+    "whyEn": "Meme-like, not a narrative short. The title treats the stock market as a joke, and the preview is a stage-performance still with an updream watermark. Archive score 891 and 30 comments (arctic-shift, sampled 2026-11-25 about 13:55 Asia/Shanghai). The live page was bot-challenged, so the score stays labeled as an archive score.",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "batch": "2026-11-25",
+    "platform": "reddit",
+    "publishedAt": "2026-11-23T23:34:10+08:00",
+    "metricsAt": "2026-11-25T13:55:00+08:00",
+    "metricsSrc": "arctic-shift archive score, sampled 2026-11-25 about 13:55 Asia/Shanghai. Not a live Reddit count; the live page was bot-challenged."
+  },
   {
     "id": "1y02vac",
     "sub": "aivideos",
@@ -9128,12 +9233,80 @@ const REDDIT_POSTS =
    Future batches: merge new hits; NEVER wipe YT_POSTS.
    Also refresh YT_TREND_ZH / YT_TREND each update, and keep whyZh/whyEn on every card.
    CANE MAN (20GbzQQyvsU, Sep 15) restored by request after the 09-20 date filter removed it. ===== */
-const YT_UPDATED = "2026-11-25 (Asia/Shanghai; scanned, no new cards)";
-const YT_UPDATED_ZH = "2026-11-25（北京时间；已扫描，本轮未新增）";
-const YT_NOTE_ZH = "本批共 5 条经实际画面验证的横屏作品，含 2 条近七天补入。竖屏条目没有加回。";
-const YT_NOTE = "Five verified landscape works, including two seven-day backfills. Portrait entries remain off this batch.";
+const YT_UPDATED = "2026-11-25 (Asia/Shanghai; scanned, +2)";
+const YT_UPDATED_ZH = "2026-11-25（北京时间；已扫描，新增 2 条）";
+const YT_NOTE_ZH = "2026-11-25 新增 2 条 Gossip Goblin 竖屏，播放为官方 RSS。早先横屏条目仍在，未整架刷新。";
+const YT_NOTE = "2026-11-25 adds two portrait Gossip Goblin films. Views are official RSS counts. Earlier landscape entries stay and were not refreshed.";
 const YT_POSTS = 
 [
+  {
+    "batch": "2026-11-25",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "metricsAt": "2026-11-25T13:54:27+08:00",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "windowType": "72-hour",
+    "platform": "youtube",
+    "orientation": "portrait",
+    "url": "https://www.youtube.com/watch?v=UEkxU8dCqd4",
+    "sourceUrl": "https://www.youtube.com/watch?v=UEkxU8dCqd4",
+    "cover": "src/img/yt_UEkxU8dCqd4.jpg",
+    "coverSource": "https://i.ytimg.com/vi/UEkxU8dCqd4/maxresdefault.jpg",
+    "orientationSource": "https://www.youtube.com/watch?v=UEkxU8dCqd4",
+    "metricsSrc": "Official YouTube Atom RSS media:statistics views 661,361 at 2026-11-25 13:54 Asia/Shanghai. Title from YouTube oEmbed. Duration and 1080×1920 portrait frame are from the matching X file probe, not a new YouTube download.",
+    "id": "UEkxU8dCqd4",
+    "channel": "Gossip Goblin",
+    "publishedAt": "2026-11-23T00:06:53+08:00",
+    "date": "Nov 23, 2026",
+    "duration": "2:32",
+    "views": "661,361",
+    "viewsRaw": 661361,
+    "likes": "N/A",
+    "comments": "N/A",
+    "title": "Fishbowl Spartacus",
+    "titleZh": "《Fishbowl Spartacus》",
+    "whyZh": "Gossip Goblin 的竖屏短片，官方标题 Fishbowl Spartacus。YouTube RSS 播放 661,361（2026-11-25 13:54 北京时间）。同片 X 文件为 1080×1920，缩略图是横幅里的竖屏画面。本轮没有另下 YouTube 成片，因此不把动作戏是否穿模写成已审结论。",
+    "whyEn": "Gossip Goblin’s portrait short, official title Fishbowl Spartacus. YouTube RSS views 661,361 at 2026-11-25 13:54 Asia/Shanghai. The matching X file is 1080×1920, and the thumbnail is that portrait image inside a 16:9 frame. No separate YouTube file was downloaded this pass, so action-beat morphing is not stated as a reviewed finding.",
+    "tags": [
+      "Portrait",
+      "Gossip Goblin",
+      "RSS views"
+    ]
+  },
+  {
+    "batch": "2026-11-25",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "metricsAt": "2026-11-25T13:54:27+08:00",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "windowType": "72-hour",
+    "platform": "youtube",
+    "orientation": "portrait",
+    "url": "https://www.youtube.com/watch?v=l8PbkFgy008",
+    "sourceUrl": "https://www.youtube.com/watch?v=l8PbkFgy008",
+    "cover": "src/img/yt_l8PbkFgy008.jpg",
+    "coverSource": "https://i.ytimg.com/vi/l8PbkFgy008/maxresdefault.jpg",
+    "orientationSource": "https://www.youtube.com/watch?v=l8PbkFgy008",
+    "metricsSrc": "Official YouTube Atom RSS media:statistics views 227,703 at 2026-11-25 13:54 Asia/Shanghai. Title from YouTube oEmbed. Duration and 1080×1920 portrait frame are from the matching X file probe, not a new YouTube download.",
+    "id": "l8PbkFgy008",
+    "channel": "Gossip Goblin",
+    "publishedAt": "2026-11-25T00:02:35+08:00",
+    "date": "Nov 25, 2026",
+    "duration": "2:56",
+    "views": "227,703",
+    "viewsRaw": 227703,
+    "likes": "N/A",
+    "comments": "N/A",
+    "title": "The Art Chippa",
+    "titleZh": "《The Art Chippa》",
+    "whyZh": "Gossip Goblin 的竖屏短片，官方标题 The Art Chippa。YouTube RSS 播放 227,703（2026-11-25 13:54 北京时间）。同片 X 文件为 1080×1920。本轮没有另下 YouTube 成片，动作戏里有没有明显形变，这里不写成已审结论。",
+    "whyEn": "Gossip Goblin’s portrait short, official title The Art Chippa. YouTube RSS views 227,703 at 2026-11-25 13:54 Asia/Shanghai. The matching X file is 1080×1920. No separate YouTube file was downloaded this pass, so visible morphing in action beats is not claimed as a reviewed finding.",
+    "tags": [
+      "Portrait",
+      "Gossip Goblin",
+      "RSS views"
+    ]
+  },
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T16:34:48.499Z","metricsAt":"2026-11-24T16:34:48.499Z","flag":"New this update","flagZh":"本批新增","windowType":"72-hour","platform":"youtube","orientation":"landscape","url":"https://www.youtube.com/watch?v=xnp_o_Kq1nw","sourceUrl":"https://www.youtube.com/watch?v=xnp_o_Kq1nw","cover":"https://i.ytimg.com/vi/xnp_o_Kq1nw/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/xnp_o_Kq1nw/maxresdefault.jpg","orientationSource":"https://i.ytimg.com/vi/xnp_o_Kq1nw/2.jpg","metricsSrc":"Native YouTube statistics from the Nov 24 UTC review. The separate original in-video still confirms the active picture is landscape.","id":"xnp_o_Kq1nw","channel":"Hushfall Drama","publishedAt":"2026-11-21T19:52:38Z","date":"Nov 22, 2026","duration":"31:23","views":"275,837","viewsRaw":275837,"likes":"N/A","comments":"N/A","title":"His Best Friend Died Holding His Hand. Two Years Later, He Finally Kept His Promise.","titleZh":"战友临终托付，两年后他回来履行承诺","whyZh":"从守住一座果园切入战后家庭的处境，让战友留下的承诺连接现在与回忆。YouTube 原帖标注含 AI。","whyEn":"The fight to keep a family orchard connects a widow’s present to a promise made by two soldiers. The YouTube original carries an AI label.","tags":["Landscape","AI-labelled","Drama"]},
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T16:34:48.499Z","metricsAt":"2026-11-24T16:34:48.499Z","flag":"7-day backfill","flagZh":"近七天补入","windowType":"7-day backfill","platform":"youtube","orientation":"landscape","url":"https://www.youtube.com/watch?v=wnCUgNQNL58","sourceUrl":"https://www.youtube.com/watch?v=wnCUgNQNL58","cover":"https://i.ytimg.com/vi/wnCUgNQNL58/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/wnCUgNQNL58/maxresdefault.jpg","orientationSource":"https://i.ytimg.com/vi/wnCUgNQNL58/2.jpg","metricsSrc":"Native YouTube statistics from the Nov 24 UTC review. The separate original in-video still confirms the active picture is landscape.","id":"wnCUgNQNL58","channel":"Junty Hugar","publishedAt":"2026-11-19T13:30:10Z","date":"Nov 19, 2026","duration":"4:04","views":"784,718","viewsRaw":784718,"likes":"20,076","likesRaw":20076,"comments":"N/A","title":"GAGANYAAN — AI concept trailer","titleZh":"《GAGANYAAN》AI 概念预告","whyZh":"用父子与飞天梦想串起印度太空题材。独立创作者自编自导的虚构预告，不是正片，也不是官方航天机构发布。","whyEn":"A father and son’s dream of space gives an independent fictional Indian space trailer an emotional hook. This is a concept trailer, not a complete feature or an official agency film.","tags":["近七天补入 / 7-day","Landscape","Trailer","Space"]},
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T16:34:48.499Z","metricsAt":"2026-11-24T16:34:48.499Z","flag":"7-day backfill","flagZh":"近七天补入","windowType":"7-day backfill","platform":"youtube","orientation":"landscape","url":"https://www.youtube.com/watch?v=ZLBhL2DRZnY","sourceUrl":"https://www.youtube.com/watch?v=ZLBhL2DRZnY","cover":"https://i.ytimg.com/vi/ZLBhL2DRZnY/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/ZLBhL2DRZnY/maxresdefault.jpg","orientationSource":"https://i.ytimg.com/vi/ZLBhL2DRZnY/2.jpg","metricsSrc":"Native YouTube statistics from the Nov 24 UTC review. The separate original in-video still confirms the active picture is landscape.","id":"ZLBhL2DRZnY","channel":"Epic AI Films","publishedAt":"2026-11-21T12:01:20Z","date":"Nov 21, 2026","duration":"1:34:17","views":"308,160","viewsRaw":308160,"likes":"3,845","likesRaw":3845,"comments":"N/A","title":"The Last King Came Back From The Dead | AGE OF KINGDOMS | Full Movie 4K 2026","titleZh":"《AGE OF KINGDOMS》第二季第 2 集：末代国王归来","whyZh":"94 分钟的原创奇幻连载，把国王归来的悬念放进既有王国世界观中。这是新一集，不是旧季重发。","whyEn":"A 94-minute original fantasy serial instalment uses the king's return to extend the established world. It is a new season-two episode, not an older upload.","tags":["近七天补入 / 7-day","Landscape","Fantasy"]},
@@ -14393,13 +14566,13 @@ const BL_INSIGHTS = [
 ];
 
 /* ===== 小红书 / Xiaohongshu (RED) — APPEND ONLY by noteId. Floor: likes≥2万 OR likes+collects≥5万 (RED shows no public views). Window Oct 29–Nov 1 (inaugural widen Oct 10–Nov 1). ===== */
-const XHS_UPDATED = "2026-11-25 (Asia/Shanghai; incomplete)";
-const XHS_UPDATED_ZH = "2026-11-25（北京时间；未完成）";
+const XHS_UPDATED = "2026-11-25 (Asia/Shanghai; incomplete, logged-out search blank)";
+const XHS_UPDATED_ZH = "2026-11-25（北京时间；未完成，未登录搜索为空白）";
 const XHS_NOTE_ZH = "发布窗口 2026 年 10 月 10–11 月 19 日（首发扩窗保留）。严窗 11/16–11/19 已核到芥末机器《选择你的冰箱藏身之处》6afa6554000000001603d4ec（11/16 10:07，展示 2 万赞），但同系列货架上已有 2 张，本批 withheld，不上架。这是 completed find + withheld，不是本窗 0 过线，也不是已确认无新。无登录复检遇 300031，不能据此断言笔记已删除，也不绕过。既有 14 条保留。";
 const XHS_NOTE = "Publish window Oct 10–Nov 19, 2026 (inaugural widen kept). The strict Nov 16–19 window found 芥末机器 “Choose your fridge hiding place” 6afa6554000000001603d4ec (Nov 16 10:07, display 20K likes), but the same series already has 2 cards on the shelf, so it is withheld and not added. That is a completed find + withhold, not a zero-hit window, and not a confirmed zero. An unauthenticated 300031 later does not prove the note was deleted; no login bypass. 14 existing rows kept.";
 const XHS_TREND_DATE = "2026-11-25";
-const XHS_TREND_ZH = "2026-11-25 发现检查未完成：未打开 explore。本轮未新增。不是已确认无新。既有卡片保留。";
-const XHS_TREND = "2026-11-25 discovery check is incomplete: explore was not opened. No new cards. Not a confirmed zero. Existing cards kept.";
+const XHS_TREND_ZH = "2026-11-25 发现检查未完成：未登录浏览器搜索结果为空白。本轮未新增。空白不是已确认无新。既有卡片保留。";
+const XHS_TREND = "2026-11-25 discovery check is incomplete: search returned blank in a logged-out browser. No new cards. A blank result is not a confirmed zero. Existing cards kept.";
 const XHS_POSTS = [
   {
     "id": "6af160f8000000003302aba9",
@@ -16955,14 +17128,51 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "2026-11-25 (Asia/Shanghai; scanned, no new cards)";
-const TUT_UPDATED_ZH = "2026-11-25（北京时间；已扫描，本轮未新增）";
-const TUT_LATEST_BATCH = "2026-11-24-evening-radar";
+const TUT_UPDATED = "2026-11-25 (Asia/Shanghai; scanned, +1)";
+const TUT_UPDATED_ZH = "2026-11-25（北京时间；已扫描，新增 1 条）";
+const TUT_LATEST_BATCH = "2026-11-25";
 const TREND_TUTORIAL_DATE = "2026-11-25";
-const TREND_TUTORIAL_ZH = "本批新增 5 条有实操流程的教程，其中 2 条为近七天补入。";
-const TREND_TUTORIAL = "5 hands-on AI filmmaking workflows, including two seven-day backfills.";
+const TREND_TUTORIAL_ZH = "2026-11-25 已扫描，新增 1 条：Higgsfield 官方拆解《怎样让 AI 动画不那么像模板》。RSS 播放 31,301。早先教程保留。";
+const TREND_TUTORIAL = "Scanned 2026-11-25. One addition: Higgsfield’s official breakdown of AI animation that does not look generic. RSS views 31,301. Earlier tutorials kept.";
 const TUTORIALS = 
 [
+  {
+    "batch": "2026-11-25",
+    "addedAt": "2026-11-25T14:40:00+08:00",
+    "metricsAt": "2026-11-25T13:54:27+08:00",
+    "flag": "New this update",
+    "flagZh": "本批新增",
+    "windowType": "72-hour",
+    "id": "mu_8D93Dkik",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=mu_8D93Dkik",
+    "sourceUrl": "https://www.youtube.com/watch?v=mu_8D93Dkik",
+    "cover": "src/img/yt_mu_8D93Dkik.jpg",
+    "coverSource": "https://i.ytimg.com/vi/mu_8D93Dkik/maxresdefault.jpg",
+    "level": "pro",
+    "comments": "N/A",
+    "likes": "N/A",
+    "metricsSrc": "Official YouTube Atom RSS media:statistics, 31,301 views at 2026-11-25 13:54 Asia/Shanghai. Title and channel from YouTube oEmbed. No full file was exported.",
+    "creator": "Higgsfield AI",
+    "date": "Nov 24, 2026",
+    "duration": "N/A",
+    "views": "31,301",
+    "viewsRaw": 31301,
+    "title": "How To Make AI Animation That Doesn't Look Generic (Full Breakdown)",
+    "titleZh": "怎样让 AI 动画不那么像模板（完整拆解）",
+    "topicZh": "动画完成度",
+    "topicEn": "Animation finish",
+    "learnZh": "Higgsfield 官方频道拆解：怎么让 AI 动画不那么像通用模板。RSS 播放 31,301（2026-11-25 13:54 北京时间）。这是工艺教程，不是成片上架，也没有把未观看写成质量通过。",
+    "learnEn": "Higgsfield’s official breakdown of how to keep AI animation from looking generic. RSS views 31,301 at 2026-11-25 13:54 Asia/Shanghai. A craft tutorial, not a finished-film add, and not marked as a quality pass.",
+    "whyZh": "Higgsfield 官方频道拆解：怎么让 AI 动画不那么像通用模板。RSS 播放 31,301（2026-11-25 13:54 北京时间）。这是工艺教程，不是成片上架，也没有把未观看写成质量通过。",
+    "whyEn": "Higgsfield’s official breakdown of how to keep AI animation from looking generic. RSS views 31,301 at 2026-11-25 13:54 Asia/Shanghai. A craft tutorial, not a finished-film add, and not marked as a quality pass.",
+    "publishedAt": "2026-11-24T21:08:04+08:00",
+    "tags": [
+      "Higgsfield",
+      "Animation",
+      "Official"
+    ]
+  },
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T16:34:48.499Z","metricsAt":"2026-11-24T16:34:48.499Z","flag":"7-day backfill","flagZh":"近七天补入","windowType":"7-day backfill","id":"yt_oqtXc0yI1S8","platform":"YouTube","url":"https://www.youtube.com/watch?v=oqtXc0yI1S8","sourceUrl":"https://www.youtube.com/watch?v=oqtXc0yI1S8","cover":"https://i.ytimg.com/vi/oqtXc0yI1S8/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/oqtXc0yI1S8/maxresdefault.jpg","level":"pro","comments":"N/A","likes":"N/A","metricsSrc":"Public listing on the original creator's YouTube channel, observed in this review; original upload date retained.","creator":"Higgsfield AI / Adil","date":"Nov 21, 2026","duration":"27:14","views":"70,246","viewsRaw":70246,"title":"How to Make Iman Gadzhi’s Fashion Ad (HILLS Breakdown)","titleZh":"HILLS 时尚广告拆解：用 AI 做眼镜的转场与最终剪辑","topicZh":"时尚广告制作","topicEn":"Fashion Ad Workflow","learnZh":"按场景演示素材和提示词怎么接，12:50 拆眼镜转场，22:16 看最终剪辑。Higgsfield 官方教学，配套有可复用的创作资料。","learnEn":"Work through assets and prompts scene by scene, then follow the eyewear transition at 12:50 and the edit at 22:16. An official Higgsfield tutorial with companion materials.","companionSource":"https://higgsfield.ai/@adilinthewildtempo/blogs/how-to-make-iman-gadzhi-s-fashion-ad","tags":["近七天补入 / 7-day","Fashion","Higgsfield"]},
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T16:34:48.499Z","metricsAt":"2026-11-24T16:34:48.499Z","flag":"7-day backfill","flagZh":"近七天补入","windowType":"7-day backfill","id":"yt_Xe0HtOj0Ohg","platform":"YouTube","url":"https://www.youtube.com/watch?v=Xe0HtOj0Ohg","sourceUrl":"https://www.youtube.com/watch?v=Xe0HtOj0Ohg","cover":"https://i.ytimg.com/vi/Xe0HtOj0Ohg/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/Xe0HtOj0Ohg/maxresdefault.jpg","level":"pro","comments":"N/A","likes":"N/A","metricsSrc":"Public listing on the original creator's YouTube channel, observed in this review; original upload date retained.","creator":"Youri van Hofwegen","date":"Nov 20, 2026","duration":"22:10","views":"约 2.8 万","viewsRaw":28000,"title":"Dreamina Canvas: Storyboards, Shared Assets and an Editable Timeline","titleZh":"Dreamina Canvas：从分镜和共享素材到可继续编辑的时间线","topicZh":"分镜到剪辑","topicEn":"Storyboard to Edit","learnZh":"先搭分镜和可跨场复用的角色、场景素材，再把不同场次生成并排列，最后把保留切点的时间线交给 Premiere Pro 或 Final Cut Pro。","learnEn":"Build storyboards around reusable character and location references, generate separate scenes, then carry an editable sequence and its cuts into Premiere Pro or Final Cut Pro.","tags":["近七天补入 / 7-day","Dreamina","Editing"]},
 {"batch":"2026-11-24-evening-radar","addedAt":"2026-11-24T14:04:58.751Z","flag":"New this update","flagZh":"本批新增","id":"yt_9l8LCZBDaiE","creator":"Youri van Hofwegen","platform":"YouTube","url":"https://www.youtube.com/watch?v=9l8LCZBDaiE","sourceUrl":"https://www.youtube.com/watch?v=9l8LCZBDaiE","cover":"https://i.ytimg.com/vi/9l8LCZBDaiE/maxresdefault.jpg","coverSource":"https://i.ytimg.com/vi/9l8LCZBDaiE/maxresdefault.jpg","publishedAt":"2026-11-22T14:55:12Z","date":"Nov 22, 2026","duration":"15:17","views":"35,662","viewsRaw":35662,"likes":"N/A","likesRaw":null,"comments":"N/A","commentsRaw":null,"title":"How to Make Animated Cartoon Videos with AI (Full Guide)","titleZh":"AI 卡通短片：用角色参考板保持四场戏连续","level":"pro","topicZh":"卡通短片连续性","topicEn":"Animated continuity","learnZh":"先做角色和场景参考板，再逐场做有对白的侦探故事；把上一场成片作为连续性参考，最后到 CapCut 剪接。包含 OpenArt 赞助演示。","learnEn":"Build character and set references, make a dialogue detective story scene by scene, carry earlier footage into the next scene as a continuity reference, then assemble in CapCut. OpenArt-sponsored demo.","tags":["Character Consistency","Animation","CapCut"],"metricsAt":"2026-11-24T14:00:00Z","metricsSrc":"Original YouTube video public metrics, 2026-11-24 (UTC)."},
