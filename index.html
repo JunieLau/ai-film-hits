@@ -502,7 +502,7 @@
 <footer id="fest-footer"></footer>
 </section>
 
-<script src="data/lane-scan-status.js?v=20261125b"></script>
+<script src="data/lane-scan-status.js?v=20261126"></script>
 <script>
 /* ===== APPEND ONLY FOREVER: never replace REELS / X_POSTS / REDDIT_POSTS / YT_POSTS / DOUYIN_POSTS / TIKTOK_POSTS / BILIBILI_POSTS / XHS_POSTS wholesale.
    Merge new hits by id (IG shortcode / tweet id / reddit id / youtube video id). Keep older posts.
@@ -17128,14 +17128,83 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "2026-11-25 (Asia/Shanghai; scanned, +1)";
-const TUT_UPDATED_ZH = "2026-11-25（北京时间；已扫描，新增 1 条）";
-const TUT_LATEST_BATCH = "2026-11-25";
-const TREND_TUTORIAL_DATE = "2026-11-25";
-const TREND_TUTORIAL_ZH = "2026-11-25 已扫描，新增 1 条：Higgsfield 官方拆解《怎样让 AI 动画不那么像模板》。RSS 播放 31,301。早先教程保留。";
-const TREND_TUTORIAL = "Scanned 2026-11-25. One addition: Higgsfield’s official breakdown of AI animation that does not look generic. RSS views 31,301. Earlier tutorials kept.";
+const TUT_UPDATED = "2026-11-26 (Asia/Shanghai; 2 added)";
+const TUT_UPDATED_ZH = "2026-11-26（北京时间，新增 2 条）";
+const TUT_LATEST_BATCH = "2026-11-26";
+const TREND_TUTORIAL_DATE = "2026-11-26";
+const TREND_TUTORIAL_ZH = "新增两条：Seedance 草稿与高清实测；Claude + Blender + Unreal 城市渲染（近七天补入）。";
+const TREND_TUTORIAL = "Two additions: a Seedance draft-to-final test and a Blender-to-Unreal city-rendering case (seven-day backfill).";
 const TUTORIALS = 
 [
+  {
+    "id": "yt_jrXoCIkLgrc",
+    "creator": "Curious Refuge",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=jrXoCIkLgrc",
+    "cover": "src/img/tut_jrXoCIkLgrc.jpg",
+    "coverSource": "https://i.ytimg.com/vi/jrXoCIkLgrc/hqdefault.jpg",
+    "publishedAt": "2026-11-24T22:44:50Z",
+    "date": "Nov 25, 2026",
+    "views": "14,430",
+    "viewsRaw": 14430,
+    "likes": "N/A",
+    "comments": "N/A",
+    "duration": "10:10",
+    "title": "Here’s How to Cut Your Seedance 2.5 Costs in Half",
+    "titleZh": "Seedance 2.5：先做低清草稿还是直接出高清？",
+    "topicZh": "测试画面与渲染预算",
+    "topicEn": "Draft-to-final testing",
+    "learnZh": "用同类镜头对比低清草稿→高清和直接生成高清，包括真人参考、延展布景和人群；成本是作者样本，不保证每个项目都能省一半。",
+    "learnEn": "Compare draft-to-final with direct high-res generation for live-action references, set extensions and crowds. Cost savings are not universal.",
+    "tags": [
+      "Draft mode",
+      "VFX",
+      "Cost test"
+    ],
+    "metricsSrc": "Official YouTube Atom RSS at 2026-11-26 10:44 Asia/Shanghai: https://www.youtube.com/feeds/videos.xml?channel_id=UClnFtyUEaxQOCd1s5NKYGFA",
+    "windowType": "72-hour",
+    "level": "pro",
+    "batch": "2026-11-26",
+    "addedAt": "2026-11-26T02:45:12Z",
+    "metricsAt": "2026-11-26T02:44:33Z",
+    "flagZh": "本批新增",
+    "flag": "New this update"
+  },
+  {
+    "id": "tut_higgsfield_unreal_city_20261121",
+    "creator": "Higgsfield Studio",
+    "platform": "X",
+    "url": "https://higgsfield.ai/@higgsfield.studio/blogs/how-we-rendered-a-3d-modeled-city-in-unreal-engine-on-higgsfield-gpu",
+    "sourceUrl": "https://x.com/higgsfield_ai/status/2123905539063336984",
+    "cover": "src/img/tut_higgsfield_unreal_city_20261121.jpg",
+    "coverSource": "https://d2ol7oe51mr4n9.cloudfront.net/user_3HTcCo0RcKm5x9CBUVXE2gojNZi/15b439ec-7280-478a-9d7f-4498b4f98c4f.mp4",
+    "publishedAt": "2026-11-20T22:25:00Z",
+    "date": "Nov 21, 2026",
+    "views": "174,934",
+    "viewsRaw": 174934,
+    "likes": "1,726",
+    "comments": "65",
+    "reposts": "318",
+    "title": "How We Rendered a 3D-Modeled City in Unreal Engine on Higgsfield GPU",
+    "titleZh": "用 Claude、Blender 和 Unreal 渲染一座城",
+    "topicZh": "3D 区块到电影渲染",
+    "topicEn": "3D blockout to film rendering",
+    "learnZh": "先用 Blender 灰模剪完 40 秒，按统一坐标和材质名组装 11 个模块，再到 Unreal 重做材质和灯光。先测帧再分配 GPU。近七天补入；数字来自公开镜像快照。",
+    "learnEn": "Lock 40 seconds in Blender grey previews, align 11 modules, rebuild materials and lighting in Unreal, and test frames before splitting the GPU render. Seven-day backfill; engagement is from a public mirror.",
+    "tags": [
+      "Blender",
+      "Unreal Engine",
+      "Near-7-day backfill"
+    ],
+    "metricsSrc": "Public mirror of Higgsfield’s launch thread, not live X: https://teapawt.net/higgsfield_ai/status/2123905539063336984",
+    "windowType": "7-day-backfill",
+    "level": "pro",
+    "batch": "2026-11-26",
+    "addedAt": "2026-11-26T02:45:12Z",
+    "metricsAt": "2026-11-26T02:45:12Z",
+    "flagZh": "本批新增",
+    "flag": "New this update"
+  },
   {
     "batch": "2026-11-25",
     "addedAt": "2026-11-25T14:40:00+08:00",

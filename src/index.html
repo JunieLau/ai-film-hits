@@ -9493,14 +9493,83 @@ const FILMMAKERS =
 /* ===== AI TUTORIALS (v23) · APPEND ONLY: merge new tutorials by id, never delete rows.
    Each refresh: add ~10 most-viewed AI filmmaking / AI video-making tutorials (any platform),
    rewrite TREND_TUTORIAL*, set batch/addedAt. Covers: img/tut_<videoId>.jpg ===== */
-const TUT_UPDATED = "Oct 31, 2026 10:28 CST";
-const TUT_UPDATED_ZH = "2026-10-31 10:28（北京时间）";
-const TUT_LATEST_BATCH = "2026-10-31";
-const TREND_TUTORIAL_DATE = "2026-10-28 → 10-31 · 专业向 Pro craft";
-const TREND_TUTORIAL_ZH = "窗口 10/28–31：+20 条专业向教程（YouTube 16 / X 1 / Reddit 3，全英文，已拒 Hindi/入门/赞助）。热点：(1) 角色一致性——RefMod vs LoRA vs 参考图、角色设定表与景别帧；(2) MiniMax H3 / Pika H3 Flex 开源链路（ComfyUI 长视频、动作控制、超分、面部修复）；(3) 导演与镜头语言——3D 导演台调度、15 种运镜、模型默认镜头偏好；(4) 年代质感 MV 与 UE→AI 工作流。";
-const TREND_TUTORIAL = "Window Oct 28–31: +20 pro craft tutorials (YouTube 16 / X 1 / Reddit 3, English; Hindi/beginner/sponsored rejected). Hot threads: (1) character consistency — RefMod vs LoRA vs references, character datasheets & shot-framing frames; (2) open MiniMax H3 / Pika H3 Flex stack (ComfyUI long video, motion control, upscale, face fixes); (3) directing & shot language — 3D director blocking, 15 camera moves, model default-camera bias; (4) period-look MVs and UE→AI pipelines.";
+const TUT_UPDATED = "2026-11-26 (Asia/Shanghai; 2 added)";
+const TUT_UPDATED_ZH = "2026-11-26（北京时间，新增 2 条）";
+const TUT_LATEST_BATCH = "2026-11-26";
+const TREND_TUTORIAL_DATE = "2026-11-26";
+const TREND_TUTORIAL_ZH = "新增两条：Seedance 草稿与高清实测；Claude + Blender + Unreal 城市渲染（近七天补入）。";
+const TREND_TUTORIAL = "Two additions: a Seedance draft-to-final test and a Blender-to-Unreal city-rendering case (seven-day backfill).";
 const TUTORIALS = 
 [
+  {
+    "id": "yt_jrXoCIkLgrc",
+    "creator": "Curious Refuge",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=jrXoCIkLgrc",
+    "cover": "img/tut_jrXoCIkLgrc.jpg",
+    "coverSource": "https://i.ytimg.com/vi/jrXoCIkLgrc/hqdefault.jpg",
+    "publishedAt": "2026-11-24T22:44:50Z",
+    "date": "Nov 25, 2026",
+    "views": "14,430",
+    "viewsRaw": 14430,
+    "likes": "N/A",
+    "comments": "N/A",
+    "duration": "10:10",
+    "title": "Here’s How to Cut Your Seedance 2.5 Costs in Half",
+    "titleZh": "Seedance 2.5：先做低清草稿还是直接出高清？",
+    "topicZh": "测试画面与渲染预算",
+    "topicEn": "Draft-to-final testing",
+    "learnZh": "用同类镜头对比低清草稿→高清和直接生成高清，包括真人参考、延展布景和人群；成本是作者样本，不保证每个项目都能省一半。",
+    "learnEn": "Compare draft-to-final with direct high-res generation for live-action references, set extensions and crowds. Cost savings are not universal.",
+    "tags": [
+      "Draft mode",
+      "VFX",
+      "Cost test"
+    ],
+    "metricsSrc": "Official YouTube Atom RSS at 2026-11-26 10:44 Asia/Shanghai: https://www.youtube.com/feeds/videos.xml?channel_id=UClnFtyUEaxQOCd1s5NKYGFA",
+    "windowType": "72-hour",
+    "level": "pro",
+    "batch": "2026-11-26",
+    "addedAt": "2026-11-26T02:45:12Z",
+    "metricsAt": "2026-11-26T02:44:33Z",
+    "flagZh": "本批新增",
+    "flag": "New this update"
+  },
+  {
+    "id": "tut_higgsfield_unreal_city_20261121",
+    "creator": "Higgsfield Studio",
+    "platform": "X",
+    "url": "https://higgsfield.ai/@higgsfield.studio/blogs/how-we-rendered-a-3d-modeled-city-in-unreal-engine-on-higgsfield-gpu",
+    "sourceUrl": "https://x.com/higgsfield_ai/status/2123905539063336984",
+    "cover": "img/tut_higgsfield_unreal_city_20261121.jpg",
+    "coverSource": "https://d2ol7oe51mr4n9.cloudfront.net/user_3HTcCo0RcKm5x9CBUVXE2gojNZi/15b439ec-7280-478a-9d7f-4498b4f98c4f.mp4",
+    "publishedAt": "2026-11-20T22:25:00Z",
+    "date": "Nov 21, 2026",
+    "views": "174,934",
+    "viewsRaw": 174934,
+    "likes": "1,726",
+    "comments": "65",
+    "reposts": "318",
+    "title": "How We Rendered a 3D-Modeled City in Unreal Engine on Higgsfield GPU",
+    "titleZh": "用 Claude、Blender 和 Unreal 渲染一座城",
+    "topicZh": "3D 区块到电影渲染",
+    "topicEn": "3D blockout to film rendering",
+    "learnZh": "先用 Blender 灰模剪完 40 秒，按统一坐标和材质名组装 11 个模块，再到 Unreal 重做材质和灯光。先测帧再分配 GPU。近七天补入；数字来自公开镜像快照。",
+    "learnEn": "Lock 40 seconds in Blender grey previews, align 11 modules, rebuild materials and lighting in Unreal, and test frames before splitting the GPU render. Seven-day backfill; engagement is from a public mirror.",
+    "tags": [
+      "Blender",
+      "Unreal Engine",
+      "Near-7-day backfill"
+    ],
+    "metricsSrc": "Public mirror of Higgsfield’s launch thread, not live X: https://teapawt.net/higgsfield_ai/status/2123905539063336984",
+    "windowType": "7-day-backfill",
+    "level": "pro",
+    "batch": "2026-11-26",
+    "addedAt": "2026-11-26T02:45:12Z",
+    "metricsAt": "2026-11-26T02:45:12Z",
+    "flagZh": "本批新增",
+    "flag": "New this update"
+  },
   {
     "id": "yt_v-r-SWMiRo4",
     "platform": "YouTube",
